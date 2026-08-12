@@ -1172,43 +1172,78 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
       </div>
     </div>
 
-    <!-- O:\ NETWORK DRIVE SYNC MODAL (SNUG & TIGHT) -->
+    <!-- TEMPLATE SYNC MODAL (GITHUB CLOUD & O:\ DRIVE) -->
     <div class="popup" id="network-sync-popup" style="width:90%; max-width:480px;">
-      <div class="popup-inner">
+      <div class="popup-inner" style="padding: 20px 24px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
           <h3 style="margin:0; display:flex; align-items:center; gap:6px;">
-            <span>💾</span> O:\ Drive Template Sync
+            <span>🔄</span> Template Sync Manager
           </h3>
           <button onclick="closeNetworkSyncPopup()" style="background:none; border:none; font-size:20px; cursor:pointer; color:var(--muted);">&times;</button>
         </div>
 
-        <p style="font-size:12px; color:var(--muted); margin-bottom:12px; line-height:1.4;">
-          Keep templates identical across all clinic PCs by exporting a master configuration file to your clinic's <strong>O:\ network drive</strong>.
-        </p>
-
-        <!-- NETWORK FOLDER PATH SELECTOR -->
-        <div style="background:rgba(0,123,255,0.06); border:1px solid rgba(0,123,255,0.2); padding:10px 12px; border-radius:8px; margin-bottom:14px;">
-          <label style="font-size:11.5px; font-weight:bold; color:var(--popup-text); display:block; margin-bottom:4px;">
-            Target Network Drive Folder Path:
-          </label>
-          <input type="text" id="network-folder-input" value="O:\Audubon\" placeholder="e.g., O:\Audubon\" style="width:100%; padding:6px 10px; border-radius:5px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12px; box-sizing:border-box;" oninput="saveNetworkFolderPath(this.value)">
-          <small style="font-size:10.5px; color:var(--muted); display:block; margin-top:4px;">
-            Target Master File: <code id="network-file-path-display" style="color:#007BFF; font-weight:bold;">O:\Audubon\audubon_master_config.json</code>
-          </small>
+        <!-- TABS -->
+        <div style="display:flex; border-bottom:1px solid rgba(0,0,0,0.1); margin-bottom:14px; gap:10px;">
+          <button type="button" id="sync-tab-github" onclick="switchSyncTab('github')" style="background:none; border:none; padding:8px 12px; font-weight:bold; cursor:pointer; font-size:12.5px; border-bottom:2px solid #007BFF; color:#007BFF;">☁️ GitHub Cloud</button>
+          <button type="button" id="sync-tab-local" onclick="switchSyncTab('local')" style="background:none; border:none; padding:8px 12px; font-weight:bold; cursor:pointer; font-size:12.5px; border-bottom:2px solid transparent; color:var(--muted);">💾 Local O:\ Drive</button>
         </div>
 
-        <!-- ACTION BUTTONS -->
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:14px;">
-          <button class="action-btn" style="background:#007BFF; padding:10px; font-size:12px; display:flex; flex-direction:column; align-items:center; justify-content:center;" onclick="exportMasterConfigToNetwork()">
-            <strong style="font-size:12.5px;">📤 Export Master</strong>
-            <span style="font-size:10px; opacity:0.85; margin-top:2px;">Save master file to O:\</span>
+        <!-- GITHUB CLOUD SYNC SECTION -->
+        <div id="sync-section-github" style="display:block;">
+          <p style="font-size:11.5px; color:var(--muted); margin-bottom:12px; line-height:1.4;">
+            Synchronize your note templates across all computers using GitHub Cloud. Note edits are automatically downloaded on startup. Use the button below to upload your local edits.
+          </p>
+
+          <div style="display:grid; grid-template-columns: 1fr; gap:8px; margin-bottom:14px; background:rgba(0,123,255,0.04); border:1px solid rgba(0,123,255,0.15); padding:12px; border-radius:8px;">
+            <div>
+              <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">GitHub Username</label>
+              <input type="text" id="github-owner-input" placeholder="e.g. Mobstaj" style="width:100%; padding:6px 10px; border-radius:5px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12px; box-sizing:border-box;">
+            </div>
+            <div>
+              <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Repository Name</label>
+              <input type="text" id="github-repo-input" placeholder="e.g. audubonwalk" style="width:100%; padding:6px 10px; border-radius:5px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12px; box-sizing:border-box;">
+            </div>
+            <div>
+              <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Personal Access Token (PAT)</label>
+              <input type="password" id="github-token-input" placeholder="ghp_..." style="width:100%; padding:6px 10px; border-radius:5px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12px; box-sizing:border-box;">
+            </div>
+          </div>
+
+          <button id="github-sync-btn" class="action-btn" style="background:#28a745; width:100%; padding:10px; font-size:13px; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:6px;" onclick="syncWithGitHubCloud()">
+            <span>☁️</span> Push Edits to Cloud
           </button>
-          
-          <button class="action-btn" style="background:#28a745; padding:10px; font-size:12px; display:flex; flex-direction:column; align-items:center; justify-content:center;" onclick="triggerImportFromNetwork()">
-            <strong style="font-size:12.5px;">📥 Import &amp; Sync</strong>
-            <span style="font-size:10px; opacity:0.85; margin-top:2px;">Select file from O:\</span>
-          </button>
-          <input type="file" id="network-file-input" accept=".json" style="display:none;" onchange="handleNetworkFileImport(this)">
+        </div>
+
+        <!-- LOCAL O:\ DRIVE SYNC SECTION -->
+        <div id="sync-section-local" style="display:none;">
+          <p style="font-size:11.5px; color:var(--muted); margin-bottom:12px; line-height:1.4;">
+            Keep templates identical across all clinic PCs by exporting a master configuration file to your clinic's <strong>O:\ network drive</strong>.
+          </p>
+
+          <!-- NETWORK FOLDER PATH SELECTOR -->
+          <div style="background:rgba(0,123,255,0.06); border:1px solid rgba(0,123,255,0.2); padding:10px 12px; border-radius:8px; margin-bottom:14px;">
+            <label style="font-size:11.5px; font-weight:bold; color:var(--popup-text); display:block; margin-bottom:4px;">
+              Target Network Drive Folder Path:
+            </label>
+            <input type="text" id="network-folder-input" value="O:\Audubon\" placeholder="e.g., O:\Audubon\" style="width:100%; padding:6px 10px; border-radius:5px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12px; box-sizing:border-box;" oninput="saveNetworkFolderPath(this.value)">
+            <small style="font-size:10.5px; color:var(--muted); display:block; margin-top:4px;">
+              Target Master File: <code id="network-file-path-display" style="color:#007BFF; font-weight:bold;">O:\Audubon\audubon_master_config.json</code>
+            </small>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:14px;">
+            <button class="action-btn" style="background:#007BFF; padding:10px; font-size:12px; display:flex; flex-direction:column; align-items:center; justify-content:center;" onclick="exportMasterConfigToNetwork()">
+              <strong style="font-size:12.5px;">📤 Export Master</strong>
+              <span style="font-size:10px; opacity:0.85; margin-top:2px;">Save master file to O:\</span>
+            </button>
+            
+            <button class="action-btn" style="background:#28a745; padding:10px; font-size:12px; display:flex; flex-direction:column; align-items:center; justify-content:center;" onclick="triggerImportFromNetwork()">
+              <strong style="font-size:12.5px;">📥 Import &amp; Sync</strong>
+              <span style="font-size:10px; opacity:0.85; margin-top:2px;">Select file from O:\</span>
+            </button>
+            <input type="file" id="network-file-input" accept=".json" style="display:none;" onchange="handleNetworkFileImport(this)">
+          </div>
         </div>
 
         <!-- CONFLICT RESOLUTION GUARDRAIL AREA -->
@@ -5910,6 +5945,54 @@ const PERMANENT_TEMPLATES = [
         loadAllNotes();
         renderArchives();
         updateDisplay();
+        autoSyncFromGitHubCloud();
+    }
+
+    async function autoSyncFromGitHubCloud() {
+        const owner = localStorage.getItem('github_owner') || 'Mobstaj';
+        const repo = localStorage.getItem('github_repo') || 'audubonwalk';
+        if (!owner || !repo) return;
+
+        // Fetch from GitHub raw to bypass CORS and get the latest JSON
+        const url = `https://raw.githubusercontent.com/${owner}/${repo}/main/custom_templates.json`;
+
+        try {
+            const res = await fetch(url);
+            if (!res.ok) return;
+            const cloudNotes = await res.json();
+            if (cloudNotes && typeof cloudNotes === 'object') {
+                let localNotes = {};
+                try {
+                    localNotes = JSON.parse(localStorage.getItem('customNotes') || '{}');
+                } catch(e){}
+
+                let merged = { ...localNotes };
+                let updated = false;
+
+                for (let key in cloudNotes) {
+                    const c = cloudNotes[key];
+                    const l = localNotes[key];
+                    
+                    if (!l) {
+                        merged[key] = c;
+                        updated = true;
+                    } else if ((c.userCustomizedText || c.userCustomizedPrice) && !(l.userCustomizedText || l.userCustomizedPrice)) {
+                        merged[key] = c;
+                        updated = true;
+                    }
+                }
+
+                if (updated) {
+                    localStorage.setItem('customNotes', JSON.stringify(merged));
+                    if (window.initializeTemplateNotes) initializeTemplateNotes();
+                    if (window.loadAllNotes) loadAllNotes();
+                    if (window.updateDisplay) updateDisplay();
+                    console.log("GitHub Cloud Sync: Auto-merged remote custom templates.");
+                }
+            }
+        } catch(err) {
+            console.log("GitHub Cloud Sync: Auto-pull offline or not configured.", err);
+        }
     }
 
     function openSyntaxGuidePopup() {
@@ -6405,11 +6488,153 @@ const PERMANENT_TEMPLATES = [
         }
         const conflictArea = document.getElementById('network-conflict-area');
         if (conflictArea) conflictArea.style.display = 'none';
+
+        // Pre-populate GitHub Cloud settings
+        const ownerInput = document.getElementById('github-owner-input');
+        const repoInput = document.getElementById('github-repo-input');
+        const tokenInput = document.getElementById('github-token-input');
+        
+        if (ownerInput) ownerInput.value = localStorage.getItem('github_owner') || 'Mobstaj';
+        if (repoInput) repoInput.value = localStorage.getItem('github_repo') || 'audubonwalk';
+        if (tokenInput) tokenInput.value = localStorage.getItem('github_pat') || '';
+
         openPopup('network-sync-popup');
     }
 
     function closeNetworkSyncPopup() {
         closePopup('network-sync-popup');
+    }
+
+    function switchSyncTab(tab) {
+        const btnGithub = document.getElementById('sync-tab-github');
+        const btnLocal = document.getElementById('sync-tab-local');
+        const secGithub = document.getElementById('sync-section-github');
+        const secLocal = document.getElementById('sync-section-local');
+
+        if (tab === 'github') {
+            btnGithub.style.borderBottom = '2px solid #007BFF';
+            btnGithub.style.color = '#007BFF';
+            btnLocal.style.borderBottom = '2px solid transparent';
+            btnLocal.style.color = 'var(--muted)';
+            secGithub.style.display = 'block';
+            secLocal.style.display = 'none';
+        } else {
+            btnLocal.style.borderBottom = '2px solid #007BFF';
+            btnLocal.style.color = '#007BFF';
+            btnGithub.style.borderBottom = '2px solid transparent';
+            btnGithub.style.color = 'var(--muted)';
+            secLocal.style.display = 'block';
+            secGithub.style.display = 'none';
+        }
+    }
+
+    async function syncWithGitHubCloud() {
+        const owner = document.getElementById('github-owner-input').value.trim();
+        const repo = document.getElementById('github-repo-input').value.trim();
+        const token = document.getElementById('github-token-input').value.trim();
+
+        if (!owner || !repo || !token) {
+            alert("Please enter your GitHub Username, Repository name, and Personal Access Token (PAT) to sync.");
+            return;
+        }
+
+        // Save settings locally
+        localStorage.setItem('github_owner', owner);
+        localStorage.setItem('github_repo', repo);
+        localStorage.setItem('github_pat', token);
+
+        const syncBtn = document.getElementById('github-sync-btn');
+        const origText = syncBtn.innerHTML;
+        syncBtn.innerHTML = "🌀 Syncing...";
+        syncBtn.disabled = true;
+
+        try {
+            // Get local customized templates
+            const localNotes = {};
+            try {
+                const parsed = JSON.parse(localStorage.getItem('customNotes') || '{}');
+                if (parsed && typeof parsed === 'object') Object.assign(localNotes, parsed);
+            } catch(e){}
+
+            const url = `https://api.github.com/repos/${owner}/${repo}/contents/custom_templates.json`;
+            const headers = {
+                "Authorization": `token ${token}`,
+                "Accept": "application/vnd.github.v3+json",
+                "Content-Type": "application/json",
+                "User-Agent": "Audubon-Walk-Sync"
+            };
+
+            // 1. Fetch remote file to merge changes
+            let sha = null;
+            let mergedNotes = { ...localNotes };
+            try {
+                const res = await fetch(url, { headers });
+                if (res.ok) {
+                    const data = await res.json();
+                    sha = data.sha;
+                    const remoteText = decodeURIComponent(escape(atob(data.content.replace(/\s/g, ''))));
+                    const remoteNotes = JSON.parse(remoteText);
+                    if (remoteNotes && typeof remoteNotes === 'object') {
+                        // Merge remote edits
+                        for (let key in remoteNotes) {
+                            // If local doesn't have it, or if remote is customized and local isn't
+                            if (!mergedNotes[key]) {
+                                mergedNotes[key] = remoteNotes[key];
+                            } else {
+                                // Smart merge: keep the one that is customized, or prefer local for conflict resolution
+                                const r = remoteNotes[key];
+                                const l = mergedNotes[key];
+                                if ((r.userCustomizedText || r.userCustomizedPrice) && !(l.userCustomizedText || l.userCustomizedPrice)) {
+                                    mergedNotes[key] = r;
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch(err) {
+                console.log("Could not pull existing cloud templates. Initializing new database...", err);
+            }
+
+            // 2. Save merged copy to localStorage
+            localStorage.setItem('customNotes', JSON.stringify(mergedNotes));
+
+            // 3. Write back to GitHub
+            const fileContent = JSON.stringify(mergedNotes, null, 2);
+            const base64Content = btoa(unescape(encodeURIComponent(fileContent)));
+
+            const putBody = {
+                message: "Sync note templates via App Cloud Sync",
+                content: base64Content
+            };
+            if (sha) {
+                putBody.sha = sha;
+            }
+
+            const putRes = await fetch(url, {
+                method: 'PUT',
+                headers,
+                body: JSON.stringify(putBody)
+            });
+
+            if (!putRes.ok) {
+                const errData = await putRes.json().catch(() => ({}));
+                throw new Error(errData.message || `HTTP ${putRes.status}`);
+            }
+
+            alert("Success! Custom templates are fully synchronized with GitHub Cloud. Other computers will now load these automatically on refresh.");
+            
+            // Re-render
+            if (window.initializeTemplateNotes) initializeTemplateNotes();
+            if (window.loadAllNotes) loadAllNotes();
+            if (window.updateDisplay) updateDisplay();
+            closeNetworkSyncPopup();
+        } catch (err) {
+            alert("Sync failed: " + err.message);
+            console.error(err);
+        } finally {
+            syncBtn.innerHTML = origText;
+            syncBtn.disabled = false;
+        }
     }
 
     function exportMasterConfigToNetwork() {
