@@ -386,13 +386,14 @@
     "lcodes": [
       "L3670"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Abduction Pillow Sling / Shoulder Immobilizer / Arc Sling / Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a left/right {Sling Model: Breg Arc/ Breg Atlas/ Breg Slingshot/ Donjoy Ultrasling} shoulder orthosis due to rotator cuff tear / post-operative repair. He/she was fit with a shoulder abduction brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
     "price": 127.15,
     "category": "Upper Extremity",
     "title": "Abduction Sling",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true
   },
   "diabetic-shoe-delivery": {
     "id": "diabetic-shoe-delivery",
