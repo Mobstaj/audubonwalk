@@ -15,7 +15,7 @@
   "acl-measurement": {
     "id": "acl-measurement",
     "lcodes": [],
-    "text": "Pt. was seen at the North/South office for functional Left/Right knee orthosis evaluation. He/she requires a functional double upright knee orthosis for stabilization following ________ injury. \n\nKnee orthosis measurements taken today: \nthigh circumference: ______ \nKnee center ML width: ______ \ncalf circumference: ______ \n\nFunctional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation and prevent progressive joint collapse/injury. Patient was educated on fitting process. Will contact for delivery appointment once authorization is obtained.",
+    "text": "Pt. was seen at the North/South office for functional Left/Right knee orthosis evaluation. He/she requires a functional double upright knee orthosis for stabilization following ACL/PCL/MCL/LCL/OA injury. \n\nKnee orthosis measurements taken today: \nthigh circumference: [Thigh Circumference] \nKnee center ML width: [Knee Center ML Width] \ncalf circumference: [Calf Circumference] \n\nFunctional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation and prevent progressive joint collapse/injury. Patient was educated on fitting process. Will contact for delivery appointment once authorization is obtained.",
     "price": 0,
     "category": "Knee",
     "title": "ACL Measurement",
@@ -273,13 +273,14 @@
     "lcodes": [
       "L4361"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right pneumatic/rigid walking boot. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} walking boot. Rigid uprights contoured and air cells inflated. Walking boot is reasonable and necessary to immobilize the ankle and foot joints, protect fractures/sprains, reduce heel strike impact, and allow protected weightbearing ambulation.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Height: Tall / Short} pneumatic/rigid walking boot. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} walking boot. Rigid uprights contoured and air cells inflated. Walking boot is reasonable and necessary to immobilize the ankle and foot joints, protect fractures/sprains, reduce heel strike impact, and allow protected weightbearing ambulation.  He/She was educated on donning, doffing, use, and care of boot.",
     "price": 343.35,
     "category": "Foot & Ankle",
     "title": "Walking Boot",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true
   },
   "wrist-splint": {
     "id": "wrist-splint",
@@ -386,14 +387,13 @@
     "lcodes": [
       "L3670"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a left/right {Sling Model: Breg Arc/ Breg Atlas/ Breg Slingshot/ Donjoy Ultrasling} shoulder orthosis due to rotator cuff tear / post-operative repair. He/she was fit with a shoulder abduction brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Abduction Pillow Sling / Shoulder Immobilizer / Arc Sling / Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
     "price": 127.15,
     "category": "Upper Extremity",
     "title": "Abduction Sling",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "isCustomEdited": true
+    "isTemplate": true
   },
   "diabetic-shoe-delivery": {
     "id": "diabetic-shoe-delivery",
@@ -404,7 +404,7 @@
       "A5513",
       "A5513"
     ],
-    "text": "Patient was seen at the North/South office for Left/Right therapeutic diabetic shoe and custom molded multiple-density inserts delivery. Inserts trimmed to fit diabetic footwear size {Shoe Size: 5/6/7/8/9/10/11/12/13/14/15}. Therapeutic diabetic shoes and heat-molded multi-density inserts are reasonable and necessary due to diabetes mellitus with peripheral neuropathy, foot deformity, and callus formation. Inserts relieve pressure points and prevent plantar ulceration. Daily foot inspection instructed.",
+    "text": "Patient was seen at the North/South office for bilateral therapeutic diabetic shoes and custom molded multiple-density inserts delivery. Inserts trimmed to fit diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Therapeutic diabetic shoes and heat-molded multi-density inserts are reasonable and necessary due to diabetes mellitus with peripheral neuropathy, foot deformity, and callus formation. Inserts relieve pressure points and prevent plantar ulceration. Daily foot inspection instructed. Patient was educated to check skin regularly and ween into full-time use.",
     "price": 512.22,
     "category": "Foot & Ankle",
     "title": "Diabetic Shoe Delivery",
@@ -1000,5 +1000,35 @@
     "excludeAutoPrice": false,
     "isTemplate": true,
     "userCustomizedPrice": false
+  },
+  "toe-filler-delivery": {
+    "id": "toe-filler-delivery",
+    "lcodes": [
+      "A5500",
+      "A5500",
+      "A5513",
+      "A5513",
+      "A5513"
+    ],
+    "text": "Patient was seen at the North/South office for fitting and delivery of bilateral therapeutic diabetic shoes and Left/Right custom molded shoe insert(s) with longitudinal arch and toe filler (L5000). The toe filler is designed to fill the void of the amputated digits, prevent the foot from sliding forward inside the shoe, and maintain appropriate fit and pressure distribution. Trimmed and fit to diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Patient was educated to check skin regularly and ween into full-time use.",
+    "price": 935.02,
+    "category": "Lower Prosthetics",
+    "title": "Diabetic shoe/toe filler",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1787000660292": {
+    "id": "custom-1787000660292",
+    "title": "Gel heel cups",
+    "price": 27,
+    "category": "Foot & Ankle",
+    "lcodes": [
+      "L2999"
+    ],
+    "text": "Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true
   }
 }
