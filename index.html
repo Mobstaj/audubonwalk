@@ -752,7 +752,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
         <!-- SUBTLE FOOTER VERSION & COPYRIGHT NOTICE -->
         <div style="text-align:center; margin-top:110px; padding-bottom:30px; font-size:11.5px; color:var(--muted); opacity:0.55; letter-spacing:0.5px; user-select:none; display:flex; flex-direction:column; align-items:center; gap:3px;">
             <div>&copy; Jay Sciortino 2026</div>
-            <div style="font-size:10.5px; opacity:0.85;">v3.40</div>
+            <div style="font-size:10.5px; opacity:0.85;">v3.43</div>
         </div>
     </div>
 
@@ -949,7 +949,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                 </div>
 
                 <!-- SIDE -->
-                <div>
+                <div id="cust-group-side">
                     <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Side</label>
                     <div style="display:flex; gap:5px; flex-wrap:wrap;">
                         <button type="button" class="cust-pill-btn active" data-group="side" data-val="right" onclick="setCustOption('side', 'right', this)">Right</button>
@@ -989,11 +989,28 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                     </div>
                 </div>
 
+                <!-- OPTIONAL PHRASE TOGGLES CONTAINER -->
+                <div id="cust-optional-phrases-container" style="grid-column: 1 / -1; display:none; flex-direction:column; gap:4px; margin-top:6px; border-top:1px solid rgba(0,0,0,0.08); padding-top:6px;"></div>
+
                 <!-- CUSTOM USER-DEFINED SELECTABLE OPTION PICKERS CONTAINER -->
                 <div id="cust-custom-pickers-container" style="display:contents;"></div>
 
                 <!-- DYNAMIC MEASUREMENT / FILL-IN FIELDS CONTAINER -->
-                <div id="cust-dynamic-fields" style="display:contents;"></div>
+                <div id="cust-dynamic-fields" style="grid-column: 1 / -1; display: none; flex-direction: column; gap: 4px; margin-top: 8px; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 8px;"></div>
+            </div>
+
+            <!-- QUICK PHRASE ADD-ONS BAR -->
+            <div style="margin-bottom:8px; background:rgba(0,123,255,0.04); border:1px solid rgba(0,123,255,0.15); border-radius:6px; padding:8px 12px; flex-shrink:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                    <label style="font-size:10.5px; font-weight:bold; color:#007BFF; text-transform:uppercase;">Quick Phrase Add-ons</label>
+                    <button type="button" onclick="promptAdHocQuickPhrase()" style="background:none; border:none; color:#007BFF; font-size:11.5px; font-weight:bold; cursor:pointer; text-decoration:underline;">+ Add Custom Quick Phrase...</button>
+                </div>
+                <div id="cust-quick-phrases-bar" style="display:flex; gap:6px; flex-wrap:wrap;">
+                    <button type="button" class="cust-pill-btn" data-adhoc-text="Parent was present during the appointment." onclick="toggleAdHocPhrase('Parent was present during the appointment.', this)">+ Parent Present</button>
+                    <button type="button" class="cust-pill-btn" data-adhoc-text="Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery." onclick="toggleAdHocPhrase('Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.', this)">+ Achilles Wedge</button>
+                    <button type="button" class="cust-pill-btn" data-adhoc-text="He/she was educated on proper donning/doffing, wear schedule, and skin inspection." onclick="toggleAdHocPhrase('He/she was educated on proper donning/doffing, wear schedule, and skin inspection.', this)">+ Patient Educated</button>
+                    <button type="button" class="cust-pill-btn" data-adhoc-text="Gait was evaluated and patient demonstrated safe ambulation with device." onclick="toggleAdHocPhrase('Gait was evaluated and patient demonstrated safe ambulation with device.', this)">+ Gait Evaluated</button>
+                </div>
             </div>
 
             <!-- EXPANDED LIVE PREVIEW BOX (TAKES ALL REMAINING VERTICAL SPACE) -->
@@ -1038,6 +1055,8 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                     <option value="Spine / LSO">Spine / LSO</option>
                     <option value="Upper Extremity">Upper Extremity</option>
                     <option value="Post-Op &amp; Recovery">Post-Op &amp; Recovery</option>
+                    <option value="Lower Prosthetics">Lower Extremity Prosthetics</option>
+                    <option value="Upper Prosthetics">Upper Extremity Prosthetics</option>
                     <option value="General">General / Other</option>
                 </select>
             </div>
@@ -1061,6 +1080,9 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('he/she')" title="Insert Sex/Pronoun variable">+ Sex (he/she)</button>
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('{Brand / Manufacturer: Breg / DonJoy / Ossur / DJO}')" title="Insert Brand Option Picker">+ Brand</button>
                 <button type="button" class="subtle-pill-btn" onclick="promptCustomPickerInsert()" title="Create custom selectable option picker">+ Custom Dropdown...</button>
+                <button type="button" class="subtle-pill-btn" onclick="promptOptionalPhraseInsert()" title="Create optional phrase toggle button" style="border-color:#28a745; color:#28a745; font-weight:bold;">+ Optional Phrase...</button>
+                <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('{+ Parent Present: Parent was present during the appointment.}')" title="Insert Parent Present toggle phrase">+ Parent Present</button>
+                <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('{+ Achilles Wedge: Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.}')" title="Insert Achilles Wedge toggle phrase">+ Achilles Wedge</button>
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('[Diagnosis]')" title="Insert Diagnosis placeholder">+ Diagnosis</button>
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('______')" title="Insert Fill-in Blank">+ Blank Field</button>
             </div>
@@ -1105,9 +1127,16 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                 Example: <code>[Thigh Circumference]</code> or <code>[Diagnosis]</code><br>
                 <small style="color:var(--muted); display:block; margin-top:2px;">Displays a text input box in the customizer to type values into the note.</small>
             </div>
-            <div style="margin-bottom:6px;"><strong>3. Office Location:</strong> <code>North/South</code> (Toggles North or South office)</div>
-            <div style="margin-bottom:6px;"><strong>4. Side / Laterality:</strong> <code>Left/Right</code> or <code>L/R</code> (Toggles Left, Right, or Bilateral)</div>
-            <div><strong>5. Pronoun Conversions:</strong> <code>he/she</code>, <code>his/her</code>, <code>him/her</code> (Converts based on patient sex)</div>
+            <div style="margin-bottom:10px; background:rgba(40,167,69,0.05); padding:10px; border-radius:6px; border:1px solid rgba(40,167,69,0.2);">
+                <strong style="color:#28a745; display:block; margin-bottom:2px;">3. Optional Phrase Toggle Button</strong>
+                <code>{+ Button Label: Full phrase text to insert}</code><br>
+                Example: <code>{+ Achilles Wedge: Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.}</code><br>
+                Example: <code>{+ Parent Present: Parent was present during the appointment.}</code><br>
+                <small style="color:var(--muted); display:block; margin-top:2px;">Generates a 1-click toggle pill button in the customizer. When ON, the phrase is included in the note.</small>
+            </div>
+            <div style="margin-bottom:6px;"><strong>4. Office Location:</strong> <code>North/South</code> (Toggles North or South office)</div>
+            <div style="margin-bottom:6px;"><strong>5. Side / Laterality:</strong> <code>Left/Right</code> or <code>L/R</code> (Toggles Left, Right, or Bilateral)</div>
+            <div><strong>6. Pronoun Conversions:</strong> <code>he/she</code>, <code>his/her</code>, <code>him/her</code> (Converts based on patient sex)</div>
         </div>
         <div style="display:flex; justify-content:flex-end; margin-top:14px;">
           <button class="action-btn" style="background:#007BFF; font-size:12px;" onclick="closePopup('syntax-guide-popup')">Got It</button>
@@ -1120,8 +1149,8 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
       <div class="popup-inner">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
             <h3 style="margin:0;">Manage &amp; Edit Templates</h3>
-            <button class="action-btn" style="background:#17a2b8; font-size:12px; padding:6px 12px; display:flex; align-items:center; gap:5px;" onclick="openNetworkSyncPopup()" title="Sync templates with O:\ Network Drive">
-                <span>💾</span> O:\ Drive Sync
+            <button class="action-btn" style="background:#17a2b8; font-size:12px; padding:6px 12px; display:flex; align-items:center; gap:5px;" onclick="openNetworkSyncPopup()" title="Sync templates with GitHub Cloud or O:\ Network Drive">
+                <span>🔄</span> Sync Templates (Cloud/Local)
             </button>
         </div>
         <p style="font-size:12px; color:var(--muted); margin-bottom:10px;">Edit note text, titles, prices, or categories for any template below:</p>
@@ -1209,9 +1238,14 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             </div>
           </div>
 
-          <button id="github-sync-btn" class="action-btn" style="background:#28a745; width:100%; padding:10px; font-size:13px; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:6px;" onclick="syncWithGitHubCloud()">
-            <span>☁️</span> Push Edits to Cloud
-          </button>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:8px;">
+            <button id="github-pull-btn" class="action-btn" style="background:#007BFF; padding:10px; font-size:12.5px; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:6px;" onclick="syncPullWithGitHubCloud()">
+              <span>📥</span> Download from Cloud
+            </button>
+            <button id="github-sync-btn" class="action-btn" style="background:#28a745; padding:10px; font-size:12.5px; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:6px;" onclick="syncWithGitHubCloud()">
+              <span>📤</span> Upload &amp; Merge
+            </button>
+          </div>
         </div>
 
         <!-- LOCAL O:\ DRIVE SYNC SECTION -->
@@ -5478,15 +5512,15 @@ const BUILTIN_CMS_DESCRIPTIONS = {
 };
 
 const PERMANENT_TEMPLATES = [
-  {"id":"abduction-sling","lcodes":["L3670"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Abduction Pillow Sling / Shoulder Immobilizer / Arc Sling / Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely \u0026 Weber / RCAI} due to rotator cuff tear / post-operative repair. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.","price":127.15,"category":"Upper Extremity","title":"Abduction Sling","fabricationType":"prefab"},
+  {"id":"abduction-sling","lcodes":["L3670"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Abduction Pillow Sling / Shoulder Immobilizer / Arc Sling / Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely \u0026 Weber / RCAI} due to rotator cuff tear / post-operative repair. Fit with a universal abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.","price":127.15,"category":"Upper Extremity","title":"Abduction Sling","fabricationType":"prefab"},
   {"id":"acl-delivery","lcodes":["L1845"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right {Knee Brace Model: Functional Double Upright KO / Custom ACL Brace / Fusion / TScope ROM / Unloader} knee orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Townsend / DJO}. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} knee brace. All straps were trimmed to length and rigid upright sub-structures contoured to patient\u0027s anatomical leg alignment. The double upright knee orthosis with adjustable joint is reasonable and necessary to stabilize the knee in sagittal and coronal planes, control joint laxity, prevent hyperextension, and protect against ACL/PCL/MCL/LCL/OA joint instability during ambulatory ADLs. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, instructed on a progressive wearing schedule (increasing 1 hour per day), and advised to monitor skin for irritation. Follow-up as needed.","price":970.06,"category":"Knee","title":"ACL Delivery","fabricationType":"prefab"},
-  {"id":"acl-measurement","lcodes":[],"text":"Pt. was seen at the North/South office for functional Left/Right knee orthosis evaluation. He/she requires a functional double upright knee orthosis for stabilization following ________ injury. \n\nKnee orthosis measurements taken today: \nthigh circumference: ______ \nKnee center ML width: ______ \ncalf circumference: ______ \n\nFunctional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation and prevent progressive joint collapse/injury. Patient was educated on fitting process. Will contact for delivery appointment once authorization is obtained.","price":0,"category":"Knee","title":"ACL Measurement","fabricationType":"prefab"},
+  {"id":"acl-measurement","lcodes":[],"text":"Pt. was seen at the North/South office for functional Left/Right knee orthosis evaluation. He/she requires a functional double upright knee orthosis for stabilization following ACL/PCL/MCL/LCL/OA injury. \n\nKnee orthosis measurements taken today: \nthigh circumference: [Thigh Circumference] \nKnee center ML width: [Knee Center ML Width] \ncalf circumference: [Calf Circumference] \n\nFunctional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation and prevent progressive joint collapse/injury. Patient was educated on fitting process. Will contact for delivery appointment once authorization is obtained.","price":0,"category":"Knee","title":"ACL Measurement","fabricationType":"prefab"},
   {"id":"afo-arizona-del","lcodes":["L1940","L2820","L2275"],"text":"Patient was seen at the North/South office for fitting and delivery of a custom Left/Right Arizona AFO brace. He/she was fit with a custom-molded plastic/leather Arizona AFO fabricated from patient model. The custom device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in sagittal and coronal planes, eliminate severe subtalar joint motion and pain, correct valgus/varus deformity, and prevent joint collapse during ambulation. He/she was provided with verbal and written care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule (1-2 hours per day initially) while inspecting skin daily.","price":872.52,"category":"Foot \u0026 Ankle","title":"AFO Arizona Delivery","fabricationType":"custom"},
   {"id":"afo-articulated-del","lcodes":["L1970","L2820","L2210","L2210"],"text":"Pt. was seen at the North/South location for custom Left/Right articulated AFO delivery. Device was custom fabricated from patient model with {Joint Type: Plantarflexion Stop / Free Motion / Dorsiflexion Assist} ankle joints. He/she was fit with the new Custom AFO. The custom brace is reasonable and necessary to support the ankle joint in frontal and coronal planes, assist dorsiflexion during swing phase, prevent foot drop tripping falls, support medial longitudinal arch, and maintain proper hindfoot alignment during stance phase. Minor footplate trimming adjustments made for shoe fit. No pressure areas noted. Instructed on proper donning/doffing, progressive wearing schedule (1 hr/day increase), and daily skin inspection.","price":1198.05,"category":"Foot \u0026 Ankle","title":"AFO Articulated delivery","fabricationType":"custom"},
   {"id":"afo-az-eval","lcodes":[],"text":"Pt. was seen at the North/South office for custom Left/Right Arizona AFO evaluation. He/she has a history of severe ankle/hindfoot arthritis and instability. Complains of severe pain and inability to ambulate functional distances. Examination reveals subtalar joint pain, arch collapse along medial longitudinal arch, and hindfoot valgus position. Conservative non-custom bracing has failed. A custom Arizona AFO is medically necessary to eliminate subtalar joint motion and stabilize foot/ankle. A cast was taken today in subtalar neutral position with bony landmarks identified. Cast sent for custom fabrication. Patient will be scheduled for delivery upon receipt.","price":0,"category":"Foot \u0026 Ankle","title":"AFO/AZ evaluation","fabricationType":"custom"},
   {"id":"afo-evaluation","lcodes":[],"text":"Pt. seen at the North/South office for Left/Right AFO evaluation. Patient presents with foot drop secondary to neurological/spinal nerve compression. States difficulty clearing floor during swing phase resulting in steppage gait, hip hiking, tripping, and fall risk. MMT \u0026 ROM tested: 2+ dorsiflexion strength, foot slap at stance. Trial of in-office AFO demonstrated immediate improvement in gait symmetry and toe clearance. Custom/prefab AFO is reasonable and necessary to stabilize foot/ankle in sagittal plane, prevent foot drop, and control coronal alignment during ambulation.","price":0,"category":"Foot \u0026 Ankle","title":"AFO Evaluation","fabricationType":"custom"},
   {"id":"ankle-laceup","lcodes":["L1902"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right ASO lace-up ankle brace. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ankle orthosis and figure-8 straps were adjusted. The prefabricated ankle brace is reasonable and necessary to stabilize the ankle in the coronal plane, restrict hazardous inversion/eversion motion, reduce ankle pain, and support injured ligaments during ambulation. Verbal and written care instructions provided; patient instructed on proper donning/doffing and skin monitoring.","price":91.73,"category":"Foot \u0026 Ankle","title":"Ankle Laceup ASO","fabricationType":"prefab"},
-  {"id":"arc-sling","lcodes":["L3960"],"text":"Pt. was seen at the North/South office for Left/Right Arc shoulder immobilizer delivery. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} arc shoulder orthosis. Positioning posts and straps adjusted for proper joint alignment. The shoulder orthosis with abduction positioning is reasonable and necessary to immobilize the glenohumeral joint, maintain prescribed shoulder abduction/rotation, offload rotator cuff tendons, and facilitate post-surgical soft tissue healing. Instructed on donning/doffing and skin inspection.","price":826.41,"category":"Upper Extremity","title":"Arc Sling","fabricationType":"prefab"},
+  {"id":"arc-sling","lcodes":["L3960"],"text":"Pt. was seen at the North/South office for Left/Right Arc shoulder immobilizer delivery. He/she was fit with a universal arc shoulder orthosis. Positioning posts and straps adjusted for proper joint alignment. The shoulder orthosis with abduction positioning is reasonable and necessary to immobilize the glenohumeral joint, maintain prescribed shoulder abduction/rotation, offload rotator cuff tendons, and facilitate post-surgical soft tissue healing. Instructed on donning/doffing and skin inspection.","price":826.41,"category":"Upper Extremity","title":"Arc Sling","fabricationType":"prefab"},
   {"id":"arch-rivals","lcodes":["L3030"],"excludeAutoPrice":true,"title":"Arch Rivals","category":"Foot \u0026 Ankle","price":100,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of Left/Right ArchRivals prefabricated foot orthotics. He/she was fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ArchRival foot orthotics placed into footwear. The orthotics support longitudinal arches, distribute plantar pressures, and reduce foot pain during standing and ambulation. Verbal and written wear and care instructions provided."},
   {"id":"bk-suction-prosthesis-w-all-pro-foot-delivery","lcodes":[],"text":"The patient was seen at the North/South office for definitive Left/Right transtibial (BK) prosthesis delivery. Fit with a custom laminated socket, flexible inner liner, suction suspension system, and dynamic response foot. Socket demonstrated total surface bearing contact and secure suction suspension without pistoning. Static and dynamic gait alignment evaluated over 300 feet ambulation. Issued prosthetic socks, liner sheaths, and care instructions. Scheduled follow-up in 2 weeks.","price":0,"category":"Foot \u0026 Ankle","title":"BK suction prosthesis w flex walk foot","fabricationType":"custom"},
   {"id":"carbon-plate","lcodes":["L3030"],"excludeAutoPrice":true,"title":"Carbon Plate","category":"Foot \u0026 Ankle","price":80,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid carbon foot plate insert. Fit underneath shoe insole. The carbon plate is reasonable and necessary to restrict hazardous forefoot/MTP joint motion, offload painful metatarsal heads, and relieve pain during propulsion phase of gait."},
@@ -5510,7 +5544,8 @@ const PERMANENT_TEMPLATES = [
   {"id":"custom-note-1752097421797","lcodes":["L3020","L3020"],"text":"Pt. was seen at the North/South location for custom Left/Right foot orthotics evaluation. Presents with severe foot/ankle pain during standing/walking. Normally wears shoe size {Shoe Size: 5/6/7/8/9/10/11/12/13/14/15}. Physical exam shows pes planus arch collapse and hindfoot valgus. Impression taken today for custom molded functional inserts.","price":500,"category":"Foot \u0026 Ankle","title":"Custom Inserts Eval","fabricationType":"custom"},
   {"id":"custom-note-1755785685531","lcodes":["L1846"],"text":"Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL/OA), prevents hyperextension, and stabilizes knee joint during ambulation.","price":1289.75,"category":"Knee","title":"Custom Knee Brace Delivery","fabricationType":"custom"},
   {"id":"custom-note-1764628290991","lcodes":["A4467"],"excludeAutoPrice":true,"title":"Knee Sleeve","category":"Knee","price":40,"fabricationType":"prefab","text":"Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities."},
-  {"id":"diabetic-shoe-delivery","lcodes":["A5500","A5500","A5513","A5513","A5513"],"text":"Patient was seen at the North/South office for Left/Right therapeutic diabetic shoe and custom molded multiple-density inserts delivery. Inserts trimmed to fit diabetic footwear size {Shoe Size: 5/6/7/8/9/10/11/12/13/14/15}. Therapeutic diabetic shoes and heat-molded multi-density inserts are reasonable and necessary due to diabetes mellitus with peripheral neuropathy, foot deformity, and callus formation. Inserts relieve pressure points and prevent plantar ulceration. Daily foot inspection instructed.","price":512.22,"category":"Foot \u0026 Ankle","title":"Diabetic Shoe Delivery","fabricationType":"prefab"},
+  {"id":"diabetic-shoe-delivery","lcodes":["A5500","A5500","A5513","A5513","A5513"],"text":"Patient was seen at the North/South office for bilateral therapeutic diabetic shoes and custom molded multiple-density inserts delivery. Inserts trimmed to fit diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Therapeutic diabetic shoes and heat-molded multi-density inserts are reasonable and necessary due to diabetes mellitus with peripheral neuropathy, foot deformity, and callus formation. Inserts relieve pressure points and prevent plantar ulceration. Daily foot inspection instructed. Patient was educated to check skin regularly and ween into full-time use.","price":512.22,"category":"Foot \u0026 Ankle","title":"Diabetic Shoe Delivery","fabricationType":"prefab"},
+  {"id":"toe-filler-delivery","lcodes":["A5500","A5500","A5513","A5513","A5513","L5000"],"text":"Patient was seen at the North/South office for fitting and delivery of bilateral therapeutic diabetic shoes and Left/Right custom molded shoe insert(s) with longitudinal arch and toe filler (L5000). The toe filler is designed to fill the void of the amputated digits, prevent the foot from sliding forward inside the shoe, and maintain appropriate fit and pressure distribution. Trimmed and fit to diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Patient was educated to check skin regularly and ween into full-time use.","price":935.02,"category":"Lower Prosthetics","title":"Diabetic shoe/toe filler","fabricationType":"custom"},
   {"id":"elbow-rom","lcodes":["L3760"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM elbow orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid elbow brace with adjustable ROM hinges. Device is reasonable and necessary to immobilize/stabilize elbow joint, control extension/flexion limits, protect ligamentous healing, and allow progressive rehabilitation.","price":565.47,"category":"Upper Extremity","title":"Elbow ROM","fabricationType":"prefab"},
   {"id":"forearm-splint","lcodes":["L3908"],"text":"Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely \u0026 Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient\u0027s anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care.","price":67.37,"category":"Upper Extremity","title":"Forearm / Wrist Splint","fabricationType":"prefab"},
   {"id":"forms","lcodes":["L3030"],"excludeAutoPrice":true,"title":"Forms","category":"Foot \u0026 Ankle","price":100,"fabricationType":"prefab","text":"Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} Forms foot orthotics. Foot orthotics will support feet in alignment, reduce plantar pressures, help to prevent {Alignment Problem: supination / pronation / arch collapse / heel pain}. He/she was educated on use/care of devices. F/up PRN."},
@@ -5533,7 +5568,7 @@ const PERMANENT_TEMPLATES = [
   {"id":"post-op-shoe","lcodes":["L3260"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} post-op shoe with rocker sole. Shoe immobilizes forefoot and offloads operative site during healing.","price":30,"category":"Foot \u0026 Ankle","title":"Post-op Shoe","fabricationType":"prefab"},
   {"id":"prewash","lcodes":["L2999"],"excludeAutoPrice":true,"title":"Prewash","category":"Post-Op \u0026 Recovery","price":11,"fabricationType":"prefab","text":"Patient was issued surgical skin prewash cleanser at North/South office prior to joint procedure. Written surgical site prep instructions provided."},
   {"id":"shoe-lift","lcodes":["L2999"],"excludeAutoPrice":true,"title":"Shoe/heel lift","category":"Foot \u0026 Ankle","price":27,"fabricationType":"custom","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Fit with a {Thickness: 1/8 inch / 1/4 inch / 3/8 inch / 1/2 inch / 5/8 inch / 3/4 inch / 1 inch} lift. Lift is reasonable and necessary to correct leg length discrepancy, reduce pelvis tilting, and reduce stress on spinal and hip joints during ambulation."},
-  {"id":"simple-sling","lcodes":["L3660"],"text":"Pt. was seen at North/South office for Left/Right shoulder immobilizer sling delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} shoulder sling. Device immobilizes upper extremity to allow tissue healing and protect glenohumeral joint.","price":150.86,"category":"Upper Extremity","title":"Simple sling","fabricationType":"prefab"},
+  {"id":"simple-sling","lcodes":["L3660"],"text":"Pt. was seen at North/South office for Left/Right shoulder immobilizer sling delivery. Fit with a universal shoulder sling. Device immobilizes upper extremity to allow tissue healing and protect glenohumeral joint.","price":150.86,"category":"Upper Extremity","title":"Simple sling","fabricationType":"prefab"},
   {"id":"step-up","lcodes":["L3260"],"text":"Patient was fit at North/South office with an EvenUp leveler device for contralateral footwear to restore pelvic alignment when using a Left/Right walking boot.","price":30,"category":"Foot \u0026 Ankle","title":"Step up","fabricationType":"prefab"},
   {"id":"thumb-spica","lcodes":["L3807"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right thumb spica wrist orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid thumb spica. Orthosis is reasonable and necessary to immobilize wrist and 1st MCP/CMC joints, reduce thumb joint inflammation, and allow healing.","price":282.7,"category":"Upper Extremity","title":"Thumb Spica","fabricationType":"prefab"},
   {"id":"tibial-fracture-brace","lcodes":["L2116"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid tibial fracture orthosis (Sarmiento AFO) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Townsend} for closed tibial shaft fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} tibial fracture brace with anterior/posterior shells and footplate. The rigid circumferential shells provide hydrostatic tissue compression, control sagittal/coronal angular alignment, and offload the fracture site to promote bone union while allowing protected ambulation. Instructed on skin inspection, donning/doffing, and wearing protocol. Follow-up PRN.","price":325.8,"category":"Foot \u0026 Ankle","title":"Tibial Fracture Orthosis","fabricationType":"prefab"},
@@ -5542,8 +5577,8 @@ const PERMANENT_TEMPLATES = [
   {"id":"toe-spacer","lcodes":["L2999"],"excludeAutoPrice":true,"title":"Toe Spacer, gel thingy","category":"Foot \u0026 Ankle","price":15,"fabricationType":"prefab","text":"Patient was seen at North/South office for fitting of a Left/Right gel toe interdigital separator. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} toe spacer to realign 1st/2nd digits and reduce interdigital pressure pain."},
   {"id":"tscope-rom","lcodes":["L1832"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right TScope ROM post-operative knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} telescoping knee brace. Hinge stops set to prescribed ROM limits. Device is reasonable and necessary to immobilize/protect knee joint, control extension/flexion limits post-surgery, and allow progressive rehabilitation.","price":698.63,"category":"Knee","title":"Tscope ROM Knee brace","fabricationType":"prefab"},
   {"id":"ulnar-gutter","lcodes":["L3807"],"text":"Patient was seen at North/South office for fitting and delivery of a Left/Right ulnar gutter wrist/hand splint. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ulnar gutter splint molded to hand/wrist. Device immobilizes 4th and 5th metacarpals/digits in position of function to heal fracture/injury.","price":282.7,"category":"Upper Extremity","title":"Ulnar gutter splint","fabricationType":"prefab"},
-  {"id":"ultrasling","lcodes":["L3675"],"text":"Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.","price":198.39,"category":"Upper Extremity","title":"Ultrasling","fabricationType":"prefab"},
-  {"id":"walking-boot","lcodes":["L4361"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right pneumatic/rigid walking boot. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} walking boot. Rigid uprights contoured and air cells inflated. Walking boot is reasonable and necessary to immobilize the ankle and foot joints, protect fractures/sprains, reduce heel strike impact, and allow protected weightbearing ambulation.","price":343.35,"category":"Foot \u0026 Ankle","title":"Walking Boot","fabricationType":"prefab"},
+  {"id":"ultrasling","lcodes":["L3675"],"text":"Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.","price":198.39,"category":"Upper Extremity","title":"Ultrasling","fabricationType":"prefab"},
+  {"id":"walking-boot","lcodes":["L4361"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right {Height: Tall / Short} pneumatic/rigid walking boot. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} walking boot. Rigid uprights contoured and air cells inflated. {+ Achilles Wedge: Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.} Walking boot is reasonable and necessary to immobilize the ankle and foot joints, protect fractures/sprains, reduce heel strike impact, and allow protected weightbearing ambulation.","price":343.35,"category":"Foot \u0026 Ankle","title":"Walking Boot","fabricationType":"prefab"},
   {"id":"wrist-splint","lcodes":["L3908"],"text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right neutral rigid wrist orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} wrist splint. Palmar stay contoured. Device is reasonable and necessary to immobilize the wrist in neutral position, relieve carpal tunnel / tendonitis strain, and decrease ambulation/activity pain.","price":67.37,"category":"Upper Extremity","title":"Wrist Splint","fabricationType":"prefab"}
 ];
 
@@ -5685,12 +5720,16 @@ const PERMANENT_TEMPLATES = [
 
         for (const c of codes) {
             if (c.startsWith('L18')) return 'Knee';
+            if (c.startsWith('L5') || c.startsWith('L84')) return 'Lower Prosthetics';
+            if (c.startsWith('L6') || c.startsWith('L7')) return 'Upper Prosthetics';
             if (c.startsWith('L19') || c.startsWith('L2') || c.startsWith('L30') || c.startsWith('L32') || c.startsWith('L33') || c.startsWith('L43') || c.startsWith('A55') || c.startsWith('A65')) return 'Foot & Ankle';
             if (c.startsWith('L01') || c.startsWith('L04') || c.startsWith('L06') || c.startsWith('L16')) return 'Spine / LSO';
             if (c.startsWith('L37') || c.startsWith('L38') || c.startsWith('L39') || c.startsWith('A46')) return 'Upper Extremity';
             if (c.startsWith('E01') || c.startsWith('E06') || c.startsWith('A42')) return 'Post-Op & Recovery';
         }
 
+        if (t.includes('myoelectric') || t.includes('terminal device') || t.includes('upper prosthetic') || t.includes('upper prosthesis') || t.includes('transradial') || t.includes('transhumeral') || t.includes('prosthetic arm') || t.includes('prosthetic hand')) return 'Upper Prosthetics';
+        if (t.includes('toe filler') || t.includes('prosthetic foot') || t.includes('bk prosthesis') || t.includes('ak prosthesis') || t.includes('below knee') || t.includes('above knee') || t.includes('lower prosthetic') || t.includes('lower prosthesis') || t.includes('prosthetic leg') || t.includes('partial foot')) return 'Lower Prosthetics';
         if (t.includes('knee') || t.includes('acl') || t.includes('patella')) return 'Knee';
         if (t.includes('afo') || t.includes('ankle') || t.includes('foot') || t.includes('shoe') || t.includes('orthotic') || t.includes('heel') || t.includes('toe') || t.includes('boot') || t.includes('splint')) return 'Foot & Ankle';
         if (t.includes('lso') || t.includes('tlso') || t.includes('spine') || t.includes('lumbar') || t.includes('cervical') || t.includes('hip')) return 'Spine / LSO';
@@ -5924,21 +5963,31 @@ const PERMANENT_TEMPLATES = [
             updateCmsFeeScheduleLabels();
         } catch(e){}
 
-        // Self-healing check to sync all built-in templates with updated LCD master text & customizer tags
+        // Self-healing check to sync built-in templates while strictly preserving user edits
         try {
             let customNotes = JSON.parse(localStorage.getItem('customNotes') || '{}');
-            let modified = false;
-            PERMANENT_TEMPLATES.forEach(p => {
-                const normPerm = normalizeLcodes({ ...p, excludeAutoPrice: !!(p.excludeAutoPrice || p.lcodes?.includes('L2999')), isTemplate: true });
-                // Unconditionally sync built-in master templates to ensure latest LCD text and pronouns
-                customNotes[p.id] = {
-                    ...normPerm,
-                    price: (customNotes[p.id] && customNotes[p.id].userCustomizedPrice) ? customNotes[p.id].price : normPerm.price,
-                    userCustomizedPrice: customNotes[p.id] ? customNotes[p.id].userCustomizedPrice : false
-                };
-                modified = true;
-            });
-            localStorage.setItem('customNotes', JSON.stringify(customNotes));
+            if (customNotes && typeof customNotes === 'object') {
+                PERMANENT_TEMPLATES.forEach(p => {
+                    const normPerm = normalizeLcodes({ ...p, excludeAutoPrice: !!(p.excludeAutoPrice || p.lcodes?.includes('L2999')), isTemplate: true });
+                    const existing = customNotes[p.id];
+                    if (!existing) {
+                        customNotes[p.id] = normPerm;
+                    } else {
+                        const isEdited = existing.userCustomizedText || existing.isCustomEdited;
+                        const isPriceEdited = existing.userCustomizedPrice;
+                        customNotes[p.id] = {
+                            ...normPerm,
+                            ...existing,
+                            text: isEdited && existing.text ? existing.text : normPerm.text,
+                            title: isEdited && existing.title ? existing.title : normPerm.title,
+                            lcodes: isEdited && existing.lcodes ? existing.lcodes : normPerm.lcodes,
+                            price: isPriceEdited && existing.price !== undefined ? existing.price : normPerm.price,
+                            isTemplate: true
+                        };
+                    }
+                });
+                localStorage.setItem('customNotes', JSON.stringify(customNotes));
+            }
         } catch(e){}
 
         migrateOldAppLogs();
@@ -6304,6 +6353,92 @@ const PERMANENT_TEMPLATES = [
         updateCustNotePreview();
     }
 
+    function toggleCustomPickerWriteIn(fullTag, idx, btn) {
+        const input = document.getElementById(`write-in-input-${idx}`);
+        if (input) {
+            input.style.display = 'block';
+            input.focus();
+            currentCustOptions.customPickers = currentCustOptions.customPickers || {};
+            currentCustOptions.customPickers[fullTag] = input.value;
+            const parent = btn.parentElement;
+            if (parent) {
+                parent.querySelectorAll('.cust-pill-btn').forEach(b => b.classList.remove('active'));
+            }
+            btn.classList.add('active');
+            updateCustNotePreview();
+        }
+    }
+
+    function detectOptionalPhrases(rawText) {
+        if (!rawText) return [];
+        const phrases = [];
+        const regex = /\{\+\s*([^:]+):\s*([^}]+)\}/g;
+        let match;
+        while ((match = regex.exec(rawText)) !== null) {
+            const fullTag = match[0];
+            const label = match[1].trim();
+            const text = match[2].trim();
+            if (!phrases.some(p => p.fullTag === fullTag)) {
+                phrases.push({ fullTag, label, text });
+            }
+        }
+        return phrases;
+    }
+
+    function toggleOptionalPhraseVal(fullTag, btn) {
+        currentCustOptions.optionalPhrases = currentCustOptions.optionalPhrases || {};
+        const curr = !!currentCustOptions.optionalPhrases[fullTag];
+        currentCustOptions.optionalPhrases[fullTag] = !curr;
+        if (!curr) btn.classList.add('active');
+        else btn.classList.remove('active');
+        updateCustNotePreview();
+    }
+
+    function toggleAdHocPhrase(text, btn) {
+        currentCustOptions.adHocPhrases = currentCustOptions.adHocPhrases || [];
+        const idx = currentCustOptions.adHocPhrases.indexOf(text);
+        if (idx >= 0) {
+            currentCustOptions.adHocPhrases.splice(idx, 1);
+            btn.classList.remove('active');
+        } else {
+            currentCustOptions.adHocPhrases.push(text);
+            btn.classList.add('active');
+        }
+        updateCustNotePreview();
+    }
+
+    function promptOptionalPhraseInsert() {
+        const label = prompt("Enter a short button title (e.g. Parent Present, Achilles Wedge):");
+        if (!label || !label.trim()) return;
+        const text = prompt(`Enter the full phrase text to insert when "${label.trim()}" is toggled ON:`);
+        if (!text || !text.trim()) return;
+        const snippet = `{+ ${label.trim()}: ${text.trim()}}`;
+        insertVariableIntoText(snippet);
+    }
+
+    function promptAdHocQuickPhrase() {
+        const text = prompt("Enter custom phrase text to insert into this clinical note:");
+        if (!text || !text.trim()) return;
+        const cleanText = text.trim();
+        const shortLabel = cleanText.length > 25 ? (cleanText.substring(0, 22) + '...') : cleanText;
+        
+        const bar = document.getElementById('cust-quick-phrases-bar');
+        if (bar) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'cust-pill-btn active';
+            btn.textContent = '+ ' + shortLabel;
+            btn.onclick = function() { toggleAdHocPhrase(cleanText, btn); };
+            bar.appendChild(btn);
+        }
+        
+        currentCustOptions.adHocPhrases = currentCustOptions.adHocPhrases || [];
+        if (!currentCustOptions.adHocPhrases.includes(cleanText)) {
+            currentCustOptions.adHocPhrases.push(cleanText);
+        }
+        updateCustNotePreview();
+    }
+
     function detectCustomPickers(rawText) {
         if (!rawText) return [];
         const pickers = [];
@@ -6312,6 +6447,7 @@ const PERMANENT_TEMPLATES = [
         while ((match = regex.exec(rawText)) !== null) {
             const fullTag = match[0];
             const inner = match[1].trim();
+            if (inner.startsWith('+')) continue; // Optional phrase tag handled separately
             if (inner.includes('/')) {
                 let label = 'Option Picker';
                 let optionsRaw = inner;
@@ -6360,6 +6496,14 @@ const PERMANENT_TEMPLATES = [
         currentCustNoteId = id;
         currentCustFieldValues = {};
         currentCustOptions.customPickers = {};
+        currentCustOptions.optionalPhrases = {};
+        currentCustOptions.adHocPhrases = [];
+
+        // Reset quick phrases bar buttons active state
+        const qbar = document.getElementById('cust-quick-phrases-bar');
+        if (qbar) {
+            qbar.querySelectorAll('.cust-pill-btn').forEach(b => b.classList.remove('active'));
+        }
 
         // Sticky location memory
         const stickyLoc = localStorage.getItem('lastSelectedLocation') || 'north';
@@ -6372,6 +6516,28 @@ const PERMANENT_TEMPLATES = [
 
         const perm = PERMANENT_TEMPLATES.find(p => p.id === id);
         const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+
+        // Render Optional Phrase Toggles if defined in template text {+ Label: Text}
+        const optionalPhrasesContainer = document.getElementById('cust-optional-phrases-container');
+        const optPhrases = detectOptionalPhrases(rawText);
+        if (optionalPhrasesContainer) {
+            if (optPhrases.length > 0) {
+                optionalPhrasesContainer.style.display = 'block';
+                optionalPhrasesContainer.innerHTML = `
+                    <label style="font-size:10.5px; font-weight:bold; color:#28a745; text-transform:uppercase; display:block; margin-bottom:3px;">Optional Phrase Toggles / Add-Ons</label>
+                    <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:4px;">
+                        ${optPhrases.map(p => {
+                            const safeTag = p.fullTag.replace(/'/g, "\\'");
+                            const isActive = !!currentCustOptions.optionalPhrases[p.fullTag];
+                            return `<button type="button" class="cust-pill-btn ${isActive ? 'active' : ''}" onclick="toggleOptionalPhraseVal('${safeTag}', this)" title="${p.text.replace(/"/g, '&quot;')}">+ ${p.label}</button>`;
+                        }).join('')}
+                    </div>
+                `;
+            } else {
+                optionalPhrasesContainer.style.display = 'none';
+                optionalPhrasesContainer.innerHTML = '';
+            }
+        }
 
         const titleElem = document.getElementById('cust-popup-title');
         if (titleElem) titleElem.textContent = `Customize Note: ${note.title}`;
@@ -6391,7 +6557,14 @@ const PERMANENT_TEMPLATES = [
             indGroup.style.display = isKneeCategory ? 'block' : 'none';
         }
 
-        // Render Custom Pickers as Clean Dropdowns with Universal Custom Write-In Option
+        // Hide Side group for midline devices (e.g. spinal templates, bilateral shoes) that do not mention Left/Right/laterality
+        const needsSide = /left\/right|right\/left|left\s*\/\s*right|right\s*\/\s*left|l\/r/i.test(rawText);
+        const sideGroup = document.getElementById('cust-group-side');
+        if (sideGroup) {
+            sideGroup.style.display = needsSide ? 'block' : 'none';
+        }
+
+        // Render Custom Pickers as Clean Dropdowns/Buttons with Universal Custom Write-In Option
         const customPickersContainer = document.getElementById('cust-custom-pickers-container');
         const pickers = detectCustomPickers(rawText);
         if (customPickersContainer) {
@@ -6404,18 +6577,36 @@ const PERMANENT_TEMPLATES = [
                     const isWriteIn = activeVal && !p.options.includes(activeVal);
                     const safeTag = p.fullTag.replace(/'/g, "\\'");
                     
-                    return `
-                        <div style="margin-bottom:10px;">
-                            <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${p.label}</label>
-                            <select class="cust-select-dropdown" onchange="onCustomPickerDropdownChange(this, '${safeTag}', ${idx})">
-                                ${p.options.map(opt => `
-                                    <option value="${opt.replace(/"/g, '&quot;')}" ${(!isWriteIn && opt === activeVal) ? 'selected' : ''}>${opt}</option>
-                                `).join('')}
-                                <option value="__write_in__" ${isWriteIn ? 'selected' : ''}>Custom Write-In...</option>
-                            </select>
-                            <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'};" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
-                        </div>
-                    `;
+                    if (p.options.length <= 3) {
+                        // Render as Pill Buttons!
+                        return `
+                            <div style="margin-bottom:10px;">
+                                <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${p.label}</label>
+                                <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:5px;">
+                                    ${p.options.map(opt => {
+                                        const isSelected = !isWriteIn && opt === activeVal;
+                                        return `<button type="button" class="cust-pill-btn ${isSelected ? 'active' : ''}" onclick="setCustomPickerVal('${safeTag}', '${opt.replace(/'/g, "\\'")}', this); document.getElementById('write-in-input-${idx}').style.display='none';">${opt}</button>`;
+                                    }).join('')}
+                                    <button type="button" class="cust-pill-btn ${isWriteIn ? 'active' : ''}" onclick="toggleCustomPickerWriteIn('${safeTag}', ${idx}, this)">+ Custom</button>
+                                </div>
+                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; max-width:240px; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
+                            </div>
+                        `;
+                    } else {
+                        // Render as Dropdown Select!
+                        return `
+                            <div style="margin-bottom:10px;">
+                                <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${p.label}</label>
+                                <select class="cust-select-dropdown" onchange="onCustomPickerDropdownChange(this, '${safeTag}', ${idx})">
+                                    ${p.options.map(opt => `
+                                        <option value="${opt.replace(/"/g, '&quot;')}" ${(!isWriteIn && opt === activeVal) ? 'selected' : ''}>${opt}</option>
+                                    `).join('')}
+                                    <option value="__write_in__" ${isWriteIn ? 'selected' : ''}>Custom Write-In...</option>
+                                </select>
+                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; max-width:240px; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
+                            </div>
+                        `;
+                    }
                 }).join('');
             } else {
                 customPickersContainer.innerHTML = '';
@@ -6427,13 +6618,15 @@ const PERMANENT_TEMPLATES = [
 
         if (fieldsContainer) {
             if (fields.length > 0) {
+                fieldsContainer.style.display = 'flex';
                 fieldsContainer.innerHTML = fields.map(f => `
-                    <div style="margin-bottom:6px;">
+                    <div style="margin-bottom:4px;">
                         <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${f.label}</label>
                         <input type="text" data-field-key="${f.key}" placeholder="e.g. measurement / value..." class="cust-field-input" oninput="onCustFieldInput(this)" style="width:100%; max-width:240px; padding:6px 10px; border-radius:6px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12.5px; font-weight:600; box-sizing:border-box;">
                     </div>
                 `).join('');
             } else {
+                fieldsContainer.style.display = 'none';
                 fieldsContainer.innerHTML = '';
             }
         }
@@ -6637,6 +6830,70 @@ const PERMANENT_TEMPLATES = [
         }
     }
 
+    async function syncPullWithGitHubCloud() {
+        const owner = document.getElementById('github-owner-input').value.trim();
+        const repo = document.getElementById('github-repo-input').value.trim();
+        const token = document.getElementById('github-token-input').value.trim();
+
+        if (!owner || !repo || !token) {
+            alert("Please enter your GitHub Username, Repository name, and Personal Access Token (PAT) to sync.");
+            return;
+        }
+
+        // Save settings locally
+        localStorage.setItem('github_owner', owner);
+        localStorage.setItem('github_repo', repo);
+        localStorage.setItem('github_pat', token);
+
+        const pullBtn = document.getElementById('github-pull-btn');
+        const origText = pullBtn.innerHTML;
+        pullBtn.innerHTML = "📥 Downloading...";
+        pullBtn.disabled = true;
+
+        try {
+            const url = `https://api.github.com/repos/${owner}/${repo}/contents/custom_templates.json`;
+            const headers = {
+                "Authorization": `token ${token}`,
+                "Accept": "application/vnd.github.v3+json",
+                "User-Agent": "Audubon-Walk-Sync"
+            };
+
+            const res = await fetch(url, { headers });
+            if (!res.ok) {
+                throw new Error(`File not found on GitHub (Status: ${res.status}). Ensure you have pushed/uploaded templates first.`);
+            }
+
+            const data = await res.json();
+            const remoteText = decodeURIComponent(escape(atob(data.content.replace(/\s/g, ''))));
+            const remoteNotes = JSON.parse(remoteText);
+
+            if (!remoteNotes || typeof remoteNotes !== 'object') {
+                throw new Error("Invalid template data format received from GitHub.");
+            }
+
+            if (!confirm("This will overwrite your local template edits on this PC with the cloud templates from GitHub. Proceed?")) {
+                return;
+            }
+
+            // Save directly to localStorage
+            localStorage.setItem('customNotes', JSON.stringify(remoteNotes));
+
+            alert("Success! Templates successfully downloaded from GitHub Cloud.");
+            
+            // Re-render
+            if (window.initializeTemplateNotes) initializeTemplateNotes();
+            if (window.loadAllNotes) loadAllNotes();
+            if (window.updateDisplay) updateDisplay();
+            closeNetworkSyncPopup();
+        } catch (err) {
+            alert("Download failed: " + err.message);
+            console.error(err);
+        } finally {
+            pullBtn.innerHTML = origText;
+            pullBtn.disabled = false;
+        }
+    }
+
     function exportMasterConfigToNetwork() {
         let customNotes = initializeTemplateNotes();
         let cmsPriceMap = {};
@@ -6649,7 +6906,7 @@ const PERMANENT_TEMPLATES = [
 
         const exportData = {
             appName: "Audubon Walk",
-            version: "3.40",
+            version: "3.43",
             exportDate: new Date().toISOString(),
             targetNetworkPath: fullFilePath,
             customNotes: customNotes,
@@ -6762,6 +7019,19 @@ const PERMANENT_TEMPLATES = [
 
         const wrapHighlight = (str) => forHtmlDisplay ? `<mark class="cust-highlight">${str}</mark>` : str;
 
+        // 0. Process Optional Phrase Toggles {+ Button Label: Phrase text}
+        const phraseToggles = detectOptionalPhrases(result);
+        phraseToggles.forEach(p => {
+            const isSelected = !!(currentCustOptions.optionalPhrases && currentCustOptions.optionalPhrases[p.fullTag]);
+            const escapedTag = p.fullTag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(escapedTag, 'g');
+            if (isSelected) {
+                result = result.replace(regex, wrapHighlight(p.text));
+            } else {
+                result = result.replace(regex, '');
+            }
+        });
+
         // 1. Process Custom Option Pickers first {Label: Opt1/Opt2/Opt3}
         const customPickers = detectCustomPickers(rawText);
         customPickers.forEach(p => {
@@ -6863,6 +7133,15 @@ const PERMANENT_TEMPLATES = [
             result = result.replace(/M\/F/g, wrapHighlight('F'));
         }
 
+        // Clean double spaces
+        result = result.replace(/\s{2,}/g, ' ');
+
+        // Process Ad-Hoc Quick Phrases selected from Quick Phrase Add-ons bar
+        if (currentCustOptions.adHocPhrases && currentCustOptions.adHocPhrases.length > 0) {
+            const adHocFormatted = currentCustOptions.adHocPhrases.map(p => wrapHighlight(p)).join(' ');
+            result = result.trim() + ' ' + adHocFormatted;
+        }
+
         return result;
     }
 
@@ -6891,11 +7170,32 @@ const PERMANENT_TEMPLATES = [
         const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
         const formattedText = generateTailoredNoteText(rawText, false);
 
-        const price = note.price || 0;
+        let price = note.price || 0;
         const title = note.title || currentCustNoteId;
-        const lcodes = note.lcodes || [];
+        let lcodes = [...(note.lcodes || [])];
         const category = note.category || detectCategory(title, lcodes);
         const timestamp = Date.now();
+
+        // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
+        if (currentCustNoteId === 'toe-filler-delivery') {
+            const sideVal = currentCustOptions.side;
+            const a5500Price = priceMap['A5500'] || 78.31;
+            const a5513Price = priceMap['A5513'] || 53.28;
+            const l5000Price = priceMap['L5000'] || 618.56;
+
+            if (sideVal === 'bilateral') {
+                lcodes = ['A5500', 'A5500', 'L5000', 'L5000'];
+                if (!note.excludeAutoPrice) {
+                    price = (a5500Price * 2) + (l5000Price * 2);
+                }
+            } else {
+                lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513', 'L5000'];
+                if (!note.excludeAutoPrice) {
+                    price = (a5500Price * 2) + (a5513Price * 3) + l5000Price;
+                }
+            }
+            price = Math.round(price * 100) / 100;
+        }
 
         actionHistory.push({ id: currentCustNoteId, price, prevTotal: yearlyTotal, timestamp });
         yearlyTotal += price;
@@ -6932,11 +7232,32 @@ const PERMANENT_TEMPLATES = [
         const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
         const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
 
-        const price = note.price || 0;
+        let price = note.price || 0;
         const title = note.title || currentCustNoteId;
-        const lcodes = note.lcodes || [];
+        let lcodes = [...(note.lcodes || [])];
         const category = note.category || detectCategory(title, lcodes);
         const timestamp = Date.now();
+
+        // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
+        if (currentCustNoteId === 'toe-filler-delivery') {
+            const sideVal = currentCustOptions.side;
+            const a5500Price = priceMap['A5500'] || 78.31;
+            const a5513Price = priceMap['A5513'] || 53.28;
+            const l5000Price = priceMap['L5000'] || 618.56;
+
+            if (sideVal === 'bilateral') {
+                lcodes = ['A5500', 'A5500', 'L5000', 'L5000'];
+                if (!note.excludeAutoPrice) {
+                    price = (a5500Price * 2) + (l5000Price * 2);
+                }
+            } else {
+                lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513', 'L5000'];
+                if (!note.excludeAutoPrice) {
+                    price = (a5500Price * 2) + (a5513Price * 3) + l5000Price;
+                }
+            }
+            price = Math.round(price * 100) / 100;
+        }
 
         actionHistory.push({ id: currentCustNoteId, price, prevTotal: yearlyTotal, timestamp });
         yearlyTotal += price;
@@ -7027,10 +7348,15 @@ const PERMANENT_TEMPLATES = [
         const te = document.getElementById('total-encounters');
         if (te) te.textContent = totalCount;
 
-        const todayStart = getTodayStartTimestamp();
+        const now = new Date();
+        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
         const logs = getEncounterLogs();
         let todayRev = 0;
-        logs.filter(l => l.timestamp >= todayStart).forEach(l => todayRev += (l.price || 0));
+        logs.filter(l => {
+            const d = new Date(l.timestamp);
+            const logStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+            return logStr === todayStr;
+        }).forEach(l => todayRev += (l.price || 0));
         const tt = document.getElementById('today-total');
         if (tt) tt.textContent = todayRev.toLocaleString();
     }
@@ -7136,25 +7462,32 @@ const PERMANENT_TEMPLATES = [
         const now = new Date();
         let startTime = 0;
 
+        let filtered = [];
         if (currentAnalyticsFilter === 'today') {
-            startTime = getTodayStartTimestamp();
-        } else if (currentAnalyticsFilter === 'week') {
-            const dayOfWeek = now.getDay();
-            const startOfWeek = new Date(now);
-            startOfWeek.setDate(now.getDate() - dayOfWeek);
-            startOfWeek.setHours(0,0,0,0);
-            startTime = startOfWeek.getTime();
-        } else if (currentAnalyticsFilter === 'month') {
-            const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
-            startTime = startOfMonth.getTime();
-        } else if (currentAnalyticsFilter === 'year') {
-            const startOfYear = new Date(now.getFullYear(), 0, 1);
-            startTime = startOfYear.getTime();
+            const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+            filtered = logs.filter(l => {
+                const d = new Date(l.timestamp);
+                const logStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+                return logStr === todayStr;
+            });
         } else {
-            startTime = 0;
+            if (currentAnalyticsFilter === 'week') {
+                const dayOfWeek = now.getDay();
+                const startOfWeek = new Date(now);
+                startOfWeek.setDate(now.getDate() - dayOfWeek);
+                startOfWeek.setHours(0,0,0,0);
+                startTime = startOfWeek.getTime();
+            } else if (currentAnalyticsFilter === 'month') {
+                const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+                startTime = startOfMonth.getTime();
+            } else if (currentAnalyticsFilter === 'year') {
+                const startOfYear = new Date(now.getFullYear(), 0, 1);
+                startTime = startOfYear.getTime();
+            } else {
+                startTime = 0;
+            }
+            filtered = logs.filter(l => l.timestamp >= startTime);
         }
-
-        const filtered = logs.filter(l => l.timestamp >= startTime);
 
         let periodRevenue = 0;
         let periodEncounters = filtered.length;
@@ -7780,7 +8113,9 @@ const PERMANENT_TEMPLATES = [
             text,
             excludeAutoPrice: existingLock,
             isTemplate: !!isTemplate,
-            isCustomEdited: true
+            isCustomEdited: true,
+            userCustomizedText: true,
+            userCustomizedPrice: true
         });
 
         try { localStorage.setItem('customNotes', JSON.stringify(customNotes)); } catch(e){}
