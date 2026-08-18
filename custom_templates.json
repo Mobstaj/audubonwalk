@@ -52,7 +52,7 @@
     "lcodes": [
       "L3960"
     ],
-    "text": "Pt. was seen at the North/South office for Left/Right Arc shoulder immobilizer delivery. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} arc shoulder orthosis. Positioning posts and straps adjusted for proper joint alignment. The shoulder orthosis with abduction positioning is reasonable and necessary to immobilize the glenohumeral joint, maintain prescribed shoulder abduction/rotation, offload rotator cuff tendons, and facilitate post-surgical soft tissue healing. Instructed on donning/doffing and skin inspection.",
+    "text": "Pt. was seen at the North/South office for Left/Right Arc shoulder immobilizer delivery. He/she was fit with a universal arc shoulder orthosis. Positioning posts and straps adjusted for proper joint alignment. The shoulder orthosis with abduction positioning is reasonable and necessary to immobilize the glenohumeral joint, maintain prescribed shoulder abduction/rotation, offload rotator cuff tendons, and facilitate post-surgical soft tissue healing. Instructed on donning/doffing and skin inspection.",
     "price": 826.41,
     "category": "Upper Extremity",
     "title": "Arc Sling",
@@ -208,7 +208,7 @@
     "lcodes": [
       "L3660"
     ],
-    "text": "Pt. was seen at North/South office for Left/Right shoulder immobilizer sling delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} shoulder sling. Device immobilizes upper extremity to allow tissue healing and protect glenohumeral joint.",
+    "text": "Pt. was seen at North/South office for Left/Right shoulder immobilizer sling delivery. Fit with a universal shoulder sling. Device immobilizes upper extremity to allow tissue healing and protect glenohumeral joint.",
     "price": 150.86,
     "category": "Upper Extremity",
     "title": "Simple sling",
@@ -260,7 +260,7 @@
     "lcodes": [
       "L3675"
     ],
-    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
+    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
     "price": 198.39,
     "category": "Upper Extremity",
     "title": "Ultrasling",
@@ -339,13 +339,16 @@
     "lcodes": [
       "L3760"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM elbow orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid elbow brace with adjustable ROM hinges. Device is reasonable and necessary to immobilize/stabilize elbow joint, control extension/flexion limits, protect ligamentous healing, and allow progressive rehabilitation.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM elbow orthosis. Fit with a rigid elbow brace with adjustable ROM hinges. Uprights were adjusted to proper length, straps were customized and trimmed for appropriate fit.  Hinge was set to {ROM setting: 90 to free flexion/90 to full extension/full motion/locked at 90/90 flexion to 45 degrees extension} per doctor's order.  Device is reasonable and necessary to immobilize/stabilize elbow joint, control extension/flexion limits, protect ligamentous healing, and allow progressive rehabilitation.\n\nPt. was educated on donning, doffing, use, and care of ROM elbow brace.  Written instructions were also provided.  Fit of brace was appropriate today.  F/up PRN.",
     "price": 565.47,
     "category": "Upper Extremity",
     "title": "Elbow ROM",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "arch-rivals": {
     "id": "arch-rivals",
@@ -387,13 +390,16 @@
     "lcodes": [
       "L3670"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Abduction Pillow Sling / Shoulder Immobilizer / Arc Sling / Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Atlas/ Arc/Slingshot/Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. Fit with a universal abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
     "price": 127.15,
     "category": "Upper Extremity",
     "title": "Abduction Sling",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "diabetic-shoe-delivery": {
     "id": "diabetic-shoe-delivery",
@@ -633,17 +639,17 @@
   },
   "custom-note-1752097421797": {
     "id": "custom-note-1752097421797",
-    "lcodes": [
-      "L3020",
-      "L3020"
-    ],
-    "text": "Pt. was seen at the North/South location for custom Left/Right foot orthotics evaluation. Presents with severe foot/ankle pain during standing/walking. Normally wears shoe size {Shoe Size: 5/6/7/8/9/10/11/12/13/14/15}. Physical exam shows pes planus arch collapse and hindfoot valgus. Impression taken today for custom molded functional inserts.",
-    "price": 500,
+    "lcodes": [],
+    "text": "Pt. was seen at the North/South location for custom foot orthotics evaluation. Presents with {Diagnosis: pes planovalgus deformity/plantar fasciitis/heel spur(s)/cavus arches/metatarsal pain/arthritis} in left/right foot/feet.\n\nCustom foot orthotics will help to distribute weight more evenly throughout the heel, longitudinal arches, and transverse arch of the foot.  They will act to help reduce foot/ankle pain help to increase activity levels.  They will also help to provide a more neutral alignment from the ground up through the knees and hips to help reduce long term problems farther up the biomechanical chain.  \n\nNormally wears shoe size {Shoe Size: 4/5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: B/D/W/XW/XXW/2E/4E/5E/6E/9E}. Impressions were taken today for custom molded functional inserts. Custom functional foot orthotics will be ordered for delivery in 4 weeks.  They will consist of {Support material: Polypro/carbon fiber/soft puff/firm puff/cork} supportive base material with {Top cover: spenco/plastizote/puff/leather/poron/p-cell} top covers, {Heel posting: neutral posting/medial posting/lateral posting}.\n\nF/up 4 weeks for delivery and PRN.",
+    "price": 0,
     "category": "Foot & Ankle",
     "title": "Custom Inserts Eval",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "custom-1782340964327": {
     "id": "custom-1782340964327",
@@ -782,10 +788,12 @@
     "lcodes": [
       "L3040"
     ],
-    "text": "Patient was seen in our North/South office for fitting and delivery of Forms prefabricated foot orthotics. Foot orthotics will support feet in alignment and reduce plantar pressures. Pt. was fit with size _____ forms.  He/She was educated on use/care of devices.  F/up PRN.",
+    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} prefabricated heat-moldable foot orthotics (Forms).\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination/ pronation/arch collapse/heel pain/metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.",
     "excludeAutoPrice": true,
     "isTemplate": true,
-    "isCustomEdited": true
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "knee-unloader": {
     "id": "knee-unloader",
@@ -856,13 +864,16 @@
     "lcodes": [
       "L1832"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right TScope ROM post-operative knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} telescoping knee brace. Hinge stops set to prescribed ROM limits. Device is reasonable and necessary to immobilize/protect knee joint, control extension/flexion limits post-surgery, and allow progressive rehabilitation.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right TScope ROM post-operative knee orthosis. He/She was with a Breg T-scope telescoping ROM knee brace. Device is reasonable and necessary to immobilize/protect knee joint, control extension/flexion limits post-surgery, and allow progressive rehabilitation.\n\n Hinge stops were set to {ROM: locked ROM/free motion ROM/0-30 ROM/0-60 ROM/0-90 ROM} as prescribed.  Uprights were extended for proper function, straps were customized for appropriate fit.  Pt. stated that device was comfortable after adjustments. \n\nPt. was educated on donning, doffing, use, and care of ROM knee brace.  He/She was also given printed instructions.  Fit of device was appropriate today.  F/up PRN.",
     "price": 698.63,
     "category": "Knee",
     "title": "Tscope ROM Knee brace",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "custom-1785437208449": {
     "id": "custom-1785437208449",
@@ -1030,5 +1041,18 @@
     "excludeAutoPrice": false,
     "isTemplate": false,
     "isCustomEdited": true
+  },
+  "custom-1787094050566": {
+    "id": "custom-1787094050566",
+    "title": "Hammertoe strap Budin",
+    "price": 27,
+    "category": "Foot & Ankle",
+    "lcodes": [],
+    "text": "Patient was seen at the North/South office for delivery of Budin/hammertoe splint.  He/She has hammertoe deformity of the {Affected Digits: 2nd/3rd/4th/5th/2nd and 3rd/2nd, 3rd, and 4th/3rd and 4th} digits.  Pt. was fit with {Single, double, triple: single/double/triple} hammertoe splint.  Device will help to reduce hammertoe deformity, prevent progression of this deformity, and reduce associated pain.  \n\nPt. was educated on donning, doffing, use, and care of hammertoe splint.  He/She was also given written instructions.  F/up PRN.",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   }
 }
