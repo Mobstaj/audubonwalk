@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audubon Walk-in Templates</title>
+    <!-- PROSTHETIC LEG BROWSER TAB FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦿</text></svg>">
     <style>
         :root {
             --bg: #d3d3d3;
@@ -752,7 +754,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
         <!-- SUBTLE FOOTER VERSION & COPYRIGHT NOTICE -->
         <div style="text-align:center; margin-top:110px; padding-bottom:30px; font-size:11.5px; color:var(--muted); opacity:0.55; letter-spacing:0.5px; user-select:none; display:flex; flex-direction:column; align-items:center; gap:3px;">
             <div>&copy; Jay Sciortino 2026</div>
-            <div style="font-size:10.5px; opacity:0.85;">v3.43</div>
+            <div style="font-size:10.5px; opacity:0.85;">v3.45</div>
         </div>
     </div>
 
@@ -5924,7 +5926,31 @@ const PERMANENT_TEMPLATES = [
         if (chk) chk.checked = enabled;
     }
 
+    function setProstheticFavicon() {
+        try {
+            const canvas = document.createElement('canvas');
+            canvas.width = 64;
+            canvas.height = 64;
+            const ctx = canvas.getContext('2d');
+            if (ctx) {
+                ctx.font = '48px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('🦿', 32, 35);
+                
+                const link = document.createElement('link');
+                link.rel = 'icon';
+                link.type = 'image/png';
+                link.href = canvas.toDataURL('image/png');
+                
+                document.querySelectorAll("link[rel*='icon']").forEach(e => e.remove());
+                document.head.appendChild(link);
+            }
+        } catch(e){}
+    }
+
     function initApp() {
+        try { setProstheticFavicon(); } catch(e){}
         try {
             updateCustomizerToggleUI();
         } catch(e){}
@@ -5999,7 +6025,11 @@ const PERMANENT_TEMPLATES = [
 
     async function autoSyncFromGitHubCloud() {
         const owner = localStorage.getItem('github_owner') || 'Mobstaj';
-        const repo = localStorage.getItem('github_repo') || 'audubonwalk';
+        let repo = localStorage.getItem('github_repo') || 'audubonwalk';
+        if (repo.toLowerCase().includes('audubon-walk-in-notes')) {
+            repo = 'audubonwalk';
+            localStorage.setItem('github_repo', 'audubonwalk');
+        }
         if (!owner || !repo) return;
 
         // Fetch from GitHub raw to bypass CORS and get the latest JSON
@@ -6682,13 +6712,24 @@ const PERMANENT_TEMPLATES = [
         const conflictArea = document.getElementById('network-conflict-area');
         if (conflictArea) conflictArea.style.display = 'none';
 
-        // Pre-populate GitHub Cloud settings
+        // Pre-populate GitHub Cloud settings with hardcoded default repository
         const ownerInput = document.getElementById('github-owner-input');
         const repoInput = document.getElementById('github-repo-input');
         const tokenInput = document.getElementById('github-token-input');
         
-        if (ownerInput) ownerInput.value = localStorage.getItem('github_owner') || 'Mobstaj';
-        if (repoInput) repoInput.value = localStorage.getItem('github_repo') || 'audubonwalk';
+        let savedRepo = localStorage.getItem('github_repo');
+        if (!savedRepo || savedRepo.toLowerCase().includes('audubon-walk-in-notes')) {
+            savedRepo = 'audubonwalk';
+            localStorage.setItem('github_repo', 'audubonwalk');
+        }
+        let savedOwner = localStorage.getItem('github_owner');
+        if (!savedOwner) {
+            savedOwner = 'Mobstaj';
+            localStorage.setItem('github_owner', 'Mobstaj');
+        }
+
+        if (ownerInput) ownerInput.value = savedOwner;
+        if (repoInput) repoInput.value = savedRepo;
         if (tokenInput) tokenInput.value = localStorage.getItem('github_pat') || '';
 
         openPopup('network-sync-popup');
@@ -6750,8 +6791,9 @@ const PERMANENT_TEMPLATES = [
             } catch(e){}
 
             const url = `https://api.github.com/repos/${owner}/${repo}/contents/custom_templates.json`;
+            const authHeader = token.startsWith('github_pat_') || token.startsWith('ghp_') ? `Bearer ${token}` : `token ${token}`;
             const headers = {
-                "Authorization": `token ${token}`,
+                "Authorization": authHeader,
                 "Accept": "application/vnd.github.v3+json",
                 "Content-Type": "application/json",
                 "User-Agent": "Audubon-Walk-Sync"
@@ -6770,11 +6812,9 @@ const PERMANENT_TEMPLATES = [
                     if (remoteNotes && typeof remoteNotes === 'object') {
                         // Merge remote edits
                         for (let key in remoteNotes) {
-                            // If local doesn't have it, or if remote is customized and local isn't
                             if (!mergedNotes[key]) {
                                 mergedNotes[key] = remoteNotes[key];
                             } else {
-                                // Smart merge: keep the one that is customized, or prefer local for conflict resolution
                                 const r = remoteNotes[key];
                                 const l = mergedNotes[key];
                                 if ((r.userCustomizedText || r.userCustomizedPrice) && !(l.userCustomizedText || l.userCustomizedPrice)) {
@@ -6783,8 +6823,11 @@ const PERMANENT_TEMPLATES = [
                             }
                         }
                     }
+                } else if (res.status === 401) {
+                    throw new Error("GitHub Authentication Failed (401 Unauthorized). Your Personal Access Token (PAT) is invalid, expired, or lacks repo permissions.");
                 }
             } catch(err) {
+                if (err.message.includes("401")) throw err;
                 console.log("Could not pull existing cloud templates. Initializing new database...", err);
             }
 
@@ -6810,6 +6853,9 @@ const PERMANENT_TEMPLATES = [
             });
 
             if (!putRes.ok) {
+                if (putRes.status === 401) {
+                    throw new Error("GitHub Authentication Failed (401 Unauthorized). Please check your Personal Access Token (PAT) permissions.");
+                }
                 const errData = await putRes.json().catch(() => ({}));
                 throw new Error(errData.message || `HTTP ${putRes.status}`);
             }
@@ -6852,15 +6898,22 @@ const PERMANENT_TEMPLATES = [
 
         try {
             const url = `https://api.github.com/repos/${owner}/${repo}/contents/custom_templates.json`;
+            const authHeader = token.startsWith('github_pat_') || token.startsWith('ghp_') ? `Bearer ${token}` : `token ${token}`;
             const headers = {
-                "Authorization": `token ${token}`,
+                "Authorization": authHeader,
                 "Accept": "application/vnd.github.v3+json",
                 "User-Agent": "Audubon-Walk-Sync"
             };
 
             const res = await fetch(url, { headers });
             if (!res.ok) {
-                throw new Error(`File not found on GitHub (Status: ${res.status}). Ensure you have pushed/uploaded templates first.`);
+                if (res.status === 401) {
+                    throw new Error("GitHub Authentication Failed (HTTP 401 Unauthorized).\n\nYour Personal Access Token (PAT) was rejected by GitHub.\n\nTroubleshooting:\n1. Verify your PAT token is typed correctly.\n2. Ensure your PAT token has not expired on GitHub.\n3. Make sure the PAT token has 'repo' (Full control of repositories) scope enabled.");
+                } else if (res.status === 404) {
+                    throw new Error(`File or Repository Not Found (HTTP 404).\n\nThe repository '${repo}' or file 'custom_templates.json' was not found on GitHub.\n\nCheck that REPOSITORY NAME is set to 'audubonwalk', or click 'Upload & Merge' first to create the file.`);
+                } else {
+                    throw new Error(`GitHub Sync Error (HTTP ${res.status}). Ensure repository exists and token is valid.`);
+                }
             }
 
             const data = await res.json();
@@ -6906,7 +6959,7 @@ const PERMANENT_TEMPLATES = [
 
         const exportData = {
             appName: "Audubon Walk",
-            version: "3.43",
+            version: "3.45",
             exportDate: new Date().toISOString(),
             targetNetworkPath: fullFilePath,
             customNotes: customNotes,
