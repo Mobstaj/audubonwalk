@@ -6501,11 +6501,19 @@ const PERMANENT_TEMPLATES = [
 
     function detectDynamicFields(rawText) {
         if (!rawText) return [];
+        const customPickers = detectCustomPickers(rawText);
+        const pickerLabels = customPickers.map(p => p.label.toLowerCase());
+
+        // Strip out {...} custom picker / optional phrase blocks from rawText before searching for loose dynamic fields
+        const textWithoutPickers = rawText.replace(/\{[^}]+\}/g, '');
+
         const fields = [];
-        const matches = rawText.match(/_{3,}|\[[^\]]+\]|SIZEDEVICE|DIAGNOSIS|MANUFACTURER|INFORMATION/gi) || [];
+        const matches = textWithoutPickers.match(/_{3,}|\[[^\]]+\]|SIZEDEVICE|DIAGNOSIS|MANUFACTURER|INFORMATION/gi) || [];
         matches.forEach((m) => {
             const cleanKey = m.replace(/[\[\]]/g, '').trim();
-            if (!fields.some(f => f.key === cleanKey)) {
+            if (pickerLabels.includes(cleanKey.toLowerCase())) return;
+
+            if (!fields.some(f => f.key.toLowerCase() === cleanKey.toLowerCase())) {
                 let label = cleanKey;
                 if (m.startsWith('___')) label = `Blank Field ${fields.length + 1}`;
                 else if (cleanKey.toUpperCase() === 'SIZEDEVICE') label = 'Device Size / Style';
@@ -7186,8 +7194,8 @@ const PERMANENT_TEMPLATES = [
             result = result.replace(/M\/F/g, wrapHighlight('F'));
         }
 
-        // Clean double spaces
-        result = result.replace(/\s{2,}/g, ' ');
+        // Clean double spaces (only inline spaces/tabs, preserving paragraph break newlines)
+        result = result.replace(/[ \t]{2,}/g, ' ');
 
         // Process Ad-Hoc Quick Phrases selected from Quick Phrase Add-ons bar
         if (currentCustOptions.adHocPhrases && currentCustOptions.adHocPhrases.length > 0) {
