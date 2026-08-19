@@ -15,13 +15,16 @@
   "acl-measurement": {
     "id": "acl-measurement",
     "lcodes": [],
-    "text": "Pt. was seen at the North/South office for functional Left/Right knee orthosis evaluation. He/she requires a functional double upright knee orthosis for stabilization following ACL/PCL/MCL/LCL/OA injury. \n\nKnee orthosis measurements taken today: \nthigh circumference: [Thigh Circumference] \nKnee center ML width: [Knee Center ML Width] \ncalf circumference: [Calf Circumference] \n\nFunctional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation and prevent progressive joint collapse/injury. Patient was educated on fitting process. Will contact for delivery appointment once authorization is obtained.",
+    "text": "Patient presented to the North/South clinic for an orthopedic evaluation, clinical assessment, and anatomical measurement for a rigid, double-upright functional Left/Right knee orthosis.\n\nSubjective & Clinical History:\nPatient reports ongoing Left/Right knee pain, instability, and episodes of subjective \"giving way\" affecting daily ambulation and functional mobility secondary to {Diagnosis: ACL Rupture / ACL Reconstruction / Combined ACL and Meniscal Tear / MCL/LCL Instability / PCL Tear / Multi-Ligamentous Laxity / Post-Traumatic Knee Instability / Knee OA}. Prior conservative treatments have been insufficient in providing necessary multi-planar stability.\n\nObjective Clinical Assessment:\nJoint Laxity / Physical Examination: Clinical exam indicates abnormal joint excursion with positive {Clinical Signs: Anterior Drawer / Lachman test / Pivot Shift / Medial Joint Laxity / Lateral Joint Laxity / Varus-Valgus Instability}.\n\nAnatomical Measurements & Sizing:\nKnee orthosis measurements taken today:\nthigh circumference: [Thigh Circumference]\nKnee center ML width: [Knee Center ML Width]\ncalf circumference: [Calf Circumference]\n\nDevice Selection:\nSelected Model & Sizing: {Brand / Model: Ossur CTi / Ossur Rebound DLG / DonJoy Defiance / DonJoy Armor / Breg Fusion / Thusane Rebel/ Medi M4s} \n{+ Custom Casting / Scanning: Anatomical mold / digital 3D topography scan of Left/Right lower extremity obtained for custom device fabrication.}\n\nPlan & Medical Necessity:\nA functional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation, prevent progressive joint collapse/injury, and control multi-planar instability. Measurements and order specifications have been finalized. Patient was educated on the fitting process and lead time, and agreed to return for delivery upon completion. {+ Parent Present: Parent was present during evaluation and measurement and agreed with the treatment plan.}",
     "price": 0,
     "category": "Knee",
     "title": "ACL Measurement",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "afo-evaluation": {
     "id": "afo-evaluation",
@@ -117,13 +120,16 @@
     "lcodes": [
       "L0651"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Lumbar-Sacral Orthosis (LSO). Pt.'s abdominal circumference was [Circumference]. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} LSO. Rigid anterior and posterior panels contoured to lumbar spine anatomy. LSO is reasonable and necessary to restrict trunk motion in sagittal/coronal planes, increase intracavitary pressure, offload intervertebral discs, and relieve severe low back pain during daily activities.",
+    "text": "Patient presented to the North/South clinic for evaluation, custom fitting, and delivery of a prefabricated Lumbar-Sacral Orthosis with sagittal-coronal control and rigid anterior/posterior/lateral panels.\n\nSubjective & Clinical Rationale:\nPatient presents with severe lumbosacral pain and functional limitations secondary to {Diagnosis:Chronic lumbar pain/ Lumbar Radiculopathy / Lumbar Spondylolisthesis / Lumbar Spinal Stenosis / Lumbar Disc Herniation / Degenerative Disc Disease / Post-Surgical Lumbar Fusion / Lumbar Compression Fracture}. The LSO is reasonable and medically necessary to provide rigid trunk immobilization, increase intracavitary pressure, reduce lumbar lordosis, offload the intervertebral discs/posterior elements, and facilitate safer performance of daily activities.\n\nObjective Assessment & Custom Fitting:\nMeasurements Obtained: Waist circumference: [Waist Circumference]\nBrand / Device: Trend LSO\nSize Selected: {Size: 0/1/1.5/2/2.5/3/3.5/4/4.5/5/5.5/6}\n\nPanel Contour & Adjustments: Rigid posterior panel was formed/contoured to match the patient’s anatomical lumbar lordosis from sacrococcygeal junction to T9. Rigid anterior panel was aligned to cover from symphysis pubis to xiphoid process without impinging the ribs when seated. Lateral rigid panels were positioned to provide coronal plane control. The mechanical advantage pulley/strap closure system was adjusted to achieve uniform hydrostatic compression without compromising respiratory excursion.\n\nFunctional Assessment & Patient Education:\nFunctional Mobility Check: Device fit and spinal restriction were verified in both standing and sitting positions; no edge digging or anterior tilt impingement noted.\n\nDonning / Doffing: Patient was instructed on proper positioning, alignment of the lordotic curve, and use of the compression pull-tabs. he/she successfully demonstrated independent donning and doffing with proper tensioning.\n\nCare & Safety Protocols: Patient was educated on prescribed wearing schedule, donning over a clean cotton undergarment to protect skin, daily skin inspection protocols, and cleaning/maintenance instructions. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working order.",
     "price": 605.72,
     "category": "Spine / LSO",
     "title": "LSO Delivery",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "lumbar-corset": {
     "id": "lumbar-corset",
@@ -169,13 +175,16 @@
     "lcodes": [
       "L3260"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} post-op shoe with rocker sole. Shoe immobilizes forefoot and offloads operative site during healing.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} stiff soled Darco post-op shoe. Shoe immobilizes toes and metatarsals. It also helps to offload surgical sites while healing. Pt. was educated on use/care of shoe today.  Fit was appropriate.  F/up PRN.",
     "price": 30,
     "category": "Foot & Ankle",
     "title": "Post-op Shoe",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "prewash": {
     "id": "prewash",
@@ -208,13 +217,16 @@
     "lcodes": [
       "L3660"
     ],
-    "text": "Pt. was seen at North/South office for Left/Right shoulder immobilizer sling delivery. Fit with a universal shoulder sling. Device immobilizes upper extremity to allow tissue healing and protect glenohumeral joint.",
+    "text": "Patient was seen at the North/South office for evaluation, fitting, and delivery of a prefabricated Left/Right shoulder immobilizer/sling.\n\nSubjective & Medical Rationale:\nPatient presents with Left/Right shoulder pain and instability secondary to {Diagnosis: Rotator Cuff Tear / Shoulder Dislocation / Glenohumeral Subluxation / Proximal Humerus Fracture / Clavicle Fracture / AC Joint Separation / Post-Operative Shoulder Repair / Post-Traumatic Sprain/ Biceps tear / Triceps tear}. The orthosis is medically necessary to immobilize the glenohumeral joint, restrict shoulder abduction and internal/external rotation, support the weight of the arm to offload the shoulder complex, and facilitate soft tissue healing during daily functional activities.\n\nFitting & Adjustments:\nBrand / Model: Ottobock shoulder immobilizer\nSize Selected: {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL / Universal}\n\nAdjustments & Alignment:\nThe envelope sling was adjusted to fully support the Left/Right elbow and forearm at approximately 90 degrees of flexion with the wrist supported in a neutral position. The padded shoulder/neck strap was adjusted to distribute weight evenly without impinging cervical musculature. The body/swathe strap was fitted and secured around the torso to prevent abduction, forward flexion, and unwanted rotational motion of the humeral head. Distal circulation, sensation, and capillary refill were verified intact with free motion of fingers.\n{+ Abduction Pillow Fit: Abduction pillow positioned and secured at [Degrees: 15 / 30 / 45 / neutral] degrees per protocol.}\n\nPatient Education & Functional Assessment:\nImmobilization Check: Verified secure immobilization of the Left/Right shoulder complex  and forearm in both sitting and standing positions without axillary pinch or neck strain.\n\nDonning / Doffing: Patient was instructed on proper positioning, strap sequencing, and safe removal for hygiene/exercises. he/she successfully demonstrated independent donning and doffing.\n\nCare & Safety Protocols: Patient was educated on the prescribed wear schedule, skin checks over the neck/axilla/elbow/hand and care instructions. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and skin inspection.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working condition. Follow-up PRN.",
     "price": 150.86,
     "category": "Upper Extremity",
     "title": "Simple sling",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "step-up": {
     "id": "step-up",
@@ -287,13 +299,16 @@
     "lcodes": [
       "L3908"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right neutral rigid wrist orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} wrist splint. Palmar stay contoured. Device is reasonable and necessary to immobilize the wrist in neutral position, relieve carpal tunnel / tendonitis strain, and decrease ambulation/activity pain.",
+    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right wrist orthosis (HCPCS L3908).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right wrist {Indication: carpal tunnel syndrome / fracure / wrist sprain-strain / tendonitis / tenosynovitis / post-traumatic wrist pain / mild osteoarthrosis}, causing pain, weakness, and functional limitation during daily activities and ADLs. Orthosis is reasonable and medically necessary to immobilize the wrist joint in a neutral/supported alignment, reduce repetitive stress, and facilitate tissue healing.\n\nObjective Assessment & Fitting:\n* Measurements Obtained\n* Brand/Model: {Brand: Med Spec / Hely & Weber \n* Size Selected: {Size: Ped. / XXS / XSmall / Small / Med / Large / XL / 2XL}\n* Customization & Fit: The rigid palmar stay was removed, anatomically contoured to maintain approximately 10-15 degrees of functional wrist extension/neutral alignment, and re-inserted. Circumferential straps and closure system were adjusted for an intimate and secure fit without impinging neurovascular structures or restricting full MCP flexion, thumb opposition, and digital mobility.\n{+ Dorsal Stay: Dorsal stay adjusted and secured to restrict flexion.}\n\nFunctional Assessment & Patient Education:\n* Functional Evaluation: Patient demonstrated the ability to grasp and perform light functional hand tasks while maintaining proper joint immobilization.\n* Donning / Doffing: Patient was instructed on proper application, strap tensioning sequence, and positioning. he/she successfully performed an independent return demonstration of donning and doffing.\n* Care & Precautions: Patient was educated on wearing schedule {Wearing Schedule: nocturnal wear only / continuous wear except hygiene / wear during aggravating activities / as directed by physician}, skin inspection protocols (monitoring for pressure or redness), cleaning instructions, and warranty terms. {+ Parent/Caregiver Present: Parent/Caregiver was present and also instructed on proper donning, doffing, and skin care checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
     "price": 67.37,
     "category": "Upper Extremity",
     "title": "Wrist Splint",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "comfort-cool": {
     "id": "comfort-cool",
@@ -377,13 +392,16 @@
   "hinged-knee-brace": {
     "id": "hinged-knee-brace",
     "lcodes": [],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right hinged knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} hinged knee brace. Rigid side hinges and straps provide coronal stability against ACL/PCL/MCL/LCL laxity, prevent hyperextension, and reduce joint pain during ADLs.",
+    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right hinged knee orthosis (HCPCS L1820: Ossur Rebound Hinged Wraparound Knee Brace).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right knee {Indication: medial joint laxity / lateral joint laxity / mild MCL sprain / mild LCL sprain / knee pain with mild instability / degenerative joint disease}, affecting his/her ability to ambulate and complete daily functional activities safely.\n\nObjective Assessment & Device Fitting:\nSize Selected: {Size: XS / Small / Medium / Large / XL / 2XL / 3XL / 4XL}\n\nDevice Adjustments: The Ossur Rebound hinged wraparound brace was aligned to the anatomical axis of the Left/Right knee. The dual aluminum uprights and hinges were contoured and adjusted for intimate fit. Straps and wraparound closures were tensioned to provide medial/lateral stability, resist hyperextension, and prevent distal migration during ambulation without impinging popliteal structures or neurovascular bundles.\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Ambulation was evaluated in clinic; patient demonstrated improved coronal plane stability, reduced subjective knee giving-way, and an improved gait pattern.\n\nDonning / Doffing: Patient was instructed on proper application, strap sequencing, and positioning. he/she successfully completed an independent return demonstration of donning and doffing.\n\nCare & Safety: Patient was educated on wearing schedule, skin inspection protocols (redness lasting >20 min), hygiene/care instructions, and warranty terms. {+ Caregiver Present: Caregiver was present and also instructed on proper donning/doffing and skin checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
     "price": 0,
     "category": "Knee",
     "title": "Hinged knee brace",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "abduction-sling": {
     "id": "abduction-sling",
@@ -736,10 +754,12 @@
     "lcodes": [
       "L0174"
     ],
-    "text": "Patient was seen in our North/South office for fitting and delivery of rigid cervical collar. Pt. was fit with {Trend/Aspen Vista} Collar. Device is medically necessary to restrict cervical spine range of motion, stabilize the cervical/upper thoracic junction, facilitate tissue healing, and control movement-induced pain. He/She was educated on donning, doffing, use, and care of device.  F/up PRN.",
+    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated rigid cervical orthosis.\n\nSubjective & Medical Rationale:\nPatient presents with severe cervical pain and cervical spine instability secondary to {Diagnosis: Cervical Spondylosis / Cervical Radiculopathy / Post-Traumatic Cervical Sprain/Strain / Cervical Disc Displacement / Post-Operative Cervical Fusion / Cervical Fracture / Degenerative Disc Disease of Cervical Spine}. The orthosis is medically necessary to provide rigid multi-planar immobilization (flexion, extension, rotation, and lateral bending), unload cervical vertebrae, facilitate tissue healing, and control movement-induced pain during daily functional activities.\n\nObjective Assessment & Fitting:\nDevice Fit: Fit with {Brand: Aspen Vista / Trend Medical Rigid Cervical Collar}.\n\nCustom Sizing & Adjustments:\nHeight adjustment dial/mechanism set to proper anatomical height to maintain the cervical spine in neutral alignment without hyper-extending the chin.  Occipital and mandibular supports contoured and centered to prevent pressure points.  Anterior and posterior sections secured with bilateral hook-and-loop closures to eliminate sagittal/rotational displacement while ensuring uncompromised airway, unobstructed tracheostomy access (if needed), and full swallowing capability.\n\nFunctional Assessment & Patient Education:\nImmobilization & Fit Verification: Verified cervical motion restriction in sitting and standing positions without excessive impingement on clavicles or mandible.\n\nDonning / Doffing: Patient was instructed on proper neutral alignment, strap sequencing, and donning/doffing procedures. he/she successfully demonstrated independent donning/doffing.\n\nCare & Safety Protocols: Patient was educated  on prescribed wear schedule, pad hygiene/replacement instructions, and skin inspection over bony contact areas (mandible, occiput, sternum, clavicles). {+ Caregiver Present: Caregiver was present and instructed on proper application, neutral positioning during collar changes, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working condition. Follow-up PRN.",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "diabetic-shoe-del": {
     "id": "diabetic-shoe-del",
@@ -928,20 +948,6 @@
     "isTemplate": true,
     "userCustomizedPrice": false
   },
-  "forearm-splint": {
-    "id": "forearm-splint",
-    "lcodes": [
-      "L3908"
-    ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely & Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient's anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care.",
-    "price": 67.37,
-    "category": "Upper Extremity",
-    "title": "Forearm / Wrist Splint",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
-    "isTemplate": true,
-    "userCustomizedPrice": false
-  },
   "forms": {
     "id": "forms",
     "lcodes": [
@@ -1054,5 +1060,19 @@
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true
+  },
+  "forearm-splint": {
+    "id": "forearm-splint",
+    "lcodes": [
+      "L3908"
+    ],
+    "text": "Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely & Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient's anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care.",
+    "price": 67.37,
+    "category": "Upper Extremity",
+    "title": "Forearm / Wrist Splint",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true,
+    "userCustomizedPrice": false
   }
 }
