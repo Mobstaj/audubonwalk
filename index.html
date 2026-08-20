@@ -438,6 +438,73 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             border-radius: 3px;
             font-weight: bold;
         }
+        mark.cust-pending {
+            background: #fff3cd;
+            color: #856404;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            border: 1px dashed #ffe8a1;
+        }
+        body.dark mark.cust-pending {
+            background: #4a3b00;
+            color: #ffd166;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            border: 1px dashed #7a6200;
+        }
+
+        /* RESPONSIVE CUSTOMIZER MODAL LAYOUT */
+        .cust-modal-body {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            min-height: 0;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+        .cust-left-col {
+            width: 440px;
+            max-width: 45%;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            padding-right: 12px;
+            border-right: 1px solid rgba(128, 128, 128, 0.2);
+        }
+        .cust-right-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            min-width: 0;
+        }
+
+        /* RESPONSIVE BREAKPOINT FOR SMALLER WINDOWS, TABLETS & PHONES (WIDTH < 900px) */
+        @media (max-width: 900px) {
+            .cust-modal-body {
+                flex-direction: column !important;
+                overflow-y: auto !important;
+            }
+            .cust-left-col {
+                width: 100% !important;
+                max-width: 100% !important;
+                border-right: none !important;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important;
+                padding-right: 0 !important;
+                padding-bottom: 12px !important;
+                overflow-y: visible !important;
+                flex-shrink: 0 !important;
+            }
+            .cust-right-col {
+                width: 100% !important;
+                min-height: 280px !important;
+                flex-shrink: 0 !important;
+            }
+        }
 
         /* DROPDOWN & WRITE-IN CUSTOMIZER STYLES */
         .cust-select-dropdown {
@@ -451,15 +518,18 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             outline: none;
             cursor: pointer;
             width: 100%;
-            max-width: 280px;
+            max-width: 100%;
             box-sizing: border-box;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
             transition: border-color 0.2s;
         }
         .cust-select-dropdown:focus {
             border-color: #007BFF;
         }
         .cust-write-in-input {
-            margin-top: 6px;
+            margin-top: 4px;
             padding: 6px 10px;
             border-radius: 6px;
             border: 1px solid #007BFF;
@@ -467,7 +537,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             color: var(--input-text);
             font-size: 12px;
             width: 100%;
-            max-width: 280px;
+            max-width: 100%;
             box-sizing: border-box;
         }
 
@@ -920,9 +990,9 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
       </div>
     </div>
 
-    <!-- INTERACTIVE NOTE CUSTOMIZER & TAILORING MODAL -->
-    <div class="popup" id="customize-note-popup" style="max-width:960px; width:95%;">
-      <div class="popup-inner" style="display:flex; flex-direction:column; max-height:88vh; overflow:hidden; padding:20px 24px;">
+    <!-- INTERACTIVE NOTE CUSTOMIZER & TAILORING MODAL (WIDESCREEN SIDE-BY-SIDE LAYOUT) -->
+    <div class="popup" id="customize-note-popup" style="max-width:1450px; width:94%; max-height:90vh;">
+      <div class="popup-inner" style="display:flex; flex-direction:column; height:85vh; max-height:860px; overflow:hidden; padding:20px 24px;">
         <div style="flex-shrink:0;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
                 <h3 id="cust-popup-title" style="margin:0; font-size:18px;">Customize Note</h3>
@@ -933,92 +1003,107 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                     </button>
                 </div>
             </div>
-            <p style="font-size:12px; color:var(--muted); margin-bottom:8px;">
-                Select location, side, pronouns, and custom pickers below to dynamically tailor your clinical note:
-            </p>
         </div>
 
-        <div style="flex:1; display:flex; flex-direction:column; overflow-y:auto; padding-right:4px; margin:2px 0;">
-            <!-- MULTI-COLUMN OPTION TOGGLES GRID -->
-            <div style="background:rgba(0,0,0,0.03); border:1px solid rgba(0,0,0,0.08); border-radius:8px; padding:10px 14px; margin-bottom:10px; display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:8px 16px; align-items:start; flex-shrink:0;">
-                <!-- LOCATION -->
-                <div>
-                    <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Office Location</label>
-                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
-                        <button type="button" class="cust-pill-btn active" data-group="location" data-val="north" onclick="setCustOption('location', 'north', this)">North</button>
-                        <button type="button" class="cust-pill-btn" data-group="location" data-val="south" onclick="setCustOption('location', 'south', this)">South</button>
+        <!-- 2-COLUMN SIDE-BY-SIDE BODY LAYOUT (RESPONSIVE) -->
+        <div class="cust-modal-body">
+            
+            <!-- LEFT COLUMN: ALL OPTIONS, PICKERS & ANATOMICAL MEASUREMENTS -->
+            <div class="cust-left-col">
+                <!-- MULTI-COLUMN OPTION TOGGLES CONTAINER -->
+                <div style="background:rgba(0,0,0,0.03); border:1px solid rgba(0,0,0,0.08); border-radius:8px; padding:10px 14px; display:flex; flex-direction:column; gap:8px; flex-shrink:0;">
+                    
+                    <!-- TOP ROW: ENCOUNTER DEMOGRAPHICS -->
+                    <div style="display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center;">
+                        <!-- LOCATION -->
+                        <div style="flex: 0 0 auto;">
+                            <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">Office Location</label>
+                            <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                <button type="button" class="cust-pill-btn active" data-group="location" data-val="north" onclick="setCustOption('location', 'north', this)">North</button>
+                                <button type="button" class="cust-pill-btn" data-group="location" data-val="south" onclick="setCustOption('location', 'south', this)">South</button>
+                            </div>
+                        </div>
+
+                        <!-- SIDE -->
+                        <div id="cust-group-side" style="flex: 0 0 auto;">
+                            <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">Side</label>
+                            <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                <button type="button" class="cust-pill-btn active" data-group="side" data-val="right" onclick="setCustOption('side', 'right', this)">Right</button>
+                                <button type="button" class="cust-pill-btn" data-group="side" data-val="left" onclick="setCustOption('side', 'left', this)">Left</button>
+                                <button type="button" class="cust-pill-btn" data-group="side" data-val="bilateral" onclick="setCustOption('side', 'bilateral', this)">Bilateral</button>
+                            </div>
+                        </div>
+
+                        <!-- SEX -->
+                        <div style="flex: 0 0 auto;">
+                            <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">Sex</label>
+                            <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                <button type="button" class="cust-pill-btn active" data-group="sex" data-val="male" onclick="setCustOption('sex', 'male', this)">Male</button>
+                                <button type="button" class="cust-pill-btn" data-group="sex" data-val="female" onclick="setCustOption('sex', 'female', this)">Female</button>
+                            </div>
+                        </div>
+
+                        <!-- COMPARTMENT (DYNAMICALLY SHOWN WHEN RELEVANT) -->
+                        <div id="cust-group-compartment" style="display:none; flex: 0 0 auto;">
+                            <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">Knee / Joint Compartment</label>
+                            <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                <button type="button" class="cust-pill-btn active" data-group="compartment" data-val="medial" onclick="setCustOption('compartment', 'medial', this)">Medial</button>
+                                <button type="button" class="cust-pill-btn" data-group="compartment" data-val="lateral" onclick="setCustOption('compartment', 'lateral', this)">Lateral</button>
+                            </div>
+                        </div>
+
+                        <!-- INDICATION / LIGAMENT (DYNAMICALLY SHOWN WHEN RELEVANT) -->
+                        <div id="cust-group-indication" style="display:none; flex: 0 0 auto;">
+                            <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">Indication / Ligament Instability</label>
+                            <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                <button type="button" class="cust-pill-btn active" data-group="indication" data-val="acl" onclick="setCustOption('indication', 'acl', this)">ACL</button>
+                                <button type="button" class="cust-pill-btn" data-group="indication" data-val="pcl" onclick="setCustOption('indication', 'pcl', this)">PCL</button>
+                                <button type="button" class="cust-pill-btn" data-group="indication" data-val="mcl" onclick="setCustOption('indication', 'mcl', this)">MCL</button>
+                                <button type="button" class="cust-pill-btn" data-group="indication" data-val="lcl" onclick="setCustOption('indication', 'lcl', this)">LCL</button>
+                                <button type="button" class="cust-pill-btn" data-group="indication" data-val="meniscus" onclick="setCustOption('indication', 'meniscus', this)">Meniscus</button>
+                                <button type="button" class="cust-pill-btn" data-group="indication" data-val="unloading" onclick="setCustOption('indication', 'unloading', this)">OA / Unloading</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUBTLE HORIZONTAL SEPARATOR DIVIDER -->
+                    <div id="cust-options-divider" style="border-top:1px solid rgba(128,128,128,0.2); width:100%; display:none;"></div>
+
+                    <!-- BOTTOM ROW: TEMPLATE-SPECIFIC PICKERS & OPTIONAL PHRASES -->
+                    <div id="cust-template-options-row" style="display:flex; flex-wrap:wrap; gap:8px 16px; align-items:flex-start; width:100%;">
+                        <!-- OPTIONAL PHRASE TOGGLES CONTAINER -->
+                        <div id="cust-optional-phrases-container" style="display:none; flex: 0 0 auto;"></div>
+
+                        <!-- CUSTOM USER-DEFINED SELECTABLE OPTION PICKERS CONTAINER -->
+                        <div id="cust-custom-pickers-container" style="display:contents;"></div>
+
+                        <!-- DYNAMIC ANATOMICAL MEASUREMENT / FILL-IN FIELDS CONTAINER (STACKED VERTICALLY) -->
+                        <div id="cust-dynamic-fields" style="width: 100%; display: none; flex-direction: column; gap: 8px; margin-top: 6px; border-top: 1px dashed rgba(128,128,128,0.2); padding-top: 6px;"></div>
                     </div>
                 </div>
 
-                <!-- SIDE -->
-                <div id="cust-group-side">
-                    <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Side</label>
-                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
-                        <button type="button" class="cust-pill-btn active" data-group="side" data-val="right" onclick="setCustOption('side', 'right', this)">Right</button>
-                        <button type="button" class="cust-pill-btn" data-group="side" data-val="left" onclick="setCustOption('side', 'left', this)">Left</button>
-                        <button type="button" class="cust-pill-btn" data-group="side" data-val="bilateral" onclick="setCustOption('side', 'bilateral', this)">Bilateral</button>
+                <!-- QUICK PHRASE ADD-ONS BAR (COLLAPSIBLE) -->
+                <div style="margin-bottom:4px; background:rgba(0,123,255,0.03); border:1px solid rgba(0,123,255,0.12); border-radius:6px; padding:6px 10px; flex-shrink:0;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div onclick="toggleQuickPhrasesBarCollapse()" style="display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none;">
+                            <span id="cust-qp-chevron" style="font-size:10px; color:#007BFF; transition:transform 0.2s; display:inline-block;">&#9654;</span>
+                            <label style="font-size:10.5px; font-weight:bold; color:#007BFF; text-transform:uppercase; cursor:pointer;">Quick Phrase Add-ons</label>
+                            <span id="cust-qp-badge" style="font-size:10px; font-weight:bold; background:#007BFF; color:#fff; padding:1px 6px; border-radius:10px; display:none;">0 active</span>
+                        </div>
+                        <button type="button" onclick="promptAdHocQuickPhrase()" style="background:none; border:none; color:#007BFF; font-size:11px; font-weight:bold; cursor:pointer; text-decoration:underline;">+ Add Custom Phrase</button>
+                    </div>
+                    <div id="cust-quick-phrases-bar" style="display:none; gap:6px; flex-wrap:wrap; margin-top:6px; padding-top:6px; border-top:1px solid rgba(0,123,255,0.1);">
+                        <button type="button" class="cust-pill-btn" data-adhoc-text="Parent was present during the appointment." onclick="toggleAdHocPhrase('Parent was present during the appointment.', this)">+ Parent Present</button>
+                        <button type="button" class="cust-pill-btn" data-adhoc-text="He/she was educated on proper donning/doffing, wear schedule, and skin inspection." onclick="toggleAdHocPhrase('He/she was educated on proper donning/doffing, wear schedule, and skin inspection.', this)">+ Patient Educated</button>
+                        <button type="button" class="cust-pill-btn" data-adhoc-text="Gait was evaluated and patient demonstrated safe ambulation with device." onclick="toggleAdHocPhrase('Gait was evaluated and patient demonstrated safe ambulation with device.', this)">+ Gait Evaluated</button>
                     </div>
                 </div>
-
-                <!-- SEX / PRONOUNS -->
-                <div>
-                    <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Sex / Pronouns</label>
-                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
-                        <button type="button" class="cust-pill-btn active" data-group="sex" data-val="male" onclick="setCustOption('sex', 'male', this)">Male (he/his)</button>
-                        <button type="button" class="cust-pill-btn" data-group="sex" data-val="female" onclick="setCustOption('sex', 'female', this)">Female (she/her)</button>
-                    </div>
-                </div>
-
-                <!-- COMPARTMENT (DYNAMICALLY SHOWN WHEN RELEVANT) -->
-                <div id="cust-group-compartment" style="display:none;">
-                    <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Knee / Joint Compartment</label>
-                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
-                        <button type="button" class="cust-pill-btn active" data-group="compartment" data-val="medial" onclick="setCustOption('compartment', 'medial', this)">Medial</button>
-                        <button type="button" class="cust-pill-btn" data-group="compartment" data-val="lateral" onclick="setCustOption('compartment', 'lateral', this)">Lateral</button>
-                    </div>
-                </div>
-
-                <!-- INDICATION / LIGAMENT (DYNAMICALLY SHOWN WHEN RELEVANT) -->
-                <div id="cust-group-indication" style="display:none;">
-                    <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">Indication / Ligament Instability</label>
-                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
-                        <button type="button" class="cust-pill-btn active" data-group="indication" data-val="acl" onclick="setCustOption('indication', 'acl', this)">ACL</button>
-                        <button type="button" class="cust-pill-btn" data-group="indication" data-val="pcl" onclick="setCustOption('indication', 'pcl', this)">PCL</button>
-                        <button type="button" class="cust-pill-btn" data-group="indication" data-val="mcl" onclick="setCustOption('indication', 'mcl', this)">MCL</button>
-                        <button type="button" class="cust-pill-btn" data-group="indication" data-val="lcl" onclick="setCustOption('indication', 'lcl', this)">LCL</button>
-                        <button type="button" class="cust-pill-btn" data-group="indication" data-val="meniscus" onclick="setCustOption('indication', 'meniscus', this)">Meniscus</button>
-                        <button type="button" class="cust-pill-btn" data-group="indication" data-val="unloading" onclick="setCustOption('indication', 'unloading', this)">OA / Unloading</button>
-                    </div>
-                </div>
-
-                <!-- OPTIONAL PHRASE TOGGLES CONTAINER -->
-                <div id="cust-optional-phrases-container" style="grid-column: 1 / -1; display:none; flex-direction:column; gap:4px; margin-top:6px; border-top:1px solid rgba(0,0,0,0.08); padding-top:6px;"></div>
-
-                <!-- CUSTOM USER-DEFINED SELECTABLE OPTION PICKERS CONTAINER -->
-                <div id="cust-custom-pickers-container" style="display:contents;"></div>
-
-                <!-- DYNAMIC MEASUREMENT / FILL-IN FIELDS CONTAINER -->
-                <div id="cust-dynamic-fields" style="grid-column: 1 / -1; display: none; flex-direction: column; gap: 4px; margin-top: 8px; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 8px;"></div>
             </div>
 
-            <!-- QUICK PHRASE ADD-ONS BAR -->
-            <div style="margin-bottom:8px; background:rgba(0,123,255,0.04); border:1px solid rgba(0,123,255,0.15); border-radius:6px; padding:8px 12px; flex-shrink:0;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
-                    <label style="font-size:10.5px; font-weight:bold; color:#007BFF; text-transform:uppercase;">Quick Phrase Add-ons</label>
-                    <button type="button" onclick="promptAdHocQuickPhrase()" style="background:none; border:none; color:#007BFF; font-size:11.5px; font-weight:bold; cursor:pointer; text-decoration:underline;">+ Add Custom Quick Phrase...</button>
-                </div>
-                <div id="cust-quick-phrases-bar" style="display:flex; gap:6px; flex-wrap:wrap;">
-                    <button type="button" class="cust-pill-btn" data-adhoc-text="Parent was present during the appointment." onclick="toggleAdHocPhrase('Parent was present during the appointment.', this)">+ Parent Present</button>
-                    <button type="button" class="cust-pill-btn" data-adhoc-text="Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery." onclick="toggleAdHocPhrase('Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.', this)">+ Achilles Wedge</button>
-                    <button type="button" class="cust-pill-btn" data-adhoc-text="He/she was educated on proper donning/doffing, wear schedule, and skin inspection." onclick="toggleAdHocPhrase('He/she was educated on proper donning/doffing, wear schedule, and skin inspection.', this)">+ Patient Educated</button>
-                    <button type="button" class="cust-pill-btn" data-adhoc-text="Gait was evaluated and patient demonstrated safe ambulation with device." onclick="toggleAdHocPhrase('Gait was evaluated and patient demonstrated safe ambulation with device.', this)">+ Gait Evaluated</button>
-                </div>
-            </div>
-
-            <!-- EXPANDED LIVE PREVIEW BOX (TAKES ALL REMAINING VERTICAL SPACE) -->
-            <div style="display:flex; flex-direction:column; flex:1; min-height:180px;">
+            <!-- RIGHT COLUMN: EXPANDED FULL-HEIGHT LIVE FORMATTED NOTE PREVIEW -->
+            <div class="cust-right-col">
                 <label style="font-size:11px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:4px;">Live Formatted Note Preview</label>
-                <div id="cust-note-preview" style="flex:1; min-height:180px; max-height:420px; overflow-y:auto; padding:12px 14px; background:var(--input-bg); border:1px solid var(--input-border); border-radius:6px; font-size:13.5px; line-height:1.5; white-space:pre-wrap; color:var(--text); box-sizing:border-box;"></div>
+                <div id="cust-note-preview" style="flex:1; min-height:180px; overflow-y:auto; padding:16px 18px; background:var(--input-bg); border:1px solid var(--input-border); border-radius:8px; font-size:14px; line-height:1.6; white-space:pre-wrap; color:var(--text); box-sizing:border-box;"></div>
             </div>
         </div>
 
@@ -6424,6 +6509,32 @@ const PERMANENT_TEMPLATES = [
         updateCustNotePreview();
     }
 
+    function toggleQuickPhrasesBarCollapse(forceOpen = null) {
+        const bar = document.getElementById('cust-quick-phrases-bar');
+        const chevron = document.getElementById('cust-qp-chevron');
+        if (!bar || !chevron) return;
+        const isHidden = forceOpen === null ? (bar.style.display === 'none' || !bar.style.display) : !forceOpen;
+        if (isHidden) {
+            bar.style.display = 'flex';
+            chevron.style.transform = 'rotate(90deg)';
+        } else {
+            bar.style.display = 'none';
+            chevron.style.transform = 'rotate(0deg)';
+        }
+    }
+
+    function updateAdHocPhraseBadge() {
+        const badge = document.getElementById('cust-qp-badge');
+        if (!badge) return;
+        const count = (currentCustOptions.adHocPhrases || []).length;
+        if (count > 0) {
+            badge.style.display = 'inline-block';
+            badge.textContent = `${count} active`;
+        } else {
+            badge.style.display = 'none';
+        }
+    }
+
     function toggleAdHocPhrase(text, btn) {
         currentCustOptions.adHocPhrases = currentCustOptions.adHocPhrases || [];
         const idx = currentCustOptions.adHocPhrases.indexOf(text);
@@ -6434,6 +6545,7 @@ const PERMANENT_TEMPLATES = [
             currentCustOptions.adHocPhrases.push(text);
             btn.classList.add('active');
         }
+        updateAdHocPhraseBadge();
         updateCustNotePreview();
     }
 
@@ -6508,7 +6620,7 @@ const PERMANENT_TEMPLATES = [
         const textWithoutPickers = rawText.replace(/\{[^}]+\}/g, '');
 
         const fields = [];
-        const matches = textWithoutPickers.match(/_{3,}|\[[^\]]+\]|SIZEDEVICE|DIAGNOSIS|MANUFACTURER|INFORMATION/gi) || [];
+        const matches = textWithoutPickers.match(/_{3,}|\[[^\]]+\]/g) || [];
         matches.forEach((m) => {
             const cleanKey = m.replace(/[\[\]]/g, '').trim();
             if (pickerLabels.includes(cleanKey.toLowerCase())) return;
@@ -6537,11 +6649,13 @@ const PERMANENT_TEMPLATES = [
         currentCustOptions.optionalPhrases = {};
         currentCustOptions.adHocPhrases = [];
 
-        // Reset quick phrases bar buttons active state
+        // Reset quick phrases bar buttons active state and keep collapsed by default
         const qbar = document.getElementById('cust-quick-phrases-bar');
         if (qbar) {
             qbar.querySelectorAll('.cust-pill-btn').forEach(b => b.classList.remove('active'));
         }
+        toggleQuickPhrasesBarCollapse(false);
+        updateAdHocPhraseBadge();
 
         // Sticky location memory
         const stickyLoc = localStorage.getItem('lastSelectedLocation') || 'north';
@@ -6615,33 +6729,35 @@ const PERMANENT_TEMPLATES = [
                     const isWriteIn = activeVal && !p.options.includes(activeVal);
                     const safeTag = p.fullTag.replace(/'/g, "\\'");
                     
-                    if (p.options.length <= 3) {
-                        // Render as Pill Buttons!
+                    const isShortPillPicker = p.options.length <= 3 && p.options.every(opt => opt.length <= 16);
+
+                    if (isShortPillPicker) {
+                        // Render as Compact Horizontal Pill Buttons!
                         return `
-                            <div style="margin-bottom:10px;">
-                                <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${p.label}</label>
-                                <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:5px;">
+                            <div style="flex: 0 0 auto;">
+                                <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${p.label}</label>
+                                <div style="display:flex; gap:4px; flex-wrap:wrap;">
                                     ${p.options.map(opt => {
                                         const isSelected = !isWriteIn && opt === activeVal;
                                         return `<button type="button" class="cust-pill-btn ${isSelected ? 'active' : ''}" onclick="setCustomPickerVal('${safeTag}', '${opt.replace(/'/g, "\\'")}', this); document.getElementById('write-in-input-${idx}').style.display='none';">${opt}</button>`;
                                     }).join('')}
                                     <button type="button" class="cust-pill-btn ${isWriteIn ? 'active' : ''}" onclick="toggleCustomPickerWriteIn('${safeTag}', ${idx}, this)">+ Custom</button>
                                 </div>
-                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; max-width:240px; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
+                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
                             </div>
                         `;
                     } else {
-                        // Render as Dropdown Select!
+                        // Render as Clean Full-Width Dropdown Select!
                         return `
-                            <div style="margin-bottom:10px;">
-                                <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${p.label}</label>
+                            <div style="flex: 0 0 auto; min-width: 150px; max-width: 240px;">
+                                <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${p.label}</label>
                                 <select class="cust-select-dropdown" onchange="onCustomPickerDropdownChange(this, '${safeTag}', ${idx})">
                                     ${p.options.map(opt => `
                                         <option value="${opt.replace(/"/g, '&quot;')}" ${(!isWriteIn && opt === activeVal) ? 'selected' : ''}>${opt}</option>
                                     `).join('')}
-                                    <option value="__write_in__" ${isWriteIn ? 'selected' : ''}>Custom Write-In...</option>
+                                    <option value="__write_in__" ${isWriteIn ? 'selected' : ''}>+ Custom Write-In...</option>
                                 </select>
-                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; max-width:240px; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
+                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
                             </div>
                         `;
                     }
@@ -6658,15 +6774,21 @@ const PERMANENT_TEMPLATES = [
             if (fields.length > 0) {
                 fieldsContainer.style.display = 'flex';
                 fieldsContainer.innerHTML = fields.map(f => `
-                    <div style="margin-bottom:4px;">
-                        <label style="font-size:10.5px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:3px;">${f.label}</label>
-                        <input type="text" data-field-key="${f.key}" placeholder="e.g. measurement / value..." class="cust-field-input" oninput="onCustFieldInput(this)" style="width:100%; max-width:240px; padding:6px 10px; border-radius:6px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12.5px; font-weight:600; box-sizing:border-box;">
+                    <div style="width:100%;">
+                        <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${f.label}</label>
+                        <input type="text" data-field-key="${f.key}" placeholder="e.g. measurement / value..." class="cust-field-input" oninput="onCustFieldInput(this)" style="width:100%; padding:6px 10px; border-radius:6px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12.5px; font-weight:600; box-sizing:border-box;">
                     </div>
                 `).join('');
             } else {
                 fieldsContainer.style.display = 'none';
                 fieldsContainer.innerHTML = '';
             }
+        }
+
+        const divider = document.getElementById('cust-options-divider');
+        if (divider) {
+            const hasBottomItems = pickers.length > 0 || optPhrases.length > 0 || fields.length > 0;
+            divider.style.display = hasBottomItems ? 'block' : 'none';
         }
 
         updateCustNotePreview();
@@ -7085,11 +7207,18 @@ const PERMANENT_TEMPLATES = [
         phraseToggles.forEach(p => {
             const isSelected = !!(currentCustOptions.optionalPhrases && currentCustOptions.optionalPhrases[p.fullTag]);
             const escapedTag = p.fullTag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(escapedTag, 'g');
             if (isSelected) {
+                const regex = new RegExp(escapedTag, 'g');
                 result = result.replace(regex, wrapHighlight(p.text));
             } else {
-                result = result.replace(regex, '');
+                // If tag sits on its own line, collapse its line break so it leaves no empty blank line behind
+                const ownLineRegex = new RegExp(`(?:\\r?\\n)[ \\t]*${escapedTag}[ \\t]*(?=\\r?\\n|$)`, 'g');
+                if (ownLineRegex.test(result)) {
+                    result = result.replace(ownLineRegex, '');
+                } else {
+                    const regex = new RegExp(escapedTag, 'g');
+                    result = result.replace(regex, '');
+                }
             }
         });
 
@@ -7111,6 +7240,8 @@ const PERMANENT_TEMPLATES = [
 
             if (userVal && userVal.trim()) {
                 result = result.replace(regex, wrapHighlight(userVal.trim()));
+            } else if (forHtmlDisplay) {
+                result = result.replace(regex, `<mark class="cust-pending">${f.original}</mark>`);
             }
         });
 
@@ -7196,6 +7327,9 @@ const PERMANENT_TEMPLATES = [
 
         // Clean double spaces (only inline spaces/tabs, preserving paragraph break newlines)
         result = result.replace(/[ \t]{2,}/g, ' ');
+
+        // Clean extra consecutive blank lines (collapse 3+ newlines to a single \n\n paragraph break)
+        result = result.replace(/(\r?\n){3,}/g, '\n\n');
 
         // Process Ad-Hoc Quick Phrases selected from Quick Phrase Add-ons bar
         if (currentCustOptions.adHocPhrases && currentCustOptions.adHocPhrases.length > 0) {
