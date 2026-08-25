@@ -15,7 +15,7 @@
   "acl-measurement": {
     "id": "acl-measurement",
     "lcodes": [],
-    "text": "Patient presented to the North/South clinic for an orthopedic evaluation, clinical assessment, and anatomical measurement for a rigid, double-upright functional Left/Right knee orthosis.\n\nSubjective & Clinical History:\nPatient reports ongoing Left/Right knee pain, instability, and episodes of subjective \"giving way\" affecting daily ambulation and functional mobility secondary to {Diagnosis: ACL Rupture / ACL Reconstruction / Combined ACL and Meniscal Tear / MCL/LCL Instability / PCL Tear / Multi-Ligamentous Laxity / Post-Traumatic Knee Instability / Knee OA}. Prior conservative treatments have been insufficient in providing necessary multi-planar stability.\n\nObjective Clinical Assessment:\nJoint Laxity / Physical Examination: Clinical exam indicates abnormal joint excursion with positive {Clinical Signs: Anterior Drawer / Lachman test / Pivot Shift / Medial Joint Laxity / Lateral Joint Laxity / Varus-Valgus Instability}.\n\nAnatomical Measurements & Sizing:\nKnee orthosis measurements taken today:\nthigh circumference: [Thigh Circumference]\nKnee center ML width: [Knee Center ML Width]\ncalf circumference: [Calf Circumference]\n\nDevice Selection:\nSelected Model & Sizing: {Brand / Model: Ossur CTi / Ossur Rebound DLG / DonJoy Defiance / DonJoy Armor / Breg Fusion / Thusane Rebel/ Medi M4s} \n{+ Custom Casting / Scanning: Anatomical mold / digital 3D topography scan of Left/Right lower extremity obtained for custom device fabrication.}\n\nPlan & Medical Necessity:\nA functional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation, prevent progressive joint collapse/injury, and control multi-planar instability. Measurements and order specifications have been finalized. Patient was educated on the fitting process and lead time, and agreed to return for delivery upon completion. {+ Parent Present: Parent was present during evaluation and measurement and agreed with the treatment plan.}",
+    "text": "Patient presented to the North/South clinic for an orthopedic evaluation, clinical assessment, and anatomical measurement for a rigid, double-upright functional Left/Right knee orthosis.\n\nSubjective & Clinical History:\nPatient reports ongoing Left/Right knee pain, instability, and episodes of subjective \"giving way\" affecting daily ambulation and functional mobility secondary to {Diagnosis: ACL Rupture / ACL Reconstruction / Combined ACL and Meniscal Tear / MCL/LCL Instability / PCL Tear / Multi-Ligamentous Laxity / Post-Traumatic Knee Instability / Knee OA}. Prior conservative treatments have been insufficient in providing necessary multi-planar stability.\n\nObjective Clinical Assessment:\nJoint Laxity / Physical Examination: Clinical exam indicates abnormal joint excursion with positive {Clinical Signs: Anterior Drawer / Lachman test / Pivot Shift / Medial Joint Laxity / Lateral Joint Laxity / Varus-Valgus Instability}.\n\nAnatomical Measurements & Sizing:\nKnee orthosis measurements taken today:\nthigh circumference: [Thigh Circumference]\nKnee center ML width: [Knee Center ML Width]\ncalf circumference: [Calf Circumference]\n\nDevice Selection:\nSelected Model: {Brand / Model: Ossur CTi / Ossur Rebound DLG / DonJoy Defiance / DonJoy Armor / Breg Fusion / Thusane Rebel/ Medi M4s} \n{+ Custom Casting / Scanning: Anatomical mold / digital 3D topography scan of Left/Right lower extremity obtained for custom device fabrication.}\n\nPlan & Medical Necessity:\nA functional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation, prevent progressive joint collapse/injury, and control multi-planar instability. Measurements and order specifications have been finalized. Patient was educated on the fitting process and lead time, and agreed to return for delivery upon completion. {+ Parent Present: Parent was present during evaluation and measurement and agreed with the treatment plan.}",
     "price": 0,
     "category": "Knee",
     "title": "ACL Measurement",
@@ -42,7 +42,7 @@
     "lcodes": [
       "L1902"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right lace-up ankle (ASO) brace with figure-8 stabilizing straps from Medspec for {Indication: Chronic Ankle Instability / Acute Grade I/II Ankle Sprain / Subtalar Joint Inversion Strain / Post-Fracture Rehabilitation/ severe Arthritis/ ankle pain}.\n\nClinical Presentation & Biomechanical Need:\nPatient demonstrates coronal plane ankle joint laxity, recurrent giving-way episodes, lateral ligament tenderness (ATFL/CFL), and pain with inversion/eversion during weight-bearing activities.\n\nFitting & Custom Adjustments:\nHe/she was fit with a size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ankle orthosis. Internal tongue and medial/lateral ballistic nylon figure-8 straps were tensioned and secured to replicate therapeutic athletic taping. Non-elastic circumferential cuff was fastened to lock the calcaneus in neutral subtalar alignment without impeding normal sagittal plantarflexion/dorsiflexion. Fit verified within patient's standard walking footwear.\n\nMedical Necessity:\nThe prefabricated ankle orthosis is reasonable and medically necessary to restrict hazardous coronal plane subtalar inversion and eversion, stabilize the talocrural joint against recurrent subluxation, decrease joint pain, and prevent re-injury during ambulatory ADLs.  {+ Post surgical use: ASO will help to stabilize the ankle and allow for healing post surgery.}\n\nEducation & Follow-up:\nHe/she was educated on proper lace tensioning, strapping technique, footwear selection, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right lace-up ankle (ASO) brace with figure-8 stabilizing straps from Medspec for {Indication: Chronic Ankle Instability / Acute Ankle Sprain / Subtalar Joint Inversion Strain / Post-Fracture Rehabilitation/ severe Arthritis/ ankle pain}.\n\nClinical Presentation & Biomechanical Need:\nPatient demonstrates coronal plane ankle joint laxity, recurrent giving-way episodes, lateral ligament tenderness, and pain with inversion/eversion during weight-bearing activities.\n\nFitting & Custom Adjustments:\nHe/she was fit with a size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ankle orthosis. Internal tongue and medial-lateral ballistic nylon figure-8 straps were tensioned and secured to replicate therapeutic athletic taping. Non-elastic circumferential cuff was fastened to lock the calcaneus in neutral subtalar alignment without impeding normal sagittal plantarflexion/dorsiflexion. Fit verified within patient's standard walking footwear.\n\nMedical Necessity:\nThe prefabricated ankle orthosis is reasonable and medically necessary to restrict hazardous coronal plane subtalar inversion and eversion, stabilize the talocrural joint against recurrent subluxation, decrease joint pain, and prevent re-injury during ambulatory ADLs.  {+ Post surgical use: ASO will help to stabilize the ankle and allow for healing post surgery.}\n\nEducation & Follow-up:\nHe/she was educated on proper lace tensioning, strapping technique, footwear selection, and skin care. Follow-up PRN.",
     "price": 91.73,
     "category": "Foot & Ankle",
     "title": "Ankle Laceup ASO",
@@ -97,13 +97,16 @@
     "lcodes": [
       "L2999"
     ],
-    "text": "The patient was issued an Iceman cold therapy circulation unit at the North/South office for post-operative management of Left/Right joint surgery. Cold pad fit to surgical site to reduce pain, swelling, and surgical inflammation.",
-    "price": 0,
+    "text": "The patient was issued an Iceman cold therapy circulation unit at the North/South office for post-operative management of joint after surgery. He/She was educated on use and care of Iceman cooling machine.  F/up PRN.",
+    "price": 200,
     "category": "Post-Op & Recovery",
     "title": "Ice Man",
     "fabricationType": "prefab",
     "excludeAutoPrice": true,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "knee-scooter": {
     "id": "knee-scooter",
@@ -479,13 +482,16 @@
       "L1960",
       "L2820"
     ],
-    "text": "Pt. was seen at the North/South location for solid custom Left/Right AFO delivery. Device was custom molded from patient model with soft interface lining. Fit with the new Custom Solid AFO. The brace is reasonable and necessary to lock the ankle in neutral, prevent foot drop, clear toes during swing, eliminate ankle instability in coronal/sagittal planes, and prevent falls. Minor trimline adjustments performed. Progressive wearing schedule and skin checks instructed.",
+    "text": "Patient was seen at the North/South location for fitting and delivery of a custom-molded Left/Right Solid Ankle-Foot Orthosis (AFO) custom fabricated from patient model with soft interface lining for {Indication: Severe Ankle/Subtalar Instability / Spastic Equinovarus / Drop Foot with Knee Hyperextension / Charcot Neuroarthropathy / Flaccid Paralysis of Lower Extremity/ severe arthritis}.\n\nClinical Justification:\nPatient demonstrates{Diagnosis: severe multidirectional ankle instability/ absent active dorsiflexion and plantarflexion/ spastic tone/extensor thrust/ severe knee instability during stance phase (recurvatum/buckling)} that cannot be controlled with an articulated or flexible device.  {+ Atypical limb size: Pt. has atypical limb shape/size that can only be fit properly with a device that is custom made to his/her shape.}\n\nTechnical Fitting & Structural Alignment:\nThe custom solid AFO was molded to lock the ankle rigidly in {Ankle Position: neutral 90 degrees / 2 degrees dorsiflexion} with rigid anterior/posterior trimlines encompassing the malleoli. Padded tibial strap and instep retention straps adjusted. Shell trimmed and smoothed for comfortable shoe integration. Dynamic gait evaluation confirmed rigid coronal/sagittal plane locking, complete toe clearance in swing phase, and stability of the knee extension moment in stance.\n\nMedical Necessity:\nThe custom solid AFO is reasonable and medically necessary to eliminate motion in all planes at the ankle and subtalar joints, correct equinovarus deformity, manage ground reaction forces to stabilize the knee during weight-bearing, and allow safe household and community ambulation.\n\nEducation & Break-in:\nHe/she was instructed on a structured break-in schedule (1-2 hours per day initially), proper sock and footwear pairing, and daily skin inspection over the fibular head, navicular, and malleoli. Follow-up PRN in 2-3 weeks.",
     "price": 770,
     "category": "Foot & Ankle",
     "title": "AFO Solid Delivery",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "custom-note-1737583188590": {
     "id": "custom-note-1737583188590",
@@ -549,13 +555,16 @@
       "L2210",
       "L2210"
     ],
-    "text": "Pt. was seen at the North/South location for custom Left/Right articulated AFO delivery. Device was custom fabricated from patient model with {Joint Type: Plantarflexion Stop / Free Motion / Dorsiflexion Assist} ankle joints. He/she was fit with the new Custom AFO. The custom brace is reasonable and necessary to support the ankle joint in frontal and coronal planes, assist dorsiflexion during swing phase, prevent foot drop tripping falls, support medial longitudinal arch, and maintain proper hindfoot alignment during stance phase. Minor footplate trimming adjustments made for shoe fit. No pressure areas noted. Instructed on proper donning/doffing, progressive wearing schedule (1 hr/day increase), and daily skin inspection.",
+    "text": "Patient was seen at the North/South location for delivery of a custom-molded Left/Right articulated Ankle-Foot Orthosis (AFO) custom fabricated from a patient anatomical model for {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Cerebral Palsy/ Lower Extremity Muscle Weakness}.\n\nBiomechanical Specifications & In-Office Modifications:\nThe custom AFO features a lightweight molded polypropylene/carbon shell, soft inner interface, and bilateral articulated {Joint Type: Tamarack Flexure Dorsiflexion Assist / Free Motion Hinges with Plantarflexion Stop / Adjustable Spring-Loaded Assist} ankle joints. Proximal calf band, anterior tibial strap, and footplate were inspected. Minor distal trimline adjustments performed to optimize shoe fit and toe clearance. Gait analysis demonstrated immediate correction of foot drop, smooth heel-to-toe progression, and restored swing phase clearance without joint buckle or hyperextension.\n\nMedical Necessity:\nThe custom articulated AFO is reasonable and medically necessary to assist ankle dorsiflexion during swing phase, prevent foot drop, resist hazardous plantarflexion, maintain coronal subtalar stability, improve gait symmetry, and prevent fall-related trauma during community ambulation.\n\nPatient Education & Compliance:\nHe/she was educated on proper donning with shoe horn, progressive break-in protocol (1 hour increments daily), footwear matching, and daily skin checks over bony landmarks. Follow-up scheduled in 2 weeks.",
     "price": 1198.05,
     "category": "Foot & Ankle",
     "title": "AFO Articulated delivery",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "custom-1771341757135": {
     "id": "custom-1771341757135",
@@ -714,15 +723,18 @@
     "lcodes": [
       "L1940",
       "L2820",
-      "L2275"
+      "L2330"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a custom Left/Right Arizona AFO brace. He/she was fit with a custom-molded plastic/leather Arizona AFO fabricated from patient model. The custom device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in sagittal and coronal planes, eliminate severe subtalar joint motion and pain, correct valgus/varus deformity, and prevent joint collapse during ambulation. He/she was provided with verbal and written care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule (1-2 hours per day initially) while inspecting skin daily.",
-    "price": 872.52,
+    "text": "Patient was seen at the North/South office for fitting and delivery of a custom-molded Left/Right Arizona-type Ankle-Foot Orthosis (AFO) custom fabricated from a positive anatomical model of the patient's lower extremity for {Indication: Posterior Tibial Tendon Dysfunction / Severe Subtalar and Talonavicular Osteoarthritis / Chronic Hindfoot Valgus Deformity / Charcot Neuroarthropathy}.\n\nClinical Justification & Prior Conservative Measures:\nPatient exhibits severe medial longitudinal arch collapse, fixed/flexible calcaneal valgus, subtalar hypermobility, and severe midfoot/rearfoot pain that severely limits functional ambulation. Prior conservative therapies (including OTC insoles, prefabricated ankle braces, physical therapy, and NSAIDs) have failed to control joint collapse and pain.\n\nTechnical Inspection & Fitting:\nThe custom AFO was fabricated with a molded thermoplastic shell, total-contact medical grade leather lining, and high medial/lateral longitudinal arch reinforcements. The device was donned and laced securely. Trimlines around the malleoli and navicular were inspected to ensure total surface bearing contact without focal shear. Bony prominences were fully relieved. Subtalar joint was held securely in neutral anatomical alignment. Patient trialed the device in extra-depth footwear across 200 feet of in-office ambulation with marked reduction in pain and elimination of pathological pronation collapse.\n\nMedical Necessity:\nThe custom molded AFO is reasonable and medically necessary to immobilize and stabilize the subtalar, talocalcaneal, and midtarsal joints in the sagittal, coronal, and transverse planes, offload the degenerated posterior tibial tendon, realign the skeletal structure of the foot/ankle, prevent progressive deformity collapse, and restore ambulatory function.\n\nPatient Instructions:\nHe/she was provided with verbal and written use/care instructions, taught proper donning/lacing technique, and placed on a strict break-in schedule (increasing wear by 1 hour daily). Instructed to inspect skin daily for redness. Scheduled follow-up in 2-3 weeks.",
+    "price": 1198.68,
     "category": "Foot & Ankle",
     "title": "AFO Arizona Delivery",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "carbon-plate": {
     "id": "carbon-plate",
@@ -742,13 +754,16 @@
     "lcodes": [
       "L1845"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right double upright unloader knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} unloader brace. Condylar pads and dynamic leverage straps adjusted to offload the Medial/Lateral compartment. Unloader knee brace is reasonable and necessary to reduce compartment joint compression, decrease osteoarthritis pain, and improve functional ambulation. Progressive wearing schedule instructed.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right single/double upright Osteoarthritis Unloader Knee Orthosis from {Brand: Breg / DonJoy / Ossur / Townsend} for {Indication: Severe Unicompartmental Medial Knee Osteoarthritis / Severe Unicompartmental Lateral Knee Osteoarthritis / Post-Meniscectomy Chondral Defect}.\n\nClinical & Radiographic Documentation:\nPatient presents with chronic, debilitating unicompartmental joint pain, varus/valgus deformity, and joint space narrowing confirmed on weight-bearing radiographs. Prior conservative treatments (including physical therapy, NSAIDs, intra-articular injections, and unloader sleeves) have failed to provide adequate functional pain relief.\n\nBiomechanical Fitting & Correction Mechanism:\nHe/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL}  {Brand: Breg / DonJoy / Ossur / Townsend} {Model: Fusion OA/Rebel Reliever/Oadjuster/Z12/Z13/Unireliever} rigid unloader knee brace. Aircraft aluminum uprights were contoured to patient's thigh and calf anatomy. Dynamic corrective leverage strapping and condylar pads were adjusted to apply a 3-point pressure moment, offloading the affected Medial/Lateral compartment and opening joint space during weight-bearing. Condyle pads and non-slip liners aligned to ensure hinge tracking matches anatomical knee center. In-office ambulation trialed across 200 feet; patient reported reduction in focal joint compartment pain and improved gait stability.\n\nMedical Necessity:\nThe unloader knee orthosis is reasonable and medically necessary to reduce compressive mechanical loads across the damaged Medial/Lateral knee compartment, stabilize the joint in the coronal plane, decrease arthritic pain, and improve functional ambulatory capacity during daily living activities.\n\nWear Protocol & Education:\nHe/she was educated on proper strap sequencing, gradual wearing progression (start with 1-2 hours daily, building to full daily weight-bearing tolerance), and skin inspection under condyle pads and cuffs. Verbal/written instructions provided; follow-up PRN.",
     "price": 970.06,
     "category": "Knee",
     "title": "Knee Unloader delivery",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "lso-measurement": {
     "id": "lso-measurement",
@@ -809,7 +824,7 @@
     "lcodes": [
       "L1832"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right TScope ROM post-operative knee orthosis. He/She was with a Breg T-scope telescoping ROM knee brace. Device is reasonable and necessary to immobilize/protect knee joint, control extension/flexion limits post-surgery, and allow progressive rehabilitation.\n\n Hinge stops were set to {ROM: locked ROM/free motion ROM/0-30 ROM/0-60 ROM/0-90 ROM} as prescribed.  Uprights were extended for proper function, straps were customized for appropriate fit.  Pt. stated that device was comfortable after adjustments. \n\nPt. was educated on donning, doffing, use, and care of ROM knee brace.  He/She was also given printed instructions.  Fit of device was appropriate today.  F/up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right post-operative Range of Motion (ROM) telescoping knee orthosis (TScope) from Breg for {Indication: Post-Operative ACL/PCL Reconstruction / Meniscal Repair Immobilization / Patellar Tendon Repair / Tibial Plateau Fracture Post-Op Care / Acute Multi-Ligament Knee Trauma/post operative rehabilitation}.\n\nClinical Indications & Post-Surgical Protocol:\nPatient requires rigid sagittal and coronal plane external knee stabilization and controlled ROM restriction to protect surgically repaired ligamentous/tendinous tissues and prevent weight-bearing joint collapse.\n\nTechnical Fitting & ROM Calibration:\nHe/she was fit with a Breg Tscope telescoping post-op knee brace. Bilateral aluminum upright lengths were adjusted to patient's anatomical thigh and calf lengths. Bars were also contoured for appropriate fit.  Foam padding and strap closures were contoured and tensioned circumferentially. Dual-axis ROM hinges were calibrated and locked per orthopedic surgeon's explicit protocol to:{ROM: locked in extension/0-30 degrees extension/0-60 degrees extension/0-90 degrees extension}. Hinge drop-lock engaged and verified.\n\nMedical Necessity:\nThe adjustable ROM knee orthosis is reasonable and medically necessary to restrict knee flexion/extension within strict therapeutic limits, provide rigid coronal/sagittal plane stability, prevent hyperextension/buckling, protect surgical graft/repair sites, and permit safe early rehabilitation.\n\nPatient Education:\nHe/she was instructed on proper hinge locking mechanisms, strap tightening sequence, sleep positioning, and skin inspection. Advised never to alter ROM hinge pin settings without MD clearance. Follow-up PRN.",
     "price": 698.63,
     "category": "Knee",
     "title": "Tscope ROM Knee brace",
@@ -962,7 +977,7 @@
   "custom-1787094050566": {
     "id": "custom-1787094050566",
     "title": "Hammertoe strap Budin",
-    "price": 27,
+    "price": 0,
     "category": "Foot & Ankle",
     "lcodes": [],
     "text": "Patient was seen at the North/South office for delivery of Budin/hammertoe splint.  He/She has hammertoe deformity of the {Affected Digits: 2nd/3rd/4th/5th/2nd and 3rd/2nd, 3rd, and 4th/3rd and 4th} digits.  Pt. was fit with {Single, double, triple: single/double/triple} hammertoe splint.  Device will help to reduce hammertoe deformity, prevent progression of this deformity, and reduce associated pain.  \n\nPt. was educated on donning, doffing, use, and care of hammertoe splint.  He/She was also given written instructions.  F/up PRN.",
@@ -993,9 +1008,12 @@
     "lcodes": [
       "L1951"
     ],
-    "text": "Fitting and delivery of carbon fiber AFO. Gait immediately improved. Foot cleared floor and pt had normal heel toe gait pattern.",
+    "text": "Patient was seen at the North/South location for fitting and delivery of a Left/Right energy-storing carbon fiber Ankle-Foot Orthosis {HCPCS Code: L1932 (Custom Fitted Carbon Fiber) / L1951 (Spiral Prefab Custom Fitted) / L1945 (Custom Molded Rigid Anterior Tibial Section)}).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right lower extremity weakness secondary to {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Incomplete Spinal Cord Injury / Charcot-Marie-Tooth / Severe Dorsiflexion Weakness}. The carbon fiber AFO is medically necessary and reasonable to provide dynamic energy return, assist swing-phase toe clearance, prevent foot drop tripping falls, control sagittal plane progression, and stabilize the ankle complex during community ambulation.\n\nBiomechanical Specifications & In-Office Modifications:\n\nDevice Characteristics: Lightweight prepreg carbon fiber composite strut with {Strut Design: dynamic posterior strut / anterior lateral strut / rigid anterior tibial cuff / full-length dynamic footplate / sulcus-length flexible footplate}.\n\nCustom Modifications & Fit:\n\nProximal calf/tibial cuff interface aligned to anatomical contours with soft padding lining (L2820).\n\nFootplate positioned within patient’s standard footwear; minor footplate adjustments and insole seating completed to ensure intimate contact without edge digging or forefoot impingement.\n\nProximal hook-and-loop closure tensioned securely to maintain uncompromised tibial positioning without proximal fibular head or peroneal nerve pressure.\n{+ Added Soft Interface: Soft interface lining added to rigid carbon section for bony prominence relief.}\n\nFunctional Assessment & Patient Education:\n\nGait Evaluation: Dynamic gait analysis demonstrated immediate restoration of swing-phase dorsiflexion clearance, smooth heel strike to toe-off energy transfer, elimination of steppage gait / hip hiking, and improved step symmetry across uneven clinic surfaces.\n\nDonning / Doffing: Patient was educated on proper shoe insertion, donning techniques, and strap tensioning. he/she independently and accurately applied the device.\n\nCare & Safety Protocols: Patient was instructed on a progressive break-in schedule (increasing 1–2 hours daily), wearing over a clean moisture-wicking sock, footwear heel-height restrictions, and daily visual skin inspection over the anterior tibia, malleoli, and plantar surface. {+ Caregiver Present: Caregiver was present and instructed on proper application and skin safety.}\n\nAll questions were answered, and the patient verbalized complete understanding. Device delivered in proper working order. Follow-up scheduled in {Follow-up: 2 weeks / 4 weeks / PRN}.",
+    "excludeAutoPrice": false,
     "isTemplate": true,
-    "excludeAutoPrice": false
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "afo-carbon-eval": {
     "id": "afo-carbon-eval",
