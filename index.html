@@ -400,6 +400,10 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             color: var(--text);
             transition: all 0.18s ease;
             user-select: none;
+            max-width: 100%;
+            white-space: normal;
+            text-align: center;
+            box-sizing: border-box;
         }
         .cust-pill-btn:hover {
             background: rgba(0,0,0,0.12);
@@ -472,8 +476,10 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             flex-direction: column;
             gap: 10px;
             overflow-y: auto;
+            overflow-x: hidden;
             padding-right: 12px;
             border-right: 1px solid rgba(128, 128, 128, 0.2);
+            box-sizing: border-box;
         }
         .cust-right-col {
             flex: 1;
@@ -1072,7 +1078,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                     <!-- BOTTOM ROW: TEMPLATE-SPECIFIC PICKERS & OPTIONAL PHRASES -->
                     <div id="cust-template-options-row" style="display:flex; flex-wrap:wrap; gap:8px 16px; align-items:flex-start; width:100%;">
                         <!-- OPTIONAL PHRASE TOGGLES CONTAINER -->
-                        <div id="cust-optional-phrases-container" style="display:none; flex: 0 0 auto;"></div>
+                        <div id="cust-optional-phrases-container" style="display:none; width: 100%; max-width: 100%; box-sizing: border-box;"></div>
 
                         <!-- CUSTOM USER-DEFINED SELECTABLE OPTION PICKERS CONTAINER -->
                         <div id="cust-custom-pickers-container" style="display:contents;"></div>
@@ -6677,7 +6683,7 @@ const PERMANENT_TEMPLATES = [
                 optionalPhrasesContainer.style.display = 'block';
                 optionalPhrasesContainer.innerHTML = `
                     <label style="font-size:10.5px; font-weight:bold; color:#28a745; text-transform:uppercase; display:block; margin-bottom:3px;">Optional Phrase Toggles / Add-Ons</label>
-                    <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:4px;">
+                    <div style="display:flex; gap:5px; flex-wrap:wrap; width:100%; max-width:100%; box-sizing:border-box; margin-bottom:4px;">
                         ${optPhrases.map(p => {
                             const safeTag = p.fullTag.replace(/'/g, "\\'");
                             const isActive = !!currentCustOptions.optionalPhrases[p.fullTag];
