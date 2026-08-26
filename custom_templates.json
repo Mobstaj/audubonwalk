@@ -15,15 +15,13 @@
   "acl-measurement": {
     "id": "acl-measurement",
     "lcodes": [],
-    "text": "Patient presented to the North/South clinic for an orthopedic evaluation, clinical assessment, and anatomical measurement for a rigid, double-upright functional Left/Right knee orthosis.\n\nSubjective & Clinical History:\nPatient reports ongoing Left/Right knee pain, instability, and episodes of subjective \"giving way\" affecting daily ambulation and functional mobility secondary to {Diagnosis: ACL Rupture / ACL Reconstruction / Combined ACL and Meniscal Tear / MCL/LCL Instability / PCL Tear / Multi-Ligamentous Laxity / Post-Traumatic Knee Instability / Knee OA}. Prior conservative treatments have been insufficient in providing necessary multi-planar stability.\n\nObjective Clinical Assessment:\nJoint Laxity / Physical Examination: Clinical exam indicates abnormal joint excursion with positive {Clinical Signs: Anterior Drawer / Lachman test / Pivot Shift / Medial Joint Laxity / Lateral Joint Laxity / Varus-Valgus Instability}.\n\nAnatomical Measurements & Sizing:\nKnee orthosis measurements taken today:\nthigh circumference: [Thigh Circumference]\nKnee center ML width: [Knee Center ML Width]\ncalf circumference: [Calf Circumference]\n\nDevice Selection:\nSelected Model: {Brand / Model: Ossur CTi / Ossur Rebound DLG / DonJoy Defiance / DonJoy Armor / Breg Fusion / Thusane Rebel/ Medi M4s} \n{+ Custom Casting / Scanning: Anatomical mold / digital 3D topography scan of Left/Right lower extremity obtained for custom device fabrication.}\n\nPlan & Medical Necessity:\nA functional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation, prevent progressive joint collapse/injury, and control multi-planar instability. Measurements and order specifications have been finalized. Patient was educated on the fitting process and lead time, and agreed to return for delivery upon completion. {+ Parent Present: Parent was present during evaluation and measurement and agreed with the treatment plan.}",
+    "text": "Pt. was seen at the North/South office for functional Left/Right knee orthosis evaluation. He/she requires a functional double upright knee orthosis for stabilization following ACL/PCL/MCL/LCL/OA injury. \n\nKnee orthosis measurements taken today: \nthigh circumference: [Thigh Circumference] \nKnee center ML width: [Knee Center ML Width] \ncalf circumference: [Calf Circumference] \n\nFunctional double upright knee brace is reasonable and necessary to stabilize the Left/Right knee joint in sagittal and coronal planes for daily ambulation and prevent progressive joint collapse/injury. Patient was educated on fitting process. Will contact for delivery appointment once authorization is obtained.",
     "price": 0,
     "category": "Knee",
     "title": "ACL Measurement",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "afo-evaluation": {
@@ -42,15 +40,13 @@
     "lcodes": [
       "L1902"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right lace-up ankle (ASO) brace with figure-8 stabilizing straps from Medspec for {Indication: Chronic Ankle Instability / Acute Ankle Sprain / Subtalar Joint Inversion Strain / Post-Fracture Rehabilitation/ severe Arthritis/ ankle pain}.\n\nClinical Presentation & Biomechanical Need:\nPatient demonstrates coronal plane ankle joint laxity, recurrent giving-way episodes, lateral ligament tenderness, and pain with inversion/eversion during weight-bearing activities.\n\nFitting & Custom Adjustments:\nHe/she was fit with a size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ankle orthosis. Internal tongue and medial-lateral ballistic nylon figure-8 straps were tensioned and secured to replicate therapeutic athletic taping. Non-elastic circumferential cuff was fastened to lock the calcaneus in neutral subtalar alignment without impeding normal sagittal plantarflexion/dorsiflexion. Fit verified within patient's standard walking footwear.\n\nMedical Necessity:\nThe prefabricated ankle orthosis is reasonable and medically necessary to restrict hazardous coronal plane subtalar inversion and eversion, stabilize the talocrural joint against recurrent subluxation, decrease joint pain, and prevent re-injury during ambulatory ADLs.  {+ Post surgical use: ASO will help to stabilize the ankle and allow for healing post surgery.}\n\nEducation & Follow-up:\nHe/she was educated on proper lace tensioning, strapping technique, footwear selection, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ASO lace-up ankle brace. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ankle orthosis and figure-8 straps were adjusted. The prefabricated ankle brace is reasonable and necessary to stabilize the ankle in the coronal plane, restrict hazardous inversion/eversion motion, reduce ankle pain, and support injured ligaments during ambulation. Verbal and written care instructions provided; patient instructed on proper donning/doffing and skin monitoring.",
     "price": 91.73,
     "category": "Foot & Ankle",
     "title": "Ankle Laceup ASO",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "arc-sling": {
@@ -97,15 +93,13 @@
     "lcodes": [
       "L2999"
     ],
-    "text": "The patient was issued an Iceman cold therapy circulation unit at the North/South office for post-operative management of joint after surgery. He/She was educated on use and care of Iceman cooling machine.  F/up PRN.",
+    "text": "The patient was issued an Iceman cold therapy circulation unit at the North/South office for post-operative management of Left/Right joint surgery. Cold pad fit to surgical site to reduce pain, swelling, and surgical inflammation.",
     "price": 200,
     "category": "Post-Op & Recovery",
     "title": "Ice Man",
     "fabricationType": "prefab",
     "excludeAutoPrice": true,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "knee-scooter": {
@@ -126,7 +120,7 @@
     "lcodes": [
       "L0651"
     ],
-    "text": "Patient presented to the North/South clinic for evaluation, custom fitting, and delivery of a prefabricated Lumbar-Sacral Orthosis with sagittal-coronal control and rigid anterior/posterior/lateral panels.\n\nSubjective & Clinical Rationale:\nPatient presents with severe lumbosacral pain and functional limitations secondary to {Diagnosis:Chronic lumbar pain/ Lumbar Radiculopathy / Lumbar Spondylolisthesis / Lumbar Spinal Stenosis / Lumbar Disc Herniation / Degenerative Disc Disease / Post-Surgical Lumbar Fusion / Lumbar Compression Fracture}. The LSO is reasonable and medically necessary to provide rigid trunk immobilization, increase intracavitary pressure, reduce lumbar lordosis, offload the intervertebral discs/posterior elements, and facilitate safer performance of daily activities.\n\nObjective Assessment & Custom Fitting:\nMeasurements Obtained: Waist circumference: [Waist Circumference]\nBrand / Device: Trend LSO\nSize Selected: {Size: 0/1/1.5/2/2.5/3/3.5/4/4.5/5/5.5/6}\n\nPanel Contour & Adjustments: Rigid posterior panel was formed/contoured to match the patient’s anatomical lumbar lordosis from sacrococcygeal junction to T9. Rigid anterior panel was aligned to cover from symphysis pubis to xiphoid process without impinging the ribs when seated. Lateral rigid panels were positioned to provide coronal plane control. The mechanical advantage pulley/strap closure system was adjusted to achieve uniform hydrostatic compression without compromising respiratory excursion.\n\nFunctional Assessment & Patient Education:\nFunctional Mobility Check: Device fit and spinal restriction were verified in both standing and sitting positions; no edge digging or anterior tilt impingement noted.\n\nDonning / Doffing: Patient was instructed on proper positioning, alignment of the lordotic curve, and use of the compression pull-tabs. he/she successfully demonstrated independent donning and doffing with proper tensioning.\n\nCare & Safety Protocols: Patient was educated on prescribed wearing schedule, donning over a clean cotton undergarment to protect skin, daily skin inspection protocols, and cleaning/maintenance instructions. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working order.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a prefabricated Lumbar-Sacral Orthosis (LSO) with sagittal-coronal rigid panels from Trend for {Indication: Acute Lumbar Disc Herniation with Radiculopathy / Compression Fracture Lumbar/ Lumbar Spinal Stenosis / Spondylolisthesis (Grade I/II) / Post-Operative Lumbar Fusion or Discectomy / Severe Mechanical Low Back Pain / Lumbar Facet Syndrome}.\n\nClinical Context & Examination:\nPatient presents with severe lumbosacral pain, trunk muscular guarding, and mechanical instability that restricts spinal range of motion and limits sitting, standing, and walking endurance.\n\nFitting, Anatomical Contouring & Compression Mechanism:\nPatient's abdominal circumference was measured at [Circumference]. He/she was fit with a size {Size: 0/1/1.5/2/2.5/3/3.5/4/4.5/5/5.5} LSO. Rigid anterior panel (extending from symphysis pubis to xiphoid) and rigid posterior panel (extending from sacrococcygeal junction to T9 vertebra) with lateral panels were heat-contoured to match the patient's lordotic curvature. The integrated mechanical pulley system was engaged to achieve rigid circumferential intracavitary compression. Fit verified in sitting, standing, and bending positions; motion restriction confirmed.\n\nMedical Necessity:\nThe sagittal-coronal LSO is reasonable and medically necessary to restrict spinal motion in the sagittal and coronal planes (L1–L5/S1), increase intracavitary abdominal pressure to offload axial compressive forces from the intervertebral discs, stabilize the lumbar vertebrae, and relieve severe low back pain during daily activities.\n\nPatient Education & Care:\nHe/she was instructed on donning/doffing over a cotton t-shirt, pulley pull-tab adjustment, posture ergonomics during transfers, and skin monitoring. Verbal/written instructions provided; follow-up PRN.",
     "price": 605.72,
     "category": "Spine / LSO",
     "title": "LSO Delivery",
@@ -142,7 +136,7 @@
     "lcodes": [
       "L0630"
     ],
-    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of an EZwrap Lumbar Orthosis / Corset with reinforcing stays.\n\nSubjective & Medical Rationale:\nPatient presents following {Procedure: Spinal Cord Stimulator (SCS) trial lead placement / permanent Spinal Cord Stimulator (SCS) implant / pulse generator pocket revision} with associated post-surgical lumbosacral pain and trunk instability secondary to {Diagnosis: Failed Back Surgery Syndrome / Chronic Intractable Low Back Pain / Lumbar Radiculopathy / Post-Laminectomy Syndrome / Spinal Stenosis}. The EZwrap lumbar corset is medically necessary to provide rigid trunk stabilization, limit gross flexion/extension and rotational movement, protect the surgical incisions, prevent lead migration or displacement of the implanted stimulator hardware during the acute healing phase, and reduce post-operative mechanical pain during daily functional activities.\n\nFitting & Adjustments:\nMeasurements Obtained: Waist circumference: [Waist Circumference]\nDevice Fit: EZwrap Lumbar Corset — Size: {Size: XSmall/Small/Med/Large/XL/2XL/3XL/4XL}.\n\nCustom Modifications & Fit: The semi-rigid posterior stays were contoured to match anatomical lordosis while bridging over and offloading the surgical incision and generator pocket sites to prevent direct focal pressure or shear forces. Side-tensioning closures were adjusted to deliver uniform intracavitary compression and immobilize the lower lumbar spine without compromising respiratory function or impinging incision margins.\n\nPatient Education:\nDonning / Doffing: Proper donning and doffing procedures were reviewed with spinal precautions (no bending/twisting). he/she independently and accurately applied the device.\n\nCare & Safety Protocols: Pt. advised to wear per Dr.'s prescribed wearing schedule.   He/She was educated on wearing over a smooth cotton undergarment to protect surgical dressings, daily wound and skin inspection, and reporting any increased pain or numbness immediately. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and surgical site monitoring.}\n\nAll questions were answered, and the patient verbalized complete understanding. Orthosis delivered in proper working condition. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a sagittal control Lumbar-Sacral Corset with rigid posterior stays from Ezwrap for {Indication: Post-Op Spinal Cord Stimulator Lead Stabilization / Acute Lumbosacral Muscle Strain / Chronic Mechanical Low Back Pain / Lumbar Spondylosis without radiculopathy}.\n\nClinical Context:\n{Clinical Presentation: Patient presents pre-op installation of spinal cord stimulator (SCS) placement requiring lumbar immobilization to prevent lead migration and reduce post-surgical pain / Patient exhibits severe lumbosacral muscle spasm, postural guarding, and mechanical low back pain}.\n\nFitting & Compression Verification:\nHe/she was fit with a size {Size: XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} elastic/canvas lumbar corset. Posterior contoured rigid aluminum stays were customized to patient's anatomical lordosis (extending from sacrococcygeal junction to T9). Dual bilateral elastic compression pull-straps were tensioned to generate uniform intracavitary abdominal compression and support the paraspinal musculature.\n\nMedical Necessity:\nThe lumbar corset orthosis is reasonable and medically necessary to {Medical Necessity: restrict lumbar motion and prevent lead displacement following spinal cord stimulator placement / restrict painful sagittal flexion, increase intra-abdominal pressure, and relieve mechanical low back strain}.\n\nPatient Education:\nInstructed on proper anterior fastening, wearing over a clean barrier shirt, progressive wear schedule, and proper body mechanics. {Precautions: Emphasized spine-neutral precautions (no bending, lifting, or twisting) to protect SCS lead positioning / Emphasized standard spine-neutral lifting body mechanics}. Follow-up PRN.",
     "price": 201.59,
     "category": "Spine / LSO",
     "title": "Lumbar Corset",
@@ -171,15 +165,13 @@
     "lcodes": [
       "L4397"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right posterior shelll adjustable tension night splint for {Indication:Plantar Fasciitis / Plantar Fasciitis with severe morning heel pain / Plantar Flexion Ankle Contracture / Achilles Tendinopathy with tightness}.\n\nClinical Indications & Subjective Evaluation:\nPatient presents with chronic pain and localized tenderness over the medial calcaneal tubercle and plantar fascia insertion, noting severe startup pain during initial weight-bearing steps in the morning that restricts daily ambulatory activities. {+ Plantar Fasciitis Protocol: Symptoms have persisted for >1 month with documented failure of prior conservative measures, including calf/plantar stretching exercises, rest, ice, NSAIDs, and supportive footwear/orthotics.} {+ Ankle Contracture: Physical exam demonstrates a non-fixed plantar flexion contracture of at least 10 degrees with limitation of passive dorsiflexion, capable of functional correction.}  {+ Arch pain: Pt. also has pain/tenderness along medial longitudinal arch.}\n\nFitting, Adjustments & Technical Alignment:\nHe/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} static ankle-foot orthosis. Straps were tensioned and soft interface padding aligned to maintain the ankle in {Dorsiflexion Setting: neutral 90 degrees / 5 degrees dorsiflexion / 10 degrees dorsiflexion} without excessive pressure over the calcaneus or malleoli. {+ Toe Wedge: Included adjustable dorsiflexion toe wedge was installed under the forefoot to engage the Windlass mechanism and maximize plantar fascia stretch.}\n\nMedical Necessity:\nThe static positioning AFO is reasonable and medically necessary to provide continuous, low-load passive stretch to the plantar fascia and Achilles-gastrocnemius complex during non-weightbearing sleep/rest, preventing nocturnal shortening contractures, alleviating severe morning startup pain, and restoring functional ambulatory capacity.\n\nPatient Education & Safety Guidelines:\nHe/she was educated on proper donning/doffing, daily skin inspection protocols, and advised on a progressive wear schedule starting with 1–2 hours during evening rest before transitioning to overnight use. {+ Non-Weightbearing Warning: Patient was explicitly warned and instructed that this orthosis is strictly NON-AMBULATORY and must be removed prior to standing or walking to prevent fall injury.} Patient demonstrated understanding and verbalized compliance. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right plantar fasciitis night splint. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} night splint maintaining ankle at 90 degrees dorsiflexion. Night splint is reasonable and necessary to provide prolonged passive stretch to plantar fascia and Achilles tendon, reducing severe morning heel pain that limits daily ambulation.",
     "price": 204.74,
     "category": "Foot & Ankle",
     "title": "Night Splint",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "post-op-shoe": {
@@ -187,15 +179,13 @@
     "lcodes": [
       "L3260"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} stiff soled Darco post-op shoe. Shoe immobilizes toes and metatarsals. It also helps to offload surgical sites while healing. Pt. was educated on use/care of shoe today.  Fit was appropriate.  F/up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} post-op shoe with rocker sole. Shoe immobilizes forefoot and offloads operative site during healing.",
     "price": 30,
     "category": "Foot & Ankle",
     "title": "Post-op Shoe",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "prewash": {
@@ -229,15 +219,13 @@
     "lcodes": [
       "L3660"
     ],
-    "text": "Patient was seen at the North/South office for evaluation, fitting, and delivery of a prefabricated Left/Right shoulder immobilizer/sling.\n\nSubjective & Medical Rationale:\nPatient presents with Left/Right shoulder pain and instability secondary to {Diagnosis: Rotator Cuff Tear / Shoulder Dislocation / Glenohumeral Subluxation / Proximal Humerus Fracture / Clavicle Fracture / AC Joint Separation / Post-Operative Shoulder Repair / Post-Traumatic Sprain/ Biceps tear / Triceps tear}. The orthosis is medically necessary to immobilize the glenohumeral joint, restrict shoulder abduction and internal/external rotation, support the weight of the arm to offload the shoulder complex, and facilitate soft tissue healing during daily functional activities.\n\nFitting & Adjustments:\nBrand / Model: Ottobock shoulder immobilizer\nSize Selected: {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL / Universal}\n\nAdjustments & Alignment:\nThe envelope sling was adjusted to fully support the Left/Right elbow and forearm at approximately 90 degrees of flexion with the wrist supported in a neutral position. The padded shoulder/neck strap was adjusted to distribute weight evenly without impinging cervical musculature. The body/swathe strap was fitted and secured around the torso to prevent abduction, forward flexion, and unwanted rotational motion of the humeral head. Distal circulation, sensation, and capillary refill were verified intact with free motion of fingers.\n{+ Abduction Pillow Fit: Abduction pillow positioned and secured at [Degrees: 15 / 30 / 45 / neutral] degrees per protocol.}\n\nPatient Education & Functional Assessment:\nImmobilization Check: Verified secure immobilization of the Left/Right shoulder complex  and forearm in both sitting and standing positions without axillary pinch or neck strain.\n\nDonning / Doffing: Patient was instructed on proper positioning, strap sequencing, and safe removal for hygiene/exercises. he/she successfully demonstrated independent donning and doffing.\n\nCare & Safety Protocols: Patient was educated on the prescribed wear schedule, skin checks over the neck/axilla/elbow/hand and care instructions. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and skin inspection.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working condition. Follow-up PRN.",
+    "text": "Pt. was seen at North/South office for Left/Right shoulder immobilizer sling delivery. Fit with a universal shoulder sling. Device immobilizes upper extremity to allow tissue healing and protect glenohumeral joint.",
     "price": 150.86,
     "category": "Upper Extremity",
     "title": "Simple sling",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "step-up": {
@@ -297,15 +285,13 @@
     "lcodes": [
       "L4361"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Height: Tall / Short} Breg pneumatic walking boot for {Indication: Acute Grade II-III Ankle Sprain / Stable Distal Fibula Ankle Fracture / Metatarsal Fracture / Post-Operative Tendon or Ligament Repair / Severe Plantar Fasciitis / Arthritis/ Charcot Joint Offloading}.\n\nClinical Examination & Diagnostic Rationale:\nPatient presents with acute pain, significant soft tissue edema, weight-bearing intolerance, and structural instability of the Left/Right foot/ankle complex. {+ For Post surgery: Walking boot is required for post surgical stabilization and healing.}\n\nFitting, Adjustments & Biomechanical Alignment:\nHe/she was fit with a size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid pneumatic walking boot. Metal uprights  were anatomically contoured to the lower leg. Integrated pneumatic air bladders were inflated to provide customized circumferential compression, edema management, and total contact hydrostatic stability. The rocker sole profile was evaluated to facilitate smooth roll-over during stance phase while minimizing sagittal ankle joint excursion. {+ Achilles Wedge: Achilles heel-wedge system was installed into the inner liner for progressive reduction of equinus contracture following Achilles tendon surgery.}\n\nMedical Necessity:\nThe pneumatic walking boot is reasonable and medically necessary to immobilize the talocrural, subtalar, and midtarsal joints in the sagittal, coronal, and transverse planes, protect healing osseous/ligamentous structures, absorb ground reaction impact, and allow protected functional weight-bearing during rehabilitation.\n\nPatient Education & Safety Protocol:\nHe/she was instructed on proper pneumatic valve inflation/deflation, strap tensioning sequence, progressive weight-bearing as tolerated per MD orders, and daily skin checks for pressure erythema. Safe ambulatory gait mechanics were demonstrated with assistive device. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Height: Tall / Short} pneumatic/rigid walking boot. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} walking boot. Rigid uprights contoured and air cells inflated. {+ Achilles Wedge: Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.} Walking boot is reasonable and necessary to immobilize the ankle and foot joints, protect fractures/sprains, reduce heel strike impact, and allow protected weightbearing ambulation.",
     "price": 343.35,
     "category": "Foot & Ankle",
     "title": "Walking Boot",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "wrist-splint": {
@@ -313,15 +299,13 @@
     "lcodes": [
       "L3908"
     ],
-    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right wrist orthosis(es) (HCPCS L3908).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right wrist {Indication: carpal tunnel syndrome / fracure / wrist sprain-strain / tendonitis / tenosynovitis / post-traumatic wrist pain / mild osteoarthrosis}, causing pain, weakness, and functional limitation during daily activities and ADLs. Orthosis is reasonable and medically necessary to immobilize the wrist joint in a neutral/supported alignment, reduce repetitive stress, and facilitate tissue healing.\n\nObjective Assessment & Fitting:\n* Measurements Obtained\n* Brand/Model: {Brand: Med Spec / Hely & Weber \n* Size Selected: {Size: Ped. / XXS / XSmall / Small / Med / Large / XL / 2XL}\n* Customization & Fit: The rigid palmar stay was removed, anatomically contoured to maintain approximately 10-15 degrees of functional wrist extension/neutral alignment, and re-inserted. Circumferential straps and closure system were adjusted for an intimate and secure fit without impinging neurovascular structures or restricting full MCP flexion, thumb opposition, and digital mobility.\n{+ Dorsal Stay: Dorsal stay adjusted and secured to restrict flexion.}\n\nFunctional Assessment & Patient Education:\n* Functional Evaluation: Patient demonstrated the ability to grasp and perform light functional hand tasks while maintaining proper joint immobilization.\n* Donning / Doffing: Patient was instructed on proper application, strap tensioning sequence, and positioning. he/she successfully performed an independent return demonstration of donning and doffing.\n* Care & Precautions: Patient was educated on wearing schedule {Wearing Schedule: nocturnal wear only / continuous wear except hygiene / wear during aggravating activities / as directed by physician}, skin inspection protocols (monitoring for pressure or redness), cleaning instructions, and warranty terms. {+ Parent/Caregiver Present: Parent/Caregiver was present and also instructed on proper donning, doffing, and skin care checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right neutral rigid wrist orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} wrist splint. Palmar stay contoured. Device is reasonable and necessary to immobilize the wrist in neutral position, relieve carpal tunnel / tendonitis strain, and decrease ambulation/activity pain.",
     "price": 67.37,
     "category": "Upper Extremity",
     "title": "Wrist Splint",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "comfort-cool": {
@@ -368,15 +352,13 @@
     "lcodes": [
       "L3760"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM elbow orthosis. Fit with a rigid elbow brace with adjustable ROM hinges. Uprights were adjusted to proper length, straps were customized and trimmed for appropriate fit.  Hinge was set to {ROM setting: 90 to free flexion/90 to full extension/full motion/locked at 90/90 flexion to 45 degrees extension} per doctor's order.  Device is reasonable and necessary to immobilize/stabilize elbow joint, control extension/flexion limits, protect ligamentous healing, and allow progressive rehabilitation.\n\nPt. was educated on donning, doffing, use, and care of ROM elbow brace.  Written instructions were also provided.  Fit of brace was appropriate today.  F/up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM elbow orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid elbow brace with adjustable ROM hinges. Device is reasonable and necessary to immobilize/stabilize elbow joint, control extension/flexion limits, protect ligamentous healing, and allow progressive rehabilitation.",
     "price": 565.47,
     "category": "Upper Extremity",
     "title": "Elbow ROM",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "arch-rivals": {
@@ -406,15 +388,13 @@
   "hinged-knee-brace": {
     "id": "hinged-knee-brace",
     "lcodes": [],
-    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right hinged knee orthosis (HCPCS L1820: Ossur Rebound Hinged Wraparound Knee Brace).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right knee {Indication: medial joint laxity / lateral joint laxity / mild MCL sprain / mild LCL sprain / knee pain with mild instability / degenerative joint disease}, affecting his/her ability to ambulate and complete daily functional activities safely.\n\nObjective Assessment & Device Fitting:\nSize Selected: {Size: XS / Small / Medium / Large / XL / 2XL / 3XL / 4XL}\n\nDevice Adjustments: The Ossur Rebound hinged wraparound brace was aligned to the anatomical axis of the Left/Right knee. The dual aluminum uprights and hinges were contoured and adjusted for intimate fit. Straps and wraparound closures were tensioned to provide medial/lateral stability, resist hyperextension, and prevent distal migration during ambulation without impinging popliteal structures or neurovascular bundles.\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Ambulation was evaluated in clinic; patient demonstrated improved coronal plane stability, reduced subjective knee giving-way, and an improved gait pattern.\n\nDonning / Doffing: Patient was instructed on proper application, strap sequencing, and positioning. he/she successfully completed an independent return demonstration of donning and doffing.\n\nCare & Safety: Patient was educated on wearing schedule, skin inspection protocols (redness lasting >20 min), hygiene/care instructions, and warranty terms. {+ Caregiver Present: Caregiver was present and also instructed on proper donning/doffing and skin checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right hinged knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} hinged knee brace. Rigid side hinges and straps provide coronal stability against ACL/PCL/MCL/LCL laxity, prevent hyperextension, and reduce joint pain during ADLs.",
     "price": 0,
     "category": "Knee",
     "title": "Hinged knee brace",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "abduction-sling": {
@@ -422,7 +402,7 @@
     "lcodes": [
       "L3670"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Atlas/ Arc/Slingshot/Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. Fit with a universal abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Atlas sling/ Slingshot 2 / Arc Sling / Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. Fit with a universal abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
     "price": 127.15,
     "category": "Upper Extremity",
     "title": "Abduction Sling",
@@ -450,79 +430,6 @@
     "excludeAutoPrice": false,
     "isTemplate": true
   },
-  "custom-1768324613082": {
-    "id": "custom-1768324613082",
-    "lcodes": [
-      "L2999"
-    ],
-    "excludeAutoPrice": true,
-    "title": "Met pad/bar",
-    "category": "Foot & Ankle",
-    "price": 25,
-    "fabricationType": "custom",
-    "text": "Pt. seen at North/South office for delivery of Left/Right metatarsal pad/bar modification. Device custom positioned on foot orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.",
-    "isTemplate": true
-  },
-  "custom-1768346959331": {
-    "id": "custom-1768346959331",
-    "lcodes": [
-      "L2999"
-    ],
-    "excludeAutoPrice": true,
-    "title": "Compression glove",
-    "category": "Upper Extremity",
-    "price": 15,
-    "fabricationType": "prefab",
-    "text": "Pt. seen at North/South office for fitting and delivery of Left/Right compression glove. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression glove. Device is reasonable and necessary to provide therapeutic edema control, manage swelling, and reduce pain in hand/digits.",
-    "isTemplate": true
-  },
-  "custom-1768422111071": {
-    "id": "custom-1768422111071",
-    "lcodes": [
-      "L1960",
-      "L2820"
-    ],
-    "text": "Patient was seen at the North/South location for fitting and delivery of a custom-molded Left/Right Solid Ankle-Foot Orthosis (AFO) custom fabricated from patient model with soft interface lining for {Indication: Severe Ankle/Subtalar Instability / Spastic Equinovarus / Drop Foot with Knee Hyperextension / Charcot Neuroarthropathy / Flaccid Paralysis of Lower Extremity/ severe arthritis}.\n\nClinical Justification:\nPatient demonstrates{Diagnosis: severe multidirectional ankle instability/ absent active dorsiflexion and plantarflexion/ spastic tone/extensor thrust/ severe knee instability during stance phase (recurvatum/buckling)} that cannot be controlled with an articulated or flexible device.  {+ Atypical limb size: Pt. has atypical limb shape/size that can only be fit properly with a device that is custom made to his/her shape.}\n\nTechnical Fitting & Structural Alignment:\nThe custom solid AFO was molded to lock the ankle rigidly in {Ankle Position: neutral 90 degrees / 2 degrees dorsiflexion} with rigid anterior/posterior trimlines encompassing the malleoli. Padded tibial strap and instep retention straps adjusted. Shell trimmed and smoothed for comfortable shoe integration. Dynamic gait evaluation confirmed rigid coronal/sagittal plane locking, complete toe clearance in swing phase, and stability of the knee extension moment in stance.\n\nMedical Necessity:\nThe custom solid AFO is reasonable and medically necessary to eliminate motion in all planes at the ankle and subtalar joints, correct equinovarus deformity, manage ground reaction forces to stabilize the knee during weight-bearing, and allow safe household and community ambulation.\n\nEducation & Break-in:\nHe/she was instructed on a structured break-in schedule (1-2 hours per day initially), proper sock and footwear pairing, and daily skin inspection over the fibular head, navicular, and malleoli. Follow-up PRN in 2-3 weeks.",
-    "price": 770,
-    "category": "Foot & Ankle",
-    "title": "AFO Solid Delivery",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true
-  },
-  "custom-note-1737583188590": {
-    "id": "custom-note-1737583188590",
-    "lcodes": [
-      "L3020"
-    ],
-    "text": "Patient was seen at the North/South office for Left/Right custom functional foot orthotics (FO) delivery due to [Diagnosis]. Fit today with custom molded foot orthotic(s) fabricated from patient model. Inserts support longitudinal arches, distribute plantar pressures, correct rearfoot alignment, and relieve ambulation pain. Break-in schedule provided.",
-    "price": 500,
-    "category": "Foot & Ankle",
-    "title": "Custom foot orthotics delivery",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-1769624127547": {
-    "id": "custom-1769624127547",
-    "lcodes": [
-      "L1970",
-      "L2210",
-      "L2210",
-      "L2820",
-      "L2280"
-    ],
-    "text": "Patient with history of [Diagnosis] was seen at the North/South location for custom articulated DAFO delivery for Left/Right leg. Custom molded to patient model with DF assist joints and molded heel cup. Supports ankle in frontal plane, prevents inversion/eversion collapse, assists swing phase clearance, and controls pes planovalgus alignment. Fit verified, donning instructed.",
-    "price": 1718.38,
-    "category": "Foot & Ankle",
-    "title": "AFO DAFO delivery",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
   "bk-suction-prosthesis-w-all-pro-foot-delivery": {
     "id": "bk-suction-prosthesis-w-all-pro-foot-delivery",
     "lcodes": [],
@@ -534,19 +441,6 @@
     "excludeAutoPrice": false,
     "isTemplate": true
   },
-  "custom-1770154434611": {
-    "id": "custom-1770154434611",
-    "lcodes": [
-      "L1971"
-    ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Tayco over-the-shoe ankle orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Tayco brace. External uprights and straps adjusted over patient footwear. The ankle orthosis is reasonable and necessary to provide coronal plane joint stability, prevent painful ankle sprain recurrence, and allow functional ambulation.",
-    "price": 582.34,
-    "category": "Foot & Ankle",
-    "title": "Tayco brace delivery",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
   "afo-articulated-del": {
     "id": "afo-articulated-del",
     "lcodes": [
@@ -555,90 +449,14 @@
       "L2210",
       "L2210"
     ],
-    "text": "Patient was seen at the North/South location for delivery of a custom-molded Left/Right articulated Ankle-Foot Orthosis (AFO) custom fabricated from a patient anatomical model for {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Cerebral Palsy/ Lower Extremity Muscle Weakness}.\n\nBiomechanical Specifications & In-Office Modifications:\nThe custom AFO features a lightweight molded polypropylene/carbon shell, soft inner interface, and bilateral articulated {Joint Type: Tamarack Flexure Dorsiflexion Assist / Free Motion Hinges with Plantarflexion Stop / Adjustable Spring-Loaded Assist} ankle joints. Proximal calf band, anterior tibial strap, and footplate were inspected. Minor distal trimline adjustments performed to optimize shoe fit and toe clearance. Gait analysis demonstrated immediate correction of foot drop, smooth heel-to-toe progression, and restored swing phase clearance without joint buckle or hyperextension.\n\nMedical Necessity:\nThe custom articulated AFO is reasonable and medically necessary to assist ankle dorsiflexion during swing phase, prevent foot drop, resist hazardous plantarflexion, maintain coronal subtalar stability, improve gait symmetry, and prevent fall-related trauma during community ambulation.\n\nPatient Education & Compliance:\nHe/she was educated on proper donning with shoe horn, progressive break-in protocol (1 hour increments daily), footwear matching, and daily skin checks over bony landmarks. Follow-up scheduled in 2 weeks.",
+    "text": "Pt. was seen at the North/South location for custom Left/Right articulated AFO delivery. Device was custom fabricated from patient model with {Joint Type: Plantarflexion Stop / Free Motion / Dorsiflexion Assist} ankle joints. He/she was fit with the new Custom AFO. The custom brace is reasonable and necessary to support the ankle joint in frontal and coronal planes, assist dorsiflexion during swing phase, prevent foot drop tripping falls, support medial longitudinal arch, and maintain proper hindfoot alignment during stance phase. Minor footplate trimming adjustments made for shoe fit. No pressure areas noted. Instructed on proper donning/doffing, progressive wearing schedule (1 hr/day increase), and daily skin inspection.",
     "price": 1198.05,
     "category": "Foot & Ankle",
     "title": "AFO Articulated delivery",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
-  },
-  "custom-1771341757135": {
-    "id": "custom-1771341757135",
-    "lcodes": [],
-    "text": "Patient was seen at North/South office for Left/Right custom SMO evaluation. Gait analysis reveals severe pes planovalgus alignment and subtalar hypermobility of the Left/Right foot and ankle. Patient casted today in subtalar neutral position for custom supramalleolar orthosis to control calcaneal valgus and support medial longitudinal arch.",
-    "price": 0,
-    "category": "Foot & Ankle",
-    "title": "SMO evaluation",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-note-1764628290991": {
-    "id": "custom-note-1764628290991",
-    "lcodes": [
-      "A4467"
-    ],
-    "excludeAutoPrice": true,
-    "title": "Knee Sleeve",
-    "category": "Knee",
-    "price": 40,
-    "fabricationType": "prefab",
-    "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.",
-    "isTemplate": true
-  },
-  "custom-1775743637752": {
-    "id": "custom-1775743637752",
-    "lcodes": [],
-    "text": "Pt. seen at North/South office for delivery of Left/Right transtibial replacement socket. New carbon fiber custom socket mounted to existing prosthetic foot. Total surface bearing socket with shuttle lock pin suspension system. Patient ambulated comfortably over 300 ft. Instructed on skin inspection.",
-    "price": 0,
-    "category": "Foot & Ankle",
-    "title": "BK socket with lock delivery",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-1776120755962": {
-    "id": "custom-1776120755962",
-    "lcodes": [],
-    "text": "Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of _________. Items fit and delivered to replace worn consumables and maintain socket fit/suspension.",
-    "price": 0,
-    "category": "Foot & Ankle",
-    "title": "BK supplies delivery",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-note-1755785685531": {
-    "id": "custom-note-1755785685531",
-    "lcodes": [
-      "L1846"
-    ],
-    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL/OA), prevents hyperextension, and stabilizes knee joint during ambulation.",
-    "price": 1289.75,
-    "category": "Knee",
-    "title": "Custom Knee Brace Delivery",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-1776725026217": {
-    "id": "custom-1776725026217",
-    "lcodes": [
-      "L1907",
-      "L2820",
-      "L2275"
-    ],
-    "text": "Pt. was seen at the North/South location for Left/Right custom SMO delivery. Custom molded supramalleolar orthosis fit to patient's Left/Right foot. Brace stabilizes calcaneus in neutral, supports medial longitudinal arch, and prevents coronal/transverse foot collapse during ambulation. Wearing schedule and skin care reviewed.",
-    "price": 1003.31,
-    "category": "Foot & Ankle",
-    "title": "SMO Delivery",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
   },
   "afo-az-eval": {
     "id": "afo-az-eval",
@@ -651,71 +469,18 @@
     "excludeAutoPrice": false,
     "isTemplate": true
   },
-  "custom-1776870240723": {
-    "id": "custom-1776870240723",
-    "lcodes": [
-      "L1971"
-    ],
-    "text": "Pt. seen at North/South office for delivery of Left/Right Mackie dynamic stretching ankle brace. Fit with size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Mackie brace. Provides low-load prolonged stretch to plantarflexors/Achilles to increase ankle dorsiflexion ROM and manage contracture.",
-    "price": 582.34,
-    "category": "Foot & Ankle",
-    "title": "Mackie ankle delivery",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-1778525470960": {
-    "id": "custom-1778525470960",
-    "lcodes": [],
-    "text": "Pt. seen at North/South office for delivery of custom Scoliosis TLSO. Custom molded thoracic-lumbar-sacral orthosis donned in centered position. Trimlines modified for comfort and arm clearance. TLSO is reasonable and necessary to correct spinal curvature, prevent progression of idiopathic scoliosis, and stabilize spine.",
-    "price": 0,
-    "category": "Spine / LSO",
-    "title": "Scoliosis TLSO",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "custom-note-1752097421797": {
-    "id": "custom-note-1752097421797",
-    "lcodes": [],
-    "text": "Pt. was seen at the North/South location for custom foot orthotics evaluation. Presents with {Diagnosis: pes planovalgus deformity/plantar fasciitis/heel spur(s)/cavus arches/metatarsal pain/arthritis} in left/right foot/feet.\n\nCustom foot orthotics will help to distribute weight more evenly throughout the heel, longitudinal arches, and transverse arch of the foot.  They will act to help reduce foot/ankle pain help to increase activity levels.  They will also help to provide a more neutral alignment from the ground up through the knees and hips to help reduce long term problems farther up the biomechanical chain.  \n\nNormally wears shoe size {Shoe Size: 4/5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: B/D/W/XW/XXW/2E/4E/5E/6E/9E}. Impressions were taken today for custom molded functional inserts. Custom functional foot orthotics will be ordered for delivery in 4 weeks.  They will consist of {Support material: Polypro/carbon fiber/soft puff/firm puff/cork} supportive base material with {Top cover: spenco/plastizote/puff/leather/poron/p-cell} top covers, {Heel posting: neutral posting/medial posting/lateral posting}.\n\nF/up 4 weeks for delivery and PRN.",
-    "price": 0,
-    "category": "Foot & Ankle",
-    "title": "Custom Inserts Eval",
-    "fabricationType": "custom",
-    "excludeAutoPrice": false,
-    "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true
-  },
-  "custom-1782340964327": {
-    "id": "custom-1782340964327",
-    "lcodes": [
-      "L2999"
-    ],
-    "excludeAutoPrice": true,
-    "title": "Shoe/heel lift LLD",
-    "category": "Foot & Ankle",
-    "price": 27,
-    "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. Lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.",
-    "isTemplate": true
-  },
   "ulnar-gutter": {
     "id": "ulnar-gutter",
     "lcodes": [
       "L3807"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a left/right rigid Ulnar Gutter Wrist/Hand Orthosis from {Brand / Manufacturer: Medspec / Hely & Weber / } for {Indication: 4th or 5th Metacarpal Fracture (Boxer's Fracture) / 4th or 5th Proximal/Middle Phalanx Fracture / Ulnar Hand Soft Tissue Trauma}.\n\nClinical Rationale:\nPatient presents with an acute fracture or severe ligamentous injury to the ulnar column of the hand (digits 4 and 5) requiring rigid immobilization in the intrinsic-plus position of function to maintain anatomical reduction and prevent rotational deformity.\n\nFitting & Position of Function:\nHe/she was fit with a size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} left/right rigid ulnar gutter splint. Thermoplastic/aluminum gutter shell was contoured along the ulnar border of the forearm, wrist, and 4th/5th rays. The orthosis was adjusted to immobilize the wrist in 15–20 degrees extension, MCP joints 4 and 5 in 70–90 degrees flexion, and PIP/DIP joints in extension (intrinsic-plus / safe position). Radial digits (thumb, index, middle) verified completely free for functional grasp.\n\nMedical Necessity:\nThe ulnar gutter orthosis is reasonable and medically necessary to immobilize the 4th and 5th metacarpals and phalanges in functional position, prevent angular/rotational displacement of fracture fragments, relieve acute pain, and promote osseous union.\n\nCare Instructions:\nHe/she was instructed on strap management, keeping the extremity elevated to control swelling, monitoring digital circulation and sensation, and routine skin inspection. Follow-up with treating physician.",
+    "text": "Patient was seen at North/South office for fitting and delivery of a Left/Right ulnar gutter wrist/hand splint. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ulnar gutter splint molded to hand/wrist. Device immobilizes 4th and 5th metacarpals/digits in position of function to heal fracture/injury.",
     "price": 282.7,
     "category": "Upper Extremity",
     "title": "Ulnar gutter splint",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "afo-arizona-del": {
@@ -723,17 +488,15 @@
     "lcodes": [
       "L1940",
       "L2820",
-      "L2330"
+      "L2275"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a custom-molded Left/Right Arizona-type Ankle-Foot Orthosis (AFO) custom fabricated from a positive anatomical model of the patient's lower extremity for {Indication: Posterior Tibial Tendon Dysfunction / Severe Subtalar and Talonavicular Osteoarthritis / Chronic Hindfoot Valgus Deformity / Charcot Neuroarthropathy}.\n\nClinical Justification & Prior Conservative Measures:\nPatient exhibits severe medial longitudinal arch collapse, fixed/flexible calcaneal valgus, subtalar hypermobility, and severe midfoot/rearfoot pain that severely limits functional ambulation. Prior conservative therapies (including OTC insoles, prefabricated ankle braces, physical therapy, and NSAIDs) have failed to control joint collapse and pain.\n\nTechnical Inspection & Fitting:\nThe custom AFO was fabricated with a molded thermoplastic shell, total-contact medical grade leather lining, and high medial/lateral longitudinal arch reinforcements. The device was donned and laced securely. Trimlines around the malleoli and navicular were inspected to ensure total surface bearing contact without focal shear. Bony prominences were fully relieved. Subtalar joint was held securely in neutral anatomical alignment. Patient trialed the device in extra-depth footwear across 200 feet of in-office ambulation with marked reduction in pain and elimination of pathological pronation collapse.\n\nMedical Necessity:\nThe custom molded AFO is reasonable and medically necessary to immobilize and stabilize the subtalar, talocalcaneal, and midtarsal joints in the sagittal, coronal, and transverse planes, offload the degenerated posterior tibial tendon, realign the skeletal structure of the foot/ankle, prevent progressive deformity collapse, and restore ambulatory function.\n\nPatient Instructions:\nHe/she was provided with verbal and written use/care instructions, taught proper donning/lacing technique, and placed on a strict break-in schedule (increasing wear by 1 hour daily). Instructed to inspect skin daily for redness. Scheduled follow-up in 2-3 weeks.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a custom Left/Right Arizona AFO brace. He/she was fit with a custom-molded plastic/leather Arizona AFO fabricated from patient model. The custom device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in sagittal and coronal planes, eliminate severe subtalar joint motion and pain, correct valgus/varus deformity, and prevent joint collapse during ambulation. He/she was provided with verbal and written care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule (1-2 hours per day initially) while inspecting skin daily.",
     "price": 1198.68,
     "category": "Foot & Ankle",
     "title": "AFO Arizona Delivery",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "carbon-plate": {
@@ -754,29 +517,25 @@
     "lcodes": [
       "L1845"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right single/double upright Osteoarthritis Unloader Knee Orthosis from {Brand: Breg / DonJoy / Ossur / Townsend} for {Indication: Severe Unicompartmental Medial Knee Osteoarthritis / Severe Unicompartmental Lateral Knee Osteoarthritis / Post-Meniscectomy Chondral Defect}.\n\nClinical & Radiographic Documentation:\nPatient presents with chronic, debilitating unicompartmental joint pain, varus/valgus deformity, and joint space narrowing confirmed on weight-bearing radiographs. Prior conservative treatments (including physical therapy, NSAIDs, intra-articular injections, and unloader sleeves) have failed to provide adequate functional pain relief.\n\nBiomechanical Fitting & Correction Mechanism:\nHe/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL}  {Brand: Breg / DonJoy / Ossur / Townsend} {Model: Fusion OA/Rebel Reliever/Oadjuster/Z12/Z13/Unireliever} rigid unloader knee brace. Aircraft aluminum uprights were contoured to patient's thigh and calf anatomy. Dynamic corrective leverage strapping and condylar pads were adjusted to apply a 3-point pressure moment, offloading the affected Medial/Lateral compartment and opening joint space during weight-bearing. Condyle pads and non-slip liners aligned to ensure hinge tracking matches anatomical knee center. In-office ambulation trialed across 200 feet; patient reported reduction in focal joint compartment pain and improved gait stability.\n\nMedical Necessity:\nThe unloader knee orthosis is reasonable and medically necessary to reduce compressive mechanical loads across the damaged Medial/Lateral knee compartment, stabilize the joint in the coronal plane, decrease arthritic pain, and improve functional ambulatory capacity during daily living activities.\n\nWear Protocol & Education:\nHe/she was educated on proper strap sequencing, gradual wearing progression (start with 1-2 hours daily, building to full daily weight-bearing tolerance), and skin inspection under condyle pads and cuffs. Verbal/written instructions provided; follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right double upright unloader knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} unloader brace. Condylar pads and dynamic leverage straps adjusted to offload the Medial/Lateral compartment. Unloader knee brace is reasonable and necessary to reduce compartment joint compression, decrease osteoarthritis pain, and improve functional ambulation. Progressive wearing schedule instructed.",
     "price": 970.06,
     "category": "Knee",
     "title": "Knee Unloader delivery",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "lso-measurement": {
     "id": "lso-measurement",
     "lcodes": [],
-    "text": "Pt. seen at North/South office for LSO measurement and trial fitting. Waist/hip circumferences measured [abdominal measurement] ; fit today with trial LSO size {Size: 0/.5/1/1.5/2/2.5/3/3.5/4/4.5/5/5.5/6}. He/She. was educated on donning, doffing, use, and care of orthosis.  Fit was appropriate today.  LSO will be delivered at hospital.",
+    "text": "Pt. seen at North/South office for LSO measurement and trial fitting. Waist/hip circumferences measured; fit with trial LSO size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL}. Educated on trunk stabilization and donning procedures.",
     "price": 0,
     "category": "Spine / LSO",
     "title": "LSO Measure- Penrose",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "patellar-stabilizing-brace": {
@@ -824,15 +583,13 @@
     "lcodes": [
       "L1832"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right post-operative Range of Motion (ROM) telescoping knee orthosis (TScope) from Breg for {Indication: Post-Operative ACL/PCL Reconstruction / Meniscal Repair Immobilization / Patellar Tendon Repair / Tibial Plateau Fracture Post-Op Care / Acute Multi-Ligament Knee Trauma/post operative rehabilitation}.\n\nClinical Indications & Post-Surgical Protocol:\nPatient requires rigid sagittal and coronal plane external knee stabilization and controlled ROM restriction to protect surgically repaired ligamentous/tendinous tissues and prevent weight-bearing joint collapse.\n\nTechnical Fitting & ROM Calibration:\nHe/she was fit with a Breg Tscope telescoping post-op knee brace. Bilateral aluminum upright lengths were adjusted to patient's anatomical thigh and calf lengths. Bars were also contoured for appropriate fit.  Foam padding and strap closures were contoured and tensioned circumferentially. Dual-axis ROM hinges were calibrated and locked per orthopedic surgeon's explicit protocol to:{ROM: locked in extension/0-30 degrees extension/0-60 degrees extension/0-90 degrees extension}. Hinge drop-lock engaged and verified.\n\nMedical Necessity:\nThe adjustable ROM knee orthosis is reasonable and medically necessary to restrict knee flexion/extension within strict therapeutic limits, provide rigid coronal/sagittal plane stability, prevent hyperextension/buckling, protect surgical graft/repair sites, and permit safe early rehabilitation.\n\nPatient Education:\nHe/she was instructed on proper hinge locking mechanisms, strap tightening sequence, sleep positioning, and skin inspection. Advised never to alter ROM hinge pin settings without MD clearance. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right TScope ROM post-operative knee orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} telescoping knee brace. Hinge stops set to prescribed ROM limits. Device is reasonable and necessary to immobilize/protect knee joint, control extension/flexion limits post-surgery, and allow progressive rehabilitation.",
     "price": 698.63,
     "category": "Knee",
     "title": "Tscope ROM Knee brace",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "custom-1785437208449": {
@@ -843,10 +600,12 @@
     "lcodes": [
       "L2999"
     ],
-    "text": "Pt. was fit with even up leveling device to compensate for walking boot sole elevation.  Pt. was fit with size ____ even up.  Pt. was educated on use/care of device.  Fit was appropriate.  F/up PRN.",
+    "text": "Pt. was fit with even up leveling device to compensate for walking boot sole elevation.  Pt. was fit with size {Size:/Small/Med/Large/XL}even up.  Pt. was educated on use/care of device.  Fit was appropriate.  F/up PRN.",
+    "excludeAutoPrice": true,
     "isTemplate": false,
     "isCustomEdited": true,
-    "excludeAutoPrice": true
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "custom-1786047844569": {
     "id": "custom-1786047844569",
@@ -987,6 +746,202 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true
   },
+  "custom-1787583412902": {
+    "id": "custom-1787583412902",
+    "title": "Diabetic shoe/Toe filler evaluation",
+    "price": 0,
+    "category": "Lower Prosthetics",
+    "lcodes": [],
+    "text": "Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History & Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination & Biomechanical Assessment:\n\nResidual Limb & Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment & Contralateral Foot: Physical examination reveals {Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions & Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan & Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting >20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}.",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
+  },
+  "custom-1787665453088": {
+    "id": "custom-1787665453088",
+    "title": "Generic orthosis adjustment",
+    "price": 29.95,
+    "category": "General",
+    "lcodes": [
+      "L4205"
+    ],
+    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Ankle-Foot Orthosis (AFO) / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Abduction Sling/ Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
+  },
+  "met-pad-bar": {
+    "id": "met-pad-bar",
+    "lcodes": [
+      "L2999"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Met pad/bar",
+    "category": "Foot & Ankle",
+    "price": 25,
+    "fabricationType": "custom",
+    "text": "Pt. seen at North/South office for delivery of Left/Right metatarsal pad/bar modification. Device custom positioned on foot orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.",
+    "isTemplate": true
+  },
+  "compression-glove": {
+    "id": "compression-glove",
+    "lcodes": [
+      "L2999"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Compression glove",
+    "category": "Upper Extremity",
+    "price": 15,
+    "fabricationType": "prefab",
+    "text": "Pt. seen at North/South office for fitting and delivery of Left/Right compression glove. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression glove. Device is reasonable and necessary to provide therapeutic edema control, manage swelling, and reduce pain in hand/digits.",
+    "isTemplate": true
+  },
+  "afo-solid-delivery": {
+    "id": "afo-solid-delivery",
+    "lcodes": [
+      "L1960",
+      "L2820"
+    ],
+    "text": "Pt. was seen at the North/South location for solid custom Left/Right AFO delivery. Device was custom molded from patient model with soft interface lining. Fit with the new Custom Solid AFO. The brace is reasonable and necessary to lock the ankle in neutral, prevent foot drop, clear toes during swing, eliminate ankle instability in coronal/sagittal planes, and prevent falls. Minor trimline adjustments performed. Progressive wearing schedule and skin checks instructed.",
+    "price": 770,
+    "category": "Foot & Ankle",
+    "title": "AFO Solid Delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "afo-dafo-delivery": {
+    "id": "afo-dafo-delivery",
+    "lcodes": [
+      "L1970",
+      "L2210",
+      "L2210",
+      "L2820",
+      "L2280"
+    ],
+    "text": "Patient with history of [Diagnosis] was seen at the North/South location for custom articulated DAFO delivery for Left/Right leg. Custom molded to patient model with DF assist joints and molded heel cup. Supports ankle in frontal plane, prevents inversion/eversion collapse, assists swing phase clearance, and controls pes planovalgus alignment. Fit verified, donning instructed.",
+    "price": 1718.38,
+    "category": "Foot & Ankle",
+    "title": "AFO DAFO delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "tayco-brace-delivery": {
+    "id": "tayco-brace-delivery",
+    "lcodes": [
+      "L1971"
+    ],
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Tayco over-the-shoe ankle orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Tayco brace. External uprights and straps adjusted over patient footwear. The ankle orthosis is reasonable and necessary to provide coronal plane joint stability, prevent painful ankle sprain recurrence, and allow functional ambulation.",
+    "price": 582.34,
+    "category": "Foot & Ankle",
+    "title": "Tayco brace delivery",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "smo-evaluation": {
+    "id": "smo-evaluation",
+    "lcodes": [],
+    "text": "Patient was seen at North/South office for Left/Right custom SMO evaluation. Gait analysis reveals severe pes planovalgus alignment and subtalar hypermobility of the Left/Right foot and ankle. Patient casted today in subtalar neutral position for custom supramalleolar orthosis to control calcaneal valgus and support medial longitudinal arch.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "SMO evaluation",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "bk-socket-lock-delivery": {
+    "id": "bk-socket-lock-delivery",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for delivery of Left/Right transtibial replacement socket. New carbon fiber custom socket mounted to existing prosthetic foot. Total surface bearing socket with shuttle lock pin suspension system. Patient ambulated comfortably over 300 ft. Instructed on skin inspection.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "BK socket with lock delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "bk-supplies-delivery": {
+    "id": "bk-supplies-delivery",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of _________. Items fit and delivered to replace worn consumables and maintain socket fit/suspension.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "BK supplies delivery",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "smo-delivery": {
+    "id": "smo-delivery",
+    "lcodes": [
+      "L1907",
+      "L2820",
+      "L2275"
+    ],
+    "text": "Pt. was seen at the North/South location for Left/Right custom SMO delivery. Custom molded supramalleolar orthosis fit to patient's Left/Right foot. Brace stabilizes calcaneus in neutral, supports medial longitudinal arch, and prevents coronal/transverse foot collapse during ambulation. Wearing schedule and skin care reviewed.",
+    "price": 1003.31,
+    "category": "Foot & Ankle",
+    "title": "SMO Delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "mackie-ankle-delivery": {
+    "id": "mackie-ankle-delivery",
+    "lcodes": [
+      "L1971"
+    ],
+    "text": "Pt. seen at North/South office for delivery of Left/Right Mackie dynamic stretching ankle brace. Fit with size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Mackie brace. Provides low-load prolonged stretch to plantarflexors/Achilles to increase ankle dorsiflexion ROM and manage contracture.",
+    "price": 582.34,
+    "category": "Foot & Ankle",
+    "title": "Mackie ankle delivery",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "scoliosis-tlso": {
+    "id": "scoliosis-tlso",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for delivery of custom Scoliosis TLSO. Custom molded thoracic-lumbar-sacral orthosis donned in centered position. Trimlines modified for comfort and arm clearance. TLSO is reasonable and necessary to correct spinal curvature, prevent progression of idiopathic scoliosis, and stabilize spine.",
+    "price": 0,
+    "category": "Spine / LSO",
+    "title": "Scoliosis TLSO",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "shoe-lift-lld": {
+    "id": "shoe-lift-lld",
+    "lcodes": [
+      "L2999"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Shoe/heel lift LLD",
+    "category": "Foot & Ankle",
+    "price": 27,
+    "fabricationType": "custom",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. Lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.",
+    "isTemplate": true
+  },
+  "custom-foot-orthotics-delivery": {
+    "id": "custom-foot-orthotics-delivery",
+    "lcodes": [
+      "L3020"
+    ],
+    "text": "Patient was seen at the North/South office for Left/Right custom functional foot orthotics (FO) delivery due to [Diagnosis]. Fit today with custom molded foot orthotic(s) fabricated from patient model. Inserts support longitudinal arches, distribute plantar pressures, correct rearfoot alignment, and relieve ambulation pain. Break-in schedule provided.",
+    "price": 500,
+    "category": "Foot & Ankle",
+    "title": "Custom foot orthotics delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
   "knee-immobilizer": {
     "id": "knee-immobilizer",
     "lcodes": [
@@ -998,7 +953,8 @@
     "title": "Knee Immobilizer",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "userCustomizedPrice": false
   },
   "afo-carbon-del": {
     "id": "afo-carbon-del",
@@ -1097,33 +1053,256 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true
   },
-  "custom-1787583412902": {
-    "id": "custom-1787583412902",
-    "title": "Diabetic shoe/Toe filler evaluation",
-    "price": 0,
-    "category": "Lower Prosthetics",
-    "lcodes": [],
-    "text": "Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History & Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination & Biomechanical Assessment:\n\nResidual Limb & Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment & Contralateral Foot: Physical examination reveals {Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions & Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan & Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting >20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}.",
+  "custom-inserts-eval": {
+    "id": "custom-inserts-eval",
+    "lcodes": [
+      "L3020",
+      "L3020"
+    ],
+    "text": "Pt. was seen at the North/South location for custom Left/Right foot orthotics evaluation. Presents with severe foot/ankle pain during standing/walking. Normally wears shoe size {Shoe Size: 5/6/7/8/9/10/11/12/13/14/15}. Physical exam shows pes planus arch collapse and hindfoot valgus. Impression taken today for custom molded functional inserts.",
+    "price": 500,
+    "category": "Foot & Ankle",
+    "title": "Custom Inserts Eval",
+    "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": false,
+    "isTemplate": true
+  },
+  "custom-knee-brace-delivery": {
+    "id": "custom-knee-brace-delivery",
+    "lcodes": [
+      "L1846"
+    ],
+    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL/OA), prevents hyperextension, and stabilizes knee joint during ambulation.",
+    "price": 1289.75,
+    "category": "Knee",
+    "title": "Custom Knee Brace Delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "knee-sleeve": {
+    "id": "knee-sleeve",
+    "lcodes": [
+      "A4467"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Knee Sleeve",
+    "category": "Knee",
+    "price": 40,
+    "fabricationType": "prefab",
+    "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.",
+    "isTemplate": true
+  },
+  "custom-1768324613082": {
+    "id": "custom-1768324613082",
+    "lcodes": [
+      "L2999"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Met pad/bar",
+    "category": "Foot & Ankle",
+    "price": 25,
+    "fabricationType": "custom",
+    "text": "Pt. seen at North/South office for delivery of Left/Right metatarsal pad/bar modification. Device custom positioned on foot orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.",
+    "isTemplate": true
+  },
+  "custom-1768346959331": {
+    "id": "custom-1768346959331",
+    "lcodes": [
+      "L2999"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Compression glove",
+    "category": "Upper Extremity",
+    "price": 15,
+    "fabricationType": "prefab",
+    "text": "Pt. seen at North/South office for fitting and delivery of Left/Right compression glove. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression glove. Device is reasonable and necessary to provide therapeutic edema control, manage swelling, and reduce pain in hand/digits.",
+    "isTemplate": true
+  },
+  "custom-1768422111071": {
+    "id": "custom-1768422111071",
+    "lcodes": [
+      "L1960",
+      "L2820"
+    ],
+    "text": "Patient was seen at the North/South location for fitting and delivery of a custom-molded Left/Right Solid Ankle-Foot Orthosis (AFO) custom fabricated from patient model with soft interface lining for {Indication: Severe Ankle/Subtalar Instability / Spastic Equinovarus / Drop Foot with Knee Hyperextension / Charcot Neuroarthropathy / Flaccid Paralysis of Lower Extremity/ severe arthritis}.\n\nClinical Justification:\nPatient demonstrates{Diagnosis: severe multidirectional ankle instability/ absent active dorsiflexion and plantarflexion/ spastic tone/extensor thrust/ severe knee instability during stance phase (recurvatum/buckling)} that cannot be controlled with an articulated or flexible device.  {+ Atypical limb size: Pt. has atypical limb shape/size that can only be fit properly with a device that is custom made to his/her shape.}\n\nTechnical Fitting & Structural Alignment:\nThe custom solid AFO was molded to lock the ankle rigidly in {Ankle Position: neutral 90 degrees / 2 degrees dorsiflexion} with rigid anterior/posterior trimlines encompassing the malleoli. Padded tibial strap and instep retention straps adjusted. Shell trimmed and smoothed for comfortable shoe integration. Dynamic gait evaluation confirmed rigid coronal/sagittal plane locking, complete toe clearance in swing phase, and stability of the knee extension moment in stance.\n\nMedical Necessity:\nThe custom solid AFO is reasonable and medically necessary to eliminate motion in all planes at the ankle and subtalar joints, correct equinovarus deformity, manage ground reaction forces to stabilize the knee during weight-bearing, and allow safe household and community ambulation.\n\nEducation & Break-in:\nHe/she was instructed on a structured break-in schedule (1-2 hours per day initially), proper sock and footwear pairing, and daily skin inspection over the fibular head, navicular, and malleoli. Follow-up PRN in 2-3 weeks.",
+    "price": 770,
+    "category": "Foot & Ankle",
+    "title": "AFO Solid Delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true
   },
-  "custom-1787665453088": {
-    "id": "custom-1787665453088",
-    "title": "General orthosis asjustment",
-    "price": 29.95,
-    "category": "General",
+  "custom-note-1737583188590": {
+    "id": "custom-note-1737583188590",
     "lcodes": [
-      "L4205"
+      "L3020"
     ],
-    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Ankle-Foot Orthosis (AFO) / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Abduction Sling/ Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for Left/Right custom functional foot orthotics (FO) delivery due to [Diagnosis]. Fit today with custom molded foot orthotic(s) fabricated from patient model. Inserts support longitudinal arches, distribute plantar pressures, correct rearfoot alignment, and relieve ambulation pain. Break-in schedule provided.",
+    "price": 500,
+    "category": "Foot & Ankle",
+    "title": "Custom foot orthotics delivery",
+    "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": false,
+    "isTemplate": true
+  },
+  "custom-1769624127547": {
+    "id": "custom-1769624127547",
+    "lcodes": [
+      "L1970",
+      "L2210",
+      "L2210",
+      "L2820",
+      "L2280"
+    ],
+    "text": "Patient with history of [Diagnosis] was seen at the North/South location for custom articulated DAFO delivery for Left/Right leg. Custom molded to patient model with DF assist joints and molded heel cup. Supports ankle in frontal plane, prevents inversion/eversion collapse, assists swing phase clearance, and controls pes planovalgus alignment. Fit verified, donning instructed.",
+    "price": 1718.38,
+    "category": "Foot & Ankle",
+    "title": "AFO DAFO delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1770154434611": {
+    "id": "custom-1770154434611",
+    "lcodes": [
+      "L1971"
+    ],
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Tayco over-the-shoe ankle orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Tayco brace. External uprights and straps adjusted over patient footwear. The ankle orthosis is reasonable and necessary to provide coronal plane joint stability, prevent painful ankle sprain recurrence, and allow functional ambulation.",
+    "price": 582.34,
+    "category": "Foot & Ankle",
+    "title": "Tayco brace delivery",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1771341757135": {
+    "id": "custom-1771341757135",
+    "lcodes": [],
+    "text": "Patient was seen at North/South office for Left/Right custom SMO evaluation. Gait analysis reveals severe pes planovalgus alignment and subtalar hypermobility of the Left/Right foot and ankle. Patient casted today in subtalar neutral position for custom supramalleolar orthosis to control calcaneal valgus and support medial longitudinal arch.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "SMO evaluation",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-note-1764628290991": {
+    "id": "custom-note-1764628290991",
+    "lcodes": [
+      "A4467"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Knee Sleeve",
+    "category": "Knee",
+    "price": 40,
+    "fabricationType": "prefab",
+    "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.",
+    "isTemplate": true
+  },
+  "custom-1775743637752": {
+    "id": "custom-1775743637752",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for delivery of Left/Right transtibial replacement socket. New carbon fiber custom socket mounted to existing prosthetic foot. Total surface bearing socket with shuttle lock pin suspension system. Patient ambulated comfortably over 300 ft. Instructed on skin inspection.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "BK socket with lock delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1776120755962": {
+    "id": "custom-1776120755962",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of _________. Items fit and delivered to replace worn consumables and maintain socket fit/suspension.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "BK supplies delivery",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-note-1755785685531": {
+    "id": "custom-note-1755785685531",
+    "lcodes": [
+      "L1846"
+    ],
+    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL/OA), prevents hyperextension, and stabilizes knee joint during ambulation.",
+    "price": 1289.75,
+    "category": "Knee",
+    "title": "Custom Knee Brace Delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1776725026217": {
+    "id": "custom-1776725026217",
+    "lcodes": [
+      "L1907",
+      "L2820",
+      "L2275"
+    ],
+    "text": "Pt. was seen at the North/South location for Left/Right custom SMO delivery. Custom molded supramalleolar orthosis fit to patient's Left/Right foot. Brace stabilizes calcaneus in neutral, supports medial longitudinal arch, and prevents coronal/transverse foot collapse during ambulation. Wearing schedule and skin care reviewed.",
+    "price": 1003.31,
+    "category": "Foot & Ankle",
+    "title": "SMO Delivery",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1776870240723": {
+    "id": "custom-1776870240723",
+    "lcodes": [
+      "L1971"
+    ],
+    "text": "Pt. seen at North/South office for delivery of Left/Right Mackie dynamic stretching ankle brace. Fit with size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Mackie brace. Provides low-load prolonged stretch to plantarflexors/Achilles to increase ankle dorsiflexion ROM and manage contracture.",
+    "price": 582.34,
+    "category": "Foot & Ankle",
+    "title": "Mackie ankle delivery",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-1778525470960": {
+    "id": "custom-1778525470960",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for delivery of custom Scoliosis TLSO. Custom molded thoracic-lumbar-sacral orthosis donned in centered position. Trimlines modified for comfort and arm clearance. TLSO is reasonable and necessary to correct spinal curvature, prevent progression of idiopathic scoliosis, and stabilize spine.",
+    "price": 0,
+    "category": "Spine / LSO",
+    "title": "Scoliosis TLSO",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "custom-note-1752097421797": {
+    "id": "custom-note-1752097421797",
+    "lcodes": [],
+    "text": "Pt. was seen at the North/South location for custom foot orthotics evaluation. Presents with {Diagnosis: pes planovalgus deformity/plantar fasciitis/heel spur(s)/cavus arches/metatarsal pain/arthritis} in left/right foot/feet.\n\nCustom foot orthotics will help to distribute weight more evenly throughout the heel, longitudinal arches, and transverse arch of the foot.  They will act to help reduce foot/ankle pain help to increase activity levels.  They will also help to provide a more neutral alignment from the ground up through the knees and hips to help reduce long term problems farther up the biomechanical chain.  \n\nNormally wears shoe size {Shoe Size: 4/5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: B/D/W/XW/XXW/2E/4E/5E/6E/9E}. Impressions were taken today for custom molded functional inserts. Custom functional foot orthotics will be ordered for delivery in 4 weeks.  They will consist of {Support material: Polypro/carbon fiber/soft puff/firm puff/cork} supportive base material with {Top cover: spenco/plastizote/puff/leather/poron/p-cell} top covers, {Heel posting: neutral posting/medial posting/lateral posting}.\n\nF/up 4 weeks for delivery and PRN.",
+    "price": 0,
+    "category": "Foot & Ankle",
+    "title": "Custom Inserts Eval",
+    "fabricationType": "custom",
+    "excludeAutoPrice": false,
+    "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true
+  },
+  "custom-1782340964327": {
+    "id": "custom-1782340964327",
+    "lcodes": [
+      "L2999"
+    ],
+    "excludeAutoPrice": true,
+    "title": "Shoe/heel lift LLD",
+    "category": "Foot & Ankle",
+    "price": 27,
+    "fabricationType": "custom",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. Lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.",
+    "isTemplate": true
   },
   "forearm-splint": {
     "id": "forearm-splint",
