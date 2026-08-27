@@ -211,8 +211,11 @@
     "category": "Foot & Ankle",
     "price": 27,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Fit with a {Thickness: 1/8 inch / 1/4 inch / 3/8 inch / 1/2 inch / 5/8 inch / 3/4 inch / 1 inch} lift. Lift is reasonable and necessary to correct leg length discrepancy, reduce pelvis tilting, and reduce stress on spinal and hip joints during ambulation.",
-    "isTemplate": true
+    "text": "Patient was seen at the North/South office for evaluation, fitting, and delivery of a Left/Right heel lift to support healing and offload posterior compartment structures.\n\nClinical Rationale & Indication:\nPatient presents secondary to {Indication: Post-Operative Achilles Tendon Repair / Acute Achilles Tendon Rupture (Non-Surgical Protocol) / Insertional Achilles Tendinitis / Midportion Achilles Tendinopathy / Achilles Paratenonitis / Retrocalcaneal Bursitis}. The heel lift is medically necessary to place the ankle in controlled plantarflexion, relax tension on the gastrocnemius-soleus complex, protect the healing tendon repair from sudden passive stretch, reduce inflammatory strain, and facilitate pain-free weight-bearing ambulation.\n\nObjective Assessment & Device Placement:\nDevice Fit: Fit with a {Lift Thickness: ⅛\" (3mm) / ¼\" (6mm) / ⅜\" (9mm) / ½\" (12mm) / ⅝\" (15mm) / ¾\" (18mm) / [Custom Thickness]} {Lift Placement: firm cork-leather heel lift / multi-layer stackable Achilles wedge / viscoelastic silicone heel cushion / full-sole tapered shoe modification} placed in Left/Right {Footwear Type: athletic shoe / rigid walking boot / post-op shoe / daily footwear}.\n{+ Contralateral Compensation: Matching lift placed on contralateral side to prevent pelvic obliquity and maintain leg length balance.}\n{+ Stepped Reduction Plan: Multi-layer wedge system utilized for gradual stepped reduction of heel height per surgical rehabilitation protocol.}\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Ambulation evaluated in clinic; patient demonstrated reduced tension at the posterior ankle, improved step length, and a stabilized stance phase without antalgic compensation.\n\nPatient Education: Patient was instructed on proper in-shoe seating, wear schedule {Wear Schedule: during all weight-bearing activities / per post-op orthopedic protocol}, avoidance of barefoot walking, and daily skin checks over the calcaneus. {+ Caregiver Present: Caregiver was present and instructed on proper wedge removal sequencing and footwear safety.}\n\nDevice delivered in proper working order. All questions answered and patient verbalized complete understanding. Follow-up PRN.",
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "simple-sling": {
     "id": "simple-sling",
@@ -352,13 +355,15 @@
     "lcodes": [
       "L3760"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM elbow orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid elbow brace with adjustable ROM hinges. Device is reasonable and necessary to immobilize/stabilize elbow joint, control extension/flexion limits, protect ligamentous healing, and allow progressive rehabilitation.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right X-act Range of Motion (ROM) Elbow Orthosis from Donjoy for {Indication: Post-Operative Distal Biceps Tendon Repair / Elbow Dislocation / Collateral Ligament Reconstruction / Olecranon Fracture Post-Op / Joint Contracture Management/Post surgical use}.\n\nClinical Context & Need for Controlled Motion:\nPatient requires rigid external stabilization to protect repaired elbow ligamentous/tendinous structures, prevent joint subluxation, and control extension/flexion excursion within safe therapeutic boundaries.\n\nFitting & ROM Calibration:\nHe/she was fit with a customized rigid elbow brace. Telescoping humeral and forearm aluminum uprights were contoured to limb contours. Padded arm cuffs and crossover straps were secured. Bilateral ROM hinges were calibrated and locked per orthopedic protocol to: {ROM setting: Locked at 90/free flexion to 90 stop/free extension to 90 degree stop/ locked in extension/full range of motion}. Neck/shoulder suspension sling attached to assist with upper extremity weight support.\n\nMedical Necessity:\nThe adjustable ROM elbow orthosis is reasonable and medically necessary to immobilize/restrict elbow joint motion across prescribed arcs, prevent destructive hyperextension, protect surgical repairs, and allow progressive tissue remodeling.\n\nPatient Instructions:\nEducated on donning/doffing, hinge lock engagement, sling support, and skin monitoring over the  epicondyles. Advised not to adjust hinge pin settings without physician authorization. Follow-up PRN.",
     "price": 565.47,
     "category": "Upper Extremity",
     "title": "Elbow ROM",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "arch-rivals": {
@@ -784,8 +789,11 @@
     "category": "Foot & Ankle",
     "price": 25,
     "fabricationType": "custom",
-    "text": "Pt. seen at North/South office for delivery of Left/Right metatarsal pad/bar modification. Device custom positioned on foot orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.",
-    "isTemplate": true
+    "text": "Pt. seen at North/South office for delivery of left/right {Metpad/bar: met bar(s)/met pad(s)}modification. Device custom positioned on foot {existing orthotic: existing facory/arch rivals/forms/custom}orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.",
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "compression-glove": {
     "id": "compression-glove",
@@ -868,14 +876,21 @@
   },
   "bk-supplies-delivery": {
     "id": "bk-supplies-delivery",
-    "lcodes": [],
-    "text": "Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of _________. Items fit and delivered to replace worn consumables and maintain socket fit/suspension.",
-    "price": 0,
+    "lcodes": [
+      "L5679",
+      "L5679",
+      "L5679"
+    ],
+    "text": "Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of {+ 2x locking liners: 2 x locking liners}{+ 2 x cushion liners: , cushion liners x 2}{+ Suspension sleeves x 2: 2 x suspension sleeves}{+ single ply socks: , 6 x single ply socks}{+ Multi ply socks: , 6 x multi ply socks}{+ Liner liners: , 6 x liner liners}. Items fit and delivered to replace worn consumables and maintain socket fit/suspension.",
+    "price": 2318.85,
     "category": "Foot & Ankle",
     "title": "BK supplies delivery",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "smo-delivery": {
     "id": "smo-delivery",
@@ -964,7 +979,7 @@
     "lcodes": [
       "L1951"
     ],
-    "text": "Patient was seen at the North/South location for fitting and delivery of a Left/Right energy-storing carbon fiber Ankle-Foot Orthosis {HCPCS Code: L1932 (Custom Fitted Carbon Fiber) / L1951 (Spiral Prefab Custom Fitted) / L1945 (Custom Molded Rigid Anterior Tibial Section)}).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right lower extremity weakness secondary to {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Incomplete Spinal Cord Injury / Charcot-Marie-Tooth / Severe Dorsiflexion Weakness}. The carbon fiber AFO is medically necessary and reasonable to provide dynamic energy return, assist swing-phase toe clearance, prevent foot drop tripping falls, control sagittal plane progression, and stabilize the ankle complex during community ambulation.\n\nBiomechanical Specifications & In-Office Modifications:\n\nDevice Characteristics: Lightweight prepreg carbon fiber composite strut with {Strut Design: dynamic posterior strut / anterior lateral strut / rigid anterior tibial cuff / full-length dynamic footplate / sulcus-length flexible footplate}.\n\nCustom Modifications & Fit:\n\nProximal calf/tibial cuff interface aligned to anatomical contours with soft padding lining (L2820).\n\nFootplate positioned within patient’s standard footwear; minor footplate adjustments and insole seating completed to ensure intimate contact without edge digging or forefoot impingement.\n\nProximal hook-and-loop closure tensioned securely to maintain uncompromised tibial positioning without proximal fibular head or peroneal nerve pressure.\n{+ Added Soft Interface: Soft interface lining added to rigid carbon section for bony prominence relief.}\n\nFunctional Assessment & Patient Education:\n\nGait Evaluation: Dynamic gait analysis demonstrated immediate restoration of swing-phase dorsiflexion clearance, smooth heel strike to toe-off energy transfer, elimination of steppage gait / hip hiking, and improved step symmetry across uneven clinic surfaces.\n\nDonning / Doffing: Patient was educated on proper shoe insertion, donning techniques, and strap tensioning. he/she independently and accurately applied the device.\n\nCare & Safety Protocols: Patient was instructed on a progressive break-in schedule (increasing 1–2 hours daily), wearing over a clean moisture-wicking sock, footwear heel-height restrictions, and daily visual skin inspection over the anterior tibia, malleoli, and plantar surface. {+ Caregiver Present: Caregiver was present and instructed on proper application and skin safety.}\n\nAll questions were answered, and the patient verbalized complete understanding. Device delivered in proper working order. Follow-up scheduled in {Follow-up: 2 weeks / 4 weeks / PRN}.",
+    "text": "Patient was seen at the North/South location for fitting and delivery of a Left/Right energy-storing carbon fiber Ankle-Foot Orthosis {HCPCS Code: L1932 (Custom Fitted Carbon Fiber) / L1951 (Spiral Prefab Custom Fitted) / L1945 (Custom Molded Rigid Anterior Tibial Section)}).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right lower extremity weakness secondary to {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Cerebral Palsy / Incomplete Spinal Cord Injury / Charcot-Marie-Tooth / Severe Dorsiflexion Weakness}. The carbon fiber AFO is medically necessary and reasonable to provide dynamic energy return, assist swing-phase toe clearance, prevent foot drop tripping falls, control sagittal plane progression, and stabilize the ankle complex during community ambulation.\n\nDevice Characteristics: Lightweight prepreg carbon fiber composite strut with {Strut Design: dynamic posterior strut / anterior lateral strut / rigid anterior tibial cuff / full-length dynamic footplate / sulcus-length flexible footplate}.\n\nCustom Modifications & Fit:\nProximal calf/tibial cuff interface aligned to anatomical contours with soft padding lining (L2820).\nFootplate positioned within patient’s standard footwear; minor footplate adjustments and insole seating completed to ensure intimate contact without edge digging or forefoot impingement.\n\nProximal hook-and-loop closure tensioned securely to maintain uncompromised tibial positioning without proximal fibular head or peroneal nerve pressure.\n{+ Added Soft Interface: Soft interface lining added to rigid carbon section for bony prominence relief.}\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Dynamic gait analysis demonstrated immediate restoration of swing-phase dorsiflexion clearance, smooth heel strike to toe-off energy transfer, elimination of steppage gait / hip hiking, and improved step symmetry across uneven clinic surfaces.\n\nDonning / Doffing: Patient was educated on proper shoe insertion, donning techniques, and strap tensioning. he/she independently and accurately applied the device.\n\nCare & Safety Protocols: Patient was instructed on a progressive break-in schedule (increasing 1–2 hours daily), wearing over a clean moisture-wicking sock, footwear heel-height restrictions, and daily visual skin inspection over the anterior tibia, malleoli, and plantar surface. {+ Caregiver Present: Caregiver was present and instructed on proper application and skin safety.}\n\nAll questions were answered, and the patient verbalized complete understanding. Device delivered in proper working order. Follow-up scheduled in {Follow-up: 2 weeks / 4 weeks / PRN}.",
     "excludeAutoPrice": false,
     "isTemplate": true,
     "isCustomEdited": true,
