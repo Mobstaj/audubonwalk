@@ -903,13 +903,16 @@
       "L2820",
       "L2275"
     ],
-    "text": "Pt. was seen at the North/South location for Left/Right custom SMO delivery. Custom molded supramalleolar orthosis fit to patient's Left/Right foot. Brace stabilizes calcaneus in neutral, supports medial longitudinal arch, and prevents coronal/transverse foot collapse during ambulation. Wearing schedule and skin care reviewed.",
+    "text": "Pt. seen at the North/South office for the final delivery and fitting of left/right Custom Supramalleolar Orthosis(es) (L1907).\n\nFITTING & STRUCTURAL ASSESSMENT:\nThe custom SMO was fit to the patient's left/right lower extremity(ies). \n* Total Contact & Contour: Device demonstrates intimate total contact along the longitudinal arch, sustentaculum tali, and medial/lateral malleoli with no localized high-pressure areas.\n* Alignment: Calcaneus is stabilized in {Alignment: neutral / corrected subtalar alignment / reduced valgus / reduced varus}.\n* Strapping & Suspension: Straps and closures secure the foot firmly into the heel cup without impingement on the anterior ankle crease or dorsal foot structures.\n* Trimlines: Trimlines allow full active/passive sagittal dorsiflexion and plantarflexion while providing rigid medial/lateral supramalleolar stabilization.\n\nDYNAMIC TRIAL & GAIT:\nPatient ambulated in office with the SMO fit inside supportive footwear. Visual gait analysis demonstrated {Gait Outcome: immediate improvement in arch height and base of support / corrected calcaneal alignment / reduction of dynamic pronation / reduction of dynamic supination and lateral weight bearing / reduction of in-toeing/ smoother transition through stance phase}. No abnormal pressure points, migration, or heel pistoning observed.\n\nEDUCATION & INSTRUCTIONS:\n* Break-in Schedule: Provided {Break-In: verbal and written gradual break-in schedule (starting 1-2 hours/day and increasing gradually)}.\n* Skin Protocol: Patient/caregiver instructed to inspect skin after each removal; {Skin Redness: any redness lasting longer than 20-30 minutes requires immediate discontinuation and clinic follow-up}.\n* Footwear & Care: Educated on appropriate footwear fitting and orthosis cleaning with mild soap and water.\n\nDISPOSITION:\nThe custom SMO (L1907) fits properly, achieves desired functional correction, and is delivered to the patient. Follow-up scheduled in {Follow-up: 2-3 weeks / 4-6 weeks / PRN as needed}.\n{+ Parent Present: Parent/caregiver attended the fitting and demonstrated independent donning/doffing proficiency.}\n{+ Patient Educated: Patient/caregiver verbalized full understanding of wear guidelines and safety precautions.}\n{+ Donning/Doffing Mastered: Patient/caregiver demonstrated proficient independent application and strap fastening.}",
     "price": 1003.31,
     "category": "Foot & Ankle",
     "title": "SMO Delivery",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "mackie-ankle-delivery": {
     "id": "mackie-ankle-delivery",
