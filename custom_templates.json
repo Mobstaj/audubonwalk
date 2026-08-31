@@ -326,15 +326,18 @@
   "comfort-cool": {
     "id": "comfort-cool",
     "lcodes": [
-      "L3908"
+      "L3923"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Comfort Cool Wrist/Thumb Splint for basal joint osteoarthritis / wrist strain. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid wrist orthosis. The device is reasonable and necessary to immobilize the wrist/CMC joint in neutral position, decrease pain, and protect joint integrity during daily activities.",
-    "price": 67.37,
+    "text": "Patient was seen at our North/South office for evaluation, custom fitting, and delivery of a left/right wrist-thumb orthosis / Comfort Cool support.\n\nMedical Necessity & Clinical Indications:\nThe orthosis is reasonable and medically necessary for the Left/Right upper extremity to provide stabilization, restrict harmful motion, and reduce pain during functional tasks.\n\nClinical Rationale: {Indication: Basal joint osteoarthritis / CMC arthritis / Wrist strain / Carpal tunnel syndrome / Tendinitis / Tenosynovitis / Repetitive strain injury}\n\nConservative measures were evaluated, and functional stabilization is indicated to maintain neutral alignment, offload the joint, decrease inflammation, and facilitate tissue healing during daily activities.\n\nFitting, Customization & Delivery:\nDevice: Comfort Cool wrist orthosis.\nSize: {Size:   XXS / XSmall / Small / Small+ / Med / Med+ / Large / Large +, XL}\n\nThe orthosis was applied, contoured, and custom-adjusted to the patient's Left/Right upper extremity.\nThe internal stays and circumferential closure straps were adjusted to ensure a secure, anatomical fit with proper joint alignment while allowing full finger mobility.\n\nSkin was inspected following trial wear; no focal pressure areas, blanching, or constriction of neurovascular structures were noted.\n\nPatient Education & Follow-Up:\nPatient demonstrated independent ability to properly don, doff, and adjust the brace.\nWearing schedule instructed: {Schedule: During daytime activities / Continuous except hygiene / As needed for pain and heavy hand use / Nighttime only}.\n{+ Parent Present: Parent/caregiver was present and instructed on proper application, strap tensioning, and skin check protocol.}\n{+ Patient Educated: Patient was instructed on skin inspection, care, and hand hygiene.}\nPatient voiced understanding of all care instructions and precautions. Follow-up scheduled as needed.",
+    "price": 97.81,
     "category": "Upper Extremity",
     "title": "Comfort Cool",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "compression-stockings": {
     "id": "compression-stockings",
@@ -421,7 +424,7 @@
     "lcodes": [
       "L3670"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right {Sling Model / Type: Atlas/ Arc/Slingshot/Ultrasling} shoulder orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / Hely & Weber / RCAI} due to rotator cuff tear / post-operative repair. Fit with a universal abduction shoulder brace. Straps and positioning pads were adjusted and trimmed for optimal anatomical fit. Shoulder orthosis with abduction positioning pillow is reasonable and necessary for post-surgical immobilization, to maintain prescribed shoulder abduction, prevent hazardous internal rotation, protect surgical repair, and promote soft tissue healing during ADLs. He/she was educated on proper donning/doffing, wearing schedule, and skin care. Follow-up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a left/right {Sling Model: Breg Atlas/ Breg Arc with pillow/ Breg Slingshot 2/ Donjoy ultrasling pro} shoulder orthosis for {Indication: Post-Operative Rotator Cuff Repair / Bankart Labral Repair / Glenohumeral Subluxation / Proximal Humerus Fracture / Shoulder Arthroplasty}.\n\nClinical & Post-Surgical Indication:\nPatient requires external glenohumeral joint immobilization and abduction positioning to protect surgically repaired tendinous/labral tissues and prevent tension across the healing rotator cuff.\n\nBiomechanical Fitting & Position Verification:\nHe/she was fit with a left/right {Sling Model: Breg Atlas, Breg Arc with pillow, Breg Slingshot 2, Donjoy ultrasling pro} shoulder abduction orthosis. The contoured high-density foam abduction pillow was positioned at the patient's iliac crest to maintain 20-30 degrees abduction with neutral rotation. Padded neck/shoulder strap and waist belt were adjusted to evenly distribute upper extremity weight across the contralateral shoulder and pelvis, eliminating cervical strain. Padded wrist/thumb cuff supported the forearm in neutral alignment.\n\nMedical Necessity:\nThe shoulder abduction orthosis is reasonable and medically necessary to immobilize the glenohumeral joint in the prescribed plane of abduction, prevent adduction/internal rotation stress on the repaired rotator cuff, offload the shoulder girdle, and promote soft tissue union.\n\nSafety & Patient Education:\nHe/she was instructed on proper sling donning/doffing with assistance, maintaining pillow positioning during sitting and sleeping, performing pendulum exercises as permitted by MD, and inspecting axillary and neck skin. Follow-up PRN.",
     "price": 127.15,
     "category": "Upper Extremity",
     "title": "Abduction Sling",
@@ -1109,7 +1112,7 @@
     "lcodes": [
       "L1846"
     ],
-    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL/OA), prevents hyperextension, and stabilizes knee joint during ambulation.",
+    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL), prevents hyperextension, and stabilizes knee joint during ambulation.",
     "price": 1289.75,
     "category": "Knee",
     "title": "Custom Knee Brace Delivery",
@@ -1141,8 +1144,7 @@
     "title": "Tibial Fracture Orthosis",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "userCustomizedPrice": false
+    "isTemplate": true
   },
   "ultrasling": {
     "id": "ultrasling",
