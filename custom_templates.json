@@ -168,13 +168,15 @@
     "lcodes": [
       "L4397"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right plantar fasciitis night splint. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} night splint maintaining ankle at 90 degrees dorsiflexion. Night splint is reasonable and necessary to provide prolonged passive stretch to plantar fascia and Achilles tendon, reducing severe morning heel pain that limits daily ambulation.",
+    "text": "Patient was seen at our North/South office for evaluation, custom fitting, and delivery of a Left/Right/Bilateral prefabricated ankle-foot orthosis / night splint (L4396/L4397).\n\nMedical Necessity & Clinical Indications:\nThe orthosis is reasonable and medically necessary for the Left/Right/Bilateral lower extremity to maintain passive sustained stretch and joint alignment.\nClinical Rationale: {Indication: Plantar fasciitis / Achilles tendinitis / Plantar flexion contracture / Post-static dyskinesia / Heel pain syndrome}\nPatient presents with severe morning pain and stiffness that limits daily ambulation. Conservative treatments ({Prior Treatment: stretching / physical therapy / footwear modification / NSAIDs / taping}) were attempted and a night splint is indicated to maintain dorsiflexion and prevent contracture of the Achilles tendon and plantar fascia.\n\nFitting, Customization & Delivery:\nDevice: {Brand: United Ortho posterior static night splint.\nSize: {Size: S/M/L/XL}\nThe orthosis was custom-adjusted, applied, and positioned on the patient's Left/Right/Bilateral lower extremity to hold the ankle in {Position: neutral (90 degrees) / slight dorsiflexion}.\n\nTension straps were adjusted to provide a sustained, gentle passive stretch without neurovascular restriction.\n{+ Achilles Wedge removed: Removable dorsiflexion foam wedge for increased comfort at met heads}\nSkin was inspected following trial fitting; no excessive pressure points or blanching noted over bony prominences\n.\nPatient Education & Follow-Up:\nPatient demonstrated independent proficiency with donning, doffing, and strap adjustment.\nPatient was instructed to wear the device primarily at rest/night and was educated that this device is non-ambulatory ({Schedule: Nighttime use during sleep / Resting periods / Gradual break-in protocol}).\n{+ Parent Present: Parent/caregiver was present and instructed on proper application, strap tensioning, and skin check protocol.}\n{+ Patient Educated: Patient was educated on proper hygiene, cleaning instructions, and routine skin inspection.}\n{+ Gait Evaluated: Patient was reminded not to walk in this non-weight-bearing splint to prevent slip and fall hazards.}\nAll questions were answered to the patient's satisfaction. Follow-up scheduled as needed.",
     "price": 204.74,
     "category": "Foot & Ankle",
     "title": "Night Splint",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
     "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
     "userCustomizedPrice": true
   },
   "post-op-shoe": {
@@ -271,19 +273,6 @@
     "price": 15,
     "fabricationType": "prefab",
     "text": "Patient was seen at North/South office for fitting of a Left/Right gel toe interdigital separator. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} toe spacer to realign 1st/2nd digits and reduce interdigital pressure pain.",
-    "isTemplate": true
-  },
-  "ultrasling": {
-    "id": "ultrasling",
-    "lcodes": [
-      "L3675"
-    ],
-    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
-    "price": 198.39,
-    "category": "Upper Extremity",
-    "title": "Ultrasling",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
     "isTemplate": true
   },
   "walking-boot": {
@@ -1084,13 +1073,16 @@
       "L3020",
       "L3020"
     ],
-    "text": "Pt. was seen at the North/South location for custom Left/Right foot orthotics evaluation. Presents with severe foot/ankle pain during standing/walking. Normally wears shoe size {Shoe Size: 5/6/7/8/9/10/11/12/13/14/15}. Physical exam shows pes planus arch collapse and hindfoot valgus. Impression taken today for custom molded functional inserts.",
+    "text": "Pt. was seen at our North/South location for an evaluation and impression for custom Left/Right foot orthotics.\n\nSubjective & Clinical Indications:\nPt. presents with severe foot and ankle pain exacerbated during weight-bearing, standing, and walking, which significantly limits daily functional activities and ambulation.\nDiagnosis: {Diagnosis: Pes planovalgus / Plantar fasciitis / Metatarsalgia / Heel pain / Heel varus with forefoot supination / Posterior tibial tendon dysfunction}\nShoe Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 13.5 / 14 / 14.5 / 15 / Other}\n\nSymptoms & Functional Limitations: {Symptoms: Severe medial arch pain / Plantar heel pain with first morning steps / Metatarsal head pain and burning / Lateral foot fatigue and instability}\nStatic Evaluation: Left/Right {Biomechanics: pes planus with medial longitudinal arch collapse / hindfoot valgus / excessive pronation / rigid high arch / forefoot varus / heel varus with forefoot supination}.\nPalpation: Tenderness noted along the {Palpation: plantar fascia insertion / medial calcaneal tubercle / metatarsal heads / posterior tibial tendon / navicular}.\nRange of Motion & Alignment: Subtalar joint demonstrated {Subtalar: full range of motion / restricted motion / reducibility to neutral}. Forefoot-to-rearfoot relationship was assessed.\nGait Analysis: Left/Right stance phase demonstrated {Gait: excessive late-stance pronation / early heel rise / antalgic gait / poor shock absorption / reduced propulsion}.\n\nTreatment Plan, Impression & Device Specifications:\nImpression taken today for custom-molded functional foot orthotics utilizing {Method: 3D optical scan / foam impression casting / plaster slipper cast} with the subtalar joint held in neutral position and midtarsal joint locked.\nFabrication Lab: {Lab: Pacific Labs / Rx Orthotic Lab / Apis / Apex / Dr. Comfort / Langer / Mile High / Anodyne / Feet First}\nShell & Posting: {Shell: Semi-rigid polypropylene / Rigid thermoplastic / Flexible EVA / Carbon composite} with {Posting: intrinsic rearfoot posting / extrinsic rearfoot post / deep heel cup / medial arch reinforcement}.\nDesign Additions: {Additions: None / Metatarsal pad / Metatarsal bar / Balance bar / Heel cushion / Deep heel cup / Poron mid-layer / First ray cutout}\nTop Cover Material: {Top Cover Material: Spenco / Neoprene / Plastazote / Leather / Vinyl / Bamboo / Poron / EVA}\nTop Cover Length: {Top Cover Length: Full-length / 3/4 length / Sulcus length}\n{+ Parent Present: Parent/caregiver was present during the evaluation and casting process.}\n\nPatient Education & Financial Protocol:\nPt. was advised that these custom foot orthotics are self-pay / non-covered items, and all out-of-pocket costs and payment policies were discussed and agreed upon.\nExplained expected timeline for custom fabrication and scheduled delivery appointment for fitting, shoe integration, and break-in instructions.\nAll questions were answered to the patient's satisfaction.",
     "price": 500,
     "category": "Foot & Ankle",
     "title": "Custom Inserts Eval",
     "fabricationType": "custom",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "custom-knee-brace-delivery": {
     "id": "custom-knee-brace-delivery",
@@ -1116,6 +1108,19 @@
     "price": 40,
     "fabricationType": "prefab",
     "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.",
+    "isTemplate": true
+  },
+  "ultrasling": {
+    "id": "ultrasling",
+    "lcodes": [
+      "L3675"
+    ],
+    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
+    "price": 198.39,
+    "category": "Upper Extremity",
+    "title": "Ultrasling",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
     "isTemplate": true
   },
   "custom-1768324613082": {
