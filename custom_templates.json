@@ -267,13 +267,16 @@
     "lcodes": [
       "L3807"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right thumb spica wrist orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid thumb spica. Orthosis is reasonable and necessary to immobilize wrist and 1st MCP/CMC joints, reduce thumb joint inflammation, and allow healing.",
+    "text": "Patient was seen at our North/South office for evaluation, custom fitting, and delivery of a left/right wrist hand finger orthosis / thumb spica.\n\nMedical Necessity & Clinical Indications:\nThe orthosis is reasonable and medically necessary for the left/right upper extremity to provide rigid immobilization, stabilize the carpometacarpal (CMC) and metacarpophalangeal (MCP) joints, and reduce pain.\n\nClinical Rationale: {Indication: De Quervain's tenosynovitis / Thumb CMC arthritis / Scaphoid fracture / Gamekeeper's-Skier's thumb / 1st MCP collateral ligament sprain / Post-operative immobilization / Tendinopathy/ fracture thumb/ tendinitis}\nConservative measures were evaluated, and external stabilization is indicated to restrict thumb and wrist motion, decrease inflammation, and allow soft tissue/bone healing.\n\nFitting, Customization & Delivery:\nDevice: Med Spec rigid thumb spica orthosis.\nSize: {Size: Ped. / XS / Small / Medium / Large / XL / Universal}\nThe orthosis was applied, contoured, and custom-adjusted to the patient's left/right upper extremity.\nThe radial stay/thumb post and palmar stays were molded to position the thumb in functional abduction and maintain the wrist in {Wrist Position: neutral / slight extension (15-20 degrees)}.\nStraps were secured to ensure total contact and rigid joint control without restricting MCP flexion of digits 2–5 or impeding neurovascular function.\n\nSkin was inspected following trial wear; no focal pressure points, blanching, or irritation were observed over bony prominences (radial styloid, 1st MCP joint).\n\nPatient Education & Follow-Up:\nPatient demonstrated independent ability to safely don, doff, and adjust the device.\nWearing schedule instructed: {Schedule: Continuous except bathing / Nighttime and during aggravating activities / As directed by physician}.\n{+ Parent Present: Parent/caregiver was present and trained on proper positioning, strap adjustments, and skin inspection protocols.}\n{+ Patient Educated: Patient was instructed on hygiene, cleaning procedures, and warning signs of pressure or neurovascular compromise.}\nPatient expressed full understanding of all instructions and care protocols. Follow-up scheduled as needed.",
     "price": 282.7,
     "category": "Upper Extremity",
     "title": "Thumb Spica",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "toe-spacer": {
     "id": "toe-spacer",
@@ -286,19 +289,6 @@
     "price": 15,
     "fabricationType": "prefab",
     "text": "Patient was seen at North/South office for fitting of a Left/Right gel toe interdigital separator. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} toe spacer to realign 1st/2nd digits and reduce interdigital pressure pain.",
-    "isTemplate": true
-  },
-  "ultrasling": {
-    "id": "ultrasling",
-    "lcodes": [
-      "L3675"
-    ],
-    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
-    "price": 198.39,
-    "category": "Upper Extremity",
-    "title": "Ultrasling",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
     "isTemplate": true
   },
   "walking-boot": {
@@ -322,7 +312,7 @@
     "lcodes": [
       "L3908"
     ],
-    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right wrist orthosis(es) (HCPCS L3908).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right wrist {Indication: carpal tunnel syndrome / fracure / wrist sprain-strain / tendonitis / tenosynovitis / post-traumatic wrist pain / mild osteoarthrosis}, causing pain, weakness, and functional limitation during daily activities and ADLs. Orthosis is reasonable and medically necessary to immobilize the wrist joint in a neutral/supported alignment, reduce repetitive stress, and facilitate tissue healing.\n\nObjective Assessment & Fitting:\n* Measurements Obtained\n* Brand/Model: {Brand: Med Spec / Hely & Weber \n* Size Selected: {Size: Ped. / XXS / XSmall / Small / Med / Large / XL / 2XL}\n* Customization & Fit: The rigid palmar stay was removed, anatomically contoured to maintain approximately 10-15 degrees of functional wrist extension/neutral alignment, and re-inserted. Circumferential straps and closure system were adjusted for an intimate and secure fit without impinging neurovascular structures or restricting full MCP flexion, thumb opposition, and digital mobility.\n{+ Dorsal Stay: Dorsal stay adjusted and secured to restrict flexion.}\n\nFunctional Assessment & Patient Education:\n* Functional Evaluation: Patient demonstrated the ability to grasp and perform light functional hand tasks while maintaining proper joint immobilization.\n* Donning / Doffing: Patient was instructed on proper application, strap tensioning sequence, and positioning. he/she successfully performed an independent return demonstration of donning and doffing.\n* Care & Precautions: Patient was educated on wearing schedule {Wearing Schedule: nocturnal wear only / continuous wear except hygiene / wear during aggravating activities / as directed by physician}, skin inspection protocols (monitoring for pressure or redness), cleaning instructions, and warranty terms. {+ Parent/Caregiver Present: Parent/Caregiver was present and also instructed on proper donning, doffing, and skin care checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
+    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right wrist orthosis(es) (HCPCS L3908).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right wrist {Indication: carpal tunnel syndrome / fracure / wrist sprain-strain / tendonitis / tenosynovitis / post-traumatic wrist pain / mild osteoarthrosis}, causing pain, weakness, and functional limitation during daily activities and ADLs. Orthosis is reasonable and medically necessary to immobilize the wrist joint in a neutral/supported alignment, reduce repetitive stress, and facilitate tissue healing.\n\nObjective Assessment & Fitting:\n* Measurements Obtained\n* Brand/Model: Brand: Med Spec \n* Size Selected: {Size: Ped. / XXS / XSmall / Small / Med / Large / XL / 2XL} {Long/short: long/short}\n* Customization & Fit: The rigid palmar stay was removed, anatomically contoured to maintain approximately 10-15 degrees of functional wrist extension/neutral alignment, and re-inserted. Circumferential straps and closure system were adjusted for an intimate and secure fit without impinging neurovascular structures or restricting full MCP flexion, thumb opposition, and digital mobility.\n{+ Dorsal Stay: Dorsal stay adjusted and secured to restrict flexion.}\n\nFunctional Assessment & Patient Education:\n* Functional Evaluation: Patient demonstrated the ability to grasp and perform light functional hand tasks while maintaining proper joint immobilization.\n* Donning / Doffing: Patient was instructed on proper application, strap tensioning sequence, and positioning. he/she successfully performed an independent return demonstration of donning and doffing.\n* Care & Precautions: Patient was educated on wearing schedule {Wearing Schedule: nocturnal wear only / continuous wear except hygiene / wear during aggravating activities / as directed by physician}, skin inspection protocols (monitoring for pressure or redness), cleaning instructions, and warranty terms. {+ Parent/Caregiver Present: Parent/Caregiver was present and also instructed on proper donning, doffing, and skin care checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
     "price": 67.37,
     "category": "Upper Extremity",
     "title": "Wrist Splint",
@@ -911,19 +901,6 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true
   },
-  "forearm-splint": {
-    "id": "forearm-splint",
-    "lcodes": [
-      "L3908"
-    ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely & Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient's anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care.",
-    "price": 67.37,
-    "category": "Upper Extremity",
-    "title": "Forearm / Wrist Splint",
-    "fabricationType": "prefab",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
   "met-pad-bar": {
     "id": "met-pad-bar",
     "lcodes": [
@@ -1027,10 +1004,12 @@
     "lcodes": [
       "L5679",
       "L5679",
-      "L5679"
+      "L5685",
+      "L5685",
+      "L8420"
     ],
     "text": "Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of {+ 2x locking liners: 2 x locking liners}{+ 2 x cushion liners: , cushion liners x 2}{+ Suspension sleeves x 2: 2 x suspension sleeves}{+ single ply socks: , 6 x single ply socks}{+ Multi ply socks: , 6 x multi ply socks}{+ Liner liners: , 6 x liner liners}. Items fit and delivered to replace worn consumables and maintain socket fit/suspension.",
-    "price": 2318.85,
+    "price": 2073.02,
     "category": "Foot & Ankle",
     "title": "BK supplies delivery",
     "fabricationType": "prefab",
@@ -1130,7 +1109,7 @@
     "lcodes": [
       "L1846"
     ],
-    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL), prevents hyperextension, and stabilizes knee joint during ambulation.",
+    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL/OA), prevents hyperextension, and stabilizes knee joint during ambulation.",
     "price": 1289.75,
     "category": "Knee",
     "title": "Custom Knee Brace Delivery",
@@ -1164,6 +1143,32 @@
     "excludeAutoPrice": false,
     "isTemplate": true,
     "userCustomizedPrice": false
+  },
+  "ultrasling": {
+    "id": "ultrasling",
+    "lcodes": [
+      "L3675"
+    ],
+    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
+    "price": 198.39,
+    "category": "Upper Extremity",
+    "title": "Ultrasling",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
+  },
+  "forearm-splint": {
+    "id": "forearm-splint",
+    "lcodes": [
+      "L3908"
+    ],
+    "text": "Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely & Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient's anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care.",
+    "price": 67.37,
+    "category": "Upper Extremity",
+    "title": "Forearm / Wrist Splint",
+    "fabricationType": "prefab",
+    "excludeAutoPrice": false,
+    "isTemplate": true
   },
   "custom-1768324613082": {
     "id": "custom-1768324613082",
