@@ -602,13 +602,16 @@
     "lcodes": [
       "L0472"
     ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Cash/Jewett hyperextension TLSO. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} hyperextension frame orthosis. Sternal and suprapubic pads adjusted. TLSO hyperextends thoracic/lumbar spine to restrict flexion and offload anterior vertebral compression fracture.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a {Cash/Jewett: CASH/Jewett} Hyperextension TLSO from Trulife for {Indication: Anterior Vertebral Body Compression Fracture (T6-L2) / Post-Traumatic Thoracic Kyphosis / Stable Non-Osteoporotic Compression Fracture / Wedge compression fracture}.\n\nClinical Context & Imaging Rationale:\nHyperextension of thoracic spine is required to help offload the anterior column and improve chances of healing. \n\nBiomechanical 3-Point Leverage Fitting:\nHe/she was fit with a size {Size: XSmall/Small/Med/Large/XL/2XL/Universal} {Cash/Jewett: CASH/Jewett} rigid aluminum hyperextension frame. Height and cross-bar widths were adjusted. Sternal pad was positioned 1 inch below the sternal notch, and the suprapubic pad was positioned 1 inch above the pubic symphysis. The posterior thoracolumbar pad was centered over the fracture apex and tensioned with the quick-release closure mechanism to establish a 3-point pressure system that maintains thoracic/lumbar hyperextension. Sitting clearance verified without sternal choking.\n\nMedical Necessity:\nThe hyperextension TLSO is reasonable and medically necessary to restrict spinal flexion in the sagittal plane, maintain lordotic/extended posture, offload axial loads from the anterior vertebral body, prevent progressive wedge deformity, and reduce acute fracture pain during upright mobility.\n\nEducation & Protocol:\nHe/she was instructed on donning in supine position, maintaining upright sitting posture, avoiding forward trunk bending, and inspecting skin over sternal, pubic, and thoracolumbar contact areas. Follow-up PRN.",
     "price": 464.64,
     "category": "Spine / LSO",
     "title": "TLSO-Cash/Jewett",
     "fabricationType": "prefab",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "tscope-rom": {
     "id": "tscope-rom",
