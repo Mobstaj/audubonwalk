@@ -288,8 +288,11 @@
     "category": "Foot & Ankle",
     "price": 15,
     "fabricationType": "prefab",
-    "text": "Patient was seen at North/South office for fitting of a Left/Right gel toe interdigital separator. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} toe spacer to realign 1st/2nd digits and reduce interdigital pressure pain.",
-    "isTemplate": true
+    "text": "Patient was seen at North/South office for fitting of a Left/Right {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch} for left/right {Toes: 1st/2nd/3rd/4th/1st-2nd/2nd-3rd/2nd-4th/3rd-4th} toe(s). Fit with {Size: S/M/L/XL}toe spacer to realign {Toes: 1st/2nd/3rd/4th/1st-2nd/2nd-3rd/2nd-4th/3rd-4th} digits and reduce interdigital pressure pain.\n\nPt. educated on use/care of gel toe devices.  F/up PRN.",
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true
   },
   "walking-boot": {
     "id": "walking-boot",
