@@ -13,8 +13,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "acl-measurement": {
     "id": "acl-measurement",
@@ -28,8 +27,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "afo-evaluation": {
     "id": "afo-evaluation",
@@ -43,8 +41,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "ankle-laceup": {
     "id": "ankle-laceup",
@@ -60,8 +57,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "arc-sling": {
     "id": "arc-sling",
@@ -116,8 +112,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "knee-scooter": {
     "id": "knee-scooter",
@@ -146,8 +141,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "lumbar-corset": {
     "id": "lumbar-corset",
@@ -163,8 +157,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "mortons-extension": {
     "id": "mortons-extension",
@@ -193,8 +186,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "post-op-shoe": {
     "id": "post-op-shoe",
@@ -210,8 +202,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "prewash": {
     "id": "prewash",
@@ -240,8 +231,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "simple-sling": {
     "id": "simple-sling",
@@ -257,8 +247,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "step-up": {
     "id": "step-up",
@@ -287,8 +276,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "toe-spacer": {
     "id": "toe-spacer",
@@ -304,8 +292,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "walking-boot": {
     "id": "walking-boot",
@@ -321,8 +308,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "wrist-splint": {
     "id": "wrist-splint",
@@ -338,8 +324,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "comfort-cool": {
     "id": "comfort-cool",
@@ -355,8 +340,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "compression-stockings": {
     "id": "compression-stockings",
@@ -398,8 +382,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "arch-rivals": {
     "id": "arch-rivals",
@@ -437,8 +420,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "abduction-sling": {
     "id": "abduction-sling",
@@ -454,8 +436,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "diabetic-shoe-delivery": {
     "id": "diabetic-shoe-delivery",
@@ -502,8 +483,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "afo-az-eval": {
     "id": "afo-az-eval",
@@ -530,8 +510,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "afo-arizona-del": {
     "id": "afo-arizona-del",
@@ -549,8 +528,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "carbon-plate": {
     "id": "carbon-plate",
@@ -579,8 +557,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "lso-measurement": {
     "id": "lso-measurement",
@@ -594,8 +571,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "patellar-stabilizing-brace": {
     "id": "patellar-stabilizing-brace",
@@ -638,8 +614,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "tscope-rom": {
     "id": "tscope-rom",
@@ -655,8 +630,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "custom-1785437208449": {
     "id": "custom-1785437208449",
@@ -671,8 +645,7 @@
     "isTemplate": false,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "custom-1786047844569": {
     "id": "custom-1786047844569",
@@ -685,8 +658,7 @@
     "text": "Pt. seen at North/South location for delivery of walker.  Walker was sized to pt.  He/She was educated on use/care of device.  F/up PRN.",
     "excludeAutoPrice": true,
     "isTemplate": false,
-    "isCustomEdited": true,
-    "lastUpdated": 1788289102472
+    "isCustomEdited": true
   },
   "custom-1786401952325": {
     "id": "custom-1786401952325",
@@ -699,8 +671,7 @@
     "text": "Patient was seen at the North/South office for fitting and delivery of Charcot/Crow boot.   He/she was fit with a custom CROW orthosis. The device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in the sagittal and coronal planes, decrease severe subtalar joint motion/pain, prevent joint collapse during ambulation, and help to slow progression or Charcot arthropathy. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule while monitoring skin for irritation.",
     "excludeAutoPrice": false,
     "isTemplate": false,
-    "isCustomEdited": true,
-    "lastUpdated": 1788289102472
+    "isCustomEdited": true
   },
   "clavicle-strap": {
     "id": "clavicle-strap",
@@ -782,8 +753,7 @@
     "text": "Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.",
     "excludeAutoPrice": false,
     "isTemplate": false,
-    "isCustomEdited": true,
-    "lastUpdated": 1788289102472
+    "isCustomEdited": true
   },
   "custom-1787094050566": {
     "id": "custom-1787094050566",
@@ -796,8 +766,7 @@
     "isTemplate": false,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "knee-immobilizer": {
     "id": "knee-immobilizer",
@@ -826,8 +795,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "afo-carbon-eval": {
     "id": "afo-carbon-eval",
@@ -839,8 +807,7 @@
     "text": "Patient presents at North/South office for evaluation of progressive gait instability, lower extremity weakness, and frequent tripping/falls impacting daily activities. He/She has been diagnosed with foot drop Left/Right due to {Diagnosis: Spinal stenosis/Muscular Dystrophy/Peripheral Neuropathy/Post-Stroke Hemiplegia/Multiple Sclerosis/Charcot-Marie-Tooth/CP}. Patient experiences persistent foot drop during the swing phase of gait and muscle fatigue after walking short distances. Current off-the-shelf bracing or lack of bracing provides inadequate energy return and insufficient stability to control dynamic gait deviations. Ambulation is limited to {Ambulation Distance: <100 feet/100-300 feet/300+ feet/community distances} {Assistance: unassisted/with a cane/with a walker} before requiring rest due to fatigue.\n\nPt. was examined and Left/Right lower extremity assessment revealed dorsiflexion MMT strength of {MMT Dorsiflexion: 0/1/2/2+/3/3+/4/5}. Plantarflexion MMT strength was {MMT Plantarflexion: 0/1/2/2+/3/3+/4/5/WNL}. Knee extensor strength was {MMT Knee Extensors: 3/3+/4/4+/5}. Passive range of motion to neutral (0° dorsiflexion) is {ROM Neutral: achievable with knee extended/achievable with knee flexed/limited}. Severe fixed equinus deformity is {Fixed Deformity: absent/present} and dynamic fluctuating edema is {Edema: absent/present}. Skin integrity is {Skin Integrity: intact/intact with mild erythema/compromised}.\n\nGait evaluation reveals {Gait Pattern: steppage gait/slap foot at initial contact/knee hyperextension during stance phase/lack of heel-strike} affecting the Left/Right lower extremity during swing and stance phases.\n\nDue to lower extremity weakness and foot drop with high fall risk, patient requires a dynamic carbon fiber AFO (L1951). Standard polypropylene AFOs are inadequate due to the patient's need for dynamic energy storage and return during stance-to-swing transition to reduce fatigue and stabilize gait. Patient meets all Medicare LCD coverage criteria, including ambulatory status, absence of severe fixed deformity or severe edema, and adequate knee/hip strength to manage dynamic propulsion.\n\nPlan: Fit and adjust HCPCS L1951 (carbon fiber dynamic response AFO) to affected Left/Right lower extremity(ies). Custom modifications to include footplate trimming, heel height alignment, and shoe interface fitting. Patient instructed on donning/doffing, skin monitoring, and footwear requirements. Follow-up scheduled in {Follow-up: 2 weeks/4 weeks}.",
     "excludeAutoPrice": false,
     "isTemplate": true,
-    "isCustomEdited": true,
-    "lastUpdated": 1788289102472
+    "isCustomEdited": true
   },
   "cervical-collar": {
     "id": "cervical-collar",
@@ -856,8 +823,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "diabetic-shoe-del": {
     "id": "diabetic-shoe-del",
@@ -888,8 +854,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "elbow-gel": {
     "id": "elbow-gel",
@@ -905,8 +870,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "forms-orthotics": {
     "id": "forms-orthotics",
@@ -922,8 +886,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "custom-1787583412902": {
     "id": "custom-1787583412902",
@@ -936,12 +899,11 @@
     "isTemplate": false,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "custom-1787665453088": {
     "id": "custom-1787665453088",
-    "title": "General orthosis asjustment",
+    "title": "General orthosis adjustment",
     "price": 29.95,
     "category": "General",
     "lcodes": [
@@ -953,7 +915,7 @@
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "lastUpdated": 1788289884623
   },
   "met-pad-bar": {
     "id": "met-pad-bar",
@@ -969,8 +931,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289146602
+    "userCustomizedPrice": true
   },
   "compression-glove": {
     "id": "compression-glove",
@@ -1041,8 +1002,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "bk-socket-lock-delivery": {
     "id": "bk-socket-lock-delivery",
@@ -1073,8 +1033,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "smo-delivery": {
     "id": "smo-delivery",
@@ -1092,8 +1051,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "mackie-ankle-delivery": {
     "id": "mackie-ankle-delivery",
@@ -1160,8 +1118,7 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788289102472
+    "userCustomizedPrice": true
   },
   "custom-knee-brace-delivery": {
     "id": "custom-knee-brace-delivery",
@@ -1187,6 +1144,19 @@
     "fabricationType": "prefab",
     "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.",
     "excludeAutoPrice": true,
+    "isTemplate": true
+  },
+  "tibial-fracture-brace": {
+    "id": "tibial-fracture-brace",
+    "lcodes": [
+      "L2116"
+    ],
+    "title": "Tibial Fracture Orthosis",
+    "category": "Foot & Ankle",
+    "price": 325.8,
+    "fabricationType": "prefab",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid tibial fracture orthosis (Sarmiento AFO) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Townsend} for closed tibial shaft fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} tibial fracture brace with anterior/posterior shells and footplate. The rigid circumferential shells provide hydrostatic tissue compression, control sagittal/coronal angular alignment, and offload the fracture site to promote bone union while allowing protected ambulation. Instructed on skin inspection, donning/doffing, and wearing protocol. Follow-up PRN.",
+    "excludeAutoPrice": false,
     "isTemplate": true
   },
   "even-up": {
@@ -1273,32 +1243,6 @@
     "price": 29.95,
     "fabricationType": "prefab",
     "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Ankle-Foot Orthosis (AFO) / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Abduction Sling/ Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "ultrasling": {
-    "id": "ultrasling",
-    "lcodes": [
-      "L3675"
-    ],
-    "title": "Ultrasling",
-    "category": "Upper Extremity",
-    "price": 198.39,
-    "fabricationType": "prefab",
-    "text": "Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair.",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
-  "forearm-splint": {
-    "id": "forearm-splint",
-    "lcodes": [
-      "L3908"
-    ],
-    "title": "Forearm / Wrist Splint",
-    "category": "Upper Extremity",
-    "price": 67.37,
-    "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely & Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient's anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care.",
     "excludeAutoPrice": false,
     "isTemplate": true
   }
