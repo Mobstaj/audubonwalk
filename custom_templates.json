@@ -830,23 +830,6 @@
     "userCustomizedPrice": true,
     "lastUpdated": 1788290290033
   },
-  "diabetic-shoe-del": {
-    "id": "diabetic-shoe-del",
-    "lcodes": [
-      "A5500",
-      "A5500",
-      "A5513",
-      "A5513",
-      "A5513"
-    ],
-    "title": "Diabetic Shoe Delivery",
-    "category": "Foot & Ankle",
-    "price": 346.74,
-    "fabricationType": "prefab",
-    "text": "Patient was seen at our office for delivery of diabetic shoes and inserts. Pt. ambulated in shoes and stated that they were comfortable. Educated on weening into new shoes.",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
   "diabetic-shoe-eval": {
     "id": "diabetic-shoe-eval",
     "lcodes": [],
@@ -1250,5 +1233,19 @@
     "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Ankle-Foot Orthosis (AFO) / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Abduction Sling/ Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
     "excludeAutoPrice": false,
     "isTemplate": true
+  },
+  "custom-1788364768362": {
+    "id": "custom-1788364768362",
+    "title": "Cerv Collar/Aspen pad kit",
+    "price": 30,
+    "category": "Spine / LSO",
+    "lcodes": [],
+    "text": "Pt. was seen for replacement cervical collar pads.  He/She was educated on hot to replace the pads on his/her collar.  {+ Pads replaced in office: Cervical pads were removed and replaced in office.  Pad fit was appropriate.}",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788364768369
   }
 }
