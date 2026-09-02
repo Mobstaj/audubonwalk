@@ -194,16 +194,17 @@
     "lcodes": [
       "L3260"
     ],
-    "title": "Post-op Shoe",
+    "title": "Post-op/Cast Shoe",
     "category": "Foot & Ankle",
     "price": 30,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} stiff soled Darco post-op shoe. Shoe immobilizes toes and metatarsals. It also helps to offload surgical sites while healing. Pt. was educated on use/care of shoe today.  Fit was appropriate.  F/up PRN.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid {+ Post op/Cast shoe: Post-operative/Cast} shoe. Fit with a {Mens/Womens: mens/womens}{Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} stiff soled Darco {+ Post op/Cast shoe: Post-operative/Cast} shoe. Shoe immobilizes toes and metatarsals. It also helps to offload surgical sites while healing. Pt. was educated on use/care of shoe today.  Fit was appropriate.  F/up PRN.",
     "excludeAutoPrice": false,
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788389330345
   },
   "prewash": {
     "id": "prewash",
