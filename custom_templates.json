@@ -713,9 +713,13 @@
     "category": "Foot & Ankle",
     "price": 100,
     "fabricationType": "prefab",
-    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} customized prefabricated heat-moldable foot orthotics (Forms).\n\nIn-office modifications performed:\n- Metatarsal modification: {Metatarsal Modification: None / adding metatarsal bars / adding metatarsal pads} for {Met Modification Side: Left / Right / Bilateral}\n- Pressure relief: {Pressure Relief: None / [Relieved Met Heads] metatarsal heads / 5th metatarsal base / 1st met head / 2nd-4th met heads}\n- Posting: {Posting: None / 1/8\" medial post / 1/4\" medial post / 3/8\" medial post / 1/8\" lateral post / 1/4\" lateral post / 3/8\" lateral post}\n- Shoe lift: {Shoe Lift: None / 1/8\" shoe lift / 1/4\" shoe lift / 3/8\" shoe lift / 1/2\" shoe lift}\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination / pronation / arch collapse / heel pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.",
+    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} customized prefabricated heat-moldable foot orthotics (Forms).\n\nIn-office modifications performed:\n- Metatarsal modification: {Metatarsal Modification: None / adding metatarsal bars / adding metatarsal pads} for {Met Modification Side: Left / Right / Bilateral}\n- Pressure relief: {Pressure Relief: None / [Relieved Met Heads] metatarsal heads / 5th metatarsal base / 1st met head / 2nd-4th met heads}\n- Posting: {Posting: None / 1/8\" medial post / 1/4\" medial post / 3/8\" medial post / 1/8\" lateral post / 1/4\" lateral post / 3/8\" lateral post}\n- Shoe lift: {Shoe Lift: None / 1/8\" shoe lift / 1/4\" shoe lift / 3/8\" shoe lift / 1/2\" shoe lift}\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination / pronation / arch collapse / heel pain / metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.",
     "excludeAutoPrice": true,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788388382921
   },
   "humeral-fracture-brace": {
     "id": "humeral-fracture-brace",
