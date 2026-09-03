@@ -13,7 +13,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "acl-measurement": {
     "id": "acl-measurement",
@@ -27,7 +28,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "afo-evaluation": {
     "id": "afo-evaluation",
@@ -41,7 +43,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "ankle-laceup": {
     "id": "ankle-laceup",
@@ -57,7 +60,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "arc-sling": {
     "id": "arc-sling",
@@ -112,7 +116,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "knee-scooter": {
     "id": "knee-scooter",
@@ -141,7 +146,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "lumbar-corset": {
     "id": "lumbar-corset",
@@ -187,7 +193,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "post-op-shoe": {
     "id": "post-op-shoe",
@@ -233,7 +240,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "simple-sling": {
     "id": "simple-sling",
@@ -249,7 +257,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "step-up": {
     "id": "step-up",
@@ -278,7 +287,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "toe-spacer": {
     "id": "toe-spacer",
@@ -294,7 +304,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "walking-boot": {
     "id": "walking-boot",
@@ -310,7 +321,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "wrist-splint": {
     "id": "wrist-splint",
@@ -326,7 +338,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "comfort-cool": {
     "id": "comfort-cool",
@@ -342,7 +355,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "compression-stockings": {
     "id": "compression-stockings",
@@ -384,7 +398,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "arch-rivals": {
     "id": "arch-rivals",
@@ -412,17 +427,20 @@
   },
   "hinged-knee-brace": {
     "id": "hinged-knee-brace",
-    "lcodes": [],
+    "lcodes": [
+      "L1820"
+    ],
     "title": "Hinged knee brace",
     "category": "Knee",
-    "price": 0,
+    "price": 162.95,
     "fabricationType": "prefab",
     "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right hinged knee orthosis (HCPCS L1820: Ossur Rebound Hinged Wraparound Knee Brace).\n\nSubjective & Clinical Rationale:\nPatient presents with Left/Right knee {Indication: medial joint laxity / lateral joint laxity / mild MCL sprain / mild LCL sprain / knee pain with mild instability / degenerative joint disease}, affecting his/her ability to ambulate and complete daily functional activities safely.\n\nObjective Assessment & Device Fitting:\nSize Selected: {Size: XS / Small / Medium / Large / XL / 2XL / 3XL / 4XL}\n\nDevice Adjustments: The Ossur Rebound hinged wraparound brace was aligned to the anatomical axis of the Left/Right knee. The dual aluminum uprights and hinges were contoured and adjusted for intimate fit. Straps and wraparound closures were tensioned to provide medial/lateral stability, resist hyperextension, and prevent distal migration during ambulation without impinging popliteal structures or neurovascular bundles.\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Ambulation was evaluated in clinic; patient demonstrated improved coronal plane stability, reduced subjective knee giving-way, and an improved gait pattern.\n\nDonning / Doffing: Patient was instructed on proper application, strap sequencing, and positioning. he/she successfully completed an independent return demonstration of donning and doffing.\n\nCare & Safety: Patient was educated on wearing schedule, skin inspection protocols (redness lasting >20 min), hygiene/care instructions, and warranty terms. {+ Caregiver Present: Caregiver was present and also instructed on proper donning/doffing and skin checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order.",
     "excludeAutoPrice": false,
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788469810858
   },
   "abduction-sling": {
     "id": "abduction-sling",
@@ -438,7 +456,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "diabetic-shoe-delivery": {
     "id": "diabetic-shoe-delivery",
@@ -485,7 +504,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "afo-az-eval": {
     "id": "afo-az-eval",
@@ -512,7 +532,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "afo-arizona-del": {
     "id": "afo-arizona-del",
@@ -530,7 +551,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "carbon-plate": {
     "id": "carbon-plate",
@@ -559,7 +581,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "lso-measurement": {
     "id": "lso-measurement",
@@ -573,7 +596,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "patellar-stabilizing-brace": {
     "id": "patellar-stabilizing-brace",
@@ -620,7 +644,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "tscope-rom": {
     "id": "tscope-rom",
@@ -636,7 +661,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "custom-1785437208449": {
     "id": "custom-1785437208449",
@@ -651,7 +677,8 @@
     "isTemplate": false,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "custom-1786047844569": {
     "id": "custom-1786047844569",
@@ -664,7 +691,8 @@
     "text": "Pt. seen at North/South location for delivery of walker.  Walker was sized to pt.  He/She was educated on use/care of device.  F/up PRN.",
     "excludeAutoPrice": true,
     "isTemplate": false,
-    "isCustomEdited": true
+    "isCustomEdited": true,
+    "lastUpdated": 1788446367077
   },
   "custom-1786401952325": {
     "id": "custom-1786401952325",
@@ -677,7 +705,8 @@
     "text": "Patient was seen at the North/South office for fitting and delivery of Charcot/Crow boot.   He/she was fit with a custom CROW orthosis. The device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in the sagittal and coronal planes, decrease severe subtalar joint motion/pain, prevent joint collapse during ambulation, and help to slow progression or Charcot arthropathy. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule while monitoring skin for irritation.",
     "excludeAutoPrice": false,
     "isTemplate": false,
-    "isCustomEdited": true
+    "isCustomEdited": true,
+    "lastUpdated": 1788446367077
   },
   "clavicle-strap": {
     "id": "clavicle-strap",
@@ -763,7 +792,8 @@
     "text": "Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.",
     "excludeAutoPrice": false,
     "isTemplate": false,
-    "isCustomEdited": true
+    "isCustomEdited": true,
+    "lastUpdated": 1788446367077
   },
   "custom-1787094050566": {
     "id": "custom-1787094050566",
@@ -776,7 +806,8 @@
     "isTemplate": false,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "knee-immobilizer": {
     "id": "knee-immobilizer",
@@ -805,7 +836,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "afo-carbon-eval": {
     "id": "afo-carbon-eval",
@@ -851,7 +883,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "elbow-gel": {
     "id": "elbow-gel",
@@ -867,7 +900,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "forms-orthotics": {
     "id": "forms-orthotics",
@@ -883,20 +917,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
-  },
-  "custom-1787583412902": {
-    "id": "custom-1787583412902",
-    "title": "Diabetic shoe/Toe filler evaluation",
-    "price": 0,
-    "category": "Lower Prosthetics",
-    "lcodes": [],
-    "text": "Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History & Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination & Biomechanical Assessment:\n\nResidual Limb & Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment & Contralateral Foot: Physical examination reveals {Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions & Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan & Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting >20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}.",
-    "excludeAutoPrice": false,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "custom-1787665453088": {
     "id": "custom-1787665453088",
@@ -928,7 +950,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "compression-glove": {
     "id": "compression-glove",
@@ -999,7 +1022,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "bk-socket-lock-delivery": {
     "id": "bk-socket-lock-delivery",
@@ -1030,7 +1054,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "smo-delivery": {
     "id": "smo-delivery",
@@ -1048,7 +1073,8 @@
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
-    "userCustomizedPrice": true
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   },
   "mackie-ankle-delivery": {
     "id": "mackie-ankle-delivery",
@@ -1257,5 +1283,19 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true,
     "lastUpdated": 1788364768369
+  },
+  "custom-1787583412902": {
+    "id": "custom-1787583412902",
+    "title": "Diabetic shoe/Toe filler evaluation",
+    "price": 0,
+    "category": "Lower Prosthetics",
+    "lcodes": [],
+    "text": "Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History & Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination & Biomechanical Assessment:\n\nResidual Limb & Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment & Contralateral Foot: Physical examination reveals {Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions & Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan & Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting >20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}.",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788446367077
   }
 }
