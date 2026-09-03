@@ -128,9 +128,13 @@
     "category": "Knee",
     "price": 200,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting of a knee scooter to enable non-weightbearing mobility for Left/Right lower extremity. Steering column and knee platform adjusted to patient height for safe ambulation.",
+    "text": "Patient was seen at the North/South office for fitting of a knee scooter to enable non-weightbearing mobility for Left/Right lower extremity. Steering column and knee platform adjusted to patient height for safe ambulation.  Pt. was educated on use/care of scooter.  She then demonstrated safe use of device by scooting through the room.   \n\nF/up PRN.",
     "excludeAutoPrice": true,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788476386277
   },
   "lso-delivery": {
     "id": "lso-delivery",
