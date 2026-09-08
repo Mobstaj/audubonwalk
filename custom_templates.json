@@ -949,13 +949,13 @@
     "category": "Foot & Ankle",
     "price": 25,
     "fabricationType": "custom",
-    "text": "Pt. seen at North/South office for delivery of left/right {Metpad/bar: met bar(s)/met pad(s)}modification. Device custom positioned on foot {existing orthotic: existing facory/arch rivals/forms/custom}orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.",
+    "text": "Pt. seen at North/South office for delivery of left/right {Metpad/bar: met bar(s)/met pad(s)} modification. Device custom positioned on foot {existing orthotic: existing factory/arch rivals/forms/custom} orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.  \n\nHe/She was educated on use and care of {Metpad/bar: met bar(s)/met pad(s)}.  Followup PRN.",
     "excludeAutoPrice": true,
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1788446367077
+    "lastUpdated": 1788905611512
   },
   "compression-glove": {
     "id": "compression-glove",
