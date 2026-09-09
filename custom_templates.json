@@ -613,9 +613,13 @@
     "category": "Knee",
     "price": 260.6,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right patellar stabilizing knee brace. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} brace with C-shaped buttress and dual tracking straps. Device is reasonable and necessary to control patellar alignment in trochlear groove, prevent patellofemoral subluxation, and reduce anterior knee pain during weightbearing activities.",
+    "text": "Patient was evaluated and fitted at the North/South office for a left/right patellar stabilizing knee orthosis secondary to [Diagnosis: e.g., patellar subluxation / chondromalacia patellae / patellofemoral tracking disorder].\n\nEvaluation & Fitting:\nMeasurements taken and patient was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} {Type: Dynatrack/Kneesio/lateral J} knee orthosis. Circumferential sleeve, condylar pads, dynamic C-shaped buttress, and dual tensioning straps were anatomically aligned and tensioned to properly centralize the patella during flexion and extension. Uprights and hinges were inspected and contoured to follow anatomical varus/valgus alignment without pressure points. {+ Parent Present: Parent was present during the appointment and assisted with fitting instructions.}\n\nMedical Necessity:\nThe orthosis is reasonable and medically necessary to control abnormal Left/Right patellar tracking within the trochlear groove, resist lateral/medial patellofemoral subluxation, stabilize joint laxity, and decrease anterior knee pain during functional weight-bearing and ambulation.\n\nEducation & Delivery:\nhe/she was instructed on proper donning, strap sequencing, positioning of the patellar buttress, wear schedule, and skin inspection. he/she demonstrated independent donning and doffing with good suspension and pain relief during trial ambulation. Proof of Delivery (POD) signed and placed in chart. Follow-up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1788990363434
   },
   "tlso": {
     "id": "tlso",
