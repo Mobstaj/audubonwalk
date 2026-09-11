@@ -1130,9 +1130,13 @@
     "category": "Foot & Ankle",
     "price": 500,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for Left/Right custom functional foot orthotics (FO) delivery due to [Diagnosis]. Fit today with custom molded foot orthotic(s) fabricated from patient model. Inserts support longitudinal arches, distribute plantar pressures, correct rearfoot alignment, and relieve ambulation pain. Break-in schedule provided.",
+    "text": "Patient was seen at the North/South office for delivery and fitting of left/right custom foot orthotic(s) for {Diagnosis: Plantar fasciitis/Pes planus/Pes planovalgus/Supination/Metatarsalgia/Club foot/Neuropathy/Arthritis}\n\nDevice Verification & Fit:\nOrthotic(s) verified against clinical specifications and custom molded from patient's anatomical model. Devices were placed into patient's {Footwear: athletic shoes / supportive walking shoes / work boots} with factory insoles removed.\n\nMedial, lateral, and transverse arches achieve intimate, total contact support.\n\nDeep heel cup stabilizes the rearfoot and centers the calcaneus.\n\n{+ In-Clinic Modification: Edges skived and toe length trimmed for a seamless fit inside shoe toe box.}\n\nGait & Functional Trial:\nTrial ambulation performed in-clinic. Devices distribute plantar pressures evenly, control abnormal pronation/supination, and stabilize the foot through stance phase without heel slippage or focal irritation. Patient reported {Comfort: immediate support and comfort / noticeable reduction in pain / stable, supportive alignment}.\n\nPatient Education & Instructions:\nhe/she was educated on proper orthotic seating, appropriate footwear pairing, and daily skin checks. A gradual break-in schedule was provided (wear 1–2 hours on day 1, adding 1–2 hours daily until full-time wear is achieved).\n\nPatient demonstrated proper insertion and removal.\n\nCare and cleaning instructions provided.\n\nAdvised to contact the clinic if any persistent redness, hot spots, or discomfort develop. Follow-up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1789163083288
   },
   "custom-inserts-eval": {
     "id": "custom-inserts-eval",
