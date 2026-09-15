@@ -877,7 +877,10 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             </div>
 
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
-                <button class="action-btn" style="background:#007BFF; font-size:13px; padding:8px 16px;" onclick="addCalcRow()">+ Add Item</button>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <button class="action-btn" style="background:#007BFF; font-size:13px; padding:8px 16px;" onclick="addCalcRow()">+ Add Item</button>
+                    <button class="action-btn" style="background:#6c757d; font-size:13px; padding:8px 14px;" onclick="clearAllCalcRows()" title="Clear all calculator rows">&#128465; Clear All</button>
+                </div>
                 <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
                     <div style="display:flex; align-items:center; gap:6px;">
                         <label style="font-size:13px; font-weight:bold; color:var(--label-color);">Discount:</label>
@@ -5805,11 +5808,19 @@ const PERMANENT_TEMPLATES = [
     function importAppData(input) {
         const file = input.files[0];
         if (!file) return;
+        const fileModTime = file.lastModified || 0;
         const reader = new FileReader();
         reader.onload = function(e) {
             try {
                 const data = JSON.parse(e.target.result);
                 if (typeof data !== 'object') throw new Error("Invalid format");
+
+                let fileTimestamp = 0;
+                if (data.exportDate) {
+                    const parsed = new Date(data.exportDate).getTime();
+                    if (!isNaN(parsed) && parsed > 0) fileTimestamp = parsed;
+                }
+                if (!fileTimestamp && fileModTime) fileTimestamp = fileModTime;
 
                 let localNotes = {};
                 try { localNotes = JSON.parse(localStorage.getItem('customNotes') || '{}'); } catch(err){}
@@ -5819,6 +5830,17 @@ const PERMANENT_TEMPLATES = [
                         let importedNotes = {};
                         try { importedNotes = typeof data.customNotes === 'string' ? JSON.parse(data.customNotes) : data.customNotes; } catch(err){}
                         if (importedNotes && typeof importedNotes === 'object') {
+                            Object.keys(importedNotes).forEach(id => {
+                                const n = importedNotes[id];
+                                if (n && typeof n === 'object' && !n.lastUpdated && !n.timestamp) {
+                                    const idMatch = String(id).match(/(\d{12,13})/);
+                                    if (idMatch) {
+                                        n.lastUpdated = parseInt(idMatch[1]);
+                                    } else if (fileTimestamp) {
+                                        n.lastUpdated = fileTimestamp;
+                                    }
+                                }
+                            });
                             const { merged } = mergeTemplateObjects(localNotes, importedNotes);
                             localStorage.setItem('customNotes', JSON.stringify(merged));
                         } else {
@@ -6118,7 +6140,7 @@ const PERMANENT_TEMPLATES = [
             }
         } catch(e){}
 
-        const CURRENT_APP_BUILD_VERSION = '3.55_20260901_03';
+        const CURRENT_APP_BUILD_VERSION = '3.56_20260905_01';
         let lastVersion = '';
         try { lastVersion = localStorage.getItem('app_build_version') || ''; } catch(e){}
         const isNewBuildVersion = (lastVersion !== CURRENT_APP_BUILD_VERSION);
@@ -7259,12 +7281,6 @@ const PERMANENT_TEMPLATES = [
 
     function exportMasterConfigToNetwork() {
         let customNotes = initializeTemplateNotes();
-        const now = Date.now();
-        Object.keys(customNotes).forEach(k => {
-            if (customNotes[k] && typeof customNotes[k] === 'object') {
-                if (!customNotes[k].lastUpdated) customNotes[k].lastUpdated = now;
-            }
-        });
         let cmsPriceMap = {};
         try { cmsPriceMap = JSON.parse(localStorage.getItem('cmsPriceMap') || '{}'); } catch(e){}
         
@@ -7275,7 +7291,7 @@ const PERMANENT_TEMPLATES = [
 
         const exportData = {
             appName: "Audubon Walk",
-            version: "3.55",
+            version: "3.56",
             exportDate: new Date().toISOString(),
             targetNetworkPath: fullFilePath,
             customNotes: customNotes,
@@ -7300,12 +7316,34 @@ const PERMANENT_TEMPLATES = [
     function handleNetworkFileImport(input) {
         const file = input.files[0];
         if (!file) return;
+        const fileModTime = file.lastModified || 0;
         const reader = new FileReader();
         reader.onload = function(e) {
             try {
                 const data = JSON.parse(e.target.result);
                 if (!data || typeof data !== 'object') throw new Error("Invalid format");
                 const importedNotes = data.customNotes || data;
+
+                let fileTimestamp = 0;
+                if (data.exportDate) {
+                    const parsed = new Date(data.exportDate).getTime();
+                    if (!isNaN(parsed) && parsed > 0) fileTimestamp = parsed;
+                }
+                if (!fileTimestamp && fileModTime) fileTimestamp = fileModTime;
+
+                if (importedNotes && typeof importedNotes === 'object') {
+                    Object.keys(importedNotes).forEach(id => {
+                        const n = importedNotes[id];
+                        if (n && typeof n === 'object' && !n.lastUpdated && !n.timestamp) {
+                            const idMatch = String(id).match(/(\d{12,13})/);
+                            if (idMatch) {
+                                n.lastUpdated = parseInt(idMatch[1]);
+                            } else if (fileTimestamp) {
+                                n.lastUpdated = fileTimestamp;
+                            }
+                        }
+                    });
+                }
                 
                 let localNotes = {};
                 try { localNotes = JSON.parse(localStorage.getItem('customNotes') || '{}'); } catch(err){}
@@ -8590,8 +8628,11 @@ const PERMANENT_TEMPLATES = [
             let notesUpdated = false;
             entries.forEach(([id, note]) => {
                 if (note && (note.userCustomizedText || note.isCustomEdited) && !note.lastUpdated && !note.timestamp) {
-                    note.lastUpdated = Date.now();
-                    notesUpdated = true;
+                    const idMatch = String(id).match(/(\d{12,13})/);
+                    if (idMatch) {
+                        note.lastUpdated = parseInt(idMatch[1]);
+                        notesUpdated = true;
+                    }
                 }
             });
             if (notesUpdated) {
@@ -8614,6 +8655,8 @@ const PERMANENT_TEMPLATES = [
                     const dateStr = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
                     const timeStr = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
                     dateBadge = `<span style="font-size:10.5px; background:rgba(40,167,69,0.14); color:#1e7e34; padding:2px 7px; border-radius:4px; font-weight:600; margin-left:6px;" title="Last updated: ${dateStr} ${timeStr}">&#128336; ${dateStr} ${timeStr}</span>`;
+                } else if (note && (note.userCustomizedText || note.isCustomEdited)) {
+                    dateBadge = `<span style="font-size:10.5px; background:rgba(23,162,184,0.14); color:#117a8b; padding:2px 7px; border-radius:4px; font-weight:600; margin-left:6px;" title="Customized template (Prior version)">&#128336; Customized</span>`;
                 } else {
                     dateBadge = `<span style="font-size:10.5px; opacity:0.6; margin-left:6px; font-weight:normal;">(Base Default)</span>`;
                 }
@@ -8951,8 +8994,17 @@ const PERMANENT_TEMPLATES = [
     function removeCalcRow(id) {
         if (calcItems.length > 1) {
             calcItems = calcItems.filter(i => i.id !== id);
-            renderCalcTable();
+        } else {
+            calcItems = [{ id: 1, lcode: '', qty: 1, description: '', price: 0, lineTotal: 0 }];
         }
+        renderCalcTable();
+    }
+
+    function clearAllCalcRows() {
+        calcItems = [{ id: 1, lcode: '', qty: 1, description: '', price: 0, lineTotal: 0 }];
+        const discInput = document.getElementById('calc-discount-percent');
+        if (discInput) discInput.value = '0';
+        renderCalcTable();
     }
 
     function onCalcInputKeyDown(e, id) {
