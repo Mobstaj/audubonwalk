@@ -428,6 +428,48 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             border-color: #2b6cb0 !important;
             box-shadow: 0 2px 6px rgba(49,130,206,0.35);
         }
+        .cust-picker-block {
+            flex: 1 1 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+        body.dark .cust-picker-block {
+            background: rgba(255, 255, 255, 0.02);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        .cust-discreet-toggle {
+            background: none !important;
+            border: none !important;
+            padding: 2px 6px !important;
+            font-size: 10.5px !important;
+            font-weight: normal !important;
+            text-transform: none !important;
+            color: var(--muted) !important;
+            cursor: pointer !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 3px !important;
+            border-radius: 4px !important;
+            transition: all 0.15s ease !important;
+            user-select: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            line-height: 1.2 !important;
+        }
+        .cust-discreet-toggle:hover {
+            color: var(--text) !important;
+            background: rgba(0, 0, 0, 0.06) !important;
+            text-decoration: underline !important;
+        }
+        body.dark .cust-discreet-toggle:hover {
+            color: #ffffff !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
         mark.cust-highlight {
             background: #d4edda;
             color: #155724;
@@ -740,9 +782,8 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
 
     <!-- CLEAN MAIN HEADER BAR -->
     <div class="header">
-      <!-- TOP LEFT: CUSTOMIZER TOGGLE + MEDICARE CMS STATUS -->
+      <!-- TOP LEFT: MEDICARE CMS STATUS -->
       <div class="header-left">
-        <button id="customizer-toggle" class="hdr-btn" onclick="toggleCustomizerMode()" title="Toggle between Interactive Customizer Popup and Instant Direct Copy">&#128221; Customizer: ON</button>
         <div id="medicare-status">CMS JUL 26</div>
       </div>
       
@@ -831,7 +872,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
         <!-- SUBTLE FOOTER VERSION & COPYRIGHT NOTICE -->
         <div style="text-align:center; margin-top:110px; padding-bottom:30px; font-size:11.5px; color:var(--muted); opacity:0.55; letter-spacing:0.5px; user-select:none; display:flex; flex-direction:column; align-items:center; gap:3px;">
             <div>&copy; Jay Sciortino 2026</div>
-            <div style="font-size:10.5px; opacity:0.85;">v3.45</div>
+            <div style="font-size:10.5px; opacity:0.85;">v4.1</div>
         </div>
     </div>
 
@@ -877,10 +918,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             </div>
 
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
-                <div style="display:flex; align-items:center; gap:8px;">
-                    <button class="action-btn" style="background:#007BFF; font-size:13px; padding:8px 16px;" onclick="addCalcRow()">+ Add Item</button>
-                    <button class="action-btn" style="background:#6c757d; font-size:13px; padding:8px 14px;" onclick="clearAllCalcRows()" title="Clear all calculator rows">&#128465; Clear All</button>
-                </div>
+                <button class="action-btn" style="background:#007BFF; font-size:13px; padding:8px 16px;" onclick="addCalcRow()">+ Add Item</button>
                 <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
                     <div style="display:flex; align-items:center; gap:6px;">
                         <label style="font-size:13px; font-weight:bold; color:var(--label-color);">Discount:</label>
@@ -1163,7 +1201,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
             </div>
             <div>
                 <label style="font-size:11.5px; font-weight:bold; color:var(--muted); display:block; margin-bottom:3px;">HCPCS L-Codes</label>
-                <input type="text" id="note-lcodes-input" placeholder="e.g. L1845, L2820" oninput="onPopupLcodeInputChange(this)" style="width:100%; padding:9px 12px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box; font-size:13.5px; font-weight:bold; background:var(--input-bg); color:var(--input-text);">
+                <input type="text" id="note-lcodes-input" placeholder="e.g. A5500 x 2, A5513 x 3 or L1845" oninput="onPopupLcodeInputChange(this)" style="width:100%; padding:9px 12px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box; font-size:13.5px; font-weight:bold; background:var(--input-bg); color:var(--input-text);">
             </div>
         </div>
 
@@ -1177,6 +1215,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('he/she')" title="Insert Sex/Pronoun variable">+ Sex (he/she)</button>
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('{Brand / Manufacturer: Breg / DonJoy / Ossur / DJO}')" title="Insert Brand Option Picker">+ Brand</button>
                 <button type="button" class="subtle-pill-btn" onclick="promptCustomPickerInsert()" title="Create custom selectable option picker">+ Custom Dropdown...</button>
+                <button type="button" class="subtle-pill-btn" onclick="promptMultiPickerInsert()" title="Create custom multi-select option picker" style="border-color:#007BFF; color:#007BFF; font-weight:bold;">+ Multi-Select Picker...</button>
                 <button type="button" class="subtle-pill-btn" onclick="promptOptionalPhraseInsert()" title="Create optional phrase toggle button" style="border-color:#28a745; color:#28a745; font-weight:bold;">+ Optional Phrase...</button>
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('{+ Parent Present: Parent was present during the appointment.}')" title="Insert Parent Present toggle phrase">+ Parent Present</button>
                 <button type="button" class="subtle-pill-btn" onclick="insertVariableIntoText('{+ Achilles Wedge: Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.}')" title="Insert Achilles Wedge toggle phrase">+ Achilles Wedge</button>
@@ -1212,28 +1251,34 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
         </div>
         <div style="font-size:12px; color:var(--text); line-height:1.5; max-height:60vh; overflow-y:auto; padding-right:4px;">
             <div style="margin-bottom:10px; background:rgba(0,123,255,0.05); padding:10px; border-radius:6px; border:1px solid rgba(0,123,255,0.2);">
-                <strong style="color:#007BFF; display:block; margin-bottom:2px;">1. Dropdown Picker with Custom Write-In</strong>
+                <strong style="color:#007BFF; display:block; margin-bottom:2px;">1. Single Dropdown Picker</strong>
                 <code>{Label: Option 1 / Option 2 / Option 3}</code><br>
                 Example: <code>{Brand: Breg / DonJoy / Ossur / DJO}</code><br>
                 Example: <code>{Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL}</code><br>
                 <small style="color:var(--muted); display:block; margin-top:2px;">Generates a clean dropdown menu in the customizer with an automatic <em>"Custom Write-In..."</em> option.</small>
             </div>
+            <div style="margin-bottom:10px; background:rgba(0,123,255,0.09); padding:10px; border-radius:6px; border:1px solid rgba(0,123,255,0.3);">
+                <strong style="color:#007BFF; display:block; margin-bottom:2px;">2. Multi-Select Option Picker</strong>
+                <code>{*Label: Option 1 / Option 2 / Option 3}</code><br>
+                Example: <code>{*Deformities: no significant rigid deformities / hallux valgus (bunions) / hammer or claw toes / severe pes planus}</code><br>
+                <small style="color:var(--muted); display:block; margin-top:2px;">Allows selecting multiple items at once (e.g. both hammertoes and pes planus). Selections are combined with commas in the note. <em>(Can also be switched on-the-fly in the Customizer using the "+ Multi" button!)</em></small>
+            </div>
             <div style="margin-bottom:10px; background:rgba(0,0,0,0.03); padding:10px; border-radius:6px; border:1px solid rgba(0,0,0,0.08);">
-                <strong style="display:block; margin-bottom:2px;">2. Fill-in-the-Blank Text Field</strong>
+                <strong style="display:block; margin-bottom:2px;">3. Fill-in-the-Blank Text Field</strong>
                 <code>[Field Name]</code> or <code>______</code><br>
                 Example: <code>[Thigh Circumference]</code> or <code>[Diagnosis]</code><br>
                 <small style="color:var(--muted); display:block; margin-top:2px;">Displays a text input box in the customizer to type values into the note.</small>
             </div>
             <div style="margin-bottom:10px; background:rgba(40,167,69,0.05); padding:10px; border-radius:6px; border:1px solid rgba(40,167,69,0.2);">
-                <strong style="color:#28a745; display:block; margin-bottom:2px;">3. Optional Phrase Toggle Button</strong>
+                <strong style="color:#28a745; display:block; margin-bottom:2px;">4. Optional Phrase Toggle Button</strong>
                 <code>{+ Button Label: Full phrase text to insert}</code><br>
                 Example: <code>{+ Achilles Wedge: Achilles wedge was fit to inner liner of boot for gradual reduction of contracture following surgery.}</code><br>
                 Example: <code>{+ Parent Present: Parent was present during the appointment.}</code><br>
                 <small style="color:var(--muted); display:block; margin-top:2px;">Generates a 1-click toggle pill button in the customizer. When ON, the phrase is included in the note.</small>
             </div>
-            <div style="margin-bottom:6px;"><strong>4. Office Location:</strong> <code>North/South</code> (Toggles North or South office)</div>
-            <div style="margin-bottom:6px;"><strong>5. Side / Laterality:</strong> <code>Left/Right</code> or <code>L/R</code> (Toggles Left, Right, or Bilateral)</div>
-            <div><strong>6. Pronoun Conversions:</strong> <code>he/she</code>, <code>his/her</code>, <code>him/her</code> (Converts based on patient sex)</div>
+            <div style="margin-bottom:6px;"><strong>5. Office Location:</strong> <code>North/South</code> (Toggles North or South office)</div>
+            <div style="margin-bottom:6px;"><strong>6. Side / Laterality:</strong> <code>Left/Right</code> or <code>L/R</code> (Toggles Left, Right, or Bilateral)</div>
+            <div><strong>7. Pronoun Conversions:</strong> <code>he/she</code>, <code>his/her</code>, <code>him/her</code> (Converts based on patient sex)</div>
         </div>
         <div style="display:flex; justify-content:flex-end; margin-top:14px;">
           <button class="action-btn" style="background:#007BFF; font-size:12px;" onclick="closePopup('syntax-guide-popup')">Got It</button>
@@ -1409,7 +1454,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "A4225":  3.47,
     "A4233":  0.51,
     "A4234":  2.36,
-    "A4235":  1,
+    "A4235":  1.0,
     "A4236":  1.16,
     "A4238":  280.71,
     "A4239":  273.28,
@@ -1920,7 +1965,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E0305":  13.14,
     "E0310":  141.02,
     "E0316":  244.56,
-    "E0325":  11,
+    "E0325":  11.0,
     "E0326":  11.87,
     "E0371":  249.97,
     "E0372":  249.97,
@@ -1960,7 +2005,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E0570":  7.16,
     "E0572":  38.8,
     "E0574":  57.36,
-    "E0575":  130,
+    "E0575":  130.0,
     "E0580":  164.65,
     "E0585":  35.71,
     "E0600":  65.25,
@@ -1974,7 +2019,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E0617":  433.3,
     "E0618":  390.17,
     "E0620":  124.59,
-    "E0621":  103,
+    "E0621":  103.0,
     "E0627":  358.79,
     "E0629":  354.72,
     "E0630":  72.7,
@@ -1982,7 +2027,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E0636":  1261.88,
     "E0639":  158.98,
     "E0640":  158.98,
-    "E0650":  996,
+    "E0650":  996.0,
     "E0651":  1308.85,
     "E0652":  6878.71,
     "E0655":  153.82,
@@ -2012,7 +2057,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E0692":  1608.1,
     "E0693":  1982.33,
     "E0694":  6309.58,
-    "E0705":  59.49,
+    "E0705":  78.58,
     "E0720":  66.89,
     "E0730":  68.53,
     "E0731":  87.58,
@@ -2061,45 +2106,45 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E0930":  59.3,
     "E0935":  32.42,
     "E0940":  26.02,
-    "E0941":  57,
+    "E0941":  57.0,
     "E0942":  28.28,
     "E0944":  65.37,
     "E0945":  63.16,
     "E0946":  75.25,
     "E0947":  864.29,
     "E0948":  835.95,
-    "E0950":  97.21,
-    "E0951":  16.83,
+    "E0950":  127.69,
+    "E0951":  20.26,
     "E0952":  19.67,
-    "E0953":  92.54,
-    "E0954":  65.99,
+    "E0953":  121.07,
+    "E0954":  69.75,
     "E0955":  17.8,
-    "E0956":  92.54,
-    "E0957":  153.17,
+    "E0956":  121.07,
+    "E0957":  169.44,
     "E0958":  50.44,
-    "E0959":  57.09,
-    "E0960":  95.08,
-    "E0961":  25.1,
-    "E0966":  91.21,
-    "E0967":  90.92,
+    "E0959":  62.99,
+    "E0960":  111.76,
+    "E0961":  42.4,
+    "E0966":  101.72,
+    "E0967":  93.6,
     "E0968":  25.54,
     "E0969":  207.15,
-    "E0971":  36.76,
-    "E0973":  60.18,
-    "E0974":  92.45,
-    "E0978":  31.2,
+    "E0971":  61.83,
+    "E0973":  141.24,
+    "E0974":  94.98,
+    "E0978":  47.94,
     "E0980":  47.1,
-    "E0981":  51.97,
-    "E0982":  57.55,
+    "E0981":  57.9,
+    "E0982":  59.53,
     "E0983":  356.18,
     "E0984":  244.05,
     "E0985":  26.35,
     "E0986":  693.24,
     "E0988":  426.62,
-    "E0990":  81.23,
-    "E0992":  105.03,
+    "E0990":  144.24,
+    "E0992":  131.15,
     "E0994":  25.13,
-    "E0995":  33.4,
+    "E0995":  37.33,
     "E1002":  463.44,
     "E1003":  539.4,
     "E1004":  596.22,
@@ -2110,8 +2155,8 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E1010":  139.14,
     "E1012":  139.14,
     "E1014":  52.06,
-    "E1015":  148.67,
-    "E1016":  138.02,
+    "E1015":  163.49,
+    "E1016":  161.31,
     "E1020":  22.27,
     "E1028":  16.34,
     "E1029":  45.38,
@@ -2151,7 +2196,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E1223":  105.48,
     "E1224":  110.89,
     "E1225":  47.43,
-    "E1226":  472.35,
+    "E1226":  660.99,
     "E1227":  336.16,
     "E1228":  33.95,
     "E1230":  2739.88,
@@ -2218,37 +2263,37 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E2100":  860.22,
     "E2101":  268.71,
     "E2102":  219.59,
-    "E2103":  283.55,
+    "E2103":  314.81,
     "E2104":  54.52,
     "E2120":  404.05,
-    "E2201":  399.55,
-    "E2202":  600.32,
-    "E2203":  513.49,
-    "E2204":  901.37,
-    "E2205":  41.43,
-    "E2206":  49.69,
-    "E2207":  55.35,
-    "E2208":  94.48,
-    "E2209":  100.05,
-    "E2210":  7.04,
-    "E2211":  40.03,
-    "E2212":  7.52,
-    "E2213":  35.86,
-    "E2214":  40.71,
-    "E2215":  12.48,
-    "E2216":  55.39,
-    "E2217":  49.02,
-    "E2218":  55.39,
-    "E2219":  49.02,
-    "E2220":  36.13,
-    "E2221":  32.16,
-    "E2222":  26.45,
-    "E2224":  115.18,
-    "E2225":  22.82,
-    "E2226":  47.29,
+    "E2201":  531.74,
+    "E2202":  675.47,
+    "E2203":  682.72,
+    "E2204":  1159.22,
+    "E2205":  46.56,
+    "E2206":  57.96,
+    "E2207":  61.77,
+    "E2208":  145.91,
+    "E2209":  131.61,
+    "E2210":  8.02,
+    "E2211":  58.31,
+    "E2212":  8.35,
+    "E2213":  43.36,
+    "E2214":  51.3,
+    "E2215":  13.67,
+    "E2216":  58.34,
+    "E2217":  51.6,
+    "E2218":  58.34,
+    "E2219":  51.6,
+    "E2220":  40.67,
+    "E2221":  36.41,
+    "E2222":  30.03,
+    "E2224":  139.75,
+    "E2225":  24.79,
+    "E2226":  54.06,
     "E2227":  266.62,
     "E2228":  113.82,
-    "E2231":  170.75,
+    "E2231":  219.0,
     "E2298":  210.34,
     "E2310":  135.7,
     "E2311":  273.84,
@@ -2256,8 +2301,8 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E2313":  45.67,
     "E2321":  184.38,
     "E2322":  173.22,
-    "E2323":  84.91,
-    "E2324":  53.82,
+    "E2323":  84.97,
+    "E2324":  53.83,
     "E2325":  165.45,
     "E2326":  42.65,
     "E2327":  320.87,
@@ -2268,42 +2313,42 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E2341":  766.12,
     "E2342":  638.45,
     "E2343":  1021.52,
-    "E2351":  858.45,
-    "E2359":  201.52,
-    "E2360":  147.69,
-    "E2361":  135.31,
-    "E2362":  131.09,
-    "E2363":  173.42,
-    "E2364":  142.17,
-    "E2365":  93.36,
-    "E2366":  180.69,
-    "E2367":  472.78,
+    "E2351":  858.16,
+    "E2359":  248.18,
+    "E2360":  160.11,
+    "E2361":  171.33,
+    "E2362":  131.08,
+    "E2363":  228.47,
+    "E2364":  160.11,
+    "E2365":  137.77,
+    "E2366":  323.81,
+    "E2367":  514.76,
     "E2368":  48.43,
     "E2369":  48.03,
     "E2370":  64.45,
-    "E2371":  170.17,
+    "E2371":  185.15,
     "E2373":  98.86,
     "E2374":  62.53,
     "E2375":  81.25,
     "E2376":  155.35,
     "E2377":  57.55,
     "E2378":  70.66,
-    "E2381":  75.28,
-    "E2382":  22.79,
-    "E2383":  161.92,
-    "E2384":  79.69,
-    "E2385":  54.69,
-    "E2386":  129.53,
-    "E2387":  62.88,
-    "E2388":  59.52,
-    "E2389":  33.27,
-    "E2390":  51.51,
-    "E2391":  21.71,
-    "E2392":  50.43,
-    "E2394":  69.61,
-    "E2395":  54.74,
-    "E2396":  64.64,
-    "E2397":  548.05,
+    "E2381":  93.56,
+    "E2382":  25.5,
+    "E2383":  186.56,
+    "E2384":  99.38,
+    "E2385":  60.79,
+    "E2386":  184.86,
+    "E2387":  82.89,
+    "E2388":  61.87,
+    "E2389":  33.61,
+    "E2390":  52.57,
+    "E2391":  25.17,
+    "E2392":  66.18,
+    "E2394":  94.3,
+    "E2395":  67.0,
+    "E2396":  69.42,
+    "E2397":  590.19,
     "E2398":  163.49,
     "E2402":  752.89,
     "E2500":  557.3,
@@ -2312,36 +2357,36 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "E2506":  3296.27,
     "E2508":  5097.15,
     "E2510":  9645.69,
-    "E2513":  4491,
-    "E2601":  45.43,
-    "E2602":  106.05,
-    "E2603":  125.59,
-    "E2604":  190.93,
-    "E2605":  261.07,
-    "E2606":  422.29,
-    "E2607":  257.36,
-    "E2608":  311.34,
-    "E2611":  186.16,
-    "E2612":  377.88,
-    "E2613":  389.71,
-    "E2614":  553.99,
-    "E2615":  431.13,
-    "E2616":  596.88,
-    "E2619":  61.28,
-    "E2620":  474.59,
-    "E2621":  539.84,
-    "E2622":  388.75,
-    "E2623":  491.6,
-    "E2624":  395.03,
-    "E2625":  488.89,
-    "E2626":  799.68,
-    "E2627":  1276.24,
-    "E2628":  982.35,
-    "E2629":  1143.01,
-    "E2630":  815.88,
-    "E2631":  339.89,
-    "E2632":  212.61,
-    "E2633":  176.43,
+    "E2513":  4491.0,
+    "E2601":  75.12,
+    "E2602":  146.66,
+    "E2603":  186.19,
+    "E2604":  231.45,
+    "E2605":  330.63,
+    "E2606":  515.8,
+    "E2607":  356.03,
+    "E2608":  427.55,
+    "E2611":  383.68,
+    "E2612":  519.02,
+    "E2613":  482.79,
+    "E2614":  668.14,
+    "E2615":  555.58,
+    "E2616":  747.55,
+    "E2619":  63.02,
+    "E2620":  672.73,
+    "E2621":  705.99,
+    "E2622":  407.15,
+    "E2623":  518.07,
+    "E2624":  410.5,
+    "E2625":  519.67,
+    "E2626":  885.21,
+    "E2627":  1412.49,
+    "E2628":  1064.08,
+    "E2629":  1144.58,
+    "E2630":  941.66,
+    "E2631":  376.69,
+    "E2632":  239.51,
+    "E2633":  203.15,
     "E3000":  244.84,
     "E3200":  1178.66,
     "K0001":  27.78,
@@ -2356,35 +2401,35 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "K0011":  730.07,
     "K0012":  463.05,
     "K0015":  18.91,
-    "K0017":  59,
-    "K0018":  33.35,
-    "K0019":  17.36,
-    "K0020":  57.07,
-    "K0037":  55.51,
-    "K0038":  29.49,
-    "K0039":  63.32,
-    "K0040":  65.11,
-    "K0041":  60.51,
-    "K0042":  38.86,
-    "K0043":  23.97,
-    "K0044":  20.44,
-    "K0045":  68.66,
-    "K0046":  23.97,
-    "K0047":  85.33,
-    "K0050":  39.59,
-    "K0051":  62.63,
-    "K0052":  92.34,
-    "K0053":  104.17,
-    "K0056":  118.55,
-    "K0065":  57.37,
-    "K0069":  117.43,
+    "K0017":  62.76,
+    "K0018":  35.07,
+    "K0019":  21.13,
+    "K0020":  57.06,
+    "K0037":  59.16,
+    "K0038":  29.82,
+    "K0039":  66.18,
+    "K0040":  91.74,
+    "K0041":  64.99,
+    "K0042":  44.75,
+    "K0043":  23.98,
+    "K0044":  20.45,
+    "K0045":  69.55,
+    "K0046":  23.98,
+    "K0047":  93.94,
+    "K0050":  39.93,
+    "K0051":  64.62,
+    "K0052":  113.58,
+    "K0053":  125.31,
+    "K0056":  135.54,
+    "K0065":  63.34,
+    "K0069":  142.42,
     "K0070":  19.48,
-    "K0071":  129.15,
-    "K0072":  82.76,
-    "K0073":  43.37,
-    "K0077":  70.81,
-    "K0098":  28.66,
-    "K0105":  120.46,
+    "K0071":  155.7,
+    "K0072":  93.72,
+    "K0073":  49.61,
+    "K0077":  83.88,
+    "K0098":  33.43,
+    "K0105":  141.7,
     "K0195":  13.41,
     "K0455":  377.46,
     "K0552":  3.47,
@@ -2395,11 +2440,11 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "K0605":  20.45,
     "K0606":  3588.9,
     "K0607":  27.69,
-    "K0608":  172.74,
+    "K0608":  191.79,
     "K0609":  1148.78,
     "K0672":  105.37,
     "K0730":  245.69,
-    "K0733":  35.93,
+    "K0733":  37.1,
     "K0738":  50.7,
     "K0739":  20.11,
     "K0800":  1017.21,
@@ -2418,7 +2463,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "K0823":  342.07,
     "K0824":  534.37,
     "K0825":  490.11,
-    "K0826":  916,
+    "K0826":  916.0,
     "K0827":  765.67,
     "K0828":  1126.96,
     "K0829":  1092.37,
@@ -2900,7 +2945,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "L5540":  2486.82,
     "L5560":  2907.33,
     "L5570":  3146.23,
-    "L5580":  3534,
+    "L5580":  3534.0,
     "L5585":  3543.26,
     "L5590":  3758.59,
     "L5595":  4929.43,
@@ -2993,7 +3038,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "L5728":  3506.61,
     "L5780":  1407.06,
     "L5781":  4980.92,
-    "L5782":  5251,
+    "L5782":  5251.0,
     "L5783":  3150.07,
     "L5785":  636.06,
     "L5790":  880.26,
@@ -3264,13 +3309,13 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "L8605":  893.39,
     "L8606":  270.16,
     "L8607":  53.52,
-    "L8609":  8127,
+    "L8609":  8127.0,
     "L8610":  955.43,
     "L8612":  823.49,
     "L8613":  314.8,
     "L8614":  23768.38,
     "L8615":  562.6,
-    "L8616":  131,
+    "L8616":  131.0,
     "L8617":  114.43,
     "L8618":  32.7,
     "L8619":  10203.6,
@@ -3285,9 +3330,9 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "L8630":  542.2,
     "L8631":  2702.46,
     "L8641":  571.4,
-    "L8642":  374,
+    "L8642":  374.0,
     "L8658":  498.19,
-    "L8659":  2407,
+    "L8659":  2407.0,
     "L8670":  681.49,
     "L8678":  12.97,
     "L8679":  10520.89,
@@ -3316,7 +3361,7 @@ body { background-color: var(--bg); font-family: Arial, Helvetica, sans-serif; p
     "Q0486":  364.94,
     "Q0487":  425.76,
     "Q0489":  20275.42,
-    "Q0490":  877,
+    "Q0490":  877.0,
     "Q0491":  1378.8,
     "Q0492":  111.07,
     "Q0493":  316.3,
@@ -5620,7 +5665,7 @@ const PERMANENT_TEMPLATES = [
   {"id":"knee-scooter","lcodes":["L2999"],"title":"Knee Scooter","category":"Knee","price":200,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting of a knee scooter to enable non-weightbearing mobility for Left/Right lower extremity. Steering column and knee platform adjusted to patient height for safe ambulation.","excludeAutoPrice":true},
   {"id":"lso-delivery","lcodes":["L0651"],"title":"LSO Delivery","category":"Spine / LSO","price":605.72,"fabricationType":"prefab","text":"Patient presented to the North/South clinic for evaluation, custom fitting, and delivery of a prefabricated Lumbar-Sacral Orthosis with sagittal-coronal control and rigid anterior/posterior/lateral panels.\n\nSubjective \u0026 Clinical Rationale:\nPatient presents with severe lumbosacral pain and functional limitations secondary to {Diagnosis:Chronic lumbar pain/ Lumbar Radiculopathy / Lumbar Spondylolisthesis / Lumbar Spinal Stenosis / Lumbar Disc Herniation / Degenerative Disc Disease / Post-Surgical Lumbar Fusion / Lumbar Compression Fracture}. The LSO is reasonable and medically necessary to provide rigid trunk immobilization, increase intracavitary pressure, reduce lumbar lordosis, offload the intervertebral discs/posterior elements, and facilitate safer performance of daily activities.\n\nObjective Assessment \u0026 Custom Fitting:\nMeasurements Obtained: Waist circumference: [Waist Circumference]\nBrand / Device: Trend LSO\nSize Selected: {Size: 0/1/1.5/2/2.5/3/3.5/4/4.5/5/5.5/6}\n\nPanel Contour \u0026 Adjustments: Rigid posterior panel was formed/contoured to match the patient’s anatomical lumbar lordosis from sacrococcygeal junction to T9. Rigid anterior panel was aligned to cover from symphysis pubis to xiphoid process without impinging the ribs when seated. Lateral rigid panels were positioned to provide coronal plane control. The mechanical advantage pulley/strap closure system was adjusted to achieve uniform hydrostatic compression without compromising respiratory excursion.\n\nFunctional Assessment \u0026 Patient Education:\nFunctional Mobility Check: Device fit and spinal restriction were verified in both standing and sitting positions; no edge digging or anterior tilt impingement noted.\n\nDonning / Doffing: Patient was instructed on proper positioning, alignment of the lordotic curve, and use of the compression pull-tabs. he/she successfully demonstrated independent donning and doffing with proper tensioning.\n\nCare \u0026 Safety Protocols: Patient was educated on prescribed wearing schedule, donning over a clean cotton undergarment to protect skin, daily skin inspection protocols, and cleaning/maintenance instructions. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working order."},
   {"id":"lumbar-corset","lcodes":["L0630"],"title":"Lumbar Corset","category":"Spine / LSO","price":201.59,"fabricationType":"prefab","text":"Patient presented to the North/South clinic for evaluation, fitting, and delivery of an EZwrap Lumbar Orthosis / Corset with reinforcing stays.\n\nSubjective \u0026 Medical Rationale:\nPatient presents following {Procedure: Spinal Cord Stimulator (SCS) trial lead placement / permanent Spinal Cord Stimulator (SCS) implant / pulse generator pocket revision} with associated post-surgical lumbosacral pain and trunk instability secondary to {Diagnosis: Failed Back Surgery Syndrome / Chronic Intractable Low Back Pain / Lumbar Radiculopathy / Post-Laminectomy Syndrome / Spinal Stenosis}. The EZwrap lumbar corset is medically necessary to provide rigid trunk stabilization, limit gross flexion/extension and rotational movement, protect the surgical incisions, prevent lead migration or displacement of the implanted stimulator hardware during the acute healing phase, and reduce post-operative mechanical pain during daily functional activities.\n\nFitting \u0026 Adjustments:\nMeasurements Obtained: Waist circumference: [Waist Circumference]\nDevice Fit: EZwrap Lumbar Corset — Size: {Size: XSmall/Small/Med/Large/XL/2XL/3XL/4XL}.\n\nCustom Modifications \u0026 Fit: The semi-rigid posterior stays were contoured to match anatomical lordosis while bridging over and offloading the surgical incision and generator pocket sites to prevent direct focal pressure or shear forces. Side-tensioning closures were adjusted to deliver uniform intracavitary compression and immobilize the lower lumbar spine without compromising respiratory function or impinging incision margins.\n\nPatient Education:\nDonning / Doffing: Proper donning and doffing procedures were reviewed with spinal precautions (no bending/twisting). he/she independently and accurately applied the device.\n\nCare \u0026 Safety Protocols: Pt. advised to wear per Dr.\u0027s prescribed wearing schedule.   He/She was educated on wearing over a smooth cotton undergarment to protect surgical dressings, daily wound and skin inspection, and reporting any increased pain or numbness immediately. {+ Caregiver Present: Caregiver was present and instructed on proper application, strap alignment, and surgical site monitoring.}\n\nAll questions were answered, and the patient verbalized complete understanding. Orthosis delivered in proper working condition. Follow-up PRN."},
-  {"id":"mortons-extension","lcodes":["L3031"],"title":"Mortons extension","category":"Foot \u0026 Ankle","price":80,"fabricationType":"custom","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right Morton\u0027s extension foot orthotic modification. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid extension under 1st MTP joint. Extension is reasonable and necessary to immobilize the 1st MTP joint, relieve hallux rigidus pain, and support propulsion phase of gait."},
+  {"id":"mortons-extension","lcodes":["L3031"],"title":"Mortons extension","category":"Foot \u0026 Ankle","price":152.19,"fabricationType":"custom","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right Morton\u0027s extension foot orthotic modification. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid extension under 1st MTP joint. Extension is reasonable and necessary to immobilize the 1st MTP joint, relieve hallux rigidus pain, and support propulsion phase of gait."},
   {"id":"night-splint","lcodes":["L4397"],"title":"Night Splint","category":"Foot \u0026 Ankle","price":204.74,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right posterior shelll adjustable tension night splint for {Indication:Plantar Fasciitis / Plantar Fasciitis with severe morning heel pain / Plantar Flexion Ankle Contracture / Achilles Tendinopathy with tightness}.\n\nClinical Indications \u0026 Subjective Evaluation:\nPatient presents with chronic pain and localized tenderness over the medial calcaneal tubercle and plantar fascia insertion, noting severe startup pain during initial weight-bearing steps in the morning that restricts daily ambulatory activities. {+ Plantar Fasciitis Protocol: Symptoms have persisted for \u003e1 month with documented failure of prior conservative measures, including calf/plantar stretching exercises, rest, ice, NSAIDs, and supportive footwear/orthotics.} {+ Ankle Contracture: Physical exam demonstrates a non-fixed plantar flexion contracture of at least 10 degrees with limitation of passive dorsiflexion, capable of functional correction.}  {+ Arch pain: Pt. also has pain/tenderness along medial longitudinal arch.}\n\nFitting, Adjustments \u0026 Technical Alignment:\nHe/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} static ankle-foot orthosis. Straps were tensioned and soft interface padding aligned to maintain the ankle in {Dorsiflexion Setting: neutral 90 degrees / 5 degrees dorsiflexion / 10 degrees dorsiflexion} without excessive pressure over the calcaneus or malleoli. {+ Toe Wedge: Included adjustable dorsiflexion toe wedge was installed under the forefoot to engage the Windlass mechanism and maximize plantar fascia stretch.}\n\nMedical Necessity:\nThe static positioning AFO is reasonable and medically necessary to provide continuous, low-load passive stretch to the plantar fascia and Achilles-gastrocnemius complex during non-weightbearing sleep/rest, preventing nocturnal shortening contractures, alleviating severe morning startup pain, and restoring functional ambulatory capacity.\n\nPatient Education \u0026 Safety Guidelines:\nHe/she was educated on proper donning/doffing, daily skin inspection protocols, and advised on a progressive wear schedule starting with 1–2 hours during evening rest before transitioning to overnight use. {+ Non-Weightbearing Warning: Patient was explicitly warned and instructed that this orthosis is strictly NON-AMBULATORY and must be removed prior to standing or walking to prevent fall injury.} Patient demonstrated understanding and verbalized compliance. Follow-up PRN."},
   {"id":"post-op-shoe","lcodes":["L3260"],"title":"Post-op Shoe","category":"Foot \u0026 Ankle","price":30,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid post-operative shoe. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} stiff soled Darco post-op shoe. Shoe immobilizes toes and metatarsals. It also helps to offload surgical sites while healing. Pt. was educated on use/care of shoe today.  Fit was appropriate.  F/up PRN."},
   {"id":"prewash","lcodes":["L2999"],"title":"Prewash","category":"Post-Op \u0026 Recovery","price":11,"fabricationType":"prefab","text":"Patient was issued surgical skin prewash cleanser at North/South office prior to joint procedure. Written surgical site prep instructions provided.","excludeAutoPrice":true},
@@ -5639,7 +5684,7 @@ const PERMANENT_TEMPLATES = [
   {"id":"generic-delivery","lcodes":[],"title":"Generic Delivery","category":"General","price":0,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of Left/Right ______________ . Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} orthotic device with custom adjustments made. Device is reasonable and necessary to stabilize the affected joint, prevent further injury, and support functional recovery."},
   {"id":"hinged-knee-brace","lcodes":[],"title":"Hinged knee brace","category":"Knee","price":0,"fabricationType":"prefab","text":"Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated Left/Right hinged knee orthosis (HCPCS L1820: Ossur Rebound Hinged Wraparound Knee Brace).\n\nSubjective \u0026 Clinical Rationale:\nPatient presents with Left/Right knee {Indication: medial joint laxity / lateral joint laxity / mild MCL sprain / mild LCL sprain / knee pain with mild instability / degenerative joint disease}, affecting his/her ability to ambulate and complete daily functional activities safely.\n\nObjective Assessment \u0026 Device Fitting:\nSize Selected: {Size: XS / Small / Medium / Large / XL / 2XL / 3XL / 4XL}\n\nDevice Adjustments: The Ossur Rebound hinged wraparound brace was aligned to the anatomical axis of the Left/Right knee. The dual aluminum uprights and hinges were contoured and adjusted for intimate fit. Straps and wraparound closures were tensioned to provide medial/lateral stability, resist hyperextension, and prevent distal migration during ambulation without impinging popliteal structures or neurovascular bundles.\n\nFunctional Assessment \u0026 Patient Education:\nGait Evaluation: Ambulation was evaluated in clinic; patient demonstrated improved coronal plane stability, reduced subjective knee giving-way, and an improved gait pattern.\n\nDonning / Doffing: Patient was instructed on proper application, strap sequencing, and positioning. he/she successfully completed an independent return demonstration of donning and doffing.\n\nCare \u0026 Safety: Patient was educated on wearing schedule, skin inspection protocols (redness lasting \u003e20 min), hygiene/care instructions, and warranty terms. {+ Caregiver Present: Caregiver was present and also instructed on proper donning/doffing and skin checks.}\n\nAll questions were answered, and the patient verbalized full understanding. Device was delivered in proper working order."},
   {"id":"abduction-sling","lcodes":["L3670"],"title":"Abduction Sling","category":"Upper Extremity","price":127.15,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a left/right {Sling Model: Breg Atlas/ Breg Arc with pillow/ Breg Slingshot 2/ Donjoy ultrasling pro} shoulder orthosis for {Indication: Post-Operative Rotator Cuff Repair / Bankart Labral Repair / Glenohumeral Subluxation / Proximal Humerus Fracture / Shoulder Arthroplasty}.\n\nClinical \u0026 Post-Surgical Indication:\nPatient requires external glenohumeral joint immobilization and abduction positioning to protect surgically repaired tendinous/labral tissues and prevent tension across the healing rotator cuff.\n\nBiomechanical Fitting \u0026 Position Verification:\nHe/she was fit with a left/right {Sling Model: Breg Atlas, Breg Arc with pillow, Breg Slingshot 2, Donjoy ultrasling pro} shoulder abduction orthosis. The contoured high-density foam abduction pillow was positioned at the patient\u0027s iliac crest to maintain 20-30 degrees abduction with neutral rotation. Padded neck/shoulder strap and waist belt were adjusted to evenly distribute upper extremity weight across the contralateral shoulder and pelvis, eliminating cervical strain. Padded wrist/thumb cuff supported the forearm in neutral alignment.\n\nMedical Necessity:\nThe shoulder abduction orthosis is reasonable and medically necessary to immobilize the glenohumeral joint in the prescribed plane of abduction, prevent adduction/internal rotation stress on the repaired rotator cuff, offload the shoulder girdle, and promote soft tissue union.\n\nSafety \u0026 Patient Education:\nHe/she was instructed on proper sling donning/doffing with assistance, maintaining pillow positioning during sitting and sleeping, performing pendulum exercises as permitted by MD, and inspecting axillary and neck skin. Follow-up PRN."},
-  {"id":"diabetic-shoe-delivery","lcodes":["A5500","A5500","A5513","A5513","A5513"],"title":"Diabetic Shoe Delivery","category":"Foot \u0026 Ankle","price":512.22,"fabricationType":"prefab","text":"Patient was seen at the North/South office for bilateral therapeutic diabetic shoes and custom molded multiple-density inserts delivery. Inserts trimmed to fit diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Therapeutic diabetic shoes and heat-molded multi-density inserts are reasonable and necessary due to diabetes mellitus with peripheral neuropathy, foot deformity, and callus formation. Inserts relieve pressure points and prevent plantar ulceration. Daily foot inspection instructed. Patient was educated to check skin regularly and ween into full-time use."},
+  {"id":"diabetic-shoe-delivery","lcodes":["A5500","A5500","A5513","A5513","A5513","A5513","A5513","A5513"],"title":"Diabetic Shoe Delivery","category":"Foot & Ankle","price":503.2,"fabricationType":"prefab","text":"Patient was seen at the North/South office for bilateral therapeutic diabetic shoes and custom molded multiple-density inserts delivery. Inserts trimmed to fit diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Therapeutic diabetic shoes and heat-molded multi-density inserts are reasonable and necessary due to diabetes mellitus with peripheral neuropathy, foot deformity, and callus formation. Inserts relieve pressure points and prevent plantar ulceration. Daily foot inspection instructed. Patient was educated to check skin regularly and ween into full-time use."},
   {"id":"bk-suction-prosthesis-w-all-pro-foot-delivery","lcodes":[],"title":"BK suction prosthesis w flex walk foot","category":"Foot \u0026 Ankle","price":0,"fabricationType":"custom","text":"The patient was seen at the North/South office for definitive Left/Right transtibial (BK) prosthesis delivery. Fit with a custom laminated socket, flexible inner liner, suction suspension system, and dynamic response foot. Socket demonstrated total surface bearing contact and secure suction suspension without pistoning. Static and dynamic gait alignment evaluated over 300 feet ambulation. Issued prosthetic socks, liner sheaths, and care instructions. Scheduled follow-up in 2 weeks."},
   {"id":"afo-articulated-del","lcodes":["L1970","L2820","L2210","L2210"],"title":"AFO Articulated delivery","category":"Foot \u0026 Ankle","price":1198.05,"fabricationType":"custom","text":"Patient was seen at the North/South location for delivery of a custom-molded Left/Right articulated Ankle-Foot Orthosis (AFO) custom fabricated from a patient anatomical model for {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Cerebral Palsy/ Lower Extremity Muscle Weakness}.\n\nBiomechanical Specifications \u0026 In-Office Modifications:\nThe custom AFO features a lightweight molded polypropylene/carbon shell, soft inner interface, and bilateral articulated {Joint Type: Tamarack Flexure Dorsiflexion Assist / Free Motion Hinges with Plantarflexion Stop / Adjustable Spring-Loaded Assist} ankle joints. Proximal calf band, anterior tibial strap, and footplate were inspected. Minor distal trimline adjustments performed to optimize shoe fit and toe clearance. Gait analysis demonstrated immediate correction of foot drop, smooth heel-to-toe progression, and restored swing phase clearance without joint buckle or hyperextension.\n\nMedical Necessity:\nThe custom articulated AFO is reasonable and medically necessary to assist ankle dorsiflexion during swing phase, prevent foot drop, resist hazardous plantarflexion, maintain coronal subtalar stability, improve gait symmetry, and prevent fall-related trauma during community ambulation.\n\nPatient Education \u0026 Compliance:\nHe/she was educated on proper donning with shoe horn, progressive break-in protocol (1 hour increments daily), footwear matching, and daily skin checks over bony landmarks. Follow-up scheduled in 2 weeks."},
   {"id":"afo-az-eval","lcodes":[],"title":"AFO/AZ evaluation","category":"Foot \u0026 Ankle","price":0,"fabricationType":"custom","text":"Pt. was seen at the North/South office for custom Left/Right Arizona AFO evaluation. He/she has a history of severe ankle/hindfoot arthritis and instability. Complains of severe pain and inability to ambulate functional distances. Examination reveals subtalar joint pain, arch collapse along medial longitudinal arch, and hindfoot valgus position. Conservative non-custom bracing has failed. A custom Arizona AFO is medically necessary to eliminate subtalar joint motion and stabilize foot/ankle. A cast was taken today in subtalar neutral position with bony landmarks identified. Cast sent for custom fabrication. Patient will be scheduled for delivery upon receipt."},
@@ -5655,22 +5700,22 @@ const PERMANENT_TEMPLATES = [
   {"id":"even-up","lcodes":["L2999"],"title":"Even up","category":"Foot \u0026 Ankle","price":30,"fabricationType":"prefab","text":"Pt. was fit with even up leveling device to compensate for walking boot sole elevation.  Pt. was fit with size {Size:/Small/Med/Large/XL}even up.  Pt. was educated on use/care of device.  Fit was appropriate.  F/up PRN.","excludeAutoPrice":true},
   {"id":"walker-boot","lcodes":["E1399"],"title":"Walker","category":"General","price":70,"fabricationType":"prefab","text":"Pt. seen at North/South location for delivery of walker.  Walker was sized to pt.  He/She was educated on use/care of device.  F/up PRN.","excludeAutoPrice":true},
   {"id":"crow-boot-delivery","lcodes":["L4631"],"title":"CROW boot delivery","category":"Foot \u0026 Ankle","price":1710.05,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of Charcot/Crow boot.   He/she was fit with a custom CROW orthosis. The device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in the sagittal and coronal planes, decrease severe subtalar joint motion/pain, prevent joint collapse during ambulation, and help to slow progression or Charcot arthropathy. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule while monitoring skin for irritation."},
-  {"id":"clavicle-strap","lcodes":["L3650"],"title":"Clavicle Support","category":"Upper Extremity","price":85.5,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right figure-8 clavicle strap/support orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO} for clavicle fracture / acromioclavicular injury. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} padded clavicle brace. Padded axillary straps tensioned to retract scapulae and maintain anatomical clavicular alignment. Device is reasonable and necessary to immobilize the shoulder girdle, maintain reduction, and promote bony healing. Instructed on skin monitoring and strap adjustment."},
+  {"id":"clavicle-strap","lcodes":["L3650"],"title":"Clavicle Support","category":"Upper Extremity","price":66.69,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right figure-8 clavicle strap/support orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO} for clavicle fracture / acromioclavicular injury. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} padded clavicle brace. Padded axillary straps tensioned to retract scapulae and maintain anatomical clavicular alignment. Device is reasonable and necessary to immobilize the shoulder girdle, maintain reduction, and promote bony healing. Instructed on skin monitoring and strap adjustment."},
   {"id":"forms","lcodes":["L3030"],"title":"Forms","category":"Foot \u0026 Ankle","price":100,"fabricationType":"prefab","text":"Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} Forms foot orthotics. Foot orthotics will support feet in alignment, reduce plantar pressures, help to prevent {Alignment Problem: supination / pronation / arch collapse / heel pain}. He/she was educated on use/care of devices. F/up PRN.","excludeAutoPrice":true},
   {"id":"forms-modified","lcodes":["L3030"],"title":"Forms, Modified","category":"Foot \u0026 Ankle","price":100,"fabricationType":"prefab","text":"Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} customized prefabricated heat-moldable foot orthotics (Forms).\n\nIn-office modifications performed:\n- Metatarsal modification: {Metatarsal Modification: None / adding metatarsal bars / adding metatarsal pads} for {Met Modification Side: Left / Right / Bilateral}\n- Pressure relief: {Pressure Relief: None / [Relieved Met Heads] metatarsal heads / 5th metatarsal base / 1st met head / 2nd-4th met heads}\n- Posting: {Posting: None / 1/8\" medial post / 1/4\" medial post / 3/8\" medial post / 1/8\" lateral post / 1/4\" lateral post / 3/8\" lateral post}\n- Shoe lift: {Shoe Lift: None / 1/8\" shoe lift / 1/4\" shoe lift / 3/8\" shoe lift / 1/2\" shoe lift}\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination / pronation / arch collapse / heel pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.","excludeAutoPrice":true},
-  {"id":"humeral-fracture-brace","lcodes":["L3980"],"title":"Humeral Fracture Brace","category":"Upper Extremity","price":215.42,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right prefabricated rigid humeral fracture brace (Sarmiento) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Corflex} for diaphyseal humerus fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} humeral orthosis with shoulder suspension cap and circumferential compression straps. Circumferential soft tissue compression and rigid anterior/posterior shells provide hydrodynamic support to stabilize the humeral shaft fracture, maintain anatomical alignment, and permit active shoulder/elbow motion. He/she was instructed on strap tensioning, skin inspection, and progressive wearing schedule. Follow-up PRN."},
+  {"id":"humeral-fracture-brace","lcodes":["L3980"],"title":"Humeral Fracture Brace","category":"Upper Extremity","price":347.63,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right prefabricated rigid humeral fracture brace (Sarmiento) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Corflex} for diaphyseal humerus fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} humeral orthosis with shoulder suspension cap and circumferential compression straps. Circumferential soft tissue compression and rigid anterior/posterior shells provide hydrodynamic support to stabilize the humeral shaft fracture, maintain anatomical alignment, and permit active shoulder/elbow motion. He/she was instructed on strap tensioning, skin inspection, and progressive wearing schedule. Follow-up PRN."},
   {"id":"toe-filler-delivery","lcodes":["A5500","A5500","A5513","A5513","A5513"],"title":"Diabetic shoe/toe filler","category":"Lower Prosthetics","price":935.02,"fabricationType":"custom","text":"Patient was seen at the North/South office for fitting and delivery of bilateral therapeutic diabetic shoes and Left/Right custom molded shoe insert(s) with longitudinal arch and toe filler (L5000). The toe filler is designed to fill the void of the amputated digits, prevent the foot from sliding forward inside the shoe, and maintain appropriate fit and pressure distribution. Trimmed and fit to diabetic footwear size {Shoe Size: 5/5.5/6/6.5/7/7.5/8/8.5/9/9.5/10/10.5/11/11.5/12/12.5/13/14/15} {Width: Medium/Wide/Extra Wide/XX-Wide} ({Shoe Style/Detail: Dr. Comfort / Anodyne / Orthofeet}). Patient was educated to check skin regularly and ween into full-time use."},
   {"id":"gel-heel-cups","lcodes":["L2999"],"title":"Gel heel cups","category":"Foot \u0026 Ankle","price":27,"fabricationType":"prefab","text":"Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.","excludeAutoPrice":true},
   {"id":"hammertoe-strap-budin","lcodes":[],"title":"Hammertoe strap Budin","category":"Foot \u0026 Ankle","price":0,"fabricationType":"prefab","text":"Patient was seen at the North/South office for delivery of Budin/hammertoe splint.  He/She has hammertoe deformity of the {Affected Digits: 2nd/3rd/4th/5th/2nd and 3rd/2nd, 3rd, and 4th/3rd and 4th} digits.  Pt. was fit with {Single, double, triple: single/double/triple} hammertoe splint.  Device will help to reduce hammertoe deformity, prevent progression of this deformity, and reduce associated pain.  \n\nPt. was educated on donning, doffing, use, and care of hammertoe splint.  He/She was also given written instructions.  F/up PRN."},
-  {"id":"knee-immobilizer","lcodes":["L1830"],"title":"Knee Immobilizer","category":"Knee","price":145.2,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right tri-panel rigid knee immobilizer from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Medline} for acute knee injury / post-surgical stabilization. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} knee immobilizer ({Length: 12 inch / 16 inch / 20 inch / 22 inch / 24 inch}). Posterior and medial/lateral contoured aluminum stays adjusted to hold knee in full extension. Device is reasonable and necessary to immobilize the knee in the sagittal plane, protect healing ligamentous/tendinous repairs, and prevent weightbearing collapse during early recovery. Instructed on proper donning/doffing and skin checks."},
+  {"id":"knee-immobilizer","lcodes":["L1830"],"title":"Knee Immobilizer","category":"Knee","price":64.38,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right tri-panel rigid knee immobilizer from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Medline} for acute knee injury / post-surgical stabilization. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} knee immobilizer ({Length: 12 inch / 16 inch / 20 inch / 22 inch / 24 inch}). Posterior and medial/lateral contoured aluminum stays adjusted to hold knee in full extension. Device is reasonable and necessary to immobilize the knee in the sagittal plane, protect healing ligamentous/tendinous repairs, and prevent weightbearing collapse during early recovery. Instructed on proper donning/doffing and skin checks."},
   {"id":"afo-carbon-del","lcodes":["L1951"],"title":"AFO/Carbon Delivery","category":"Foot \u0026 Ankle","price":1043.45,"fabricationType":"prefab","text":"Patient was seen at the North/South location for fitting and delivery of a Left/Right energy-storing carbon fiber Ankle-Foot Orthosis {HCPCS Code: L1932 (Custom Fitted Carbon Fiber) / L1951 (Spiral Prefab Custom Fitted) / L1945 (Custom Molded Rigid Anterior Tibial Section)}).\n\nSubjective \u0026 Clinical Rationale:\nPatient presents with Left/Right lower extremity weakness secondary to {Indication: Drop Foot secondary to Peroneal Nerve Palsy / Post-Stroke Hemiplegia / Lumbar Radiculopathy (L4/L5) / Multiple Sclerosis / Incomplete Spinal Cord Injury / Charcot-Marie-Tooth / Severe Dorsiflexion Weakness}. The carbon fiber AFO is medically necessary and reasonable to provide dynamic energy return, assist swing-phase toe clearance, prevent foot drop tripping falls, control sagittal plane progression, and stabilize the ankle complex during community ambulation.\n\nBiomechanical Specifications \u0026 In-Office Modifications:\n\nDevice Characteristics: Lightweight prepreg carbon fiber composite strut with {Strut Design: dynamic posterior strut / anterior lateral strut / rigid anterior tibial cuff / full-length dynamic footplate / sulcus-length flexible footplate}.\n\nCustom Modifications \u0026 Fit:\n\nProximal calf/tibial cuff interface aligned to anatomical contours with soft padding lining (L2820).\n\nFootplate positioned within patient’s standard footwear; minor footplate adjustments and insole seating completed to ensure intimate contact without edge digging or forefoot impingement.\n\nProximal hook-and-loop closure tensioned securely to maintain uncompromised tibial positioning without proximal fibular head or peroneal nerve pressure.\n{+ Added Soft Interface: Soft interface lining added to rigid carbon section for bony prominence relief.}\n\nFunctional Assessment \u0026 Patient Education:\n\nGait Evaluation: Dynamic gait analysis demonstrated immediate restoration of swing-phase dorsiflexion clearance, smooth heel strike to toe-off energy transfer, elimination of steppage gait / hip hiking, and improved step symmetry across uneven clinic surfaces.\n\nDonning / Doffing: Patient was educated on proper shoe insertion, donning techniques, and strap tensioning. he/she independently and accurately applied the device.\n\nCare \u0026 Safety Protocols: Patient was instructed on a progressive break-in schedule (increasing 1–2 hours daily), wearing over a clean moisture-wicking sock, footwear heel-height restrictions, and daily visual skin inspection over the anterior tibia, malleoli, and plantar surface. {+ Caregiver Present: Caregiver was present and instructed on proper application and skin safety.}\n\nAll questions were answered, and the patient verbalized complete understanding. Device delivered in proper working order. Follow-up scheduled in {Follow-up: 2 weeks / 4 weeks / PRN}."},
   {"id":"afo-carbon-eval","lcodes":[],"title":"AFO/Carbon Evaluation","category":"Foot \u0026 Ankle","price":0,"fabricationType":"prefab","text":"Patient presents at North/South office for evaluation of progressive gait instability, lower extremity weakness, and frequent tripping/falls impacting daily activities. He/She has been diagnosed with foot drop Left/Right due to {Diagnosis: Spinal stenosis/Muscular Dystrophy/Peripheral Neuropathy/Post-Stroke Hemiplegia/Multiple Sclerosis/Charcot-Marie-Tooth/CP}. Patient experiences persistent foot drop during the swing phase of gait and muscle fatigue after walking short distances. Current off-the-shelf bracing or lack of bracing provides inadequate energy return and insufficient stability to control dynamic gait deviations. Ambulation is limited to {Ambulation Distance: \u003c100 feet/100-300 feet/300+ feet/community distances} {Assistance: unassisted/with a cane/with a walker} before requiring rest due to fatigue.\n\nPt. was examined and Left/Right lower extremity assessment revealed dorsiflexion MMT strength of {MMT Dorsiflexion: 0/1/2/2+/3/3+/4/5}. Plantarflexion MMT strength was {MMT Plantarflexion: 0/1/2/2+/3/3+/4/5/WNL}. Knee extensor strength was {MMT Knee Extensors: 3/3+/4/4+/5}. Passive range of motion to neutral (0° dorsiflexion) is {ROM Neutral: achievable with knee extended/achievable with knee flexed/limited}. Severe fixed equinus deformity is {Fixed Deformity: absent/present} and dynamic fluctuating edema is {Edema: absent/present}. Skin integrity is {Skin Integrity: intact/intact with mild erythema/compromised}.\n\nGait evaluation reveals {Gait Pattern: steppage gait/slap foot at initial contact/knee hyperextension during stance phase/lack of heel-strike} affecting the Left/Right lower extremity during swing and stance phases.\n\nDue to lower extremity weakness and foot drop with high fall risk, patient requires a dynamic carbon fiber AFO (L1951). Standard polypropylene AFOs are inadequate due to the patient\u0027s need for dynamic energy storage and return during stance-to-swing transition to reduce fatigue and stabilize gait. Patient meets all Medicare LCD coverage criteria, including ambulatory status, absence of severe fixed deformity or severe edema, and adequate knee/hip strength to manage dynamic propulsion.\n\nPlan: Fit and adjust HCPCS L1951 (carbon fiber dynamic response AFO) to affected Left/Right lower extremity(ies). Custom modifications to include footplate trimming, heel height alignment, and shoe interface fitting. Patient instructed on donning/doffing, skin monitoring, and footwear requirements. Follow-up scheduled in {Follow-up: 2 weeks/4 weeks}."},
   {"id":"cervical-collar","lcodes":["L0174"],"title":"Cervical/Trend/Vista","category":"Spine / LSO","price":369.22,"fabricationType":"prefab","text":"Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated rigid cervical orthosis.\n\nSubjective \u0026 Medical Rationale:\nPatient presents with severe cervical pain and cervical spine instability secondary to {Diagnosis: Cervical Spondylosis / Cervical Radiculopathy / Post-Traumatic Cervical Sprain/Strain / Cervical Disc Displacement / Post-Operative Cervical Fusion / Cervical Fracture / Degenerative Disc Disease of Cervical Spine}. The orthosis is medically necessary to provide rigid multi-planar immobilization (flexion, extension, rotation, and lateral bending), unload cervical vertebrae, facilitate tissue healing, and control movement-induced pain during daily functional activities.\n\nObjective Assessment \u0026 Fitting:\nDevice Fit: Fit with {Brand: Aspen Vista / Trend Medical Rigid Cervical Collar}.\n\nCustom Sizing \u0026 Adjustments:\nHeight adjustment dial/mechanism set to proper anatomical height to maintain the cervical spine in neutral alignment without hyper-extending the chin.  Occipital and mandibular supports contoured and centered to prevent pressure points.  Anterior and posterior sections secured with bilateral hook-and-loop closures to eliminate sagittal/rotational displacement while ensuring uncompromised airway, unobstructed tracheostomy access (if needed), and full swallowing capability.\n\nFunctional Assessment \u0026 Patient Education:\nImmobilization \u0026 Fit Verification: Verified cervical motion restriction in sitting and standing positions without excessive impingement on clavicles or mandible.\n\nDonning / Doffing: Patient was instructed on proper neutral alignment, strap sequencing, and donning/doffing procedures. he/she successfully demonstrated independent donning/doffing.\n\nCare \u0026 Safety Protocols: Patient was educated  on prescribed wear schedule, pad hygiene/replacement instructions, and skin inspection over bony contact areas (mandible, occiput, sternum, clavicles). {+ Caregiver Present: Caregiver was present and instructed on proper application, neutral positioning during collar changes, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working condition. Follow-up PRN."},
-  {"id":"diabetic-shoe-del","lcodes":["A5500","A5500","A5513","A5513","A5513"],"title":"Diabetic Shoe Delivery","category":"Foot \u0026 Ankle","price":346.74,"fabricationType":"prefab","text":"Patient was seen at our office for delivery of diabetic shoes and inserts. Pt. ambulated in shoes and stated that they were comfortable. Educated on weening into new shoes."},
-  {"id":"diabetic-shoe-eval","lcodes":[],"title":"Diabetic Shoe Evaluation","category":"Foot \u0026 Ankle","price":0,"fabricationType":"prefab","text":"Patient presents to the North/South office for evaluation and anatomical measurement for therapeutic diabetic footwear and total contact inserts. He/She is under active diabetic management by his/her certifying physician.  Patient arrived to the office today {Ambulatory state: ambulating unaided/ambulating with cane/ambulating with walker/in wheelchair}\n\nQualifying Medical History \u0026 Rationale:\nPatient has a documented diagnosis of Diabetes Mellitus and meets Medicare/LCD qualifying criteria presenting with: {Qualifying Condition: Peripheral neuropathy with evidence of callus formation / History of pre-ulcerative callus / History of previous ulceration / Foot deformity / Poor peripheral circulation / History of partial or complete amputation of the foot}. Therapeutic footwear and inserts are medically necessary to accommodate deformities, relieve shear/friction, redistribute peak plantar pressures, and prevent ulceration or progressive skin breakdown.\n\nPhysical Examination \u0026 Biomechanical Assessment:\nSkin Integrity: Skin is {Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / healed at prior ulcer site}; no active open ulcerations or signs of acute infection present.\n\nStructural Deformity: Bilateral foot exam reveals {Deformities: no significant rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / amputation site}.\n\nNeurological \u0026 Vascular:\nPt. was tested for sensation and found to have {Sensation: Loss of Protective Sensation (LOPS) / Loss of protective sensation of toes but intact from ankle up/ intact protective sensation}. \n\nFoot Sizing \u0026 Measurements:\nBrannock Assessment (Weight-Bearing): Size  Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M/ W / XW / XXW}. \nShoe Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M/ W / XW / XXW}. \n{+ Custom Impressions Taken: Direct 3D volumetric impressions / foam impression boxes taken bilaterally for custom-fabricated multi-density inserts (A5513/A5514).}\n\nPlan \u0026 Patient Education:\nOrder Placed: HCPCS A5500 (Pair) and HCPCS {Insert Code: A5512 (Prefab heat-molded, 3 pairs) / A5513 (Custom-molded multi-density, 3 pairs)}.\n\nNext Steps: Patient will return for fitting, in-shoe evaluation, heat-molding/customization, and weight-bearing pressure distribution check upon receipt of order.\n\nEducation Provided: Patient was counseled on the break-in schedule (1–2 hours daily with gradual progression), daily visual foot inspections with a mirror, seamless diabetic socks, and immediate reporting of any erythema lasting \u003e20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily foot inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 2-3 weeks for delivery / PRN upon order arrival}."},
+  {"id":"diabetic-shoe-del","lcodes":["A5500","A5500","A5513","A5513","A5513","A5513","A5513","A5513"],"title":"Diabetic Shoe Delivery","category":"Foot & Ankle","price":503.2,"fabricationType":"prefab","text":"Patient was seen at our office for delivery of diabetic shoes and inserts. Pt. ambulated in shoes and stated that they were comfortable. Educated on weening into new shoes."},
+  {"id":"diabetic-shoe-eval","lcodes":["A5500","A5500","A5513","A5513","A5513","A5513","A5513","A5513"],"title":"Diabetic Shoe Evaluation","category":"Foot & Ankle","price":0,"fabricationType":"prefab","text":"Patient presents to the North/South office for evaluation and anatomical measurement for therapeutic diabetic footwear and total contact inserts. He/She is under active diabetic management by his/her certifying physician. Patient arrived to the office today {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History & Rationale:\nPatient has a documented diagnosis of Diabetes Mellitus and meets Medicare/LCD qualifying criteria presenting with: {*Qualifying Condition: Peripheral neuropathy with evidence of callus formation / Foot deformity / History of pre-ulcerative callus / History of previous ulceration / Poor peripheral circulation / History of partial or complete amputation of the foot}. Therapeutic extra-depth footwear (A5500) and total contact inserts are medically necessary to accommodate deformities, relieve shear/friction, redistribute peak plantar pressures off bony prominences, and prevent ulceration or progressive skin breakdown.\n\nPhysical Examination & Biomechanical Assessment:\n\nSkin Integrity & Callus Formation:\nSkin condition is {Skin Condition: intact with localized callus formation / intact without active calluses or lesions / intact with pre-ulcerative callus formation / dry with heavy calluses}.\nCallus / Issue Location: {*Callus Location: None / Bilateral 1st met heads / Bilateral 2nd-4th met heads / Bilateral 5th met heads / Left 1st met head / Left 2nd-3rd met heads / Left 5th met head / Right 1st met head / Right 2nd-3rd met heads / Right 5th met head / Bilateral great toes (hallux IPJ) / Left great toe / Right great toe / Dorsal lesser toes (hammertoes) / Bilateral plantar heels / Medial 1st met head (bunion) / Lateral 5th met head (bunionette)}; no active open ulcerations or signs of acute infection present.\n{+ Prior Ulcer: History of healed prior ulcer located at [Prior Ulcer Location]; skin is intact.}\n{+ Active Ulcer Accommodated: Superficial ulceration noted at [Active Ulcer Location]; currently receiving physician wound care and accommodated within insert.}\n\nStructural Deformities:\nBilateral foot exam reveals: {*Deformities: no significant rigid deformities / hallux valgus (bunions) / hammer or claw toes / prominent metatarsal heads / severe pes planus / Charcot arthropathy / partial foot amputation}.\nDeformity Location: {*Deformity Location: None / Bilateral 1st MTPJs (bunions) / Left 1st MTPJ / Right 1st MTPJ / Bilateral lesser toes (digits 2-5) / Left toes / Right toes / Bilateral 1st-5th met heads / Plantar 2nd-3rd met heads / Midfoot / Amputation site}. Deformities require extra-depth footwear to relieve pressure and prevent skin breakdown.\n\nNeurological & Vascular:\nPt. was tested for sensation and found to have {Sensation: Loss of Protective Sensation / Loss of protective sensation of toes but intact from ankle up / intact protective sensation / diminished sensation}. Peripheral circulation is {Circulation: intact with adequate perfusion / poor peripheral circulation / intact with mild edema}.\n\nFoot Sizing & Measurements:\nBrannock Assessment (Weight-Bearing): Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\nShoe Selected for Order: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} \u2014 Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}. Footwear features extra depth to accommodate prescribed inserts without dorsal friction.\n\n{+ Custom Impressions Taken: Direct 3D volumetric impressions / foam impression boxes taken bilaterally in subtalar neutral position for custom-fabricated multi-density inserts (A5513/A5514).}\n\nPlan & Patient Education:\nOrder Placed: HCPCS A5500 (Pair) and HCPCS {Insert Code: A5513 (Custom-molded multi-density, 3 pairs) / A5512 (Prefab heat-molded, 3 pairs)}.\n{+ Toe Filler: HCPCS L5000 Left/Right partial foot prosthesis with custom toe filler.}\n\nCertifying Physician Coordination:\nPatient is under active diabetes management by his/her certifying physician [Certifying Physician Name, M.D./D.O.]. Prior to delivery, supplier will ensure required certifying physician notes and a signed Statement of Certifying Physician are on file.\n\nNext Steps: Patient will return for fitting, in-shoe evaluation, heat-molding/customization, and weight-bearing pressure distribution check upon receipt of order.\n\nEducation Provided: Patient was counseled on the break-in schedule (1\u20132 hours daily with gradual progression), daily visual foot inspections with a mirror, seamless diabetic socks, and immediate reporting of any erythema lasting >20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily foot inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 2-3 weeks for delivery / PRN upon order arrival}."},
   {"id":"elbow-gel","lcodes":["L3762"],"title":"Elbow Gel Rod","category":"Upper Extremity","price":121.55,"fabricationType":"prefab","text":"Patient was seen at our North / South office for evaluation, custom fitting, and delivery of a left/right static rigid elbow orthosis (L3762, Gel Rod - Elbow Immobilizer).\n\nMedical Necessity \u0026 Clinical Indications:\nThe orthosis is reasonable and medically necessary for the left/right upper extremity to provide rigid immobilization, joint alignment, and symptom relief.  Pt. has {Diagnosis: Cubital Tunnel Syndrome/ Carpal Tunnel Syndrome/ Tennis Elbow/ Elbow Fracture}. Conservative measures were evaluated and rigid positioning is indicated to prevent harmful flexion, decompress the nerves, and facilitate tissue healing.\n\nFitting, Customization \u0026 Delivery:\nDevice: Hely and Weber Gel rod elbow orthosis with rigid stays and gel conditioning pad.\nSize: {Size:  Small-Medium / Large - XL}\n\nThe device was contoured, applied, and adjusted to the patient\u0027s left/right upper extremity.\n\nStraps and rigid structural stays were modified to ensure proper joint alignment and total contact without neurovascular impingement.\n\nSkin was inspected following trial fitting; no excessive redness or pressure points were noted over bony prominences.\n\nPatient Education \u0026 Follow-Up:\nPatient demonstrated independent ability to safely don, doff, and adjust the brace.\nEducation provided regarding wearing schedule ({Schedule: Nighttime use only / Continuous except hygiene / As needed for pain \u0026 activity}), skin inspection, hygiene, and care instructions.\n\n{+ Caregiver: Caregiver / parent was present and trained on proper application and skin check protocol.}\n\nPatient expressed understanding of all instructions, and all questions were addressed. Follow-up scheduled as needed."},
   {"id":"forms-orthotics","lcodes":["L3040"],"title":"Forms","category":"Foot \u0026 Ankle","price":50,"fabricationType":"prefab","text":"Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} prefabricated heat-moldable foot orthotics (Forms).\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination/ pronation/arch collapse/heel pain/metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.","excludeAutoPrice":true},
-  {"id":"diabetic-shoe-toe-filler-eval","lcodes":[],"title":"Diabetic shoe/Toe filler evaluation","category":"Lower Prosthetics","price":0,"fabricationType":"prefab","text":"Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History \u0026 Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination \u0026 Biomechanical Assessment:\n\nResidual Limb \u0026 Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment \u0026 Contralateral Foot: Physical examination reveals {Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions \u0026 Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan \u0026 Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting \u003e20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}."},
+  {"id":"diabetic-shoe-toe-filler-eval","lcodes":[],"title":"Diabetic shoe/Toe filler evaluation","category":"Lower Prosthetics","price":0,"fabricationType":"prefab","text":"Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History \u0026 Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination \u0026 Biomechanical Assessment:\n\nResidual Limb \u0026 Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment \u0026 Contralateral Foot: Physical examination reveals {*Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions \u0026 Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan \u0026 Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting \u003e20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}."},
   {"id":"general-orthosis-adjustment","lcodes":["L4205"],"title":"General orthosis asjustment","category":"General","price":29.95,"fabricationType":"prefab","text":"Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Ankle-Foot Orthosis (AFO) / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Abduction Sling/ Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints \u0026 Clinical History:\nPatient reports {Issue: localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment \u0026 Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor \u0026 Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome \u0026 Patient Verification:\nTrial \u0026 Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin \u0026 Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN."},
   {"id":"met-pad-bar","lcodes":["L2999"],"title":"Met pad/bar","category":"Foot \u0026 Ankle","price":25,"fabricationType":"custom","text":"Pt. seen at North/South office for delivery of left/right {Metpad/bar: met bar(s)/met pad(s)}modification. Device custom positioned on foot {existing orthotic: existing facory/arch rivals/forms/custom}orthotic insert proximal to 2nd-4th metatarsal heads. Metatarsal modification is reasonable and necessary to offload painful metatarsal heads and redistribute forefoot plantar pressure during ambulation.","excludeAutoPrice":true},
   {"id":"compression-glove","lcodes":["L2999"],"title":"Compression glove","category":"Upper Extremity","price":15,"fabricationType":"prefab","text":"Pt. seen at North/South office for fitting and delivery of Left/Right compression glove. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression glove. Device is reasonable and necessary to provide therapeutic edema control, manage swelling, and reduce pain in hand/digits.","excludeAutoPrice":true},
@@ -5679,7 +5724,7 @@ const PERMANENT_TEMPLATES = [
   {"id":"tayco-brace-delivery","lcodes":["L1971"],"title":"Tayco brace delivery","category":"Foot \u0026 Ankle","price":582.34,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right Tayco over-the-shoe ankle orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Tayco brace. External uprights and straps adjusted over patient footwear. The ankle orthosis is reasonable and necessary to provide coronal plane joint stability, prevent painful ankle sprain recurrence, and allow functional ambulation."},
   {"id":"smo-evaluation","lcodes":[],"title":"SMO evaluation","category":"Foot \u0026 Ankle","price":0,"fabricationType":"custom","text":"Pt. seen at the North/South office for left/right evaluation for a custom supramalleolar orthosis(es) (L1907).\n\nCHIEF COMPLAINT \u0026 FUNCTIONAL DEFICIT:\nPatient presents with {Pathology: severe bilateral pes planovalgus / hypotonia / subtalar joint instability / pronation with dynamic arch collapse / dynamic calcaneal valgus / calcaneal varus and forefoot supination / toe walking / severe in-toeing}. He/she demonstrates difficulty with {Functional Deficits: delayed gross motor development / frequent tripping and loss of balance / toe-walking / gait fatigue / painful stance phase alignment}.\n\nPHYSICAL ASSESSMENT \u0026 BIOMECHANICS:\n* Subtalar \u0026 Midtarsal Alignment: {Subtalar Alignment: Severe calcaneal eversion reducible to neutral / Calcaneal valgus with forefoot abduction / Rigid pes valgus / Significant midfoot sag / calcaneal varus with forefoot supination}.\n* Tone \u0026 Range of Motion: {Tone: Hypotonia / mild hypotonia / hypertonia / Mild hypertonia / Normal tone}. Ankle dorsiflexion is {DF ROM: Full passive DF / Restricted DF with gastrocnemius tightness / Neutral}.\n* Triplanar Flexibility: {Flexibility: Deformity is fully reducible with manual correction / Partially reducible / Fixed}.\n* Skin Integrity / Edema: Skin is intact without breakdown over medial malleolus and navicular. {Edema: No edema / Mild fluctuating edema}.\n\nGAIT OBSERVATION:\nObservational gait analysis demonstrates {Gait Deviations: excessive pronation and arch flattening at midstance / lack of stable base of support / dynamic valgus thrust / out-toeing with medial heel whip / delayed push-off / in-toeing with lateral whip/ toe walking / ambulating with excessive lateral weight bearing}.  {+ Gait Evaluated: Observational gait assessment performed barefoot and in supportive footwear.}\n\nMEDICAL NECESSITY \u0026 CUSTOM JUSTIFICATION:\nA custom-fabricated SMO (L1907) is medically necessary to provide circumferential, triplanar control of the subtalar and midtarsal joints while allowing full sagittal plane ankle motion. Prefabricated arch supports or off-the-shelf orthoses were considered but are insufficient due to {Custom Justification: need for intimate hydrostatic compression and midfoot realignment / disproportionate pediatric foot dimensions / severe calcaneal valgus requiring specific triplanar correction}. \n\nCASTING, CUSTOM MEASURING:\n{+ 3d Scanned: Detailed anatomical impression obtained via 3D optical scanning.}{+ Fiber cast: Pt. was cast in subtalar neutral position with fiberglass wrap.} {+ Cust. Measure.: Detailed anatomical measurements were taken for custom made devices.}\n\nThe goal of the device is to align the hindfoot/forefoot complex, stabilize the base of support during dynamic stance, improve balance, and facilitate proper gait kinematics.\n{+ Parent Present: Parent/guardian was present during the evaluation and agreed with the treatment goals.}\n{+ Patient Educated: Caregiver/patient instructed on expected outcomes and custom fabrication process.}"},
   {"id":"bk-socket-lock-delivery","lcodes":[],"title":"BK socket with lock delivery","category":"Foot \u0026 Ankle","price":0,"fabricationType":"custom","text":"Pt. seen at North/South office for delivery of Left/Right transtibial replacement socket. New carbon fiber custom socket mounted to existing prosthetic foot. Total surface bearing socket with shuttle lock pin suspension system. Patient ambulated comfortably over 300 ft. Instructed on skin inspection."},
-  {"id":"bk-supplies-delivery","lcodes":["L5679","L5679","L5685","L5685","L8420"],"title":"BK supplies delivery","category":"Foot \u0026 Ankle","price":2073.02,"fabricationType":"prefab","text":"Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of {+ 2x locking liners: 2 x locking liners}{+ 2 x cushion liners: , cushion liners x 2}{+ Suspension sleeves x 2: 2 x suspension sleeves}{+ single ply socks: , 6 x single ply socks}{+ Multi ply socks: , 6 x multi ply socks}{+ Liner liners: , 6 x liner liners}. Items fit and delivered to replace worn consumables and maintain socket fit/suspension."},
+  {"id":"bk-supplies-delivery","lcodes":["L5679","L5679","L5685","L5685","L8420"],"title":"BK supplies delivery","category":"Foot \u0026 Ankle","price":1888.63,"fabricationType":"prefab","text":"Pt. seen at North/South office for delivery of Left/Right prosthetic replacement supplies consisting of {+ 2x locking liners: 2 x locking liners}{+ 2 x cushion liners: , cushion liners x 2}{+ Suspension sleeves x 2: 2 x suspension sleeves}{+ single ply socks: , 6 x single ply socks}{+ Multi ply socks: , 6 x multi ply socks}{+ Liner liners: , 6 x liner liners}. Items fit and delivered to replace worn consumables and maintain socket fit/suspension."},
   {"id":"smo-delivery","lcodes":["L1907","L2820","L2275"],"title":"SMO Delivery","category":"Foot \u0026 Ankle","price":1003.31,"fabricationType":"custom","text":"Pt. seen at the North/South office for the final delivery and fitting of left/right Custom Supramalleolar Orthosis(es) (L1907).\n\nFITTING \u0026 STRUCTURAL ASSESSMENT:\nThe custom SMO was fit to the patient\u0027s left/right lower extremity(ies). \n* Total Contact \u0026 Contour: Device demonstrates intimate total contact along the longitudinal arch, sustentaculum tali, and medial/lateral malleoli with no localized high-pressure areas.\n* Alignment: Calcaneus is stabilized in {Alignment: neutral / corrected subtalar alignment / reduced valgus / reduced varus}.\n* Strapping \u0026 Suspension: Straps and closures secure the foot firmly into the heel cup without impingement on the anterior ankle crease or dorsal foot structures.\n* Trimlines: Trimlines allow full active/passive sagittal dorsiflexion and plantarflexion while providing rigid medial/lateral supramalleolar stabilization.\n\nDYNAMIC TRIAL \u0026 GAIT:\nPatient ambulated in office with the SMO fit inside supportive footwear. Visual gait analysis demonstrated {Gait Outcome: immediate improvement in arch height and base of support / corrected calcaneal alignment / reduction of dynamic pronation / reduction of dynamic supination and lateral weight bearing / reduction of in-toeing/ smoother transition through stance phase}. No abnormal pressure points, migration, or heel pistoning observed.\n\nEDUCATION \u0026 INSTRUCTIONS:\n* Break-in Schedule: Provided {Break-In: verbal and written gradual break-in schedule (starting 1-2 hours/day and increasing gradually)}.\n* Skin Protocol: Patient/caregiver instructed to inspect skin after each removal; {Skin Redness: any redness lasting longer than 20-30 minutes requires immediate discontinuation and clinic follow-up}.\n* Footwear \u0026 Care: Educated on appropriate footwear fitting and orthosis cleaning with mild soap and water.\n\nDISPOSITION:\nThe custom SMO (L1907) fits properly, achieves desired functional correction, and is delivered to the patient. Follow-up scheduled in {Follow-up: 2-3 weeks / 4-6 weeks / PRN as needed}.\n{+ Parent Present: Parent/caregiver attended the fitting and demonstrated independent donning/doffing proficiency.}\n{+ Patient Educated: Patient/caregiver verbalized full understanding of wear guidelines and safety precautions.}\n{+ Donning/Doffing Mastered: Patient/caregiver demonstrated proficient independent application and strap fastening.}"},
   {"id":"mackie-ankle-delivery","lcodes":["L1971"],"title":"Mackie ankle delivery","category":"Foot \u0026 Ankle","price":582.34,"fabricationType":"prefab","text":"Pt. seen at North/South office for delivery of Left/Right Mackie dynamic stretching ankle brace. Fit with size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Mackie brace. Provides low-load prolonged stretch to plantarflexors/Achilles to increase ankle dorsiflexion ROM and manage contracture."},
   {"id":"scoliosis-tlso","lcodes":[],"title":"Scoliosis TLSO","category":"Spine / LSO","price":0,"fabricationType":"custom","text":"Pt. seen at North/South office for delivery of custom Scoliosis TLSO. Custom molded thoracic-lumbar-sacral orthosis donned in centered position. Trimlines modified for comfort and arm clearance. TLSO is reasonable and necessary to correct spinal curvature, prevent progression of idiopathic scoliosis, and stabilize spine."},
@@ -5688,7 +5733,7 @@ const PERMANENT_TEMPLATES = [
   {"id":"custom-inserts-eval","lcodes":["L3020","L3020"],"title":"Custom Inserts Eval","category":"Foot \u0026 Ankle","price":500,"fabricationType":"custom","text":"Pt. was seen at our North/South location for an evaluation and impression for custom Left/Right foot orthotics.\n\nSubjective \u0026 Clinical Indications:\nPt. presents with severe foot and ankle pain exacerbated during weight-bearing, standing, and walking, which significantly limits daily functional activities and ambulation.\nDiagnosis: {Diagnosis: Pes planovalgus / Plantar fasciitis / Metatarsalgia / Heel pain / Heel varus with forefoot supination / Posterior tibial tendon dysfunction}\nShoe Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 13.5 / 14 / 14.5 / 15 / Other}\n\nSymptoms \u0026 Functional Limitations: {Symptoms: Severe medial arch pain / Plantar heel pain with first morning steps / Metatarsal head pain and burning / Lateral foot fatigue and instability}\nStatic Evaluation: Left/Right {Biomechanics: pes planus with medial longitudinal arch collapse / hindfoot valgus / excessive pronation / rigid high arch / forefoot varus / heel varus with forefoot supination}.\nPalpation: Tenderness noted along the {Palpation: plantar fascia insertion / medial calcaneal tubercle / metatarsal heads / posterior tibial tendon / navicular}.\nRange of Motion \u0026 Alignment: Subtalar joint demonstrated {Subtalar: full range of motion / restricted motion / reducibility to neutral}. Forefoot-to-rearfoot relationship was assessed.\nGait Analysis: Left/Right stance phase demonstrated {Gait: excessive late-stance pronation / early heel rise / antalgic gait / poor shock absorption / reduced propulsion}.\n\nTreatment Plan, Impression \u0026 Device Specifications:\nImpression taken today for custom-molded functional foot orthotics utilizing {Method: 3D optical scan / foam impression casting / plaster slipper cast} with the subtalar joint held in neutral position and midtarsal joint locked.\nFabrication Lab: {Lab: Pacific Labs / Rx Orthotic Lab / Apis / Apex / Dr. Comfort / Langer / Mile High / Anodyne / Feet First}\nShell \u0026 Posting: {Shell: Semi-rigid polypropylene / Rigid thermoplastic / Flexible EVA / Carbon composite} with {Posting: intrinsic rearfoot posting / extrinsic rearfoot post / deep heel cup / medial arch reinforcement}.\nDesign Additions: {Additions: None / Metatarsal pad / Metatarsal bar / Balance bar / Heel cushion / Deep heel cup / Poron mid-layer / First ray cutout}\nTop Cover Material: {Top Cover Material: Spenco / Neoprene / Plastazote / Leather / Vinyl / Bamboo / Poron / EVA}\nTop Cover Length: {Top Cover Length: Full-length / 3/4 length / Sulcus length}\n{+ Parent Present: Parent/caregiver was present during the evaluation and casting process.}\n\nPatient Education \u0026 Financial Protocol:\nPt. was advised that these custom foot orthotics are self-pay / non-covered items, and all out-of-pocket costs and payment policies were discussed and agreed upon.\nExplained expected timeline for custom fabrication and scheduled delivery appointment for fitting, shoe integration, and break-in instructions.\nAll questions were answered to the patient\u0027s satisfaction."},
   {"id":"custom-knee-brace-delivery","lcodes":["L1846"],"title":"Custom Knee Brace Delivery","category":"Knee","price":1289.75,"fabricationType":"custom","text":"Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL), prevents hyperextension, and stabilizes knee joint during ambulation."},
   {"id":"knee-sleeve","lcodes":["A4467"],"title":"Knee Sleeve","category":"Knee","price":40,"fabricationType":"prefab","text":"Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.","excludeAutoPrice":true},
-  {"id":"tibial-fracture-brace","lcodes":["L2116"],"title":"Tibial Fracture Orthosis","category":"Foot \u0026 Ankle","price":325.8,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid tibial fracture orthosis (Sarmiento AFO) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Townsend} for closed tibial shaft fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} tibial fracture brace with anterior/posterior shells and footplate. The rigid circumferential shells provide hydrostatic tissue compression, control sagittal/coronal angular alignment, and offload the fracture site to promote bone union while allowing protected ambulation. Instructed on skin inspection, donning/doffing, and wearing protocol. Follow-up PRN."},
+  {"id":"tibial-fracture-brace","lcodes":["L2116"],"title":"Tibial Fracture Orthosis","category":"Foot \u0026 Ankle","price":818.05,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid tibial fracture orthosis (Sarmiento AFO) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Townsend} for closed tibial shaft fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} tibial fracture brace with anterior/posterior shells and footplate. The rigid circumferential shells provide hydrostatic tissue compression, control sagittal/coronal angular alignment, and offload the fracture site to promote bone union while allowing protected ambulation. Instructed on skin inspection, donning/doffing, and wearing protocol. Follow-up PRN."},
   {"id":"ultrasling","lcodes":["L3675"],"title":"Ultrasling","category":"Upper Extremity","price":198.39,"fabricationType":"prefab","text":"Pt. was seen at North/South office for Left/Right Ultrasling shoulder immobilizer delivery. Fit with a universal Ultrasling pro with abduction pillow. Holds shoulder in prescribed abduction and neutral rotation to protect rotator cuff/glenohumeral repair."},
   {"id":"forearm-splint","lcodes":["L3908"],"title":"Forearm / Wrist Splint","category":"Upper Extremity","price":67.37,"fabricationType":"prefab","text":"Patient was seen at the North/South office for fitting and delivery of an extended Left/Right forearm and wrist orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Hely \u0026 Weber} for distal radius / forearm fracture / severe tendonitis. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} forearm splint. Rigid palmar and dorsal stays contoured to patient\u0027s anatomy. Device is reasonable and necessary to immobilize the wrist and distal forearm in functional alignment, minimize painful musculoskeletal strain, and protect healing osseous structures during ADLs. Instructed on wear schedule and skin care."}
 ];
@@ -5737,8 +5782,14 @@ const PERMANENT_TEMPLATES = [
         'L3030': 'Foot insert, removable, molded to patient foot',
         'L5585': 'Preparatory AK ischial open end, custom',
         'L7700': 'Prosthetic socket insert gasket/seal',
-        'L5679': 'Addition to lower extremity, socket insert, acrylic',
-        'L5673': 'Addition to lower extremity, socket insert, silicone or equal',
+        'L5679': 'Addition to lower extremity, socket insert, silicone gel/elastomeric, without lock (cushion liner)',
+        'L5673': 'Addition to lower extremity, socket insert, silicone gel/elastomeric, with locking mechanism (locking liner)',
+        'L5671': 'Addition to lower extremity, below knee/above knee, suspension locking mechanism',
+        'L5685': 'Addition to lower extremity, below knee, suspension/sealing sleeve, each',
+        'L5000': 'Partial foot, shoe insert with longitudinal arch, toe filler',
+        'L8420': 'Prosthetic sock, multiple ply, below knee, each',
+        'L8417': 'Prosthetic sheath/sock, each',
+        'L8430': 'Prosthetic sock, single ply, below knee, each',
         'L5674': 'Addition to lower extremity, socket insert, silicone, custom molded',
         'L5675': 'Addition to lower extremity, socket insert, synthetic gel',
         'L6739': 'Terminal device, mechanical hook/hand',
@@ -5808,19 +5859,11 @@ const PERMANENT_TEMPLATES = [
     function importAppData(input) {
         const file = input.files[0];
         if (!file) return;
-        const fileModTime = file.lastModified || 0;
         const reader = new FileReader();
         reader.onload = function(e) {
             try {
                 const data = JSON.parse(e.target.result);
                 if (typeof data !== 'object') throw new Error("Invalid format");
-
-                let fileTimestamp = 0;
-                if (data.exportDate) {
-                    const parsed = new Date(data.exportDate).getTime();
-                    if (!isNaN(parsed) && parsed > 0) fileTimestamp = parsed;
-                }
-                if (!fileTimestamp && fileModTime) fileTimestamp = fileModTime;
 
                 let localNotes = {};
                 try { localNotes = JSON.parse(localStorage.getItem('customNotes') || '{}'); } catch(err){}
@@ -5830,17 +5873,6 @@ const PERMANENT_TEMPLATES = [
                         let importedNotes = {};
                         try { importedNotes = typeof data.customNotes === 'string' ? JSON.parse(data.customNotes) : data.customNotes; } catch(err){}
                         if (importedNotes && typeof importedNotes === 'object') {
-                            Object.keys(importedNotes).forEach(id => {
-                                const n = importedNotes[id];
-                                if (n && typeof n === 'object' && !n.lastUpdated && !n.timestamp) {
-                                    const idMatch = String(id).match(/(\d{12,13})/);
-                                    if (idMatch) {
-                                        n.lastUpdated = parseInt(idMatch[1]);
-                                    } else if (fileTimestamp) {
-                                        n.lastUpdated = fileTimestamp;
-                                    }
-                                }
-                            });
                             const { merged } = mergeTemplateObjects(localNotes, importedNotes);
                             localStorage.setItem('customNotes', JSON.stringify(merged));
                         } else {
@@ -5884,25 +5916,115 @@ const PERMANENT_TEMPLATES = [
         return 'General';
     }
 
+    function parseLcodeEntries(input) {
+        if (!input) return [];
+        const rawChunks = Array.isArray(input) 
+            ? input.flatMap(item => String(item || '').split(/[,;+\n]+/))
+            : String(input || '').split(/[,;+\n]+/);
+
+        const entries = [];
+        for (let chunk of rawChunks) {
+            chunk = chunk.trim();
+            if (!chunk) continue;
+
+            // CODE x QTY (e.g. A5500 x 2, A5500*2, A5500X2)
+            let m = chunk.match(/^([A-Za-z0-9\-]+)\s*[*xX]\s*(\d+)$/);
+            if (m) {
+                const qty = Math.min(Math.max(parseInt(m[2], 10) || 0, 0), 20);
+                entries.push({ code: m[1].toUpperCase(), qty });
+                continue;
+            }
+
+            // QTY x CODE (e.g. 2 x A5500, 2*A5500)
+            m = chunk.match(/^(\d+)\s*[*xX]\s*([A-Za-z0-9\-]+)$/);
+            if (m) {
+                const qty = Math.min(Math.max(parseInt(m[1], 10) || 0, 0), 20);
+                entries.push({ code: m[2].toUpperCase(), qty });
+                continue;
+            }
+
+            // CODE (QTY) (e.g. A5500 (2))
+            m = chunk.match(/^([A-Za-z0-9\-]+)\s*\(\s*(\d+)\s*\)$/);
+            if (m) {
+                const qty = Math.min(Math.max(parseInt(m[2], 10) || 0, 0), 20);
+                entries.push({ code: m[1].toUpperCase(), qty });
+                continue;
+            }
+
+            // Single CODE or in-progress typing (e.g. A5500, A5500 x)
+            m = chunk.match(/^([A-Za-z0-9\-]+)\s*[*xX]?\s*$/);
+            if (m) {
+                entries.push({ code: m[1].toUpperCase(), qty: 1 });
+                continue;
+            }
+        }
+        return entries;
+    }
+
+    function expandLcodes(input) {
+        const entries = parseLcodeEntries(input);
+        const result = [];
+        for (const { code, qty } of entries) {
+            for (let i = 0; i < qty; i++) {
+                result.push(code);
+                if (result.length >= 25) break;
+            }
+        }
+        return result;
+    }
+
+    function formatLcodesForInput(lcodes) {
+        if (!lcodes) return '';
+        const entries = parseLcodeEntries(lcodes);
+        if (entries.length === 0) return '';
+        const counts = new Map();
+        const order = [];
+        for (const { code, qty } of entries) {
+            if (!counts.has(code)) {
+                counts.set(code, 0);
+                order.push(code);
+            }
+            counts.set(code, counts.get(code) + qty);
+        }
+        const parts = [];
+        for (const code of order) {
+            const qty = counts.get(code);
+            if (qty > 1) {
+                parts.push(`${code} x ${qty}`);
+            } else if (qty === 1) {
+                parts.push(code);
+            }
+        }
+        return parts.join(', ');
+    }
+
     function calculateSummedPrice(lcodesRaw) {
         let cmsPriceMap = {};
         try { cmsPriceMap = JSON.parse(localStorage.getItem('cmsPriceMap') || '{}'); } catch(e){}
         
-        const codes = (Array.isArray(lcodesRaw) ? lcodesRaw : String(lcodesRaw || '').split(','))
-            .map(c => String(c).trim().toUpperCase())
-            .filter(Boolean);
-
-        if (codes.length === 0) return 0;
+        const entries = parseLcodeEntries(lcodesRaw);
+        if (entries.length === 0) return 0;
 
         let totalPrice = 0;
         let matchedCount = 0;
 
-        for (const code of codes) {
+        for (const { code, qty } of entries) {
+            if (qty <= 0) continue;
+            let unitPrice = undefined;
+            const baseCode = code.includes('-') ? code.split('-')[0] : code;
+
             if (cmsPriceMap[code] !== undefined && !isNaN(cmsPriceMap[code])) {
-                totalPrice += cmsPriceMap[code];
-                matchedCount++;
+                unitPrice = Number(cmsPriceMap[code]);
+            } else if (cmsPriceMap[baseCode] !== undefined && !isNaN(cmsPriceMap[baseCode])) {
+                unitPrice = Number(cmsPriceMap[baseCode]);
             } else if (typeof BUILTIN_CMS_PRICE_MAP !== 'undefined' && BUILTIN_CMS_PRICE_MAP[code] !== undefined) {
-                totalPrice += BUILTIN_CMS_PRICE_MAP[code];
+                unitPrice = Number(BUILTIN_CMS_PRICE_MAP[code]);
+            } else if (typeof BUILTIN_CMS_PRICE_MAP !== 'undefined' && BUILTIN_CMS_PRICE_MAP[baseCode] !== undefined) {
+                unitPrice = Number(BUILTIN_CMS_PRICE_MAP[baseCode]);
+            }
+
+            if (unitPrice !== undefined && !isNaN(unitPrice)) {
+                totalPrice += (unitPrice * qty);
                 matchedCount++;
             }
         }
@@ -6051,22 +6173,10 @@ const PERMANENT_TEMPLATES = [
         if (popupLabel) popupLabel.textContent = labelForDisplay;
     }
 
-    function toggleCustomizerMode() {
-        const current = localStorage.getItem('enableCustomizerModal') !== '0';
-        const next = !current;
-        try { localStorage.setItem('enableCustomizerModal', next ? '1' : '0'); } catch(e){}
-        updateCustomizerToggleUI();
-    }
+    function toggleCustomizerMode() {}
 
     function updateCustomizerToggleUI() {
-        const enabled = localStorage.getItem('enableCustomizerModal') !== '0';
-        const btn = document.getElementById('customizer-toggle');
-        if (btn) {
-            btn.innerHTML = enabled ? '&#128221; Customizer: ON' : '&#9889; Instant Copy';
-            btn.title = enabled ? 'Click to switch to Instant Direct Copy' : 'Click to switch to Interactive Customizer Popup';
-        }
-        const chk = document.getElementById('manage-customizer-chk');
-        if (chk) chk.checked = enabled;
+        try { localStorage.setItem('enableCustomizerModal', '1'); } catch(e){}
     }
 
     function setProstheticFavicon() {
@@ -6138,12 +6248,21 @@ const PERMANENT_TEMPLATES = [
                 delete cn['elbow-rom'];
                 localStorage.setItem('customNotes', JSON.stringify(cn));
             }
+            if (cn['diabetic-shoe-eval'] && (!cn['diabetic-shoe-eval'].text || !cn['diabetic-shoe-eval'].text.includes('Shoe Selected for Order'))) {
+                delete cn['diabetic-shoe-eval'];
+                localStorage.setItem('customNotes', JSON.stringify(cn));
+            }
         } catch(e){}
 
-        const CURRENT_APP_BUILD_VERSION = '3.56_20260905_01';
+        const CURRENT_APP_BUILD_VERSION = '4.1_20260915_01';
         let lastVersion = '';
         try { lastVersion = localStorage.getItem('app_build_version') || ''; } catch(e){}
         const isNewBuildVersion = (lastVersion !== CURRENT_APP_BUILD_VERSION);
+        try {
+            // Update cached priceMap to ensure Colorado Non-Rural rates are applied
+            localStorage.setItem('cmsPriceMap', JSON.stringify(BUILTIN_CMS_PRICE_MAP));
+            localStorage.setItem('priceMapLabel', 'CMS JUL 26 (CO NR)');
+        } catch(e){}
 
         // Self-healing check to sync built-in templates while strictly preserving user edits
         try {
@@ -6152,8 +6271,19 @@ const PERMANENT_TEMPLATES = [
                 PERMANENT_TEMPLATES.forEach(p => {
                     const normPerm = normalizeLcodes({ ...p, excludeAutoPrice: !!(p.excludeAutoPrice || (Array.isArray(p.lcodes) && p.lcodes.includes('L2999'))), isTemplate: true });
                     const existing = customNotes[p.id];
+                    if (existing && (p.id === 'diabetic-shoe-delivery' || p.id === 'diabetic-shoe-del')) {
+                        if (existing.price === 346.74 || existing.price === 340.18 || !existing.lcodes || existing.lcodes.length < 8) {
+                            existing.price = 503.20;
+                            existing.lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513', 'A5513', 'A5513', 'A5513'];
+                        }
+                    }
+                    if (existing && p.id === 'diabetic-shoe-eval') {
+                        if (!existing.lcodes || existing.lcodes.length < 8) {
+                            existing.lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513', 'A5513', 'A5513', 'A5513'];
+                        }
+                    }
                     const isEdited = existing && (existing.userCustomizedText === true || existing.isCustomEdited === true);
-                    const isPriceEdited = existing && existing.userCustomizedPrice === true;
+                    const isPriceEdited = existing && existing.userCustomizedPrice === true && existing.price !== 346.74 && existing.price !== 340.18;
 
                     if (!existing || !isEdited) {
                         customNotes[p.id] = {
@@ -6362,15 +6492,14 @@ const PERMANENT_TEMPLATES = [
     function normalizeLcodes(note) {
         if (!note || typeof note !== 'object') return { lcodes: [] };
         if (typeof note.lcodes === 'string') {
-            note.lcodes = [note.lcodes];
-        } else if (!Array.isArray(note.lcodes)) {
-            note.lcodes = note.lcode ? [note.lcode] : [];
+            note.lcodes = expandLcodes(note.lcodes);
+        } else if (Array.isArray(note.lcodes)) {
+            note.lcodes = expandLcodes(note.lcodes);
+        } else if (note.lcode) {
+            note.lcodes = expandLcodes(note.lcode);
+        } else {
+            note.lcodes = [];
         }
-        note.lcodes = note.lcodes
-            .filter(c => typeof c === 'string' || typeof c === 'number')
-            .map(c => String(c).trim().toUpperCase())
-            .filter(Boolean)
-            .slice(0, 5);
         return note;
     }
 
@@ -6451,6 +6580,15 @@ const PERMANENT_TEMPLATES = [
                             delete existing.isCustomEdited;
                         }
                     }
+                    if (template.id === 'diabetic-shoe-eval' && (!finalText || !finalText.includes('Shoe Selected for Order'))) {
+                        finalText = template.text;
+                        if (existing) {
+                            existing.text = template.text;
+                            existing.lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513'];
+                            delete existing.userCustomizedText;
+                            delete existing.isCustomEdited;
+                        }
+                    }
                     if (finalText && finalText.includes('{Size: Ped./XXS/XS/S/M/L/XL/2XL/3XL}')) {
                         finalText = finalText.replace(/\{Size:\s*Ped\.\/XXS\/XS\/S\/M\/L\/XL\/2XL\/3XL\}/g, '{Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL}');
                     }
@@ -6468,6 +6606,35 @@ const PERMANENT_TEMPLATES = [
                     }
                     if (template.id === 'forms-modified' && finalText && finalText.includes('Forms were customized by: {Metatarsal Modification: None / Adding Metatarsal Bars / Adding Metatarsal Pads}')) {
                         finalText = template.text;
+                    }
+                    if (finalText && finalText.includes('{Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / healed at prior ulcer site}')) {
+                        finalText = finalText.replace(
+                            '{Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / healed at prior ulcer site}',
+                            '{*Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / moderate calluses / healed at prior ulcer site}{*Skin Location: None / toes / metatarsals / heel / arch / navicular}'
+                        );
+                    } else if (finalText && finalText.includes('{*Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / healed at prior ulcer site}')) {
+                        finalText = finalText.replace(
+                            '{*Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / healed at prior ulcer site}',
+                            '{*Skin Integrity: intact without active lesions / intact with localized hyperkeratosis / moderate calluses / healed at prior ulcer site}'
+                        );
+                    }
+                    if (finalText && !finalText.includes('Skin Location:') && finalText.includes('moderate calluses / healed at prior ulcer site}')) {
+                        finalText = finalText.replace(
+                            'moderate calluses / healed at prior ulcer site}',
+                            'moderate calluses / healed at prior ulcer site}{*Skin Location: None / toes / metatarsals / heel / arch / navicular}'
+                        );
+                    }
+                    if (finalText && finalText.includes('{Deformities: no significant rigid deformities')) {
+                        finalText = finalText.replace('{Deformities: no significant rigid deformities', '{*Deformities: no significant rigid deformities');
+                    }
+                    if (finalText && !finalText.includes('Deformity Location:') && finalText.includes('amputation site}.')) {
+                        finalText = finalText.replace(
+                            'amputation site}.',
+                            'amputation site}{*Deformity Location: None / toes / metatarsals / heel / arch / navicular}.'
+                        );
+                    }
+                    if (finalText && finalText.includes('{Contralateral Deformities: intact contralateral')) {
+                        finalText = finalText.replace('{Contralateral Deformities: intact contralateral', '{*Contralateral Deformities: intact contralateral');
                     }
 
                     const finalTitle = (existing.title && existing.title.trim()) ? existing.title : template.title;
@@ -6635,6 +6802,15 @@ const PERMANENT_TEMPLATES = [
         insertVariableIntoText(tag);
     }
 
+    function promptMultiPickerInsert() {
+        const label = prompt('Enter a label for your multi-select picker (e.g. Deformities, Symptoms):', 'Deformities');
+        if (!label) return;
+        const optionsStr = prompt('Enter slash-separated options (e.g. hammer or claw toes / severe pes planus / hallux valgus):', 'no significant rigid deformities / hammer or claw toes / severe pes planus / hallux valgus (bunions)');
+        if (!optionsStr) return;
+        const tag = `{*${label.trim()}: ${optionsStr.trim()}}`;
+        insertVariableIntoText(tag);
+    }
+
     function setCustOption(group, val, btn) {
         currentCustOptions[group] = val;
         if (group === 'location') {
@@ -6784,17 +6960,39 @@ const PERMANENT_TEMPLATES = [
             if (inner.includes('/')) {
                 let label = 'Option Picker';
                 let optionsRaw = inner;
-                if (inner.includes(':')) {
-                    const parts = inner.split(':');
+                let isMulti = false;
+
+                // Check for multi-select indicator in inner text or label
+                if (optionsRaw.startsWith('*')) {
+                    isMulti = true;
+                    optionsRaw = optionsRaw.substring(1).trim();
+                } else if (/^multi\s*:\s*/i.test(optionsRaw)) {
+                    isMulti = true;
+                    optionsRaw = optionsRaw.replace(/^multi\s*:\s*/i, '').trim();
+                }
+
+                if (optionsRaw.includes(':')) {
+                    const parts = optionsRaw.split(':');
                     label = parts[0].trim();
                     optionsRaw = parts.slice(1).join(':').trim();
                 }
+
+                if (label.endsWith('*')) {
+                    isMulti = true;
+                    label = label.substring(0, label.length - 1).trim();
+                } else if (label.startsWith('*')) {
+                    isMulti = true;
+                    label = label.substring(1).trim();
+                }
+
                 const options = optionsRaw.split('/').map(o => o.trim()).filter(Boolean);
                 if (options.length > 0 && !pickers.some(p => p.fullTag === fullTag)) {
                     pickers.push({
+                        index: match.index,
                         fullTag: fullTag,
                         label: label,
-                        options: options
+                        options: options,
+                        isMulti: isMulti
                     });
                 }
             }
@@ -6807,14 +7005,17 @@ const PERMANENT_TEMPLATES = [
         const customPickers = detectCustomPickers(rawText);
         const pickerLabels = customPickers.map(p => p.label.toLowerCase());
 
-        // Strip out {...} custom picker / optional phrase blocks from rawText before searching for loose dynamic fields
-        const textWithoutPickers = rawText.replace(/\{[^}]+\}/g, '');
+        // Replace {...} blocks with spaces of same length so character offsets are perfectly preserved
+        const textWithoutPickers = rawText.replace(/\{[^}]+\}/g, m => ' '.repeat(m.length));
 
         const fields = [];
-        const matches = textWithoutPickers.match(/_{3,}|\[[^\]]+\]/g) || [];
-        matches.forEach((m) => {
+        const regex = /_{3,}|\[([^\]]+)\]/g;
+        let match;
+        while ((match = regex.exec(textWithoutPickers)) !== null) {
+            const m = match[0];
             const cleanKey = m.replace(/[\[\]]/g, '').trim();
-            if (pickerLabels.includes(cleanKey.toLowerCase())) return;
+            if (pickerLabels.includes(cleanKey.toLowerCase())) continue;
+            if (['SIDE', 'LOCATION', 'SEX', 'COMPARTMENT'].includes(cleanKey.toUpperCase())) continue;
 
             if (!fields.some(f => f.key.toLowerCase() === cleanKey.toLowerCase())) {
                 let label = cleanKey;
@@ -6823,10 +7024,24 @@ const PERMANENT_TEMPLATES = [
                 else if (cleanKey.toUpperCase() === 'DIAGNOSIS') label = 'Diagnosis / Condition';
                 else if (cleanKey.toUpperCase() === 'MANUFACTURER') label = 'Manufacturer / Brand';
                 else if (cleanKey.toUpperCase() === 'INFORMATION') label = 'Additional Details';
-                fields.push({ original: m, key: cleanKey, label: label });
+                fields.push({
+                    index: match.index,
+                    original: m,
+                    key: cleanKey,
+                    label: label
+                });
             }
-        });
+        }
         return fields;
+    }
+
+    function detectTemplateInputControls(rawText) {
+        if (!rawText) return [];
+        const pickers = detectCustomPickers(rawText).map(p => ({ kind: 'picker', index: p.index, data: p }));
+        const fields = detectDynamicFields(rawText).map(f => ({ kind: 'field', index: f.index, data: f }));
+        const all = [...pickers, ...fields];
+        all.sort((a, b) => a.index - b.index);
+        return all;
     }
 
     function openCustomizeNotePopup(id) {
@@ -6837,6 +7052,8 @@ const PERMANENT_TEMPLATES = [
         currentCustNoteId = id;
         currentCustFieldValues = {};
         currentCustOptions.customPickers = {};
+        currentCustOptions.multiPickerModes = {};
+        currentCustOptions.customWriteIns = {};
         currentCustOptions.optionalPhrases = {};
         currentCustOptions.adHocPhrases = [];
 
@@ -6860,6 +7077,12 @@ const PERMANENT_TEMPLATES = [
         const perm = PERMANENT_TEMPLATES.find(p => p.id === id);
         if (id === 'elbow-rom' && perm && (!note.text || !note.text.includes('DonJoy X-ROM'))) {
             note.text = perm.text;
+            note.userCustomizedText = false;
+            note.isCustomEdited = false;
+        }
+        if (id === 'diabetic-shoe-eval' && perm && (!note.text || !note.text.includes('Shoe Selected for Order'))) {
+            note.text = perm.text;
+            note.lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513'];
             note.userCustomizedText = false;
             note.isCustomEdited = false;
         }
@@ -6921,91 +7144,257 @@ const PERMANENT_TEMPLATES = [
         }
 
         // Hide Side group for midline devices (e.g. cervical collars, spinal templates, bilateral shoes)
-        const isMidlineDevice = /cervical|collar|neck|spine|lso|tlso|lumbar/i.test(note.title || '') || /cervical|collar|neck|spine|lso|tlso|lumbar/i.test(note.category || '');
-        const needsSide = !isMidlineDevice && /left\/right|right\/left|left\s*\/\s*right|right\s*\/\s*left|l\/r/i.test(rawText);
+        const isMidlineDevice = !/\bhip\b/i.test(note.title || '') && (
+            /\b(cervical|collar|neck|spine|spinal|lso|tlso|lumbar)\b/i.test(note.title || '') ||
+            /\b(cervical|collar|neck|spine|spinal|lso|tlso|lumbar)\b/i.test(note.category || '')
+        );
+        const hasSideModifier = /(?:left\s*\/\s*right|right\s*\/\s*left|\bL\/R\b|\bR\/L\b|\[side\]|\{side\})/i.test(rawText);
+        const needsSide = !isMidlineDevice && hasSideModifier;
         const sideGroup = document.getElementById('cust-group-side');
         if (sideGroup) {
             sideGroup.style.display = needsSide ? 'block' : 'none';
         }
 
-        // Render Custom Pickers as Clean Dropdowns/Buttons with Universal Custom Write-In Option
-        const customPickersContainer = document.getElementById('cust-custom-pickers-container');
-        const pickers = detectCustomPickers(rawText);
-        if (customPickersContainer) {
-            if (pickers.length > 0) {
-                customPickersContainer.innerHTML = pickers.map((p, idx) => {
-                    if (!currentCustOptions.customPickers[p.fullTag]) {
-                        currentCustOptions.customPickers[p.fullTag] = p.options[0];
-                    }
-                    const activeVal = currentCustOptions.customPickers[p.fullTag];
-                    const isWriteIn = activeVal && !p.options.includes(activeVal);
-                    const safeTag = p.fullTag.replace(/'/g, "\\'");
-                    
-                    const isShortPillPicker = p.options.length <= 3 && p.options.every(opt => opt.length <= 16);
-
-                    if (isShortPillPicker) {
-                        // Render as Compact Horizontal Pill Buttons!
-                        return `
-                            <div style="flex: 0 0 auto;">
-                                <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${p.label}</label>
-                                <div style="display:flex; gap:4px; flex-wrap:wrap;">
-                                    ${p.options.map(opt => {
-                                        const isSelected = !isWriteIn && opt === activeVal;
-                                        return `<button type="button" class="cust-pill-btn ${isSelected ? 'active' : ''}" onclick="setCustomPickerVal('${safeTag}', '${opt.replace(/'/g, "\\'")}', this); document.getElementById('write-in-input-${idx}').style.display='none';">${opt}</button>`;
-                                    }).join('')}
-                                    <button type="button" class="cust-pill-btn ${isWriteIn ? 'active' : ''}" onclick="toggleCustomPickerWriteIn('${safeTag}', ${idx}, this)">+ Custom</button>
-                                </div>
-                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
-                            </div>
-                        `;
-                    } else {
-                        // Render as Clean Full-Width Dropdown Select!
-                        return `
-                            <div style="flex: 0 0 auto; min-width: 150px; max-width: 240px;">
-                                <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${p.label}</label>
-                                <select class="cust-select-dropdown" onchange="onCustomPickerDropdownChange(this, '${safeTag}', ${idx})">
-                                    ${p.options.map(opt => `
-                                        <option value="${opt.replace(/"/g, '&quot;')}" ${(!isWriteIn && opt === activeVal) ? 'selected' : ''}>${opt}</option>
-                                    `).join('')}
-                                    <option value="__write_in__" ${isWriteIn ? 'selected' : ''}>+ Custom Write-In...</option>
-                                </select>
-                                <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
-                            </div>
-                        `;
-                    }
-                }).join('');
-            } else {
-                customPickersContainer.innerHTML = '';
-            }
-        }
+        // Render Custom Pickers and Dynamic Fields in chronological order of appearance in template note
+        renderCustomPickersContainer(rawText);
 
         const fieldsContainer = document.getElementById('cust-dynamic-fields');
-        const fields = detectDynamicFields(rawText);
-
         if (fieldsContainer) {
-            if (fields.length > 0) {
-                fieldsContainer.style.display = 'flex';
-                fieldsContainer.innerHTML = fields.map(f => `
-                    <div style="width:100%;">
-                        <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${f.label}</label>
-                        <input type="text" data-field-key="${f.key}" placeholder="e.g. measurement / value..." class="cust-field-input" oninput="onCustFieldInput(this)" style="width:100%; padding:6px 10px; border-radius:6px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12.5px; font-weight:600; box-sizing:border-box;">
-                    </div>
-                `).join('');
-            } else {
-                fieldsContainer.style.display = 'none';
-                fieldsContainer.innerHTML = '';
-            }
+            fieldsContainer.style.display = 'none';
+            fieldsContainer.innerHTML = '';
         }
 
         const divider = document.getElementById('cust-options-divider');
         if (divider) {
-            const hasBottomItems = pickers.length > 0 || optPhrases.length > 0 || fields.length > 0;
+            const controls = detectTemplateInputControls(rawText);
+            const hasBottomItems = controls.length > 0 || optPhrases.length > 0;
             divider.style.display = hasBottomItems ? 'block' : 'none';
         }
 
         updateCustNotePreview();
         openPopup('customize-note-popup');
     }
+
+    function renderCustomPickersContainer(rawText) {
+        const customPickersContainer = document.getElementById('cust-custom-pickers-container');
+        if (!customPickersContainer) return;
+        const controls = detectTemplateInputControls(rawText);
+        if (controls.length === 0) {
+            customPickersContainer.innerHTML = '';
+            return;
+        }
+
+        let pickerIdx = 0;
+        customPickersContainer.innerHTML = controls.map((ctrl) => {
+            if (ctrl.kind === 'field') {
+                const f = ctrl.data;
+                const userVal = currentCustFieldValues[f.key] || '';
+                return `
+                    <div style="width:100%; margin-top:2px; margin-bottom:2px;">
+                        <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; display:block; margin-bottom:2px;">${f.label}</label>
+                        <input type="text" data-field-key="${f.key}" placeholder="e.g. measurement / value..." class="cust-field-input" value="${userVal.replace(/"/g, '&quot;')}" oninput="onCustFieldInput(this)" style="width:100%; padding:6px 10px; border-radius:6px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12.5px; font-weight:600; box-sizing:border-box;">
+                    </div>
+                `;
+            }
+
+            const p = ctrl.data;
+            const idx = pickerIdx++;
+            currentCustOptions.multiPickerModes = currentCustOptions.multiPickerModes || {};
+            const isMulti = currentCustOptions.multiPickerModes[p.fullTag] !== undefined
+                ? currentCustOptions.multiPickerModes[p.fullTag]
+                : false;
+
+            const safeTag = p.fullTag.replace(/'/g, "\\'");
+
+            if (isMulti) {
+                let selectedArr = currentCustOptions.customPickers[p.fullTag];
+                if (selectedArr === undefined) {
+                    selectedArr = [p.options[0]];
+                    currentCustOptions.customPickers[p.fullTag] = selectedArr;
+                } else if (!Array.isArray(selectedArr)) {
+                    selectedArr = selectedArr ? [selectedArr] : [];
+                    currentCustOptions.customPickers[p.fullTag] = selectedArr;
+                }
+
+                currentCustOptions.customWriteIns = currentCustOptions.customWriteIns || {};
+                const writeInVal = currentCustOptions.customWriteIns[p.fullTag] || '';
+                const hasWriteIn = !!writeInVal.trim();
+                const totalCount = selectedArr.length + (hasWriteIn ? 1 : 0);
+
+                return `
+                    <div class="cust-picker-block" id="cust-picker-block-${idx}" style="flex: 1 1 100%; width: 100%; background: rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; padding: 8px 12px; margin-top: 4px; box-sizing: border-box;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; flex-wrap:wrap; gap:6px;">
+                            <div style="display:flex; align-items:center; gap:6px;">
+                                <label style="font-size:10.5px; font-weight:bold; color:var(--text); text-transform:uppercase; margin:0;">${p.label}</label>
+                                <button type="button" class="cust-discreet-toggle" onclick="togglePickerMultiMode('${safeTag}', ${idx})" title="Click to switch to single selection">
+                                    multiple &#9662;
+                                    ${totalCount > 0 ? `<span style="color:#007BFF; font-weight:600; margin-left:3px;">(${totalCount} selected)</span>` : ''}
+                                </button>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:5px; flex-wrap:wrap; align-items:center;">
+                            ${p.options.map(opt => {
+                                const isSelected = selectedArr.includes(opt);
+                                return `<button type="button" class="cust-pill-btn ${isSelected ? 'active' : ''}" onclick="toggleCustomPickerMultiOption('${safeTag}', '${opt.replace(/'/g, "\\'")}', ${idx})" style="font-size:11.5px; padding:4px 10px;">${opt}</button>`;
+                            }).join('')}
+                            <button type="button" class="cust-pill-btn ${hasWriteIn ? 'active' : ''}" onclick="toggleCustomPickerMultiWriteIn('${safeTag}', ${idx})" style="font-size:11.5px; padding:4px 10px; border-style:dashed;">+ Custom...</button>
+                        </div>
+                        <div id="write-in-wrap-${idx}" style="display:${hasWriteIn ? 'block' : 'none'}; margin-top:6px;">
+                            <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type additional custom ${p.label.toLowerCase()}..." value="${writeInVal.replace(/"/g, '&quot;')}" style="width:100%; padding:6px 10px; border-radius:6px; border:1px solid var(--input-border); background:var(--input-bg); color:var(--input-text); font-size:12px; box-sizing:border-box;" oninput="onCustomPickerMultiWriteInInput(this, '${safeTag}')">
+                        </div>
+                    </div>
+                `;
+            } else {
+                if (!currentCustOptions.customPickers[p.fullTag] || Array.isArray(currentCustOptions.customPickers[p.fullTag])) {
+                    const currentArr = Array.isArray(currentCustOptions.customPickers[p.fullTag]) ? currentCustOptions.customPickers[p.fullTag] : [];
+                    currentCustOptions.customPickers[p.fullTag] = currentArr[0] || p.options[0];
+                }
+                const activeVal = currentCustOptions.customPickers[p.fullTag];
+                const isWriteIn = activeVal && !p.options.includes(activeVal);
+                const isShortPillPicker = !p.isMulti && p.options.length <= 3 && p.options.every(opt => opt.length <= 16);
+
+                if (isShortPillPicker) {
+                    return `
+                        <div style="flex: 0 0 auto;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2px; gap:6px;">
+                                <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; margin:0;">${p.label}</label>
+                                ${p.isMulti ? `
+                                    <button type="button" class="cust-discreet-toggle" onclick="togglePickerMultiMode('${safeTag}', ${idx})" title="Click to switch to multiple selection">
+                                        multiple &#9656;
+                                    </button>
+                                ` : ''}
+                            </div>
+                            <div style="display:flex; gap:4px; flex-wrap:wrap;">
+                                ${p.options.map(opt => {
+                                    const isSelected = !isWriteIn && opt === activeVal;
+                                    return `<button type="button" class="cust-pill-btn ${isSelected ? 'active' : ''}" onclick="setCustomPickerVal('${safeTag}', '${opt.replace(/'/g, "\\'")}', this); document.getElementById('write-in-input-${idx}').style.display='none';">${opt}</button>`;
+                                }).join('')}
+                                <button type="button" class="cust-pill-btn ${isWriteIn ? 'active' : ''}" onclick="toggleCustomPickerWriteIn('${safeTag}', ${idx}, this)">+ Custom</button>
+                            </div>
+                            <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div style="flex: 0 0 auto; min-width: 150px; max-width: 240px;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2px; gap:6px;">
+                                <label style="font-size:10px; font-weight:bold; color:var(--muted); text-transform:uppercase; margin:0;">${p.label}</label>
+                                ${p.isMulti ? `
+                                    <button type="button" class="cust-discreet-toggle" onclick="togglePickerMultiMode('${safeTag}', ${idx})" title="Click to switch to multiple selection">
+                                        multiple &#9656;
+                                    </button>
+                                ` : ''}
+                            </div>
+                            <select class="cust-select-dropdown" onchange="onCustomPickerDropdownChange(this, '${safeTag}', ${idx})">
+                                ${p.options.map(opt => `
+                                    <option value="${opt.replace(/"/g, '&quot;')}" ${(!isWriteIn && opt === activeVal) ? 'selected' : ''}>${opt}</option>
+                                `).join('')}
+                                <option value="__write_in__" ${isWriteIn ? 'selected' : ''}>+ Custom Write-In...</option>
+                            </select>
+                            <input type="text" class="cust-write-in-input" id="write-in-input-${idx}" placeholder="Type custom ${p.label.toLowerCase()}..." value="${isWriteIn ? activeVal.replace(/"/g, '&quot;') : ''}" style="display:${isWriteIn ? 'block' : 'none'}; width:100%; margin-top:4px;" oninput="onCustomPickerWriteInInput(this, '${safeTag}')">
+                        </div>
+                    `;
+                }
+            }
+        }).join('');
+    }
+
+    function togglePickerMultiMode(fullTag, idx) {
+        currentCustOptions.multiPickerModes = currentCustOptions.multiPickerModes || {};
+        const customNotes = initializeTemplateNotes();
+        const note = customNotes[currentCustNoteId];
+        const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+        const rawText = (note && note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+        const pickers = detectCustomPickers(rawText);
+        const p = pickers.find(x => x.fullTag === fullTag) || pickers[idx];
+        const defaultIsMulti = false;
+
+        const currentMode = currentCustOptions.multiPickerModes[fullTag] !== undefined
+            ? currentCustOptions.multiPickerModes[fullTag]
+            : defaultIsMulti;
+
+        currentCustOptions.multiPickerModes[fullTag] = !currentMode;
+
+        if (currentCustOptions.multiPickerModes[fullTag]) {
+            const curr = currentCustOptions.customPickers[fullTag];
+            currentCustOptions.customPickers[fullTag] = Array.isArray(curr) ? curr : (curr ? [curr] : (p ? [p.options[0]] : []));
+        } else {
+            const curr = currentCustOptions.customPickers[fullTag];
+            currentCustOptions.customPickers[fullTag] = Array.isArray(curr) ? (curr[0] || (p ? p.options[0] : '')) : (curr || (p ? p.options[0] : ''));
+        }
+
+        renderCustomPickersContainer(rawText);
+        updateCustNotePreview();
+    }
+
+    function isNegativeNoneOption(text) {
+        if (!text) return false;
+        const t = text.trim();
+        if (/^(none|n\/a|denies|unremarkable)$/i.test(t)) return true;
+        if (/^no\s+(significant|rigid|active|known|signs|history|deformity|deformities|lesions)?\b/i.test(t)) return true;
+        if (/^intact\s+(without|with\s+no)\b/i.test(t)) return true;
+        if (/^intact\b.*(with\s+no|without)\b/i.test(t)) return true;
+        if (/^(normal|none)$/i.test(t)) return true;
+        return false;
+    }
+
+    function toggleCustomPickerMultiOption(fullTag, opt, idx) {
+        currentCustOptions.customPickers = currentCustOptions.customPickers || {};
+        let arr = currentCustOptions.customPickers[fullTag];
+        if (!Array.isArray(arr)) {
+            arr = arr ? [arr] : [];
+        }
+
+        const isNone = isNegativeNoneOption(opt);
+
+        if (arr.includes(opt)) {
+            arr = arr.filter(o => o !== opt);
+        } else {
+            if (isNone) {
+                arr = [opt];
+            } else {
+                arr = arr.filter(o => !isNegativeNoneOption(o));
+                arr.push(opt);
+            }
+        }
+
+        currentCustOptions.customPickers[fullTag] = arr;
+
+        const customNotes = initializeTemplateNotes();
+        const note = customNotes[currentCustNoteId];
+        const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+        const rawText = (note && note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+        renderCustomPickersContainer(rawText);
+        updateCustNotePreview();
+    }
+
+    function toggleCustomPickerMultiWriteIn(fullTag, idx) {
+        const wrap = document.getElementById(`write-in-wrap-${idx}`);
+        const input = document.getElementById(`write-in-input-${idx}`);
+        if (!wrap || !input) return;
+        const isHidden = wrap.style.display === 'none';
+        if (isHidden) {
+            wrap.style.display = 'block';
+            input.focus();
+        } else {
+            wrap.style.display = 'none';
+            currentCustOptions.customWriteIns = currentCustOptions.customWriteIns || {};
+            delete currentCustOptions.customWriteIns[fullTag];
+            const customNotes = initializeTemplateNotes();
+            const note = customNotes[currentCustNoteId];
+            const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+            const rawText = (note && note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+            renderCustomPickersContainer(rawText);
+            updateCustNotePreview();
+        }
+    }
+
+    function onCustomPickerMultiWriteInInput(input, fullTag) {
+        currentCustOptions.customWriteIns = currentCustOptions.customWriteIns || {};
+        currentCustOptions.customWriteIns[fullTag] = input.value;
+        updateCustNotePreview();
+    }
+
 
     function onCustomPickerDropdownChange(select, fullTag, idx) {
         const val = select.value;
@@ -7281,6 +7670,12 @@ const PERMANENT_TEMPLATES = [
 
     function exportMasterConfigToNetwork() {
         let customNotes = initializeTemplateNotes();
+        const now = Date.now();
+        Object.keys(customNotes).forEach(k => {
+            if (customNotes[k] && typeof customNotes[k] === 'object') {
+                if (!customNotes[k].lastUpdated) customNotes[k].lastUpdated = now;
+            }
+        });
         let cmsPriceMap = {};
         try { cmsPriceMap = JSON.parse(localStorage.getItem('cmsPriceMap') || '{}'); } catch(e){}
         
@@ -7291,7 +7686,7 @@ const PERMANENT_TEMPLATES = [
 
         const exportData = {
             appName: "Audubon Walk",
-            version: "3.56",
+            version: "4.1",
             exportDate: new Date().toISOString(),
             targetNetworkPath: fullFilePath,
             customNotes: customNotes,
@@ -7316,34 +7711,12 @@ const PERMANENT_TEMPLATES = [
     function handleNetworkFileImport(input) {
         const file = input.files[0];
         if (!file) return;
-        const fileModTime = file.lastModified || 0;
         const reader = new FileReader();
         reader.onload = function(e) {
             try {
                 const data = JSON.parse(e.target.result);
                 if (!data || typeof data !== 'object') throw new Error("Invalid format");
                 const importedNotes = data.customNotes || data;
-
-                let fileTimestamp = 0;
-                if (data.exportDate) {
-                    const parsed = new Date(data.exportDate).getTime();
-                    if (!isNaN(parsed) && parsed > 0) fileTimestamp = parsed;
-                }
-                if (!fileTimestamp && fileModTime) fileTimestamp = fileModTime;
-
-                if (importedNotes && typeof importedNotes === 'object') {
-                    Object.keys(importedNotes).forEach(id => {
-                        const n = importedNotes[id];
-                        if (n && typeof n === 'object' && !n.lastUpdated && !n.timestamp) {
-                            const idMatch = String(id).match(/(\d{12,13})/);
-                            if (idMatch) {
-                                n.lastUpdated = parseInt(idMatch[1]);
-                            } else if (fileTimestamp) {
-                                n.lastUpdated = fileTimestamp;
-                            }
-                        }
-                    });
-                }
                 
                 let localNotes = {};
                 try { localNotes = JSON.parse(localStorage.getItem('customNotes') || '{}'); } catch(err){}
@@ -7490,13 +7863,68 @@ const PERMANENT_TEMPLATES = [
             }
         });
 
-        // 1. Process Custom Option Pickers first {Label: Opt1/Opt2/Opt3}
+        // 1. Process Custom Option Pickers first {Label: Opt1/Opt2/Opt3} or {*Label: Opt1/Opt2/Opt3}
         const customPickers = detectCustomPickers(rawText);
         customPickers.forEach(p => {
-            const selectedVal = currentCustOptions.customPickers[p.fullTag] || p.options[0];
+            const isMulti = (currentCustOptions.multiPickerModes && currentCustOptions.multiPickerModes[p.fullTag] !== undefined)
+                ? currentCustOptions.multiPickerModes[p.fullTag]
+                : false;
+
+            let displayVal = '';
+
+            if (isMulti) {
+                let selectedArr = currentCustOptions.customPickers && currentCustOptions.customPickers[p.fullTag];
+                if (selectedArr === undefined) {
+                    selectedArr = [p.options[0]];
+                } else if (!Array.isArray(selectedArr)) {
+                    selectedArr = selectedArr ? [selectedArr] : [];
+                }
+
+                const writeInVal = (currentCustOptions.customWriteIns && currentCustOptions.customWriteIns[p.fullTag]) || '';
+                let combined = [...selectedArr];
+                if (writeInVal && writeInVal.trim()) {
+                    combined.push(writeInVal.trim());
+                }
+
+                combined = combined.map(s => String(s).trim()).filter(Boolean);
+
+                if (combined.length > 0) {
+                    displayVal = combined.join(', ');
+                } else {
+                    if (/location/i.test(p.label)) {
+                        displayVal = '';
+                    } else {
+                        displayVal = forHtmlDisplay ? `<mark class="cust-pending">[${p.label}]</mark>` : `[${p.label}]`;
+                    }
+                }
+            } else {
+                const selectedVal = (currentCustOptions.customPickers && currentCustOptions.customPickers[p.fullTag] !== undefined)
+                    ? currentCustOptions.customPickers[p.fullTag]
+                    : p.options[0];
+                displayVal = String(selectedVal !== undefined && selectedVal !== null ? selectedVal : '');
+            }
+
+            const isLocationPicker = /location/i.test(p.label);
+            if (isLocationPicker) {
+                if (!displayVal || displayVal.trim().toLowerCase() === 'none') {
+                    displayVal = '';
+                } else {
+                    const cleanVal = displayVal.trim();
+                    if (!cleanVal.startsWith('(') && !cleanVal.startsWith(',')) {
+                        displayVal = ` (${cleanVal})`;
+                    }
+                }
+            }
+
             const escapedTag = p.fullTag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             const regex = new RegExp(escapedTag, 'g');
-            result = result.replace(regex, wrapHighlight(selectedVal));
+            if (!displayVal) {
+                result = result.replace(regex, '');
+            } else if (displayVal.startsWith('<mark')) {
+                result = result.replace(regex, displayVal);
+            } else {
+                result = result.replace(regex, wrapHighlight(displayVal));
+            }
         });
 
         // 2. Process Dynamic Fill-in Fields second [Field]
@@ -7520,18 +7948,33 @@ const PERMANENT_TEMPLATES = [
         if (sideVal === 'left') { sideText = 'left'; sideCapText = 'Left'; }
         else if (sideVal === 'bilateral') { sideText = 'bilateral'; sideCapText = 'Bilateral'; }
 
-        const isMidlineNote = (currentCustNoteId && /cervical|collar|neck|spine|lso|tlso|lumbar/i.test(currentCustNoteId)) || (rawText && /cervical|collar|neck|spine|lso|tlso|lumbar/i.test(rawText));
-        if (isMidlineNote) {
-            result = result.replace(/Left\/Right\s*/gi, '');
-            result = result.replace(/left\/right\s*/gi, '');
-            result = result.replace(/L\/R\s*/gi, '');
-        } else {
-            result = result.replace(/Left\/Right/g, wrapHighlight(sideCapText));
-            result = result.replace(/left\/right/g, wrapHighlight(sideText));
-            result = result.replace(/Left\s*\/\s*Right/gi, wrapHighlight(sideCapText));
-            result = result.replace(/Right\s*\/\s*Left/gi, wrapHighlight(sideCapText));
-            result = result.replace(/L\/R/g, wrapHighlight(sideCapText));
-        }
+        // Process 3-way Side Modifiers first (e.g. Left/Right/Bilateral, left/right/bilateral)
+        result = result.replace(/(?:Left|Right)\s*\/\s*(?:Left|Right)\s*\/\s*Bilateral/g, wrapHighlight(sideCapText));
+        result = result.replace(/(?:left|right)\s*\/\s*(?:left|right)\s*\/\s*bilateral/g, wrapHighlight(sideText));
+        result = result.replace(/(?:left|right)\s*\/\s*(?:left|right)\s*\/\s*bilateral/gi, (m) => {
+            return wrapHighlight(m[0] === m[0].toLowerCase() ? sideText : sideCapText);
+        });
+
+        // Process 2-way Side Modifiers (Left/Right, left/right, Right/Left, right/left)
+        result = result.replace(/Left\s*\/\s*Right/g, wrapHighlight(sideCapText));
+        result = result.replace(/left\s*\/\s*right/g, wrapHighlight(sideText));
+        result = result.replace(/Right\s*\/\s*Left/g, wrapHighlight(sideCapText));
+        result = result.replace(/right\s*\/\s*left/g, wrapHighlight(sideText));
+        result = result.replace(/(?:left|right)\s*\/\s*(?:left|right)/gi, (m) => {
+            return wrapHighlight(m[0] === m[0].toLowerCase() ? sideText : sideCapText);
+        });
+
+        // Process Standalone Abbreviated Side Modifiers (\bL/R\b, \bl/r\b, \bR/L\b, \br/l\b)
+        result = result.replace(/\bL\/R\b/g, wrapHighlight(sideCapText));
+        result = result.replace(/\bl\/r\b/g, wrapHighlight(sideText));
+        result = result.replace(/\bR\/L\b/g, wrapHighlight(sideCapText));
+        result = result.replace(/\br\/l\b/g, wrapHighlight(sideText));
+
+        // Process Bracket / Brace Side Modifiers ([Side], [side], {Side}, {side})
+        result = result.replace(/\[Side\]/g, wrapHighlight(sideCapText));
+        result = result.replace(/\[side\]/g, wrapHighlight(sideText));
+        result = result.replace(/\{Side\}/g, wrapHighlight(sideCapText));
+        result = result.replace(/\{side\}/g, wrapHighlight(sideText));
 
 
         // Compartment replacement
@@ -7627,8 +8070,8 @@ const PERMANENT_TEMPLATES = [
         // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
         if (currentCustNoteId === 'toe-filler-delivery') {
             const sideVal = currentCustOptions.side;
-            const a5500Price = priceMap['A5500'] || 78.31;
-            const a5513Price = priceMap['A5513'] || 53.28;
+            const a5500Price = priceMap['A5500'] || 88.58;
+            const a5513Price = priceMap['A5513'] || 54.34;
             const l5000Price = priceMap['L5000'] || 618.56;
 
             if (sideVal === 'bilateral') {
@@ -7689,8 +8132,8 @@ const PERMANENT_TEMPLATES = [
         // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
         if (currentCustNoteId === 'toe-filler-delivery') {
             const sideVal = currentCustOptions.side;
-            const a5500Price = priceMap['A5500'] || 78.31;
-            const a5513Price = priceMap['A5513'] || 53.28;
+            const a5500Price = priceMap['A5500'] || 88.58;
+            const a5513Price = priceMap['A5513'] || 54.34;
             const l5000Price = priceMap['L5000'] || 618.56;
 
             if (sideVal === 'bilateral') {
@@ -7728,40 +8171,7 @@ const PERMANENT_TEMPLATES = [
     }
 
     function handleButtonClick(btn, id, price, text) {
-        const customizerEnabled = localStorage.getItem('enableCustomizerModal') !== '0';
-        if (customizerEnabled) {
-            openCustomizeNotePopup(id);
-        } else {
-            const customNotes = initializeTemplateNotes();
-            const note = customNotes[id] || {};
-            const title = note.title || id;
-            const lcodes = note.lcodes || [];
-            const category = note.category || detectCategory(title, lcodes);
-            const perm = PERMANENT_TEMPLATES.find(p => p.id === id);
-            const textToCopy = (note.text && note.text.trim()) ? note.text : (text || (perm ? perm.text : ''));
-            const timestamp = Date.now();
-
-            actionHistory.push({ id, price, prevTotal: yearlyTotal, timestamp });
-            yearlyTotal += price;
-            buttonPresses[id] = (buttonPresses[id] || 0) + 1;
-
-            let logs = getEncounterLogs();
-            logs.push({ id, title, price, category, timestamp, isoDate: new Date(timestamp).toISOString() });
-            try { localStorage.setItem('encounterLogs', JSON.stringify(logs)); } catch(e){}
-
-            try { localStorage.setItem('yearlyTotal', yearlyTotal); } catch(e){}
-            try { localStorage.setItem(`${id}-presses`, buttonPresses[id]); } catch(e){}
-
-            if (textToCopy && navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).catch(err => console.error("Clipboard error:", err));
-            }
-
-            btn.classList.add('success-flash');
-            setTimeout(() => btn.classList.remove('success-flash'), 280);
-
-            updateDisplay();
-            document.getElementById('undo-button').disabled = false;
-        }
+        openCustomizeNotePopup(id);
     }
 
     function toggleFavorite(e, id) {
@@ -8158,7 +8568,7 @@ const PERMANENT_TEMPLATES = [
 
             sortedEntries.forEach(([id, note]) => {
                 const title = (note && note.title) ? String(note.title) : String(id || 'Untitled');
-                const lcodesStr = (note && Array.isArray(note.lcodes) && note.lcodes.length > 0) ? note.lcodes.join(', ') : '';
+                const lcodesStr = (note && Array.isArray(note.lcodes) && note.lcodes.length > 0) ? formatLcodesForInput(note.lcodes) : '';
                 const isLocked = note ? !!note.excludeAutoPrice : false;
                 let displayPrice = (note && note.price !== undefined) ? note.price : 0;
                 
@@ -8177,7 +8587,7 @@ const PERMANENT_TEMPLATES = [
                     <div style="font-weight:bold; font-size:13px; color:var(--popup-text); margin-bottom:3px;">${title}</div>
                     <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:nowrap;">
                         <div style="flex:1; max-width:520px;">
-                            <input type="text" data-id="${id}" value="${lcodesStr}" class="lcode-edit-input" oninput="onLcodeInputChange(this)" placeholder="HCPCS L-Codes (e.g. L1845, L1852)" style="padding:4px 8px; border-radius:4px; font-size:12px; width:100%; box-sizing:border-box;">
+                            <input type="text" data-id="${id}" value="${lcodesStr}" class="lcode-edit-input" oninput="onLcodeInputChange(this)" placeholder="HCPCS L-Codes (e.g. A5500 x 2, A5513 x 3)" style="padding:4px 8px; border-radius:4px; font-size:12px; width:100%; box-sizing:border-box;">
                         </div>
                         <div style="display:flex; align-items:center; gap:12px; flex-shrink:0;">
                             <div style="display:flex; align-items:center; gap:4px;">
@@ -8264,11 +8674,7 @@ const PERMANENT_TEMPLATES = [
             const id = inp.getAttribute('data-id');
             if (customNotes[id]) {
                 const raw = inp.value || '';
-                const lcodes = raw.split(',')
-                    .map(c => c.trim().toUpperCase())
-                    .filter(Boolean)
-                    .slice(0, 5);
-                customNotes[id].lcodes = lcodes;
+                customNotes[id].lcodes = expandLcodes(raw);
             }
         });
 
@@ -8480,7 +8886,7 @@ const PERMANENT_TEMPLATES = [
                 if (titleInput) titleInput.value = note.title || '';
                 if (catInput) catInput.value = note.category || 'auto';
                 if (priceInput) priceInput.value = (note.price !== undefined) ? note.price : '';
-                if (lcodesInput) lcodesInput.value = (Array.isArray(note.lcodes) ? note.lcodes.join(', ') : '');
+                if (lcodesInput) lcodesInput.value = (note && note.lcodes) ? formatLcodesForInput(note.lcodes) : '';
                 if (textInput) textInput.value = finalText;
             } else {
                 popup.removeAttribute('data-editing-id');
@@ -8538,10 +8944,7 @@ const PERMANENT_TEMPLATES = [
 
         if (!title) { alert('Please enter a title'); return; }
 
-        const lcodes = lcodesRaw.split(',')
-            .map(c => c.trim().toUpperCase())
-            .filter(Boolean)
-            .slice(0, 5);
+        const lcodes = expandLcodes(lcodesRaw);
 
         const catInput = document.getElementById('note-category-input');
         let category = catInput ? catInput.value : 'auto';
@@ -8628,11 +9031,8 @@ const PERMANENT_TEMPLATES = [
             let notesUpdated = false;
             entries.forEach(([id, note]) => {
                 if (note && (note.userCustomizedText || note.isCustomEdited) && !note.lastUpdated && !note.timestamp) {
-                    const idMatch = String(id).match(/(\d{12,13})/);
-                    if (idMatch) {
-                        note.lastUpdated = parseInt(idMatch[1]);
-                        notesUpdated = true;
-                    }
+                    note.lastUpdated = Date.now();
+                    notesUpdated = true;
                 }
             });
             if (notesUpdated) {
@@ -8644,7 +9044,7 @@ const PERMANENT_TEMPLATES = [
                 const title = String((note && note.title) || id || 'Untitled');
                 const safeTitle = title.replace(/"/g, '&quot;');
                 const price = (note && note.price !== undefined) ? note.price : 0;
-                const lcodesStr = (note && Array.isArray(note.lcodes) && note.lcodes.length > 0) ? note.lcodes.join(', ') : 'None';
+                const lcodesStr = (note && Array.isArray(note.lcodes) && note.lcodes.length > 0) ? formatLcodesForInput(note.lcodes) : 'None';
                 const catStr = (note && note.category) ? note.category : detectCategory(title, note ? note.lcodes : []);
                 const isBuiltIn = note && note.isTemplate;
                 
@@ -8655,8 +9055,6 @@ const PERMANENT_TEMPLATES = [
                     const dateStr = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
                     const timeStr = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
                     dateBadge = `<span style="font-size:10.5px; background:rgba(40,167,69,0.14); color:#1e7e34; padding:2px 7px; border-radius:4px; font-weight:600; margin-left:6px;" title="Last updated: ${dateStr} ${timeStr}">&#128336; ${dateStr} ${timeStr}</span>`;
-                } else if (note && (note.userCustomizedText || note.isCustomEdited)) {
-                    dateBadge = `<span style="font-size:10.5px; background:rgba(23,162,184,0.14); color:#117a8b; padding:2px 7px; border-radius:4px; font-weight:600; margin-left:6px;" title="Customized template (Prior version)">&#128336; Customized</span>`;
                 } else {
                     dateBadge = `<span style="font-size:10.5px; opacity:0.6; margin-left:6px; font-weight:normal;">(Base Default)</span>`;
                 }
@@ -8888,23 +9286,27 @@ const PERMANENT_TEMPLATES = [
 
         // Hardcoded fallbacks if no CSV loaded
         if (price === 0) {
-            const defaults = {
+                        const defaults = {
                 'L1920': 505.28,
-                'L1940': 568.30,
+                'L1940': 568.3,
                 'L1845': 970.06,
-                'L1852': 583.90,
+                'L1852': 583.9,
                 'L1970': 859.02,
                 'L2820': 133.05,
                 'L2275': 171.17,
-                'L3960': 195.00,
-                'L1902': 90.00,
+                'L3960': 826.41,
+                'L1902': 91.73,
                 'A5512': 36.96,
                 'A5500': 90.63,
                 'A5513': 55.16,
                 'L5585': 3543.26,
                 'L7700': 146.37,
                 'L5679': 772.95,
-                'L5673': 927.59
+                'L5673': 927.59,
+                'L5685': 159.46,
+                'L5671': 811.94,
+                'L5000': 618.56,
+                'L8420': 23.81
             };
             if (defaults[cleanCode]) price = defaults[cleanCode];
         }
@@ -8953,7 +9355,19 @@ const PERMANENT_TEMPLATES = [
         const row = inputElem.closest('tr');
 
         if (field === 'lcode') {
-            item.lcode = inputElem.value.toUpperCase();
+            const rawVal = inputElem.value;
+            const parsed = parseLcodeEntries(rawVal);
+            if (parsed.length > 0 && parsed[0].qty > 1) {
+                item.lcode = parsed[0].code;
+                item.qty = parsed[0].qty;
+                inputElem.value = item.lcode;
+                if (row) {
+                    const qtyInp = row.querySelector('.calc-qty-input');
+                    if (qtyInp) qtyInp.value = item.qty;
+                }
+            } else {
+                item.lcode = rawVal.toUpperCase().trim();
+            }
             const info = getCalcItemPriceAndDesc(item.lcode);
             item.price = info.price;
             item.description = info.description;
@@ -8994,17 +9408,8 @@ const PERMANENT_TEMPLATES = [
     function removeCalcRow(id) {
         if (calcItems.length > 1) {
             calcItems = calcItems.filter(i => i.id !== id);
-        } else {
-            calcItems = [{ id: 1, lcode: '', qty: 1, description: '', price: 0, lineTotal: 0 }];
+            renderCalcTable();
         }
-        renderCalcTable();
-    }
-
-    function clearAllCalcRows() {
-        calcItems = [{ id: 1, lcode: '', qty: 1, description: '', price: 0, lineTotal: 0 }];
-        const discInput = document.getElementById('calc-discount-percent');
-        if (discInput) discInput.value = '0';
-        renderCalcTable();
     }
 
     function onCalcInputKeyDown(e, id) {
