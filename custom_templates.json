@@ -1329,26 +1329,6 @@
     "userCustomizedPrice": true,
     "lastUpdated": 1789570873355
   },
-  "diabetic-shoe-del": {
-    "id": "diabetic-shoe-del",
-    "lcodes": [
-      "A5500",
-      "A5500",
-      "A5513",
-      "A5513",
-      "A5513",
-      "A5513",
-      "A5513",
-      "A5513"
-    ],
-    "title": "Diabetic Shoe Delivery",
-    "category": "Foot & Ankle",
-    "price": 503.2,
-    "fabricationType": "prefab",
-    "text": "Patient was seen at our office for delivery of diabetic shoes and inserts. Pt. ambulated in shoes and stated that they were comfortable. Educated on weening into new shoes.",
-    "excludeAutoPrice": false,
-    "isTemplate": true
-  },
   "diabetic-shoe-toe-filler-eval": {
     "id": "diabetic-shoe-toe-filler-eval",
     "lcodes": [],
