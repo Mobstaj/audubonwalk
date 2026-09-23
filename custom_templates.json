@@ -978,11 +978,14 @@
   "custom-foot-orthotics-delivery": {
     "id": "custom-foot-orthotics-delivery",
     "lcodes": [
+      "L3020",
+      "L3020",
+      "L3020",
       "L3020"
     ],
     "title": "Custom foot orthotics delivery",
     "category": "Foot & Ankle",
-    "price": 246.48,
+    "price": 985.92,
     "fabricationType": "custom",
     "text": "Patient was seen at the North/South office for delivery and fitting of left/right custom foot orthotic(s) for {Diagnosis: Plantar fasciitis/Pes planus/Pes planovalgus/Supination/Metatarsalgia/Club foot/Neuropathy/Arthritis}\n\nDevice Verification & Fit: \nOrthotic(s) verified against clinical specifications and custom molded from patient's anatomical model. Devices were trimmed and fit into patient's {Footwear: athletic shoes / supportive walking shoes / work boots/ military boots} with factory insoles removed.\nMedial, lateral, and transverse arches achieve intimate, total contact support.\nDeep heel cup stabilizes the rearfoot and centers the calcaneus.\n\nGait & Functional Trial:\nTrial ambulation performed in-clinic. Devices distribute plantar pressures evenly, control abnormal pronation/supination, and stabilize the foot through stance phase without heel slippage or focal irritation. Patient reported {Comfort: immediate support and comfort / noticeable reduction in pain / stable, supportive alignment}.\n\nPatient Education & Instructions:\nHe/She was educated on proper orthotic seating, appropriate footwear pairing, and daily skin checks. A gradual break-in schedule was provided (wear 1–2 hours on day 1, adding 1–2 hours daily until full-time wear is achieved).\n\nPatient demonstrated proper insertion and removal.\nCare and cleaning instructions provided.\nAdvised him/her to contact the clinic if any persistent redness, hot spots, or discomfort develop. Follow-up PRN.",
     "excludeAutoPrice": false,
@@ -990,7 +993,7 @@
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1789163283183
+    "lastUpdated": 1790202815973
   },
   "tibial-fracture-brace": {
     "id": "tibial-fracture-brace",
