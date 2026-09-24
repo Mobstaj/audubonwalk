@@ -710,13 +710,13 @@
   "forms": {
     "id": "forms",
     "lcodes": [
-      "L3030"
+      "L3040"
     ],
     "title": "Forms",
     "category": "Foot & Ankle",
-    "price": 100,
+    "price": 50,
     "fabricationType": "prefab",
-    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} Forms foot orthotics. Foot orthotics will support feet in alignment, reduce plantar pressures, help to prevent {Alignment Problem: supination / pronation / arch collapse / heel pain}. He/she was educated on use/care of devices. F/up PRN.",
+    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} prefabricated heat-moldable foot orthotics (Forms).\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination/ pronation/arch collapse/heel pain/metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.",
     "excludeAutoPrice": true,
     "isTemplate": true
   },
@@ -790,11 +790,11 @@
     "lcodes": [
       "L4205"
     ],
-    "title": "General orthosis asjustment",
+    "title": "General orthosis adjustment",
     "category": "General",
     "price": 29.95,
     "fabricationType": "prefab",
-    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Ankle-Foot Orthosis (AFO) / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Abduction Sling/ Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
+    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Abduction Sling/Ankle-Foot Orthosis / AFO / Night splint / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: Pt. needs help re-adjusting strapping and fit / localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: Fit is non optimal/worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Re-fit device and re-adjusted all strapping / Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
     "excludeAutoPrice": false,
     "isTemplate": true
   },
@@ -1008,94 +1008,6 @@
     "excludeAutoPrice": false,
     "isTemplate": true
   },
-  "custom-1785437208449": {
-    "id": "custom-1785437208449",
-    "title": "Even up",
-    "price": 30,
-    "category": "Foot & Ankle",
-    "lcodes": [
-      "L2999"
-    ],
-    "text": "Pt. was fit with even up leveling device to compensate for walking boot sole elevation.  Pt. was fit with size {Size:/Small/Med/Large/XL}even up.  Pt. was educated on use/care of device.  Fit was appropriate.  F/up PRN.",
-    "excludeAutoPrice": true,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788446367077
-  },
-  "custom-1786047844569": {
-    "id": "custom-1786047844569",
-    "title": "Walker",
-    "price": 70,
-    "category": "General",
-    "lcodes": [
-      "E1399"
-    ],
-    "text": "Pt. seen at North/South location for delivery of walker.  Walker was sized to pt.  He/She was educated on use/care of device.  F/up PRN.",
-    "excludeAutoPrice": true,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "lastUpdated": 1788446367077
-  },
-  "custom-1786401952325": {
-    "id": "custom-1786401952325",
-    "title": "CROW boot delivery",
-    "price": 1710.05,
-    "category": "Foot & Ankle",
-    "lcodes": [
-      "L4631"
-    ],
-    "text": "Patient was seen at the North/South office for fitting and delivery of Charcot/Crow boot.   He/she was fit with a custom CROW orthosis. The device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in the sagittal and coronal planes, decrease severe subtalar joint motion/pain, prevent joint collapse during ambulation, and help to slow progression or Charcot arthropathy. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule while monitoring skin for irritation.",
-    "excludeAutoPrice": false,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "lastUpdated": 1788446367077
-  },
-  "custom-1787000660292": {
-    "id": "custom-1787000660292",
-    "title": "Gel heel cups",
-    "price": 0,
-    "category": "Foot & Ankle",
-    "lcodes": [
-      "L2999"
-    ],
-    "text": "Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.",
-    "excludeAutoPrice": false,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "lastUpdated": 1788446367077
-  },
-  "custom-1787094050566": {
-    "id": "custom-1787094050566",
-    "title": "Hammertoe strap Budin",
-    "price": 26,
-    "category": "Foot & Ankle",
-    "lcodes": [],
-    "text": "Patient was seen at the North/South office for delivery of Budin/hammertoe splint.  He/She has hammertoe deformity of the {Affected Digits: 2nd/3rd/4th/5th/2nd and 3rd/2nd, 3rd, and 4th/3rd and 4th} digits.  Pt. was fit with {Single, double, triple: single/double/triple} hammertoe splint.  Device will help to reduce hammertoe deformity, prevent progression of this deformity, and reduce associated pain.  \n\nPt. was educated on donning, doffing, use, and care of hammertoe splint.  He/She was also given written instructions.  F/up PRN.",
-    "excludeAutoPrice": false,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1789999276334
-  },
-  "custom-1787665453088": {
-    "id": "custom-1787665453088",
-    "title": "General orthosis adjustment",
-    "price": 29.95,
-    "category": "General",
-    "lcodes": [
-      "L4205"
-    ],
-    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Abduction Sling/Ankle-Foot Orthosis / AFO / Night splint / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: Pt. needs help re-adjusting strapping and fit / localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: Fit is non optimal/worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Re-fit device and re-adjusted all strapping / Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
-    "excludeAutoPrice": false,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1789596812762
-  },
   "custom-1788364768362": {
     "id": "custom-1788364768362",
     "title": "Cerv Collar/Aspen pad kit",
@@ -1109,20 +1021,6 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true,
     "lastUpdated": 1788364768369
-  },
-  "custom-1787583412902": {
-    "id": "custom-1787583412902",
-    "title": "Diabetic shoe/Toe filler evaluation",
-    "price": 0,
-    "category": "Lower Prosthetics",
-    "lcodes": [],
-    "text": "Patient presents to the North/South office for clinical evaluation, anatomical measurement, and volumetric impressions for a custom Left/Right/Bilateral partial foot prosthesis with toe filler (L5000), therapeutic diabetic depth footwear (A5500 x 2), and multi-density total contact inserts (A5513). he/she is under active diabetic management by his/her certifying physician. Patient arrived {Ambulatory state: ambulating unaided / ambulating with cane / ambulating with walker / in wheelchair}.\n\nQualifying Medical History & Rationale:\nPatient has a documented history of Diabetes Mellitus and presents with: Left/Right {Amputation History: partial foot amputation / Transmetatarsal amputation (TMA) / Lisfranc amputation / Chopart amputation / Great toe amputation with ray resection / Multi-digit amputation / Bilateral partial foot amputations}. Medical necessity is established to provide a custom partial foot prosthesis with rigid/flexible toe filler to replace missing skeletal leverage, fill footwear void, prevent forward sliding/shear within the shoe, protect the residual limb from skin breakdown, and restore functional rollover during the stance phase of gait.\n\nPhysical Examination & Biomechanical Assessment:\n\nResidual Limb & Skin Integrity: Skin is {Skin Status: completely intact without lesions / fully healed surgical site / healed with localized hyperkeratosis / adherent distal scar tissue}. {Callus: No hyperkeratotic callus noted. / Callus noted on Left 1st Met Head. / Callus noted on Right 1st Met Head. / Callus noted on Bilateral 1st Met Heads. / Callus noted on Left 2nd-4th Met Heads. / Callus noted on Right 2nd-4th Met Heads. / Callus noted on Bilateral 2nd-4th Met Heads. / Callus noted on Left 5th Met Head. / Callus noted on Right 5th Met Head. / Callus noted on Bilateral 5th Met Heads. / Callus noted on Left Plantar Heel. / Callus noted on Right Plantar Heel. / Callus noted on Bilateral Plantar Heels.}\n{+ Prior Ulcer Site: Healed prior ulcer site noted on [Prior Ulcer Location].}\nNo active open ulcerations, drainage, or signs of acute infection noted.\n\nStructural Assessment & Contralateral Foot: Physical examination reveals {Contralateral Deformities: intact contralateral foot with no rigid deformities / hallux valgus (bunions) / hammer or claw toes / Charcot arthropathy / severe pes planus / prominent metatarsal heads / bilateral amputation sites}.\n\nNeurological Assessment: Sensation testing demonstrates {Sensation: Loss of Protective Sensation / Loss of protective sensation distally but intact proximal to mets / Loss of protective sensation but intact proximal to ankle / intact protective sensation}.\n\nFoot Sizing, Custom Impressions & Device Selection:\n\nBrannock Sizing (Weight-Bearing): Determined shoe size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nTherapeutic Footwear Selected: {Brand: Anodyne / Dr. Comfort / Orthofeet / Apex / Mt. Emey} — Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 14 / 15} / Width: {Shoe Width: M / W / XW / XXW}.\n\nImpressions Obtained: Direct 3D volumetric impressions / foam impression boxes taken today of bilateral feet for custom multi-density insert fabrication. The custom insert incorporates a longitudinal arch support and Left/Right custom toe filler (L5000) molded to match the anatomical contour of the residual limb.\n\nPlan & Patient Education:\n\nOrder Placed: HCPCS A5500 x 2 (Therapeutic depth shoes), HCPCS L5000 Left/Right (Partial foot prosthesis with toe filler), and HCPCS A5513 (Custom-molded multi-density inserts).\n\nNext Steps: Patient will return for prosthetic delivery, shoe fitting, total contact pressure check, and dynamic gait trial upon completion of custom fabrication.\n\nEducation Provided: Patient was educated on a progressive break-in schedule (1–2 hours daily), daily visual skin checks using a mirror, diabetic seamless socks, and immediate reporting of any erythema lasting >20 minutes. {+ Caregiver Present: Caregiver was present and instructed on daily residual limb inspection and footwear safety.}\n\nFollow-up scheduled in {Follow-up: 3-4 weeks for custom fitting and delivery / PRN upon order arrival}.",
-    "excludeAutoPrice": false,
-    "isTemplate": false,
-    "isCustomEdited": true,
-    "userCustomizedText": true,
-    "userCustomizedPrice": true,
-    "lastUpdated": 1788446367077
   },
   "custom-1788907701005": {
     "id": "custom-1788907701005",
@@ -1225,19 +1123,6 @@
     "excludeAutoPrice": false,
     "isTemplate": true
   },
-  "forms-orthotics": {
-    "id": "forms-orthotics",
-    "lcodes": [
-      "L3040"
-    ],
-    "title": "Forms",
-    "category": "Foot & Ankle",
-    "price": 50,
-    "fabricationType": "prefab",
-    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} prefabricated heat-moldable foot orthotics (Forms).\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination/ pronation/arch collapse/heel pain/metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.",
-    "excludeAutoPrice": true,
-    "isTemplate": true
-  },
   "custom-inserts-eval": {
     "id": "custom-inserts-eval",
     "lcodes": [
@@ -1317,10 +1202,10 @@
     "lcodes": [],
     "title": "Hammertoe strap Budin",
     "category": "Foot & Ankle",
-    "price": 0,
+    "price": 26,
     "fabricationType": "prefab",
     "text": "Patient was seen at the North/South office for delivery of Budin/hammertoe splint.  He/She has hammertoe deformity of the {Affected Digits: 2nd/3rd/4th/5th/2nd and 3rd/2nd, 3rd, and 4th/3rd and 4th} digits.  Pt. was fit with {Single, double, triple: single/double/triple} hammertoe splint.  Device will help to reduce hammertoe deformity, prevent progression of this deformity, and reduce associated pain.  \n\nPt. was educated on donning, doffing, use, and care of hammertoe splint.  He/She was also given written instructions.  F/up PRN.",
-    "excludeAutoPrice": false,
+    "excludeAutoPrice": true,
     "isTemplate": true
   },
   "diabetic-shoe-toe-filler-eval": {
