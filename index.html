@@ -8051,123 +8051,233 @@ const PERMANENT_TEMPLATES = [
         }
     }
 
+    function copyTextToClipboard(text) {
+        if (!text) return Promise.resolve(false);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            return navigator.clipboard.writeText(text).then(() => true).catch(err => {
+                console.warn("navigator.clipboard.writeText failed, using fallback:", err);
+                return fallbackCopyText(text);
+            });
+        } else {
+            return Promise.resolve(fallbackCopyText(text));
+        }
+    }
+
+    function fallbackCopyText(text) {
+        try {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            textArea.style.top = "-9999px";
+            textArea.setAttribute("readonly", "");
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            const successful = document.execCommand('copy');
+            document.body.removeChild(textArea);
+            return successful;
+        } catch (err) {
+            console.error("fallbackCopyText failed:", err);
+            return false;
+        }
+    }
+
     function confirmAndCopyCustNote() {
-        if (!currentCustNoteId) return;
-        const customNotes = initializeTemplateNotes();
-        const note = customNotes[currentCustNoteId];
-        if (!note) return;
+        try {
+            if (!currentCustNoteId) return;
+            const customNotes = initializeTemplateNotes();
+            const note = customNotes[currentCustNoteId];
+            if (!note) return;
 
-        const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
-        const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
-        const formattedText = generateTailoredNoteText(rawText, false);
+            const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+            const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+            const formattedText = generateTailoredNoteText(rawText, false);
 
-        let price = note.price || 0;
-        const title = note.title || currentCustNoteId;
-        let lcodes = [...(note.lcodes || [])];
-        const category = note.category || detectCategory(title, lcodes);
-        const timestamp = Date.now();
+            let price = note.price || 0;
+            const title = note.title || currentCustNoteId;
+            let lcodes = [...(note.lcodes || [])];
+            const category = note.category || detectCategory(title, lcodes);
+            const timestamp = Date.now();
 
-        // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
-        if (currentCustNoteId === 'toe-filler-delivery') {
-            const sideVal = currentCustOptions.side;
-            const a5500Price = priceMap['A5500'] || 88.58;
-            const a5513Price = priceMap['A5513'] || 54.34;
-            const l5000Price = priceMap['L5000'] || 618.56;
+            // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
+            if (currentCustNoteId === 'toe-filler-delivery') {
+                let cmsPriceMap = {};
+                try { cmsPriceMap = JSON.parse(localStorage.getItem('cmsPriceMap') || '{}'); } catch(e){}
+                const getPrice = (code, fallback) => {
+                    if (cmsPriceMap[code] !== undefined && !isNaN(cmsPriceMap[code])) return Number(cmsPriceMap[code]);
+                    if (typeof BUILTIN_CMS_PRICE_MAP !== 'undefined' && BUILTIN_CMS_PRICE_MAP[code] !== undefined) return Number(BUILTIN_CMS_PRICE_MAP[code]);
+                    return fallback;
+                };
 
-            if (sideVal === 'bilateral') {
-                lcodes = ['A5500', 'A5500', 'L5000', 'L5000'];
-                if (!note.excludeAutoPrice) {
-                    price = (a5500Price * 2) + (l5000Price * 2);
+                let toeFillerSide = (currentCustOptions && currentCustOptions.side) || 'right';
+                if (currentCustOptions && currentCustOptions.customPickers) {
+                    for (const [tag, val] of Object.entries(currentCustOptions.customPickers)) {
+                        if (/side of toe filler/i.test(tag) && val) {
+                            toeFillerSide = String(val).toLowerCase().trim();
+                        }
+                    }
                 }
-            } else {
-                lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513', 'L5000'];
-                if (!note.excludeAutoPrice) {
-                    price = (a5500Price * 2) + (a5513Price * 3) + l5000Price;
+
+                let isOTS = false;
+                if (currentCustOptions && currentCustOptions.customPickers) {
+                    for (const [tag, val] of Object.entries(currentCustOptions.customPickers)) {
+                        if (/custom or ots/i.test(tag) && /5512/i.test(String(val))) {
+                            isOTS = true;
+                        }
+                    }
                 }
+
+                const a5500Price = getPrice('A5500', 90.63);
+                const insertCode = isOTS ? 'A5512' : 'A5513';
+                const insertPrice = isOTS ? getPrice('A5512', 36.96) : getPrice('A5513', 55.16);
+                const l5000Price = getPrice('L5000', 618.56);
+
+                if (toeFillerSide === 'bilateral' || (currentCustOptions && currentCustOptions.side === 'bilateral')) {
+                    lcodes = ['A5500', 'A5500', 'L5000', 'L5000'];
+                    if (!note.excludeAutoPrice) {
+                        price = (a5500Price * 2) + (l5000Price * 2);
+                    }
+                } else {
+                    lcodes = ['A5500', 'A5500', insertCode, insertCode, insertCode, 'L5000'];
+                    if (!note.excludeAutoPrice) {
+                        price = (a5500Price * 2) + (insertPrice * 3) + l5000Price;
+                    }
+                }
+                price = Math.round(price * 100) / 100;
             }
-            price = Math.round(price * 100) / 100;
+
+            actionHistory.push({ id: currentCustNoteId, price, prevTotal: yearlyTotal, timestamp });
+            yearlyTotal += price;
+            buttonPresses[currentCustNoteId] = (buttonPresses[currentCustNoteId] || 0) + 1;
+
+            let logs = getEncounterLogs();
+            logs.push({ id: currentCustNoteId, title, price, category, timestamp, isoDate: new Date(timestamp).toISOString() });
+            try { localStorage.setItem('encounterLogs', JSON.stringify(logs)); } catch(e){}
+
+            try { localStorage.setItem('yearlyTotal', yearlyTotal); } catch(e){}
+            try { localStorage.setItem(`${currentCustNoteId}-presses`, buttonPresses[currentCustNoteId]); } catch(e){}
+
+            if (formattedText) {
+                copyTextToClipboard(formattedText);
+            }
+
+            const targetBtn = document.querySelector(`.button[data-id="${currentCustNoteId}"]`);
+            if (targetBtn) {
+                targetBtn.classList.add('success-flash');
+                setTimeout(() => targetBtn.classList.remove('success-flash'), 300);
+            }
+
+            updateDisplay();
+            const undoBtn = document.getElementById('undo-button');
+            if (undoBtn) undoBtn.disabled = false;
+            closeAllPopups();
+        } catch (err) {
+            console.error("Error in confirmAndCopyCustNote:", err);
+            try {
+                const customNotes = initializeTemplateNotes();
+                const note = customNotes[currentCustNoteId] || {};
+                const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+                const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+                if (rawText) copyTextToClipboard(rawText);
+            } catch(e){}
+            closeAllPopups();
         }
-
-        actionHistory.push({ id: currentCustNoteId, price, prevTotal: yearlyTotal, timestamp });
-        yearlyTotal += price;
-        buttonPresses[currentCustNoteId] = (buttonPresses[currentCustNoteId] || 0) + 1;
-
-        let logs = getEncounterLogs();
-        logs.push({ id: currentCustNoteId, title, price, category, timestamp, isoDate: new Date(timestamp).toISOString() });
-        try { localStorage.setItem('encounterLogs', JSON.stringify(logs)); } catch(e){}
-
-        try { localStorage.setItem('yearlyTotal', yearlyTotal); } catch(e){}
-        try { localStorage.setItem(`${currentCustNoteId}-presses`, buttonPresses[currentCustNoteId]); } catch(e){}
-
-        if (formattedText && navigator.clipboard) {
-            navigator.clipboard.writeText(formattedText).catch(err => console.error("Clipboard error:", err));
-        }
-
-        const targetBtn = document.querySelector(`.button[data-id="${currentCustNoteId}"]`);
-        if (targetBtn) {
-            targetBtn.classList.add('success-flash');
-            setTimeout(() => targetBtn.classList.remove('success-flash'), 300);
-        }
-
-        updateDisplay();
-        document.getElementById('undo-button').disabled = false;
-        closeAllPopups();
     }
 
     function copyCustNoteRaw() {
-        if (!currentCustNoteId) return;
-        const customNotes = initializeTemplateNotes();
-        const note = customNotes[currentCustNoteId];
-        if (!note) return;
+        try {
+            if (!currentCustNoteId) return;
+            const customNotes = initializeTemplateNotes();
+            const note = customNotes[currentCustNoteId];
+            if (!note) return;
 
-        const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
-        const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+            const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+            const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
 
-        let price = note.price || 0;
-        const title = note.title || currentCustNoteId;
-        let lcodes = [...(note.lcodes || [])];
-        const category = note.category || detectCategory(title, lcodes);
-        const timestamp = Date.now();
+            let price = note.price || 0;
+            const title = note.title || currentCustNoteId;
+            let lcodes = [...(note.lcodes || [])];
+            const category = note.category || detectCategory(title, lcodes);
+            const timestamp = Date.now();
 
-        // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
-        if (currentCustNoteId === 'toe-filler-delivery') {
-            const sideVal = currentCustOptions.side;
-            const a5500Price = priceMap['A5500'] || 88.58;
-            const a5513Price = priceMap['A5513'] || 54.34;
-            const l5000Price = priceMap['L5000'] || 618.56;
+            // DYNAMIC QUANTITY/PRICE ADJUSTMENT FOR TOE FILLER:
+            if (currentCustNoteId === 'toe-filler-delivery') {
+                let cmsPriceMap = {};
+                try { cmsPriceMap = JSON.parse(localStorage.getItem('cmsPriceMap') || '{}'); } catch(e){}
+                const getPrice = (code, fallback) => {
+                    if (cmsPriceMap[code] !== undefined && !isNaN(cmsPriceMap[code])) return Number(cmsPriceMap[code]);
+                    if (typeof BUILTIN_CMS_PRICE_MAP !== 'undefined' && BUILTIN_CMS_PRICE_MAP[code] !== undefined) return Number(BUILTIN_CMS_PRICE_MAP[code]);
+                    return fallback;
+                };
 
-            if (sideVal === 'bilateral') {
-                lcodes = ['A5500', 'A5500', 'L5000', 'L5000'];
-                if (!note.excludeAutoPrice) {
-                    price = (a5500Price * 2) + (l5000Price * 2);
+                let toeFillerSide = (currentCustOptions && currentCustOptions.side) || 'right';
+                if (currentCustOptions && currentCustOptions.customPickers) {
+                    for (const [tag, val] of Object.entries(currentCustOptions.customPickers)) {
+                        if (/side of toe filler/i.test(tag) && val) {
+                            toeFillerSide = String(val).toLowerCase().trim();
+                        }
+                    }
                 }
-            } else {
-                lcodes = ['A5500', 'A5500', 'A5513', 'A5513', 'A5513', 'L5000'];
-                if (!note.excludeAutoPrice) {
-                    price = (a5500Price * 2) + (a5513Price * 3) + l5000Price;
+
+                let isOTS = false;
+                if (currentCustOptions && currentCustOptions.customPickers) {
+                    for (const [tag, val] of Object.entries(currentCustOptions.customPickers)) {
+                        if (/custom or ots/i.test(tag) && /5512/i.test(String(val))) {
+                            isOTS = true;
+                        }
+                    }
                 }
+
+                const a5500Price = getPrice('A5500', 90.63);
+                const insertCode = isOTS ? 'A5512' : 'A5513';
+                const insertPrice = isOTS ? getPrice('A5512', 36.96) : getPrice('A5513', 55.16);
+                const l5000Price = getPrice('L5000', 618.56);
+
+                if (toeFillerSide === 'bilateral' || (currentCustOptions && currentCustOptions.side === 'bilateral')) {
+                    lcodes = ['A5500', 'A5500', 'L5000', 'L5000'];
+                    if (!note.excludeAutoPrice) {
+                        price = (a5500Price * 2) + (l5000Price * 2);
+                    }
+                } else {
+                    lcodes = ['A5500', 'A5500', insertCode, insertCode, insertCode, 'L5000'];
+                    if (!note.excludeAutoPrice) {
+                        price = (a5500Price * 2) + (insertPrice * 3) + l5000Price;
+                    }
+                }
+                price = Math.round(price * 100) / 100;
             }
-            price = Math.round(price * 100) / 100;
+
+            actionHistory.push({ id: currentCustNoteId, price, prevTotal: yearlyTotal, timestamp });
+            yearlyTotal += price;
+            buttonPresses[currentCustNoteId] = (buttonPresses[currentCustNoteId] || 0) + 1;
+
+            let logs = getEncounterLogs();
+            logs.push({ id: currentCustNoteId, title, price, category, timestamp, isoDate: new Date(timestamp).toISOString() });
+            try { localStorage.setItem('encounterLogs', JSON.stringify(logs)); } catch(e){}
+
+            try { localStorage.setItem('yearlyTotal', yearlyTotal); } catch(e){}
+            try { localStorage.setItem(`${currentCustNoteId}-presses`, buttonPresses[currentCustNoteId]); } catch(e){}
+
+            if (rawText) {
+                copyTextToClipboard(rawText);
+            }
+
+            updateDisplay();
+            const undoBtn = document.getElementById('undo-button');
+            if (undoBtn) undoBtn.disabled = false;
+            closeAllPopups();
+        } catch (err) {
+            console.error("Error in copyCustNoteRaw:", err);
+            try {
+                const customNotes = initializeTemplateNotes();
+                const note = customNotes[currentCustNoteId] || {};
+                const perm = PERMANENT_TEMPLATES.find(p => p.id === currentCustNoteId);
+                const rawText = (note.text && note.text.trim()) ? note.text : (perm ? perm.text : '');
+                if (rawText) copyTextToClipboard(rawText);
+            } catch(e){}
+            closeAllPopups();
         }
-
-        actionHistory.push({ id: currentCustNoteId, price, prevTotal: yearlyTotal, timestamp });
-        yearlyTotal += price;
-        buttonPresses[currentCustNoteId] = (buttonPresses[currentCustNoteId] || 0) + 1;
-
-        let logs = getEncounterLogs();
-        logs.push({ id: currentCustNoteId, title, price, category, timestamp, isoDate: new Date(timestamp).toISOString() });
-        try { localStorage.setItem('encounterLogs', JSON.stringify(logs)); } catch(e){}
-
-        try { localStorage.setItem('yearlyTotal', yearlyTotal); } catch(e){}
-        try { localStorage.setItem(`${currentCustNoteId}-presses`, buttonPresses[currentCustNoteId]); } catch(e){}
-
-        if (rawText && navigator.clipboard) {
-            navigator.clipboard.writeText(rawText).catch(err => console.error("Clipboard error:", err));
-        }
-
-        updateDisplay();
-        document.getElementById('undo-button').disabled = false;
-        closeAllPopups();
     }
 
     function handleButtonClick(btn, id, price, text) {
