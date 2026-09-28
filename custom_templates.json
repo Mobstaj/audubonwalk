@@ -1193,12 +1193,12 @@
     "price": 27,
     "category": "Foot & Ankle",
     "lcodes": [],
-    "text": "Patient was seen for delivery and fitting of a left/right Toe alignment splint rom Darco.  Strap(s) adjusted for appropriate fit and to hold and align {*Toes to correct: 1st, 2nd, 3rd, 4th, 5th} digits in {*Alignment: flexion/extension/abduction/adduction}.  \n\nToe alignment splint will help to hold the digit(s) in the proper alignment for appropriate healing.  \nPatient was instructed on proper donning/doffing, wearing, and cleaning procedures of new device.  Fit was appropriate and functional.  He/She will contact the office as needed for f/u.",
+    "text": "Patient was seen for delivery and fitting of a left/right Toe alignment splint rom Darco.  Strap(s) adjusted for appropriate fit and to hold and align {*toes to correct: 1st, 2nd, 3rd, 4th, 5th} digits in {*Alignment: flexion/extension/abduction/adduction}.  \n\nToe alignment splint will help to hold the digit(s) in the proper alignment for appropriate healing.  \nPatient was instructed on proper donning/doffing, wearing, and cleaning procedures of new device.  Fit was appropriate and functional.  He/She will contact the office as needed for f/u.",
     "excludeAutoPrice": false,
     "isTemplate": false,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1790626436511
+    "lastUpdated": 1790626501991
   }
 }
