@@ -303,13 +303,13 @@
     "category": "Foot & Ankle",
     "price": 15,
     "fabricationType": "prefab",
-    "text": "Patient was seen at North/South office for fitting of a Left/Right {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch} for left/right {Toes: 1st/2nd/3rd/4th/1st-2nd/2nd-3rd/2nd-4th/3rd-4th} toe(s). Fit with {Size: S/M/L/XL} {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch}to realign {Toes: 1st/2nd/3rd/4th/1st-2nd/2nd-3rd/2nd-4th/3rd-4th} digits and reduce related pain.  Gel {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch} should help to maintain proper toe alignment and prevent progression of deformity. \n\nPt. educated on use/care of gel toe devices.  F/up PRN.",
+    "text": "Patient was seen at North/South office for fitting of a Left/Right {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch} for left/right {Toes: 1st/2nd/3rd/4th/1st-2nd/2nd-3rd/2nd-4th/3rd-4th} toe(s). Fit with {Size: S/M/L/XL} {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch}to realign {Toes: 1st/2nd/3rd/4th/1st-2nd/2nd-3rd/2nd-4th/3rd-4th} digits and reduce related pain. {Device: gel toe spacer with ring/gel toe spacer without ring/ gel toe crest pad/ gel toe cap(caps)/gel toe crutch} should help to maintain proper toe alignment and prevent progression of deformity. \n\nPt. educated on use/care of gel toe devices.  F/up PRN.",
     "excludeAutoPrice": true,
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1790703102841
+    "lastUpdated": 1790703129894
   },
   "walking-boot": {
     "id": "walking-boot",
