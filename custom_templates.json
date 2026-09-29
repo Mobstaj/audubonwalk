@@ -764,7 +764,7 @@
       "A5513",
       "L5000"
     ],
-    "title": "Diabetic shoe/toe filler",
+    "title": "Diabetic shoe/toe filler delivery",
     "category": "Lower Prosthetics",
     "price": 965.3,
     "fabricationType": "custom",
@@ -774,7 +774,7 @@
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1790285343859
+    "lastUpdated": 1790708971345
   },
   "gel-heel-cups": {
     "id": "gel-heel-cups",
