@@ -664,9 +664,13 @@
     "category": "Foot & Ankle",
     "price": 30,
     "fabricationType": "prefab",
-    "text": "Pt. was fit with even up leveling device to compensate for walking boot sole elevation.  Pt. was fit with size {Size:/Small/Med/Large/XL}even up.  Pt. was educated on use/care of device.  Fit was appropriate.  F/up PRN.",
+    "text": "Pt. was fit with even up leveling device to compensate for walking boot sole elevation.  Pt. was fit with size {Size:/Small/Med/Large/XL} even up.  Pt. was educated on use/care of device.  Fit was appropriate.  F/up PRN.",
     "excludeAutoPrice": true,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1790696235135
   },
   "walker-boot": {
     "id": "walker-boot",
