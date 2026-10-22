@@ -6399,11 +6399,11 @@ const PERMANENT_TEMPLATES = [
         ['smo-delivery', 'afo-arizona-del'].forEach(k => {
             if (merged[k] && merged[k].text) {
                 const cleaned = merged[k].text
-                    .replace(/medial\\/lateral malleoli/gi, 'medial and lateral malleoli')
-                    .replace(/medial\\/lateral supramalleolar stabilization/gi, 'medial and lateral supramalleolar stabilization')
-                    .replace(/medial\\/lateral longitudinal arch/gi, 'medial and lateral longitudinal arch')
-                    .replace(/\\{Break-In:\\s*verbal and written gradual break-in schedule \\(starting 1-2 hours\\/day and increasing gradually\\)\\}/g, 'verbal and written gradual break-in schedule (starting 1-2 hours per day and increasing gradually)')
-                    .replace(/\\{Skin Redness:\\s*any redness lasting longer than 20-30 minutes requires immediate discontinuation and clinic follow-up\\}/g, 'any redness lasting longer than 20-30 minutes requires immediate discontinuation and clinic follow-up');
+                    .replace(/medial\/lateral malleoli/gi, 'medial and lateral malleoli')
+                    .replace(/medial\/lateral supramalleolar stabilization/gi, 'medial and lateral supramalleolar stabilization')
+                    .replace(/medial\/lateral longitudinal arch/gi, 'medial and lateral longitudinal arch')
+                    .replace(/\{Break-In:\s*verbal and written gradual break-in schedule \(starting 1-2 hours\/day and increasing gradually\)\}/g, 'verbal and written gradual break-in schedule (starting 1-2 hours per day and increasing gradually)')
+                    .replace(/\{Skin Redness:\s*any redness lasting longer than 20-30 minutes requires immediate discontinuation and clinic follow-up\}/g, 'any redness lasting longer than 20-30 minutes requires immediate discontinuation and clinic follow-up');
                 if (cleaned !== merged[k].text) {
                     merged[k].text = cleaned;
                     updated = true;
