@@ -72,10 +72,9 @@
     "category": "Upper Extremity",
     "price": 826.41,
     "fabricationType": "prefab",
-    "text": "Pt. was seen at the North/South office for Left/Right Arc shoulder immobilizer delivery. He/she was fit with a universal arc shoulder orthosis. Positioning posts and straps adjusted for proper joint alignment. The shoulder orthosis with abduction positioning is reasonable and necessary to immobilize the glenohumeral joint, maintain prescribed shoulder abduction/rotation, offload rotator cuff tendons, and facilitate post-surgical soft tissue healing. Instructed on donning/doffing and skin inspection.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Immobilize or stabilize the affected upper extremity joint(s) in functional anatomical alignment, protect healing bone and soft-tissue structures, reduce mechanical strain/edema, and alleviate pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit with preserved distal circulation and sensation; patient demonstrated improved joint support, pain reduction, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Pt. was seen at the North/South office for Left/Right Arc shoulder immobilizer delivery. He/she was fit with a universal arc shoulder orthosis. Positioning posts and straps adjusted for proper joint alignment. The shoulder orthosis with abduction positioning is reasonable and necessary to immobilize the glenohumeral joint, maintain prescribed shoulder abduction/rotation, offload rotator cuff tendons, and facilitate post-surgical soft tissue healing. Instructed on donning/doffing and skin inspection.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "hip-abduction": {
     "id": "hip-abduction",
@@ -86,10 +85,9 @@
     "category": "Spine / LSO",
     "price": 1181.45,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM hip orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} hip abduction brace set at prescribed flexion/abduction limits. Hip orthosis is reasonable and necessary to restrict hip ROM, prevent dislocation, and hold joint in optimum position for post-op healing.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Provide external spinal/trunk or joint stabilization, restrict contraindicated planes of motion, maintain anatomical alignment, protect healing structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved proper anatomical contour and fit without respiratory, neurovascular, or skin compromise; patient demonstrated improved postural stability and safe functional mobility during transfers and Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right ROM hip orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} hip abduction brace set at prescribed flexion/abduction limits. Hip orthosis is reasonable and necessary to restrict hip ROM, prevent dislocation, and hold joint in optimum position for post-op healing.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "home-scd": {
     "id": "home-scd",
@@ -100,10 +98,9 @@
     "category": "Post-Op & Recovery",
     "price": 300,
     "fabricationType": "prefab",
-    "text": "The patient was issued a pneumatic sequential compression device (SCD) at the North/South office for post-surgical DVT prophylaxis. Garments fit to Left/Right lower extremity. Device provides intermittent pneumatic compression to prevent venous stasis and blood clot formation during post-operative recovery.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Support post-operative recovery, tissue/bone healing, edema and vascular management, and complication prevention per physician protocol.\nFunctional Outcomes: Device/supplies were properly fit and verified; patient/caregiver demonstrated full understanding of operational and safety protocols to support safe recovery and Activities of Daily Living (ADLs).",
+    "text": "The patient was issued a pneumatic sequential compression device (SCD) at the North/South office for post-surgical DVT prophylaxis. Garments fit to Left/Right lower extremity. Device provides intermittent pneumatic compression to prevent venous stasis and blood clot formation during post-operative recovery.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "ice-man": {
     "id": "ice-man",
@@ -182,10 +179,9 @@
     "category": "Foot & Ankle",
     "price": 152.19,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Morton's extension foot orthotic modification. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid extension under 1st MTP joint. Extension is reasonable and necessary to immobilize the 1st MTP joint, relieve hallux rigidus pain, and support propulsion phase of gait.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Morton's extension foot orthotic modification. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid extension under 1st MTP joint. Extension is reasonable and necessary to immobilize the 1st MTP joint, relieve hallux rigidus pain, and support propulsion phase of gait.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "night-splint": {
     "id": "night-splint",
@@ -230,10 +226,9 @@
     "category": "Post-Op & Recovery",
     "price": 11,
     "fabricationType": "prefab",
-    "text": "Patient was issued surgical skin prewash cleanser at North/South office prior to joint procedure. Written surgical site prep instructions provided.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Support post-operative recovery, tissue/bone healing, edema and vascular management, and complication prevention per physician protocol.\nFunctional Outcomes: Device/supplies were properly fit and verified; patient/caregiver demonstrated full understanding of operational and safety protocols to support safe recovery and Activities of Daily Living (ADLs).",
+    "text": "Patient was issued surgical skin prewash cleanser at North/South office prior to joint procedure. Written surgical site prep instructions provided.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "shoe-lift": {
     "id": "shoe-lift",
@@ -244,13 +239,13 @@
     "category": "Foot & Ankle",
     "price": 27,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for evaluation, fitting, and delivery of a Left/Right heel lift to support healing and offload posterior compartment structures.\n\nClinical Rationale & Indication:\nPatient presents secondary to {Indication: Post-Operative Achilles Tendon Repair / Acute Achilles Tendon Rupture (Non-Surgical Protocol) / Insertional Achilles Tendinitis / Midportion Achilles Tendinopathy / Achilles Paratenonitis / Retrocalcaneal Bursitis}. The heel lift is medically necessary to place the ankle in controlled plantarflexion, relax tension on the gastrocnemius-soleus complex, protect the healing tendon repair from sudden passive stretch, reduce inflammatory strain, and facilitate pain-free weight-bearing ambulation.\n\nObjective Assessment & Device Placement:\nDevice Fit: Fit with a {Lift Thickness: ⅛\" (3mm) / ¼\" (6mm) / ⅜\" (9mm) / ½\" (12mm) / ⅝\" (15mm) / ¾\" (18mm) / [Custom Thickness]} {Lift Placement: firm cork-leather heel lift / multi-layer stackable Achilles wedge / viscoelastic silicone heel cushion / full-sole tapered shoe modification} placed in Left/Right {Footwear Type: athletic shoe / rigid walking boot / post-op shoe / daily footwear}.\n{+ Contralateral Compensation: Matching lift placed on contralateral side to prevent pelvic obliquity and maintain leg length balance.}\n{+ Stepped Reduction Plan: Multi-layer wedge system utilized for gradual stepped reduction of heel height per surgical rehabilitation protocol.}\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Ambulation evaluated in clinic; patient demonstrated reduced tension at the posterior ankle, improved step length, and a stabilized stance phase without antalgic compensation.\n\nPatient Education: Patient was instructed on proper in-shoe seating, wear schedule {Wear Schedule: during all weight-bearing activities / per post-op orthopedic protocol}, avoidance of barefoot walking, and daily skin checks over the calcaneus. {+ Caregiver Present: Caregiver was present and instructed on proper wedge removal sequencing and footwear safety.}\n\nDevice delivered in proper working order. All questions answered and patient verbalized complete understanding. Follow-up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for evaluation, fitting, and delivery of a Left/Right heel lift to support healing and offload posterior compartment structures.\n\nClinical Rationale & Indication:\nPatient presents secondary to {Indication: Post-Operative Achilles Tendon Repair / Acute Achilles Tendon Rupture (Non-Surgical Protocol) / Insertional Achilles Tendinitis / Midportion Achilles Tendinopathy / Achilles Paratenonitis / Retrocalcaneal Bursitis}. The heel lift is medically necessary to place the ankle in controlled plantarflexion, relax tension on the gastrocnemius-soleus complex, protect the healing tendon repair from sudden passive stretch, reduce inflammatory strain, and facilitate pain-free weight-bearing ambulation.\n\nObjective Assessment & Device Placement:\nDevice Fit: Fit with a {Lift Thickness: ⅛\" (3mm) / ¼\" (6mm) / ⅜\" (9mm) / ½\" (12mm) / ⅝\" (15mm) / ¾\" (18mm) / [Custom Thickness]} {Lift Placement: Felt Hapad heel lift/ multi-layer stackable Achilles wedge / viscoelastic silicone heel cushion / full-sole tapered shoe modification} placed in Left/Right {Footwear Type: athletic shoe / rigid walking boot / post-op shoe / daily footwear}.\n{+ Contralateral Compensation: Matching lift placed on contralateral side to prevent pelvic obliquity and maintain leg length balance.}\n{+ Stepped Reduction Plan: Multi-layer wedge system utilized for gradual stepped reduction of heel height per surgical rehabilitation protocol.}\n\nFunctional Assessment & Patient Education:\nGait Evaluation: Ambulation evaluated in clinic; patient demonstrated reduced tension at the posterior ankle, improved step length, and a stabilized stance phase without antalgic compensation.\n\nPatient Education: Patient was instructed on proper in-shoe seating, wear schedule {Wear Schedule: during all weight-bearing activities / per post-op orthopedic protocol}, avoidance of barefoot walking, and daily skin checks over the calcaneus. {+ Caregiver Present: Caregiver was present and instructed on proper wedge removal sequencing and footwear safety.}\n\nDevice delivered in proper working order. All questions answered and patient verbalized complete understanding. Follow-up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, offload at risk Achilles complex, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
     "excludeAutoPrice": true,
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1792706500000
+    "lastUpdated": 1793307542456
   },
   "simple-sling": {
     "id": "simple-sling",
@@ -278,10 +273,9 @@
     "category": "Foot & Ankle",
     "price": 30,
     "fabricationType": "prefab",
-    "text": "Patient was fit at North/South office with an EvenUp leveler device for contralateral footwear to restore pelvic alignment when using a Left/Right walking boot.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was fit at North/South office with an EvenUp leveler device for contralateral footwear to restore pelvic alignment when using a Left/Right walking boot.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "thumb-spica": {
     "id": "thumb-spica",
@@ -377,10 +371,9 @@
     "category": "Foot & Ankle",
     "price": 40,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right medical graduated compression stockings. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression stockings for the Left/Right lower extremity. Compression garments are reasonable and necessary to reduce lower extremity edema, support venous return, and alleviate leg fatigue/pain during standing.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Support post-operative recovery, tissue/bone healing, edema and vascular management, and complication prevention per physician protocol.\nFunctional Outcomes: Device/supplies were properly fit and verified; patient/caregiver demonstrated full understanding of operational and safety protocols to support safe recovery and Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right medical graduated compression stockings. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression stockings for the Left/Right lower extremity. Compression garments are reasonable and necessary to reduce lower extremity edema, support venous return, and alleviate leg fatigue/pain during standing.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "crutches": {
     "id": "crutches",
@@ -391,10 +384,9 @@
     "category": "Post-Op & Recovery",
     "price": 44,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of axillary aluminum crutches. Fit with {Size: Tall Adult / Standard Adult / Youth / Pediatric} crutches with height and handgrip adjusted to patient's anatomical stature. Crutches are reasonable and necessary for non-weight bearing / partial weight bearing ambulation to offload the injured Left/Right lower extremity. Patient instructed on 3-point crutch gait and stair safety.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Offload the affected lower extremity, provide stable external support, and reduce fall risk during non-weight-bearing or protected ambulation.\nFunctional Outcomes: Device was properly sized to patient stature; patient demonstrated safe, stable operation and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of axillary aluminum crutches. Fit with {Size: Tall Adult / Standard Adult / Youth / Pediatric} crutches with height and handgrip adjusted to patient's anatomical stature. Crutches are reasonable and necessary for non-weight bearing / partial weight bearing ambulation to offload the injured Left/Right lower extremity. Patient instructed on 3-point crutch gait and stair safety.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "elbow-rom": {
     "id": "elbow-rom",
@@ -422,10 +414,9 @@
     "category": "Foot & Ankle",
     "price": 100,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right ArchRivals prefabricated foot orthotics. He/she was fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ArchRival foot orthotics placed into footwear. The orthotics support longitudinal arches, distribute plantar pressures, and reduce foot pain during standing and ambulation. Verbal and written wear and care instructions provided.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right ArchRivals prefabricated foot orthotics. He/she was fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} ArchRival foot orthotics placed into footwear. The orthotics support longitudinal arches, distribute plantar pressures, and reduce foot pain during standing and ambulation. Verbal and written wear and care instructions provided.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "generic-delivery": {
     "id": "generic-delivery",
@@ -434,10 +425,9 @@
     "category": "General",
     "price": 0,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right ______________ . Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} orthotic device with custom adjustments made. Device is reasonable and necessary to stabilize the affected joint, prevent further injury, and support functional recovery.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right ______________ . Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} orthotic device with custom adjustments made. Device is reasonable and necessary to stabilize the affected joint, prevent further injury, and support functional recovery.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "hinged-knee-brace": {
     "id": "hinged-knee-brace",
@@ -480,10 +470,9 @@
     "category": "Foot & Ankle",
     "price": 0,
     "fabricationType": "custom",
-    "text": "The patient was seen at the North/South office for definitive Left/Right transtibial (BK) prosthesis delivery. Fit with a custom laminated socket, flexible inner liner, suction suspension system, and dynamic response foot. Socket demonstrated total surface bearing contact and secure suction suspension without pistoning. Static and dynamic gait alignment evaluated over 300 feet ambulation. Issued prosthetic socks, liner sheaths, and care instructions. Scheduled follow-up in 2 weeks.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore total-contact socket fit, secure prosthetic suspension, optimal biomechanical alignment, and residual limb tissue protection.\nFunctional Outcomes: Prosthesis/components achieved intimate fit and reliable suspension without focal pressure or skin compromise; patient demonstrated safe, stable weight-bearing ambulation and functional independence in Activities of Daily Living (ADLs).",
+    "text": "The patient was seen at the North/South office for definitive Left/Right transtibial (BK) prosthesis delivery. Fit with a custom laminated socket, flexible inner liner, suction suspension system, and dynamic response foot. Socket demonstrated total surface bearing contact and secure suction suspension without pistoning. Static and dynamic gait alignment evaluated over 300 feet ambulation. Issued prosthetic socks, liner sheaths, and care instructions. Scheduled follow-up in 2 weeks.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "afo-articulated-del": {
     "id": "afo-articulated-del",
@@ -512,10 +501,9 @@
     "category": "Foot & Ankle",
     "price": 0,
     "fabricationType": "custom",
-    "text": "Pt. was seen at the North/South office for custom Left/Right Arizona AFO evaluation. He/she has a history of severe ankle/hindfoot arthritis and instability. Complains of severe pain and inability to ambulate functional distances. Examination reveals subtalar joint pain, arch collapse along medial longitudinal arch, and hindfoot valgus position. Conservative non-custom bracing has failed. A custom Arizona AFO is medically necessary to eliminate subtalar joint motion and stabilize foot/ankle. A cast was taken today in subtalar neutral position with bony landmarks identified. Cast sent for custom fabrication. Patient will be scheduled for delivery upon receipt.\n\nTreatment Goals & Expected Outcomes:\nTreatment Goals: Provide biomechanical alignment and stabilization of the foot/ankle complex, redistribute plantar and bony pressures, protect soft tissue and skin integrity, and reduce pain during weight-bearing.\nExpected Functional Outcomes: Improve gait stability and balance, prevent skin breakdown or deformity progression, reduce fall risk, and support safe participation in mobility-related Activities of Daily Living (ADLs).",
+    "text": "Pt. was seen at the North/South office for custom Left/Right Arizona AFO evaluation. He/she has a history of severe ankle/hindfoot arthritis and instability. Complains of severe pain and inability to ambulate functional distances. Examination reveals subtalar joint pain, arch collapse along medial longitudinal arch, and hindfoot valgus position. Conservative non-custom bracing has failed. A custom Arizona AFO is medically necessary to eliminate subtalar joint motion and stabilize foot/ankle. A cast was taken today in subtalar neutral position with bony landmarks identified. Cast sent for custom fabrication. Patient will be scheduled for delivery upon receipt.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "ulnar-gutter": {
     "id": "ulnar-gutter",
@@ -562,10 +550,9 @@
     "category": "Foot & Ankle",
     "price": 80,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid carbon foot plate insert. Fit underneath shoe insole. The carbon plate is reasonable and necessary to restrict hazardous forefoot/MTP joint motion, offload painful metatarsal heads, and relieve pain during propulsion phase of gait.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid carbon foot plate insert. Fit underneath shoe insole. The carbon plate is reasonable and necessary to restrict hazardous forefoot/MTP joint motion, offload painful metatarsal heads, and relieve pain during propulsion phase of gait.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "knee-unloader": {
     "id": "knee-unloader",
@@ -694,10 +681,9 @@
     "category": "General",
     "price": 70,
     "fabricationType": "prefab",
-    "text": "Pt. seen at North/South location for delivery of walker.  Walker was sized to pt.  He/She was educated on use/care of device.  F/up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Offload the affected lower extremity, provide stable external support, and reduce fall risk during non-weight-bearing or protected ambulation.\nFunctional Outcomes: Device was properly sized to patient stature; patient demonstrated safe, stable operation and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Pt. seen at North/South location for delivery of walker.  Walker was sized to pt.  He/She was educated on use/care of device.  F/up PRN.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "crow-boot-delivery": {
     "id": "crow-boot-delivery",
@@ -708,10 +694,9 @@
     "category": "Foot & Ankle",
     "price": 1710.05,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of Charcot/Crow boot.   He/she was fit with a custom CROW orthosis. The device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in the sagittal and coronal planes, decrease severe subtalar joint motion/pain, prevent joint collapse during ambulation, and help to slow progression or Charcot arthropathy. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule while monitoring skin for irritation.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize and align the ankle-foot complex in the prescribed planes of motion, control pathological joint instability or contracture, offload compromised structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit without localized pressure or neurovascular compromise; patient demonstrated improved lower extremity stability, safer gait mechanics, and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of Charcot/Crow boot.   He/she was fit with a custom CROW orthosis. The device is reasonable and necessary to stabilize the hindfoot, midfoot, and ankle joints in the sagittal and coronal planes, decrease severe subtalar joint motion/pain, prevent joint collapse during ambulation, and help to slow progression or Charcot arthropathy. He/she was provided with verbal and written use and care instructions, taught proper donning/doffing, and instructed on a progressive wearing schedule while monitoring skin for irritation.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "clavicle-strap": {
     "id": "clavicle-strap",
@@ -722,10 +707,9 @@
     "category": "Upper Extremity",
     "price": 66.69,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right figure-8 clavicle strap/support orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO} for clavicle fracture / acromioclavicular injury. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} padded clavicle brace. Padded axillary straps tensioned to retract scapulae and maintain anatomical clavicular alignment. Device is reasonable and necessary to immobilize the shoulder girdle, maintain reduction, and promote bony healing. Instructed on skin monitoring and strap adjustment.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Immobilize or stabilize the affected upper extremity joint(s) in functional anatomical alignment, protect healing bone and soft-tissue structures, reduce mechanical strain/edema, and alleviate pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit with preserved distal circulation and sensation; patient demonstrated improved joint support, pain reduction, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right figure-8 clavicle strap/support orthosis from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO} for clavicle fracture / acromioclavicular injury. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} padded clavicle brace. Padded axillary straps tensioned to retract scapulae and maintain anatomical clavicular alignment. Device is reasonable and necessary to immobilize the shoulder girdle, maintain reduction, and promote bony healing. Instructed on skin monitoring and strap adjustment.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "forms": {
     "id": "forms",
@@ -736,10 +720,9 @@
     "category": "Foot & Ankle",
     "price": 50,
     "fabricationType": "prefab",
-    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} prefabricated heat-moldable foot orthotics (Forms).\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination/ pronation/arch collapse/heel pain/metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen in our North/South office for fitting and delivery of a Left/Right size {Size: A (W 4.5-5) / B (W5.5-6) / C (W6.5-7, M5-5.5) / D (W7.5-8, M6-6.5) / E (W8.5-9, M7-7.5) / F (W9.5-10, M8-8.5) / G (W10.5-11, M9-9.5) / H (W11.5-12, M10-10.5) / I (W12.5-13, M11-11.5) / J (M12-12.5) / K (M13-13.5) / L (M14-14.5) / M (M15-15.5)} prefabricated heat-moldable foot orthotics (Forms).\n\nFoot orthotics will support feet in alignment, offload pressure points, help to prevent {Alignment Problem: supination/ pronation/arch collapse/heel pain/metatarsal pain}, and increase stability. He/she was educated on use/care of devices. F/up PRN.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "forms-modified": {
     "id": "forms-modified",
@@ -767,10 +750,9 @@
     "category": "Upper Extremity",
     "price": 347.63,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right prefabricated rigid humeral fracture brace (Sarmiento) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Corflex} for diaphyseal humerus fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} humeral orthosis with shoulder suspension cap and circumferential compression straps. Circumferential soft tissue compression and rigid anterior/posterior shells provide hydrodynamic support to stabilize the humeral shaft fracture, maintain anatomical alignment, and permit active shoulder/elbow motion. He/she was instructed on strap tensioning, skin inspection, and progressive wearing schedule. Follow-up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Immobilize or stabilize the affected upper extremity joint(s) in functional anatomical alignment, protect healing bone and soft-tissue structures, reduce mechanical strain/edema, and alleviate pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit with preserved distal circulation and sensation; patient demonstrated improved joint support, pain reduction, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right prefabricated rigid humeral fracture brace (Sarmiento) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Corflex} for diaphyseal humerus fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} humeral orthosis with shoulder suspension cap and circumferential compression straps. Circumferential soft tissue compression and rigid anterior/posterior shells provide hydrodynamic support to stabilize the humeral shaft fracture, maintain anatomical alignment, and permit active shoulder/elbow motion. He/she was instructed on strap tensioning, skin inspection, and progressive wearing schedule. Follow-up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "toe-filler-delivery": {
     "id": "toe-filler-delivery",
@@ -805,10 +787,9 @@
     "category": "Foot & Ankle",
     "price": 27,
     "fabricationType": "prefab",
-    "text": "Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Pt. was seen at the North/South office for delivery of gel heel cups.  Pt. was fit with size {Size: Small/Med/Large/XL} gel heel cups.  Devices will help to reduce heel pressure and prevent pain associated with {Diagnosis: plantar fasciitis/heel spur/arthritis}.  He/She was educated on use/care of gel heel cups.  Devices fit appropriately in shoes today.  F/up PRN.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "general-orthosis-adjustment": {
     "id": "general-orthosis-adjustment",
@@ -819,10 +800,9 @@
     "category": "General",
     "price": 29.95,
     "fabricationType": "prefab",
-    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Abduction Sling/Ankle-Foot Orthosis / AFO / Night splint / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: Pt. needs help re-adjusting strapping and fit / localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: Fit is non optimal/worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Re-fit device and re-adjusted all strapping / Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient presented to the North/South clinic for evaluation, clinical assessment, and adjustment/repair of his/her existing Left/Right {Device Type: Walking Boot/Abduction Sling/Ankle-Foot Orthosis / AFO / Night splint / Knee Orthosis (KO) / Lumbar-Sacral Orthosis (LSO) / Cervical Collar / Form Foot Orthotics / Custom Foot Orthotics/ Arch Rivals / Wrist-Hand Orthosis (WHO) / Knee-Ankle-Foot Orthosis (KAFO)}.\n\nSubjective Complaints & Clinical History:\nPatient reports {Issue: Pt. needs help re-adjusting strapping and fit / localized pressure and rubbing / straps losing adherence and failing to maintain compression / device migration during activity / skin redness over bony prominence / edge impingement during sitting/ambulation / anatomical volume changes affecting fit}. Adjustments are medically necessary to eliminate skin irritation, restore proper anatomical alignment, ensure structural integrity, and maintain prescribed joint stabilization/offloading during daily functional activities.\n\nObjective Assessment & Adjustments Performed:\nInspection of Existing Device: Evaluation of device reveals {Device Status: Fit is non optimal/worn/delaminated hook-and-loop straps / localized point pressure over bony prominence / edge digging / minor structural fatigue / padding compression}.\n\nModifications Performed Today:\n{Modification: Re-fit device and re-adjusted all strapping / Heat flared and remolded thermoplastic trimlines to relieve focal pressure / Replaced worn Velcro straps and re-anchored tension closures / Added relief padding over bony prominence / Realigned and contoured metal uprights / Ground down and smoothed plastic edge impingements / Added posting/wedging to optimize biomechanical alignment / Replaced worn closure hardware and re-tensioned pulleys}.\n\nLabor & Service Time: Repair and clinical adjustment completed requiring {Labor Units: 1 unit (15 min) / 2 units (30 min) / 3 units (45 min) / 4 units (60 min)} of custom bench modification and refitting labor (HCPCS L4205).\n{+ Replacement Straps/Materials: Replacement materials and closures installed to restore original function.}\n\nOutcome & Patient Verification:\nTrial & Fit Check: Device was re-donned; verified intimate total contact, restored structural security, and complete relief of prior pressure areas with zero active impingement during functional trials.\n\nSkin & Safety Assessment: Visual skin inspection after weight-bearing/motion trial confirmed no persistent erythema or tissue compromise.\n\nPatient Education: Patient was re-instructed on proper strap tensioning, donning alignment, and continued daily skin checks. {+ Caregiver Present: Caregiver was present and reviewed on adjusted fit and application.}\n\nPatient verbalized significant improvement in comfort and stability. Device returned in safe working order. Follow-up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "met-pad-bar": {
     "id": "met-pad-bar",
@@ -850,10 +830,9 @@
     "category": "Upper Extremity",
     "price": 15,
     "fabricationType": "prefab",
-    "text": "Pt. seen at North/South office for fitting and delivery of Left/Right compression glove. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression glove. Device is reasonable and necessary to provide therapeutic edema control, manage swelling, and reduce pain in hand/digits.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Immobilize or stabilize the affected upper extremity joint(s) in functional anatomical alignment, protect healing bone and soft-tissue structures, reduce mechanical strain/edema, and alleviate pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit with preserved distal circulation and sensation; patient demonstrated improved joint support, pain reduction, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Pt. seen at North/South office for fitting and delivery of Left/Right compression glove. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compression glove. Device is reasonable and necessary to provide therapeutic edema control, manage swelling, and reduce pain in hand/digits.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "afo-solid-delivery": {
     "id": "afo-solid-delivery",
@@ -865,10 +844,9 @@
     "category": "Foot & Ankle",
     "price": 770,
     "fabricationType": "custom",
-    "text": "Pt. was seen at the North/South location for solid custom Left/Right AFO delivery. Device was custom molded from patient model with soft interface lining. Fit with the new Custom Solid AFO. The brace is reasonable and necessary to lock the ankle in neutral, prevent foot drop, clear toes during swing, eliminate ankle instability in coronal/sagittal planes, and prevent falls. Minor trimline adjustments performed. Progressive wearing schedule and skin checks instructed.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize and align the ankle-foot complex in the prescribed planes of motion, control pathological joint instability or contracture, offload compromised structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit without localized pressure or neurovascular compromise; patient demonstrated improved lower extremity stability, safer gait mechanics, and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Pt. was seen at the North/South location for solid custom Left/Right AFO delivery. Device was custom molded from patient model with soft interface lining. Fit with the new Custom Solid AFO. The brace is reasonable and necessary to lock the ankle in neutral, prevent foot drop, clear toes during swing, eliminate ankle instability in coronal/sagittal planes, and prevent falls. Minor trimline adjustments performed. Progressive wearing schedule and skin checks instructed.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "afo-dafo-delivery": {
     "id": "afo-dafo-delivery",
@@ -883,10 +861,9 @@
     "category": "Foot & Ankle",
     "price": 1718.38,
     "fabricationType": "custom",
-    "text": "Patient with history of [Diagnosis] was seen at the North/South location for custom articulated DAFO delivery for Left/Right leg. Custom molded to patient model with DF assist joints and molded heel cup. Supports ankle in frontal plane, prevents inversion/eversion collapse, assists swing phase clearance, and controls pes planovalgus alignment. Fit verified, donning instructed.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize and align the ankle-foot complex in the prescribed planes of motion, control pathological joint instability or contracture, offload compromised structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit without localized pressure or neurovascular compromise; patient demonstrated improved lower extremity stability, safer gait mechanics, and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Patient with history of [Diagnosis] was seen at the North/South location for custom articulated DAFO delivery for Left/Right leg. Custom molded to patient model with DF assist joints and molded heel cup. Supports ankle in frontal plane, prevents inversion/eversion collapse, assists swing phase clearance, and controls pes planovalgus alignment. Fit verified, donning instructed.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "tayco-brace-delivery": {
     "id": "tayco-brace-delivery",
@@ -897,10 +874,9 @@
     "category": "Foot & Ankle",
     "price": 582.34,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Tayco over-the-shoe ankle orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Tayco brace. External uprights and straps adjusted over patient footwear. The ankle orthosis is reasonable and necessary to provide coronal plane joint stability, prevent painful ankle sprain recurrence, and allow functional ambulation.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize and align the ankle-foot complex in the prescribed planes of motion, control pathological joint instability or contracture, offload compromised structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit without localized pressure or neurovascular compromise; patient demonstrated improved lower extremity stability, safer gait mechanics, and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Tayco over-the-shoe ankle orthosis. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Tayco brace. External uprights and straps adjusted over patient footwear. The ankle orthosis is reasonable and necessary to provide coronal plane joint stability, prevent painful ankle sprain recurrence, and allow functional ambulation.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "smo-evaluation": {
     "id": "smo-evaluation",
@@ -924,10 +900,9 @@
     "category": "Foot & Ankle",
     "price": 0,
     "fabricationType": "custom",
-    "text": "Pt. seen at North/South office for delivery of Left/Right transtibial replacement socket. New carbon fiber custom socket mounted to existing prosthetic foot. Total surface bearing socket with shuttle lock pin suspension system. Patient ambulated comfortably over 300 ft. Instructed on skin inspection.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore total-contact socket fit, secure prosthetic suspension, optimal biomechanical alignment, and residual limb tissue protection.\nFunctional Outcomes: Prosthesis/components achieved intimate fit and reliable suspension without focal pressure or skin compromise; patient demonstrated safe, stable weight-bearing ambulation and functional independence in Activities of Daily Living (ADLs).",
+    "text": "Pt. seen at North/South office for delivery of Left/Right transtibial replacement socket. New carbon fiber custom socket mounted to existing prosthetic foot. Total surface bearing socket with shuttle lock pin suspension system. Patient ambulated comfortably over 300 ft. Instructed on skin inspection.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "bk-supplies-delivery": {
     "id": "bk-supplies-delivery",
@@ -981,10 +956,9 @@
     "category": "Foot & Ankle",
     "price": 582.34,
     "fabricationType": "prefab",
-    "text": "Pt. seen at North/South office for delivery of Left/Right Mackie dynamic stretching ankle brace. Fit with size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Mackie brace. Provides low-load prolonged stretch to plantarflexors/Achilles to increase ankle dorsiflexion ROM and manage contracture.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize and align the ankle-foot complex in the prescribed planes of motion, control pathological joint instability or contracture, offload compromised structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit without localized pressure or neurovascular compromise; patient demonstrated improved lower extremity stability, safer gait mechanics, and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Pt. seen at North/South office for delivery of Left/Right Mackie dynamic stretching ankle brace. Fit with size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} Mackie brace. Provides low-load prolonged stretch to plantarflexors/Achilles to increase ankle dorsiflexion ROM and manage contracture.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "scoliosis-tlso": {
     "id": "scoliosis-tlso",
@@ -993,10 +967,9 @@
     "category": "Spine / LSO",
     "price": 0,
     "fabricationType": "custom",
-    "text": "Pt. seen at North/South office for delivery of custom Scoliosis TLSO. Custom molded thoracic-lumbar-sacral orthosis donned in centered position. Trimlines modified for comfort and arm clearance. TLSO is reasonable and necessary to correct spinal curvature, prevent progression of idiopathic scoliosis, and stabilize spine.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Provide external spinal/trunk or joint stabilization, restrict contraindicated planes of motion, maintain anatomical alignment, protect healing structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved proper anatomical contour and fit without respiratory, neurovascular, or skin compromise; patient demonstrated improved postural stability and safe functional mobility during transfers and Activities of Daily Living (ADLs).",
+    "text": "Pt. seen at North/South office for delivery of custom Scoliosis TLSO. Custom molded thoracic-lumbar-sacral orthosis donned in centered position. Trimlines modified for comfort and arm clearance. TLSO is reasonable and necessary to correct spinal curvature, prevent progression of idiopathic scoliosis, and stabilize spine.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "shoe-lift-lld": {
     "id": "shoe-lift-lld",
@@ -1007,10 +980,9 @@
     "category": "Foot & Ankle",
     "price": 27,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. Lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Optimize biomechanical foot and lower extremity alignment, redistribute plantar pressures, offload painful or at-risk anatomical structures, and reduce mechanical strain during weight-bearing.\nFunctional Outcomes: Device achieved proper fit and footwear integration with no focal pressure areas; patient demonstrated improved comfort, postural/gait stability, and functional tolerance for standing and ambulation during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. Lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "custom-foot-orthotics-delivery": {
     "id": "custom-foot-orthotics-delivery",
@@ -1039,10 +1011,9 @@
     "category": "Foot & Ankle",
     "price": 818.05,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid tibial fracture orthosis (Sarmiento AFO) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Townsend} for closed tibial shaft fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} tibial fracture brace with anterior/posterior shells and footplate. The rigid circumferential shells provide hydrostatic tissue compression, control sagittal/coronal angular alignment, and offload the fracture site to promote bone union while allowing protected ambulation. Instructed on skin inspection, donning/doffing, and wearing protocol. Follow-up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize and align the ankle-foot complex in the prescribed planes of motion, control pathological joint instability or contracture, offload compromised structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit without localized pressure or neurovascular compromise; patient demonstrated improved lower extremity stability, safer gait mechanics, and functional mobility for Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right rigid tibial fracture orthosis (Sarmiento AFO) from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Townsend} for closed tibial shaft fracture management. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} tibial fracture brace with anterior/posterior shells and footplate. The rigid circumferential shells provide hydrostatic tissue compression, control sagittal/coronal angular alignment, and offload the fracture site to promote bone union while allowing protected ambulation. Instructed on skin inspection, donning/doffing, and wearing protocol. Follow-up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "custom-1788364768362": {
     "id": "custom-1788364768362",
@@ -1095,10 +1066,9 @@
     "category": "Knee",
     "price": 64.38,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right tri-panel rigid knee immobilizer from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Medline} for acute knee injury / post-surgical stabilization. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} knee immobilizer ({Length: 12 inch / 16 inch / 20 inch / 22 inch / 24 inch}). Posterior and medial/lateral contoured aluminum stays adjusted to hold knee in full extension. Device is reasonable and necessary to immobilize the knee in the sagittal plane, protect healing ligamentous/tendinous repairs, and prevent weightbearing collapse during early recovery. Instructed on proper donning/doffing and skin checks.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize the knee joint across target planes of motion, control ligamentous instability or unicompartmental load, protect healing tissues, and reduce mechanical knee pain.\nFunctional Outcomes: Orthosis achieved secure anatomical fit and suspension without neurovascular or skin impingement; patient demonstrated improved knee stability, reduced pain, and safe functional ambulation for Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right tri-panel rigid knee immobilizer from {Brand / Manufacturer: Breg / DonJoy / Ossur / DJO / Medline} for acute knee injury / post-surgical stabilization. He/she was fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} knee immobilizer ({Length: 12 inch / 16 inch / 20 inch / 22 inch / 24 inch}). Posterior and medial/lateral contoured aluminum stays adjusted to hold knee in full extension. Device is reasonable and necessary to immobilize the knee in the sagittal plane, protect healing ligamentous/tendinous repairs, and prevent weightbearing collapse during early recovery. Instructed on proper donning/doffing and skin checks.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "afo-carbon-del": {
     "id": "afo-carbon-del",
@@ -1124,10 +1094,9 @@
     "category": "Foot & Ankle",
     "price": 0,
     "fabricationType": "prefab",
-    "text": "Patient presents at North/South office for evaluation of progressive gait instability, lower extremity weakness, and frequent tripping/falls impacting daily activities. He/She has been diagnosed with foot drop Left/Right due to {Diagnosis: Spinal stenosis/Muscular Dystrophy/Peripheral Neuropathy/Post-Stroke Hemiplegia/Multiple Sclerosis/Charcot-Marie-Tooth/CP}. Patient experiences persistent foot drop during the swing phase of gait and muscle fatigue after walking short distances. Current off-the-shelf bracing or lack of bracing provides inadequate energy return and insufficient stability to control dynamic gait deviations. Ambulation is limited to {Ambulation Distance: <100 feet/100-300 feet/300+ feet/community distances} {Assistance: unassisted/with a cane/with a walker} before requiring rest due to fatigue.\n\nPt. was examined and Left/Right lower extremity assessment revealed dorsiflexion MMT strength of {MMT Dorsiflexion: 0/1/2/2+/3/3+/4/5}. Plantarflexion MMT strength was {MMT Plantarflexion: 0/1/2/2+/3/3+/4/5/WNL}. Knee extensor strength was {MMT Knee Extensors: 3/3+/4/4+/5}. Passive range of motion to neutral (0° dorsiflexion) is {ROM Neutral: achievable with knee extended/achievable with knee flexed/limited}. Severe fixed equinus deformity is {Fixed Deformity: absent/present} and dynamic fluctuating edema is {Edema: absent/present}. Skin integrity is {Skin Integrity: intact/intact with mild erythema/compromised}.\n\nGait evaluation reveals {Gait Pattern: steppage gait/slap foot at initial contact/knee hyperextension during stance phase/lack of heel-strike} affecting the Left/Right lower extremity during swing and stance phases.\n\nDue to lower extremity weakness and foot drop with high fall risk, patient requires a dynamic carbon fiber AFO (L1951). Standard polypropylene AFOs are inadequate due to the patient's need for dynamic energy storage and return during stance-to-swing transition to reduce fatigue and stabilize gait. Patient meets all Medicare LCD coverage criteria, including ambulatory status, absence of severe fixed deformity or severe edema, and adequate knee/hip strength to manage dynamic propulsion.\n\nPlan: Fit and adjust HCPCS L1951 (carbon fiber dynamic response AFO) to affected Left/Right lower extremity(ies). Custom modifications to include footplate trimming, heel height alignment, and shoe interface fitting. Patient instructed on donning/doffing, skin monitoring, and footwear requirements. Follow-up scheduled in {Follow-up: 2 weeks/4 weeks}.\n\nTreatment Goals & Expected Outcomes:\nTreatment Goals: Provide biomechanical alignment and stabilization of the foot/ankle complex, redistribute plantar and bony pressures, protect soft tissue and skin integrity, and reduce pain during weight-bearing.\nExpected Functional Outcomes: Improve gait stability and balance, prevent skin breakdown or deformity progression, reduce fall risk, and support safe participation in mobility-related Activities of Daily Living (ADLs).",
+    "text": "Patient presents at North/South office for evaluation of progressive gait instability, lower extremity weakness, and frequent tripping/falls impacting daily activities. He/She has been diagnosed with foot drop Left/Right due to {Diagnosis: Spinal stenosis/Muscular Dystrophy/Peripheral Neuropathy/Post-Stroke Hemiplegia/Multiple Sclerosis/Charcot-Marie-Tooth/CP}. Patient experiences persistent foot drop during the swing phase of gait and muscle fatigue after walking short distances. Current off-the-shelf bracing or lack of bracing provides inadequate energy return and insufficient stability to control dynamic gait deviations. Ambulation is limited to {Ambulation Distance: <100 feet/100-300 feet/300+ feet/community distances} {Assistance: unassisted/with a cane/with a walker} before requiring rest due to fatigue.\n\nPt. was examined and Left/Right lower extremity assessment revealed dorsiflexion MMT strength of {MMT Dorsiflexion: 0/1/2/2+/3/3+/4/5}. Plantarflexion MMT strength was {MMT Plantarflexion: 0/1/2/2+/3/3+/4/5/WNL}. Knee extensor strength was {MMT Knee Extensors: 3/3+/4/4+/5}. Passive range of motion to neutral (0° dorsiflexion) is {ROM Neutral: achievable with knee extended/achievable with knee flexed/limited}. Severe fixed equinus deformity is {Fixed Deformity: absent/present} and dynamic fluctuating edema is {Edema: absent/present}. Skin integrity is {Skin Integrity: intact/intact with mild erythema/compromised}.\n\nGait evaluation reveals {Gait Pattern: steppage gait/slap foot at initial contact/knee hyperextension during stance phase/lack of heel-strike} affecting the Left/Right lower extremity during swing and stance phases.\n\nDue to lower extremity weakness and foot drop with high fall risk, patient requires a dynamic carbon fiber AFO (L1951). Standard polypropylene AFOs are inadequate due to the patient's need for dynamic energy storage and return during stance-to-swing transition to reduce fatigue and stabilize gait. Patient meets all Medicare LCD coverage criteria, including ambulatory status, absence of severe fixed deformity or severe edema, and adequate knee/hip strength to manage dynamic propulsion.\n\nPlan: Fit and adjust HCPCS L1951 (carbon fiber dynamic response AFO) to affected Left/Right lower extremity(ies). Custom modifications to include footplate trimming, heel height alignment, and shoe interface fitting. Patient instructed on donning/doffing, skin monitoring, and footwear requirements. Follow-up scheduled in {Follow-up: 2 weeks/4 weeks}.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "cervical-collar": {
     "id": "cervical-collar",
@@ -1138,10 +1107,9 @@
     "category": "Spine / LSO",
     "price": 369.22,
     "fabricationType": "prefab",
-    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated rigid cervical orthosis.\n\nSubjective & Medical Rationale:\nPatient presents with severe cervical pain and cervical spine instability secondary to {Diagnosis: Cervical Spondylosis / Cervical Radiculopathy / Post-Traumatic Cervical Sprain/Strain / Cervical Disc Displacement / Post-Operative Cervical Fusion / Cervical Fracture / Degenerative Disc Disease of Cervical Spine}. The orthosis is medically necessary to provide rigid multi-planar immobilization (flexion, extension, rotation, and lateral bending), unload cervical vertebrae, facilitate tissue healing, and control movement-induced pain during daily functional activities.\n\nObjective Assessment & Fitting:\nDevice Fit: Fit with {Brand: Aspen Vista / Trend Medical Rigid Cervical Collar}.\n\nCustom Sizing & Adjustments:\nHeight adjustment dial/mechanism set to proper anatomical height to maintain the cervical spine in neutral alignment without hyper-extending the chin.  Occipital and mandibular supports contoured and centered to prevent pressure points.  Anterior and posterior sections secured with bilateral hook-and-loop closures to eliminate sagittal/rotational displacement while ensuring uncompromised airway, unobstructed tracheostomy access (if needed), and full swallowing capability.\n\nFunctional Assessment & Patient Education:\nImmobilization & Fit Verification: Verified cervical motion restriction in sitting and standing positions without excessive impingement on clavicles or mandible.\n\nDonning / Doffing: Patient was instructed on proper neutral alignment, strap sequencing, and donning/doffing procedures. he/she successfully demonstrated independent donning/doffing.\n\nCare & Safety Protocols: Patient was educated  on prescribed wear schedule, pad hygiene/replacement instructions, and skin inspection over bony contact areas (mandible, occiput, sternum, clavicles). {+ Caregiver Present: Caregiver was present and instructed on proper application, neutral positioning during collar changes, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working condition. Follow-up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Provide external spinal/trunk or joint stabilization, restrict contraindicated planes of motion, maintain anatomical alignment, protect healing structures, and reduce pain.\nFunctional Outcomes: Orthosis achieved proper anatomical contour and fit without respiratory, neurovascular, or skin compromise; patient demonstrated improved postural stability and safe functional mobility during transfers and Activities of Daily Living (ADLs).",
+    "text": "Patient presented to the North/South clinic for evaluation, fitting, and delivery of a prefabricated rigid cervical orthosis.\n\nSubjective & Medical Rationale:\nPatient presents with severe cervical pain and cervical spine instability secondary to {Diagnosis: Cervical Spondylosis / Cervical Radiculopathy / Post-Traumatic Cervical Sprain/Strain / Cervical Disc Displacement / Post-Operative Cervical Fusion / Cervical Fracture / Degenerative Disc Disease of Cervical Spine}. The orthosis is medically necessary to provide rigid multi-planar immobilization (flexion, extension, rotation, and lateral bending), unload cervical vertebrae, facilitate tissue healing, and control movement-induced pain during daily functional activities.\n\nObjective Assessment & Fitting:\nDevice Fit: Fit with {Brand: Aspen Vista / Trend Medical Rigid Cervical Collar}.\n\nCustom Sizing & Adjustments:\nHeight adjustment dial/mechanism set to proper anatomical height to maintain the cervical spine in neutral alignment without hyper-extending the chin.  Occipital and mandibular supports contoured and centered to prevent pressure points.  Anterior and posterior sections secured with bilateral hook-and-loop closures to eliminate sagittal/rotational displacement while ensuring uncompromised airway, unobstructed tracheostomy access (if needed), and full swallowing capability.\n\nFunctional Assessment & Patient Education:\nImmobilization & Fit Verification: Verified cervical motion restriction in sitting and standing positions without excessive impingement on clavicles or mandible.\n\nDonning / Doffing: Patient was instructed on proper neutral alignment, strap sequencing, and donning/doffing procedures. he/she successfully demonstrated independent donning/doffing.\n\nCare & Safety Protocols: Patient was educated  on prescribed wear schedule, pad hygiene/replacement instructions, and skin inspection over bony contact areas (mandible, occiput, sternum, clavicles). {+ Caregiver Present: Caregiver was present and instructed on proper application, neutral positioning during collar changes, and skin checks.}\n\nAll questions were answered, and the patient verbalized complete understanding. The orthosis was delivered in proper working condition. Follow-up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "diabetic-shoe-eval": {
     "id": "diabetic-shoe-eval",
@@ -1176,10 +1144,9 @@
     "category": "Upper Extremity",
     "price": 121.55,
     "fabricationType": "prefab",
-    "text": "Patient was seen at our North / South office for evaluation, custom fitting, and delivery of a left/right static rigid elbow orthosis (L3762, Gel Rod - Elbow Immobilizer).\n\nMedical Necessity & Clinical Indications:\nThe orthosis is reasonable and medically necessary for the left/right upper extremity to provide rigid immobilization, joint alignment, and symptom relief.  Pt. has {Diagnosis: Cubital Tunnel Syndrome/ Carpal Tunnel Syndrome/ Tennis Elbow/ Elbow Fracture}. Conservative measures were evaluated and rigid positioning is indicated to prevent harmful flexion, decompress the nerves, and facilitate tissue healing.\n\nFitting, Customization & Delivery:\nDevice: Hely and Weber Gel rod elbow orthosis with rigid stays and gel conditioning pad.\nSize: {Size:  Small-Medium / Large - XL}\n\nThe device was contoured, applied, and adjusted to the patient's left/right upper extremity.\n\nStraps and rigid structural stays were modified to ensure proper joint alignment and total contact without neurovascular impingement.\n\nSkin was inspected following trial fitting; no excessive redness or pressure points were noted over bony prominences.\n\nPatient Education & Follow-Up:\nPatient demonstrated independent ability to safely don, doff, and adjust the brace.\nEducation provided regarding wearing schedule ({Schedule: Nighttime use only / Continuous except hygiene / As needed for pain & activity}), skin inspection, hygiene, and care instructions.\n\n{+ Caregiver: Caregiver / parent was present and trained on proper application and skin check protocol.}\n\nPatient expressed understanding of all instructions, and all questions were addressed. Follow-up scheduled as needed.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Immobilize or stabilize the affected upper extremity joint(s) in functional anatomical alignment, protect healing bone and soft-tissue structures, reduce mechanical strain/edema, and alleviate pain.\nFunctional Outcomes: Orthosis achieved intimate anatomical fit with preserved distal circulation and sensation; patient demonstrated improved joint support, pain reduction, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at our North / South office for evaluation, custom fitting, and delivery of a left/right static rigid elbow orthosis (L3762, Gel Rod - Elbow Immobilizer).\n\nMedical Necessity & Clinical Indications:\nThe orthosis is reasonable and medically necessary for the left/right upper extremity to provide rigid immobilization, joint alignment, and symptom relief.  Pt. has {Diagnosis: Cubital Tunnel Syndrome/ Carpal Tunnel Syndrome/ Tennis Elbow/ Elbow Fracture}. Conservative measures were evaluated and rigid positioning is indicated to prevent harmful flexion, decompress the nerves, and facilitate tissue healing.\n\nFitting, Customization & Delivery:\nDevice: Hely and Weber Gel rod elbow orthosis with rigid stays and gel conditioning pad.\nSize: {Size:  Small-Medium / Large - XL}\n\nThe device was contoured, applied, and adjusted to the patient's left/right upper extremity.\n\nStraps and rigid structural stays were modified to ensure proper joint alignment and total contact without neurovascular impingement.\n\nSkin was inspected following trial fitting; no excessive redness or pressure points were noted over bony prominences.\n\nPatient Education & Follow-Up:\nPatient demonstrated independent ability to safely don, doff, and adjust the brace.\nEducation provided regarding wearing schedule ({Schedule: Nighttime use only / Continuous except hygiene / As needed for pain & activity}), skin inspection, hygiene, and care instructions.\n\n{+ Caregiver: Caregiver / parent was present and trained on proper application and skin check protocol.}\n\nPatient expressed understanding of all instructions, and all questions were addressed. Follow-up scheduled as needed.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "custom-inserts-eval": {
     "id": "custom-inserts-eval",
@@ -1191,10 +1158,9 @@
     "category": "Foot & Ankle",
     "price": 500,
     "fabricationType": "custom",
-    "text": "Pt. was seen at our North/South location for an evaluation and impression for custom Left/Right foot orthotics.\n\nSubjective & Clinical Indications:\nPt. presents with severe foot and ankle pain exacerbated during weight-bearing, standing, and walking, which significantly limits daily functional activities and ambulation.\nDiagnosis: {Diagnosis: Pes planovalgus / Plantar fasciitis / Metatarsalgia / Heel pain / Heel varus with forefoot supination / Posterior tibial tendon dysfunction}\nShoe Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 13.5 / 14 / 14.5 / 15 / Other}\n\nSymptoms & Functional Limitations: {Symptoms: Severe medial arch pain / Plantar heel pain with first morning steps / Metatarsal head pain and burning / Lateral foot fatigue and instability}\nStatic Evaluation: Left/Right {Biomechanics: pes planus with medial longitudinal arch collapse / hindfoot valgus / excessive pronation / rigid high arch / forefoot varus / heel varus with forefoot supination}.\nPalpation: Tenderness noted along the {Palpation: plantar fascia insertion / medial calcaneal tubercle / metatarsal heads / posterior tibial tendon / navicular}.\nRange of Motion & Alignment: Subtalar joint demonstrated {Subtalar: full range of motion / restricted motion / reducibility to neutral}. Forefoot-to-rearfoot relationship was assessed.\nGait Analysis: Left/Right stance phase demonstrated {Gait: excessive late-stance pronation / early heel rise / antalgic gait / poor shock absorption / reduced propulsion}.\n\nTreatment Plan, Impression & Device Specifications:\nImpression taken today for custom-molded functional foot orthotics utilizing {Method: 3D optical scan / foam impression casting / plaster slipper cast} with the subtalar joint held in neutral position and midtarsal joint locked.\nFabrication Lab: {Lab: Pacific Labs / Rx Orthotic Lab / Apis / Apex / Dr. Comfort / Langer / Mile High / Anodyne / Feet First}\nShell & Posting: {Shell: Semi-rigid polypropylene / Rigid thermoplastic / Flexible EVA / Carbon composite} with {Posting: intrinsic rearfoot posting / extrinsic rearfoot post / deep heel cup / medial arch reinforcement}.\nDesign Additions: {Additions: None / Metatarsal pad / Metatarsal bar / Balance bar / Heel cushion / Deep heel cup / Poron mid-layer / First ray cutout}\nTop Cover Material: {Top Cover Material: Spenco / Neoprene / Plastazote / Leather / Vinyl / Bamboo / Poron / EVA}\nTop Cover Length: {Top Cover Length: Full-length / 3/4 length / Sulcus length}\n{+ Parent Present: Parent/caregiver was present during the evaluation and casting process.}\n\nPatient Education & Financial Protocol:\nPt. was advised that these custom foot orthotics are self-pay / non-covered items, and all out-of-pocket costs and payment policies were discussed and agreed upon.\nExplained expected timeline for custom fabrication and scheduled delivery appointment for fitting, shoe integration, and break-in instructions.\nAll questions were answered to the patient's satisfaction.\n\nTreatment Goals & Expected Outcomes:\nTreatment Goals: Provide biomechanical alignment and stabilization of the foot/ankle complex, redistribute plantar and bony pressures, protect soft tissue and skin integrity, and reduce pain during weight-bearing.\nExpected Functional Outcomes: Improve gait stability and balance, prevent skin breakdown or deformity progression, reduce fall risk, and support safe participation in mobility-related Activities of Daily Living (ADLs).",
+    "text": "Pt. was seen at our North/South location for an evaluation and impression for custom Left/Right foot orthotics.\n\nSubjective & Clinical Indications:\nPt. presents with severe foot and ankle pain exacerbated during weight-bearing, standing, and walking, which significantly limits daily functional activities and ambulation.\nDiagnosis: {Diagnosis: Pes planovalgus / Plantar fasciitis / Metatarsalgia / Heel pain / Heel varus with forefoot supination / Posterior tibial tendon dysfunction}\nShoe Size: {Shoe Size: 5 / 5.5 / 6 / 6.5 / 7 / 7.5 / 8 / 8.5 / 9 / 9.5 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 13.5 / 14 / 14.5 / 15 / Other}\n\nSymptoms & Functional Limitations: {Symptoms: Severe medial arch pain / Plantar heel pain with first morning steps / Metatarsal head pain and burning / Lateral foot fatigue and instability}\nStatic Evaluation: Left/Right {Biomechanics: pes planus with medial longitudinal arch collapse / hindfoot valgus / excessive pronation / rigid high arch / forefoot varus / heel varus with forefoot supination}.\nPalpation: Tenderness noted along the {Palpation: plantar fascia insertion / medial calcaneal tubercle / metatarsal heads / posterior tibial tendon / navicular}.\nRange of Motion & Alignment: Subtalar joint demonstrated {Subtalar: full range of motion / restricted motion / reducibility to neutral}. Forefoot-to-rearfoot relationship was assessed.\nGait Analysis: Left/Right stance phase demonstrated {Gait: excessive late-stance pronation / early heel rise / antalgic gait / poor shock absorption / reduced propulsion}.\n\nTreatment Plan, Impression & Device Specifications:\nImpression taken today for custom-molded functional foot orthotics utilizing {Method: 3D optical scan / foam impression casting / plaster slipper cast} with the subtalar joint held in neutral position and midtarsal joint locked.\nFabrication Lab: {Lab: Pacific Labs / Rx Orthotic Lab / Apis / Apex / Dr. Comfort / Langer / Mile High / Anodyne / Feet First}\nShell & Posting: {Shell: Semi-rigid polypropylene / Rigid thermoplastic / Flexible EVA / Carbon composite} with {Posting: intrinsic rearfoot posting / extrinsic rearfoot post / deep heel cup / medial arch reinforcement}.\nDesign Additions: {Additions: None / Metatarsal pad / Metatarsal bar / Balance bar / Heel cushion / Deep heel cup / Poron mid-layer / First ray cutout}\nTop Cover Material: {Top Cover Material: Spenco / Neoprene / Plastazote / Leather / Vinyl / Bamboo / Poron / EVA}\nTop Cover Length: {Top Cover Length: Full-length / 3/4 length / Sulcus length}\n{+ Parent Present: Parent/caregiver was present during the evaluation and casting process.}\n\nPatient Education & Financial Protocol:\nPt. was advised that these custom foot orthotics are self-pay / non-covered items, and all out-of-pocket costs and payment policies were discussed and agreed upon.\nExplained expected timeline for custom fabrication and scheduled delivery appointment for fitting, shoe integration, and break-in instructions.\nAll questions were answered to the patient's satisfaction.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "custom-knee-brace-delivery": {
     "id": "custom-knee-brace-delivery",
@@ -1205,10 +1171,9 @@
     "category": "Knee",
     "price": 1289.75,
     "fabricationType": "custom",
-    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL), prevents hyperextension, and stabilizes knee joint during ambulation.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize the knee joint across target planes of motion, control ligamentous instability or unicompartmental load, protect healing tissues, and reduce mechanical knee pain.\nFunctional Outcomes: Orthosis achieved secure anatomical fit and suspension without neurovascular or skin impingement; patient demonstrated improved knee stability, reduced pain, and safe functional ambulation for Activities of Daily Living (ADLs).",
+    "text": "Pt was seen at the North/South office for Custom Left/Right Knee brace delivery. Custom double upright knee orthosis fabricated from patient measurements. Straps trimmed and aluminum uprights contoured. Device provides rigid structural support, controls ligament laxity (ACL/PCL/MCL/LCL), prevents hyperextension, and stabilizes knee joint during ambulation.",
     "excludeAutoPrice": false,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "knee-sleeve": {
     "id": "knee-sleeve",
@@ -1219,10 +1184,9 @@
     "category": "Knee",
     "price": 40,
     "fabricationType": "prefab",
-    "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Stabilize the knee joint across target planes of motion, control ligamentous instability or unicompartmental load, protect healing tissues, and reduce mechanical knee pain.\nFunctional Outcomes: Orthosis achieved secure anatomical fit and suspension without neurovascular or skin impingement; patient demonstrated improved knee stability, reduced pain, and safe functional ambulation for Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at North/South office for Left/Right knee sleeve delivery. Fit with a {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} compressive neoprene knee sleeve to provide joint compression, proprioceptive support, and pain reduction during daily activities.",
     "excludeAutoPrice": true,
-    "isTemplate": true,
-    "lastUpdated": 1792706500000
+    "isTemplate": true
   },
   "custom-1790625956017": {
     "id": "custom-1790625956017",
