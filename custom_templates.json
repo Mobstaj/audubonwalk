@@ -1231,5 +1231,19 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true,
     "lastUpdated": 1792706500000
+  },
+  "custom-1793749554684": {
+    "id": "custom-1793749554684",
+    "title": "Cane delivery",
+    "price": 28,
+    "category": "General",
+    "lcodes": [],
+    "text": "Patient was seen at the North/South office for evaluation, fitting, and delivery of a single-point cane to assist with functional ambulation.\n\nCLINICAL INDICATION & MEDICAL NECESSITY:\nA single-point cane is medically necessary to provide an expanded base of support, partially offload weight-bearing forces from the affected Left/Right lower extremity, reduce fall risk, and improve stability during household and community ambulation.\n\nTECHNICAL FITTING & CALIBRATION:\nHe/She was fitted with an adjustable single-point aluminum cane.\nHeight Adjustment: With patient standing upright in standard supportive footwear and arms relaxed at sides, overall cane height was adjusted via push-button telescoping shaft so the handle rests at the level of the patient's greater trochanter / ulnar styloid process.\n\nBiomechanical Verification: Elbow flexion verified at approximately 15°–20° with hand on the grip.\n\nHardware & Integrity: Brass locking pin securely engaged, anti-rattle safety collar tightened, and slip-resistant rubber tip inspected for secure seating and full floor contact.\n\nGAIT TRAINING & PATIENT EDUCATION:\nhe/she was instructed on proper gait kinematics, positioning, and safety:\n\nGait Technique: Instructed to hold the cane in the hand opposite the affected Left/Right lower extremity, advancing the cane concurrently with the affected leg, followed by the sound leg.\n\nStair Navigation: Educated on step navigation (\"up with the good, down with the bad\"), leading with the unaffected leg when ascending and the cane alongside the affected leg when descending.\n\nInspection & Care: Educated on routine maintenance, including monitoring the rubber tip for wear, checking pin engagement before use, and navigating wet or uneven terrain.\n\nHe/She demonstrated independent, steady gait with the device and verbalized understanding of all safety instructions. Manufacturer warranty information provided and delivery documentation completed. Follow-up PRN.",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1793749554690
   }
 }
