@@ -183,9 +183,13 @@
     "category": "Foot & Ankle",
     "price": 152.19,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Morton's extension foot orthotic modification. Fit with {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} rigid extension under 1st MTP joint. Extension is reasonable and necessary to immobilize the 1st MTP joint, relieve hallux rigidus pain, and support propulsion phase of gait.",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right Morton's extension foot orthotic modification. Fit with Wrymark {Size: 23.5/27.5/31.5/} carbon mortons rigid extension under 1st MTP joint. Mortons extension is reasonable and necessary to immobilize the 1st MTP joint, relieve hallux rigidus pain by restricting motion, and support propulsion phase of gait.\n\nPt. was educated on use/care of the device.  Fit was appropriate.  He/she ambulated with device and stated that it was comfortable.  F/up PRN.",
     "excludeAutoPrice": false,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1794348251402
   },
   "night-splint": {
     "id": "night-splint",
