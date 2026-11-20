@@ -243,7 +243,7 @@
     "lcodes": [
       "L2999"
     ],
-    "title": "Shoe/heel lift",
+    "title": "Shoe/heel lift Achilles",
     "category": "Foot & Ankle",
     "price": 27,
     "fabricationType": "custom",
@@ -253,7 +253,7 @@
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1793307542456
+    "lastUpdated": 1795209514452
   },
   "simple-sling": {
     "id": "simple-sling",
