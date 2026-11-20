@@ -998,9 +998,13 @@
     "category": "Foot & Ankle",
     "price": 27,
     "fabricationType": "custom",
-    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. Lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of a Left/Right shoe lift modification. Measured non-weightbearing and weightbearing at _________ leg length discrepancy. {Size: Small/Med/Large} {height: 1/8\"/1/4\"/3/8\"/1/2\"/5/8\"/3/4\"} heel lift added to footwear to restore pelvis symmetry, reduce spinal tilt, and improve gait mechanics.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
     "excludeAutoPrice": true,
-    "isTemplate": true
+    "isTemplate": true,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1795209647326
   },
   "custom-foot-orthotics-delivery": {
     "id": "custom-foot-orthotics-delivery",
