@@ -426,13 +426,13 @@
     "category": "Foot & Ankle",
     "price": 100,
     "fabricationType": "prefab",
-    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right ArchRivals prefabricated foot orthotics. He/she was fit with size {Size: A -W4.5-6 /B - W6.5-8, M 6.5-7/C/D/E/F/G/H}.  ArchRival foot orthotics placed into footwear. The orthotics support longitudinal arches, distribute plantar pressures, and reduce foot pain during standing and ambulation. Verbal and written wear and care instructions provided.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
+    "text": "Patient was seen at the North/South office for fitting and delivery of Left/Right ArchRivals prefabricated foot orthotics. He/she was fit with size {Size: A -W4.5-6 /B - M6.5-8, M6.5-7/C - W8.5-10, M7.5-9/D - W10.5-12, M9.5-11/E/F/G/H}.  ArchRival foot orthotics placed into footwear. The orthotics support longitudinal arches, distribute plantar pressures, and reduce foot pain during standing and ambulation. Verbal and written wear and care instructions provided.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
     "excludeAutoPrice": true,
     "isTemplate": true,
     "isCustomEdited": true,
     "userCustomizedText": true,
     "userCustomizedPrice": true,
-    "lastUpdated": 1795186373913
+    "lastUpdated": 1795186539949
   },
   "generic-delivery": {
     "id": "generic-delivery",
