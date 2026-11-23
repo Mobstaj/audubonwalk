@@ -1298,5 +1298,19 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true,
     "lastUpdated": 1795213482260
+  },
+  "custom-1795449959103": {
+    "id": "custom-1795449959103",
+    "title": "Prosthetic supplies Misc",
+    "price": 800,
+    "category": "General",
+    "lcodes": [],
+    "text": "",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1795449959110
   }
 }
