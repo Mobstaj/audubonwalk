@@ -1312,5 +1312,19 @@
     "userCustomizedText": true,
     "userCustomizedPrice": true,
     "lastUpdated": 1795449959110
+  },
+  "custom-1795562114684": {
+    "id": "custom-1795562114684",
+    "title": "Boot liner delivery",
+    "price": 30,
+    "category": "Foot & Ankle",
+    "lcodes": [],
+    "text": "Pt. seen at North/South office for walk-in delivery of boot liner.  Size {Size: Ped./XXS/XSmall/Small/Med/Large/XL/2XL/3XL/4XL} boot liner was delivered to pt.  {+ Liner installed: Old boot liner was removed and new one installed to boot.  Liner was trimmed to fit pt.}{+ Liner dispensed no install: Liner was given to pt. for future use.  Pt. was educated on removing old liner without removing straps and installing new on in its place.}  Pt. was advised to contact the office with any questions or issues.  \n\nF/up PRN.\n\nTreatment Goals & Functional Outcomes:\nTreatment Goals: Restore and maintain optimal orthotic fit, anatomical alignment, joint stabilization, and pressure relief to reduce pain and prevent skin breakdown.\nFunctional Outcomes: Device achieved secure, comfortable fit without focal impingement; patient demonstrated improved stability, comfort, and safe functional use during Activities of Daily Living (ADLs).",
+    "excludeAutoPrice": false,
+    "isTemplate": false,
+    "isCustomEdited": true,
+    "userCustomizedText": true,
+    "userCustomizedPrice": true,
+    "lastUpdated": 1795562114692
   }
 }
